@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 5fd2dc2c41c342a75c26f9756ca6b1814ed05fb4
 Branches analyzed: 2
 
---- master (tip: e475fa2b5f9fb50c3d6fc3e7c6fdf1e004465b62, commits from ancestor: 9) ---
+--- master (tip: 4b48a53b6cc60e051f35f2acbd06264a909bb255, commits from ancestor: 10) ---
+4b48a53 server : optimize get_token_probabilities (#24796)
 e475fa2 mtmd, arg: fix utf8 handling on windows (#24779)
 175147e server: remove all internal mentions about "webui" (#24817)
 fabde3b arg: Add comment line support to --api-key-file (#23168)
