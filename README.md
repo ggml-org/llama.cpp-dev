@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-19 14:10:00 UTC
+Auto-generated on 2026-06-19 14:55:00 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -23,5 +23,7 @@ graph BT
     C_38724ab["<a href='https://github.com/ggml-org/llama.cpp/pull/24794'>#24794</a><br/><span style="font-size:smaller;color:gray">docker : build the UI (#24794)</span>"]
     C_38724ab --> C_8c2d6f6
     C_8c2d6f6["<a href='https://github.com/ggml-org/llama.cpp/pull/24801'>#24801</a><br/><span style="font-size:smaller;color:gray">server: add --agent arg, remove redundant webui naming compat (#24801)</span>"]
+    C_8c2d6f6 --> C_0d2d9cc
+    C_0d2d9cc["<a href='https://github.com/ggml-org/llama.cpp/pull/24787'>#24787</a><br/><span style="font-size:smaller;color:gray">vendor : update cpp-httplib to 0.48.0 (#24787)</span>"]
     COMMON -->|dev-metal| none
 ```
