@@ -1,0 +1,13 @@
+=== Branch Analysis ===
+Repo: https://github.com/ggml-org/llama.cpp
+Common ancestor: 5fd2dc2c41c342a75c26f9756ca6b1814ed05fb4
+Branches analyzed: 2
+
+--- master (tip: 38724ab5937f6440993d4e9814563385569d3b5a, commits from ancestor: 4) ---
+38724ab docker : build the UI (#24794)
+e2e7a9b mtmd: several bug fixes (#24784)
+b14e3fb spec: support eagle3 for qwen3.5 & 3.6 (#24593)
+159d093 server: fix non-bound n_discard value (ctx shifting) (#24786)
+
+--- dev-metal (tip: 5fd2dc2c41c342a75c26f9756ca6b1814ed05fb4, commits from ancestor: 0) ---
+

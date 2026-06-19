@@ -1,0 +1,36 @@
+name: Main
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: [self-hosted, dev-plot]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run main
+        run: ./main.sh
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet -- branches.txt; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add branches.txt README.md
+          git commit -m "auto: update"
+          git push
