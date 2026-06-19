@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 5fd2dc2c41c342a75c26f9756ca6b1814ed05fb4
 Branches analyzed: 2
 
---- master (tip: fabde3bf5136940eb03821aa2490e2360093965b, commits from ancestor: 7) ---
+--- master (tip: e475fa2b5f9fb50c3d6fc3e7c6fdf1e004465b62, commits from ancestor: 9) ---
+e475fa2 mtmd, arg: fix utf8 handling on windows (#24779)
+175147e server: remove all internal mentions about "webui" (#24817)
 fabde3b arg: Add comment line support to --api-key-file (#23168)
 0d2d9cc vendor : update cpp-httplib to 0.48.0 (#24787)
 8c2d6f6 server: add --agent arg, remove redundant webui naming compat (#24801)

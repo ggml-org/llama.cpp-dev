@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-19 16:36:56 UTC
+Auto-generated on 2026-06-19 21:19:13 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -27,5 +27,9 @@ graph BT
     C_0d2d9cc["<a href='https://github.com/ggml-org/llama.cpp/pull/24787'>#24787</a><br/><span style="font-size:smaller;color:gray">vendor : update cpp-httplib to 0.48.0 (#24787)</span>"]
     C_0d2d9cc --> C_fabde3b
     C_fabde3b["<a href='https://github.com/ggml-org/llama.cpp/pull/23168'>#23168</a><br/><span style="font-size:smaller;color:gray">arg: Add comment line support to --api-key-file (#23168)</span>"]
+    C_fabde3b --> C_175147e
+    C_175147e["<a href='https://github.com/ggml-org/llama.cpp/pull/24817'>#24817</a><br/><span style="font-size:smaller;color:gray">server: remove all internal mentions about "webui" (#24817)</span>"]
+    C_175147e --> C_e475fa2
+    C_e475fa2["<a href='https://github.com/ggml-org/llama.cpp/pull/24779'>#24779</a><br/><span style="font-size:smaller;color:gray">mtmd, arg: fix utf8 handling on windows (#24779)</span>"]
     COMMON -->|dev-metal| none
 ```
