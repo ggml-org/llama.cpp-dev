@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 5fd2dc2c41c342a75c26f9756ca6b1814ed05fb4
 Branches analyzed: 2
 
---- master (tip: 0d2d9ccbf6aae92de310712297fd52becc134092, commits from ancestor: 6) ---
+--- master (tip: fabde3bf5136940eb03821aa2490e2360093965b, commits from ancestor: 7) ---
+fabde3b arg: Add comment line support to --api-key-file (#23168)
 0d2d9cc vendor : update cpp-httplib to 0.48.0 (#24787)
 8c2d6f6 server: add --agent arg, remove redundant webui naming compat (#24801)
 38724ab docker : build the UI (#24794)
