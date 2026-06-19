@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 5fd2dc2c41c342a75c26f9756ca6b1814ed05fb4
 Branches analyzed: 2
 
---- master (tip: 38724ab5937f6440993d4e9814563385569d3b5a, commits from ancestor: 4) ---
+--- master (tip: 8c2d6f6475f2586e079fa6677dec91088de85604, commits from ancestor: 5) ---
+8c2d6f6 server: add --agent arg, remove redundant webui naming compat (#24801)
 38724ab docker : build the UI (#24794)
 e2e7a9b mtmd: several bug fixes (#24784)
 b14e3fb spec: support eagle3 for qwen3.5 & 3.6 (#24593)
