@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 5fd2dc2c41c342a75c26f9756ca6b1814ed05fb4
 Branches analyzed: 2
 
---- master (tip: 4b48a53b6cc60e051f35f2acbd06264a909bb255, commits from ancestor: 10) ---
+--- master (tip: f449e0553708b895adbd94a301431cef691f632d, commits from ancestor: 12) ---
+f449e05 ggml-webgpu: add adapter toggles for F16 on Vulkan + NVIDIA
+2b686a9 server: refactor child --> router communication (#24821)
 4b48a53 server : optimize get_token_probabilities (#24796)
 e475fa2 mtmd, arg: fix utf8 handling on windows (#24779)
 175147e server: remove all internal mentions about "webui" (#24817)

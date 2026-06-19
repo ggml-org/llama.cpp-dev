@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-19 22:15:48 UTC
+Auto-generated on 2026-06-19 23:16:56 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -33,5 +33,9 @@ graph BT
     C_e475fa2["<a href='https://github.com/ggml-org/llama.cpp/pull/24779'>#24779</a><br/><span style="font-size:smaller;color:gray">mtmd, arg: fix utf8 handling on windows (#24779)</span>"]
     C_e475fa2 --> C_4b48a53
     C_4b48a53["<a href='https://github.com/ggml-org/llama.cpp/pull/24796'>#24796</a><br/><span style="font-size:smaller;color:gray">server : optimize get_token_probabilities (#24796)</span>"]
+    C_4b48a53 --> C_2b686a9
+    C_2b686a9["<a href='https://github.com/ggml-org/llama.cpp/pull/24821'>#24821</a><br/><span style="font-size:smaller;color:gray">server: refactor child --> router communication (#24821)</span>"]
+    C_2b686a9 --> C_f449e05
+    C_f449e05["<a href='https://github.com/ggml-org/llama.cpp/commit/f449e05'>f449e05</a><br/><span style="font-size:smaller;color:gray">ggml-webgpu: add adapter toggles for F16 on Vulkan + NVIDIA</span>"]
     COMMON -->|dev-metal| none
 ```
