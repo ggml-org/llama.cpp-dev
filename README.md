@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-20 15:07:44 UTC
+Auto-generated on 2026-06-20 16:44:58 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -47,6 +47,8 @@ graph BT
     C_67e9fd3["<a href='https://github.com/ggml-org/llama.cpp/pull/24829'>#24829</a><br/><span style='font-size:smaller;color:gray'>docker : prebuild web UI for s390x build [no release] (#24829)</span>"]
     C_67e9fd3 --> C_e27f308
     C_e27f308["<a href='https://github.com/ggml-org/llama.cpp/pull/24373'>#24373</a><br/><span style='font-size:smaller;color:gray'>server: avoid forwarding auth headers in CORS proxy (#24373)</span>"]
+    C_e27f308 --> C_8452824
+    C_8452824["<a href='https://github.com/ggml-org/llama.cpp/pull/24809'>#24809</a><br/><span style='font-size:smaller;color:gray'>release: add missing link for win opencl adreno arm64 (#24809)</span>"]
     COMMON -->|dev-metal| C_5d3eb99
     C_5d3eb99["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
