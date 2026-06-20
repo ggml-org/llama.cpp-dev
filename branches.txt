@@ -17,5 +17,6 @@ e2e7a9b mtmd: several bug fixes (#24784)
 b14e3fb spec: support eagle3 for qwen3.5 & 3.6 (#24593)
 159d093 server: fix non-bound n_discard value (ctx shifting) (#24786)
 
---- dev-metal (tip: 5fd2dc2c41c342a75c26f9756ca6b1814ed05fb4, commits from ancestor: 0) ---
+--- dev-metal (tip: 5d3eb999b6eb90d0da9c7eea8ea62ce1b7165e2e, commits from ancestor: 1) ---
+5d3eb99 metal : per-op source split + parallel compile (#24021)
 

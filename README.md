@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-20 08:39:27 UTC
+Auto-generated on 2026-06-20 10:36:58 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -28,7 +28,7 @@ graph BT
     C_0d2d9cc --> C_fabde3b
     C_fabde3b["<a href='https://github.com/ggml-org/llama.cpp/pull/23168'>#23168</a><br/><span style='font-size:smaller;color:gray'>arg: Add comment line support to --api-key-file (#23168)</span>"]
     C_fabde3b --> C_175147e
-    C_175147e["<a href='https://github.com/ggml-org/llama.cpp/pull/24817'>#24817</a><br/><span style='font-size:smaller;color:gray'>server: remove all internal mentions about &quot;webui&quot; (#24817)</span>"]
+    C_175147e["<a href='https://github.com/ggml-org/llama.cpp/pull/24817'>#24817</a><br/><span style='font-size:smaller;color:gray'>server: remove all internal mentions about "quot;webui"quot; (#24817)</span>"]
     C_175147e --> C_e475fa2
     C_e475fa2["<a href='https://github.com/ggml-org/llama.cpp/pull/24779'>#24779</a><br/><span style='font-size:smaller;color:gray'>mtmd, arg: fix utf8 handling on windows (#24779)</span>"]
     C_e475fa2 --> C_4b48a53
@@ -37,5 +37,6 @@ graph BT
     C_2b686a9["<a href='https://github.com/ggml-org/llama.cpp/pull/24821'>#24821</a><br/><span style='font-size:smaller;color:gray'>server: refactor child --> router communication (#24821)</span>"]
     C_2b686a9 --> C_f449e05
     C_f449e05["<a href='https://github.com/ggml-org/llama.cpp/commit/f449e05'>f449e05</a><br/><span style='font-size:smaller;color:gray'>ggml-webgpu: add adapter toggles for F16 on Vulkan + NVIDIA</span>"]
-    COMMON -->|dev-metal| none
+    COMMON -->|dev-metal| C_5d3eb99
+    C_5d3eb99["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
