@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-20 11:26:26 UTC
+Auto-generated on 2026-06-20 15:07:44 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -45,6 +45,8 @@ graph BT
     C_796f41b["<a href='https://github.com/ggml-org/llama.cpp/pull/24770'>#24770</a><br/><span style='font-size:smaller;color:gray'>model : glm-dsa load DSA indexer tensors as optional (#24770)</span>"]
     C_796f41b --> C_67e9fd3
     C_67e9fd3["<a href='https://github.com/ggml-org/llama.cpp/pull/24829'>#24829</a><br/><span style='font-size:smaller;color:gray'>docker : prebuild web UI for s390x build [no release] (#24829)</span>"]
+    C_67e9fd3 --> C_e27f308
+    C_e27f308["<a href='https://github.com/ggml-org/llama.cpp/pull/24373'>#24373</a><br/><span style='font-size:smaller;color:gray'>server: avoid forwarding auth headers in CORS proxy (#24373)</span>"]
     COMMON -->|dev-metal| C_5d3eb99
     C_5d3eb99["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```

@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 5fd2dc2c41c342a75c26f9756ca6b1814ed05fb4
 Branches analyzed: 2
 
---- master (tip: 67e9fd3b74b7fab3a153161f1942cc2121aa90a3, commits from ancestor: 16) ---
+--- master (tip: e27f3085973722407518ea4822fb3e0a2b41df9c, commits from ancestor: 17) ---
+e27f308 server: avoid forwarding auth headers in CORS proxy (#24373)
 67e9fd3 docker : prebuild web UI for s390x build [no release] (#24829)
 796f41b model : glm-dsa load DSA indexer tensors as optional (#24770)
 37a77fb ggml : optimize AMX (#24806)
