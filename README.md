@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-20 16:44:58 UTC
+Auto-generated on 2026-06-20 18:00:39 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -49,6 +49,8 @@ graph BT
     C_e27f308["<a href='https://github.com/ggml-org/llama.cpp/pull/24373'>#24373</a><br/><span style='font-size:smaller;color:gray'>server: avoid forwarding auth headers in CORS proxy (#24373)</span>"]
     C_e27f308 --> C_8452824
     C_8452824["<a href='https://github.com/ggml-org/llama.cpp/pull/24809'>#24809</a><br/><span style='font-size:smaller;color:gray'>release: add missing link for win opencl adreno arm64 (#24809)</span>"]
+    C_8452824 --> C_75f460a
+    C_75f460a["<a href='https://github.com/ggml-org/llama.cpp/pull/24826'>#24826</a><br/><span style='font-size:smaller;color:gray'>arg: try fixing test-args-parser randomly fails (#24826)</span>"]
     COMMON -->|dev-metal| C_5d3eb99
     C_5d3eb99["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
