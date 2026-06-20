@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-20 19:47:44 UTC
+Auto-generated on 2026-06-20 22:04:26 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -53,6 +53,8 @@ graph BT
     C_75f460a["<a href='https://github.com/ggml-org/llama.cpp/pull/24826'>#24826</a><br/><span style='font-size:smaller;color:gray'>arg: try fixing test-args-parser randomly fails (#24826)</span>"]
     C_75f460a --> C_84de01a
     C_84de01a["<a href='https://github.com/ggml-org/llama.cpp/pull/24802'>#24802</a><br/><span style='font-size:smaller;color:gray'>llama : use LLM_KV for quantization_version & file_type (#24802)</span>"]
+    C_84de01a --> C_4a80943
+    C_4a80943["<a href='https://github.com/ggml-org/llama.cpp/pull/24470'>#24470</a><br/><span style='font-size:smaller;color:gray'>fix(hexagon): use padded stride for ssm-conv weights (#24470)</span>"]
     COMMON -->|dev-metal| C_5d3eb99
     C_5d3eb99["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
