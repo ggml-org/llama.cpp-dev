@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-20 10:39:29 UTC
+Auto-generated on 2026-06-20 11:26:26 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -37,6 +37,14 @@ graph BT
     C_2b686a9["<a href='https://github.com/ggml-org/llama.cpp/pull/24821'>#24821</a><br/><span style='font-size:smaller;color:gray'>server: refactor child --> router communication (#24821)</span>"]
     C_2b686a9 --> C_f449e05
     C_f449e05["<a href='https://github.com/ggml-org/llama.cpp/commit/f449e05'>f449e05</a><br/><span style='font-size:smaller;color:gray'>ggml-webgpu: add adapter toggles for F16 on Vulkan + NVIDIA</span>"]
+    C_f449e05 --> C_f4043fe
+    C_f4043fe["<a href='https://github.com/ggml-org/llama.cpp/pull/24833'>#24833</a><br/><span style='font-size:smaller;color:gray'>convert : more consistent handling of rope_parameters (#24833)</span>"]
+    C_f4043fe --> C_37a77fb
+    C_37a77fb["<a href='https://github.com/ggml-org/llama.cpp/pull/24806'>#24806</a><br/><span style='font-size:smaller;color:gray'>ggml : optimize AMX (#24806)</span>"]
+    C_37a77fb --> C_796f41b
+    C_796f41b["<a href='https://github.com/ggml-org/llama.cpp/pull/24770'>#24770</a><br/><span style='font-size:smaller;color:gray'>model : glm-dsa load DSA indexer tensors as optional (#24770)</span>"]
+    C_796f41b --> C_67e9fd3
+    C_67e9fd3["<a href='https://github.com/ggml-org/llama.cpp/pull/24829'>#24829</a><br/><span style='font-size:smaller;color:gray'>docker : prebuild web UI for s390x build [no release] (#24829)</span>"]
     COMMON -->|dev-metal| C_5d3eb99
     C_5d3eb99["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```

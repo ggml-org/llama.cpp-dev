@@ -3,7 +3,11 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 5fd2dc2c41c342a75c26f9756ca6b1814ed05fb4
 Branches analyzed: 2
 
---- master (tip: f449e0553708b895adbd94a301431cef691f632d, commits from ancestor: 12) ---
+--- master (tip: 67e9fd3b74b7fab3a153161f1942cc2121aa90a3, commits from ancestor: 16) ---
+67e9fd3 docker : prebuild web UI for s390x build [no release] (#24829)
+796f41b model : glm-dsa load DSA indexer tensors as optional (#24770)
+37a77fb ggml : optimize AMX (#24806)
+f4043fe convert : more consistent handling of rope_parameters (#24833)
 f449e05 ggml-webgpu: add adapter toggles for F16 on Vulkan + NVIDIA
 2b686a9 server: refactor child --> router communication (#24821)
 4b48a53 server : optimize get_token_probabilities (#24796)
