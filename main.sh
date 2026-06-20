@@ -99,12 +99,13 @@ common_pr=$(extract_pr "$(git -C "$BARE_DIR" log -1 --format="%s" "$common_base"
         common_label="$common_label #${common_pr}"
     fi
     common_subject=$(git -C "$BARE_DIR" log -1 --format="%s" "$common_base")
+    common_subject="${common_subject//\"/&quot;}"  # escape quotes for mermaid
     if [ -n "$common_pr" ]; then
         common_link="<a href='${REPO_URL}/pull/${common_pr}'>#${common_pr}</a>"
     else
         common_link="<a href='${REPO_URL}/commit/${common_base}'>${common_short}</a>"
     fi
-    echo "    COMMON[\"${common_link}<br/><span style=\"font-size:smaller;color:gray\">${common_subject}</span>\"]"
+    echo "    COMMON[\"${common_link}<br/><span style='font-size:smaller;color:gray'>${common_subject}</span>\"]"
 
     for branch in "${branches[@]}"; do
         # Determine the base: master uses global ancestor, dev-* uses merge-base with master
@@ -154,7 +155,8 @@ common_pr=$(extract_pr "$(git -C "$BARE_DIR" log -1 --format="%s" "$common_base"
                 label="<a href='${REPO_URL}/commit/${hash}'>${hash}</a>"
             fi
             if ! echo " $emitted " | grep -q " $hash "; then
-                echo "    C_${hash}[\"${label}<br/><span style=\"font-size:smaller;color:gray\">${subject}</span>\"]"
+                subject_escaped="${subject//\"/&quot;}"  # escape quotes for mermaid
+                echo "    C_${hash}[\"${label}<br/><span style='font-size:smaller;color:gray'>${subject_escaped}</span>\"]"
                 emitted="$emitted $hash"
             fi
 
