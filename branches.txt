@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 5fd2dc2c41c342a75c26f9756ca6b1814ed05fb4
 Branches analyzed: 2
 
---- master (tip: 4a8094317436a23c484c9803cc3ac348e236708f, commits from ancestor: 21) ---
+--- master (tip: c57607016a1ebdd08d269e3378eee5546fc3bf3a, commits from ancestor: 22) ---
+c576070 common/json-schema-to-grammar : align spacing rules with parsers (#24835)
 4a80943 fix(hexagon): use padded stride for ssm-conv weights (#24470)
 84de01a llama : use LLM_KV for quantization_version & file_type (#24802)
 75f460a arg: try fixing test-args-parser randomly fails (#24826)
