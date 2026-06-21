@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-21 12:21:24 UTC
+Auto-generated on 2026-06-21 16:18:17 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -75,6 +75,8 @@ graph BT
     C_0d135df["<a href='https://github.com/ggml-org/llama.cpp/pull/24867'>#24867</a><br/><span style='font-size:smaller;color:gray'>mtmd: fix mtmd_get_memory_usage (#24867)</span>"]
     C_0d135df --> C_bddfd2b
     C_bddfd2b["<a href='https://github.com/ggml-org/llama.cpp/pull/24843'>#24843</a><br/><span style='font-size:smaller;color:gray'>server: refactor batch construction (#24843)</span>"]
+    C_bddfd2b --> C_7c082bc
+    C_7c082bc["<a href='https://github.com/ggml-org/llama.cpp/pull/24870'>#24870</a><br/><span style='font-size:smaller;color:gray'>server: fix report progress for loading spec models, add 'stages' list (#24870)</span>"]
     COMMON -->|dev-metal| C_5d3eb99
     C_5d3eb99["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```

@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 5fd2dc2c41c342a75c26f9756ca6b1814ed05fb4
 Branches analyzed: 2
 
---- master (tip: bddfd2b1137cd6e51fbb939081caf50e9f496a66, commits from ancestor: 31) ---
+--- master (tip: 7c082bc417bbe53210a83df4ba5b49e18ce6193c, commits from ancestor: 32) ---
+7c082bc server: fix report progress for loading spec models, add "stages" list (#24870)
 bddfd2b server: refactor batch construction (#24843)
 0d135df mtmd: fix mtmd_get_memory_usage (#24867)
 bf53382 jinja : implement call statement (#24847)
