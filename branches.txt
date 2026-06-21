@@ -3,7 +3,10 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 5fd2dc2c41c342a75c26f9756ca6b1814ed05fb4
 Branches analyzed: 2
 
---- master (tip: 063d9c156e816ae3cf62db01f429a07a099afe97, commits from ancestor: 23) ---
+--- master (tip: d6d899580dcf0e50a3d14453d3d082f6ed050450, commits from ancestor: 26) ---
+d6d8995 server: real-time model load progress tracking via /models/sse (#24828)
+8a118ee minor : clean-up whitespaces (#24862)
+d789527 spec : Support Step3.5/3.7 flash mtp3 (#24340)
 063d9c1 common/peg : refactor until gbnf grammar generation (#24839)
 c576070 common/json-schema-to-grammar : align spacing rules with parsers (#24835)
 4a80943 fix(hexagon): use padded stride for ssm-conv weights (#24470)

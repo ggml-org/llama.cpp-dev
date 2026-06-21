@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-21 06:31:51 UTC
+Auto-generated on 2026-06-21 10:11:50 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -59,6 +59,12 @@ graph BT
     C_c576070["<a href='https://github.com/ggml-org/llama.cpp/pull/24835'>#24835</a><br/><span style='font-size:smaller;color:gray'>common/json-schema-to-grammar : align spacing rules with parsers (#24835)</span>"]
     C_c576070 --> C_063d9c1
     C_063d9c1["<a href='https://github.com/ggml-org/llama.cpp/pull/24839'>#24839</a><br/><span style='font-size:smaller;color:gray'>common/peg : refactor until gbnf grammar generation (#24839)</span>"]
+    C_063d9c1 --> C_d789527
+    C_d789527["<a href='https://github.com/ggml-org/llama.cpp/pull/24340'>#24340</a><br/><span style='font-size:smaller;color:gray'>spec : Support Step3.5/3.7 flash mtp3 (#24340)</span>"]
+    C_d789527 --> C_8a118ee
+    C_8a118ee["<a href='https://github.com/ggml-org/llama.cpp/pull/24862'>#24862</a><br/><span style='font-size:smaller;color:gray'>minor : clean-up whitespaces (#24862)</span>"]
+    C_8a118ee --> C_d6d8995
+    C_d6d8995["<a href='https://github.com/ggml-org/llama.cpp/pull/24828'>#24828</a><br/><span style='font-size:smaller;color:gray'>server: real-time model load progress tracking via /models/sse (#24828)</span>"]
     COMMON -->|dev-metal| C_5d3eb99
     C_5d3eb99["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
