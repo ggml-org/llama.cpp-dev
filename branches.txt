@@ -3,7 +3,12 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 5fd2dc2c41c342a75c26f9756ca6b1814ed05fb4
 Branches analyzed: 2
 
---- master (tip: d6d899580dcf0e50a3d14453d3d082f6ed050450, commits from ancestor: 26) ---
+--- master (tip: bddfd2b1137cd6e51fbb939081caf50e9f496a66, commits from ancestor: 31) ---
+bddfd2b server: refactor batch construction (#24843)
+0d135df mtmd: fix mtmd_get_memory_usage (#24867)
+bf53382 jinja : implement call statement (#24847)
+2f89acc mtmd: add load progress callback (#24865)
+bfa3219 server: add "verbose" field to schema (#24864)
 d6d8995 server: real-time model load progress tracking via /models/sse (#24828)
 8a118ee minor : clean-up whitespaces (#24862)
 d789527 spec : Support Step3.5/3.7 flash mtp3 (#24340)

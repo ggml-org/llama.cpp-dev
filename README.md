@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-21 10:11:50 UTC
+Auto-generated on 2026-06-21 12:21:24 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -65,6 +65,16 @@ graph BT
     C_8a118ee["<a href='https://github.com/ggml-org/llama.cpp/pull/24862'>#24862</a><br/><span style='font-size:smaller;color:gray'>minor : clean-up whitespaces (#24862)</span>"]
     C_8a118ee --> C_d6d8995
     C_d6d8995["<a href='https://github.com/ggml-org/llama.cpp/pull/24828'>#24828</a><br/><span style='font-size:smaller;color:gray'>server: real-time model load progress tracking via /models/sse (#24828)</span>"]
+    C_d6d8995 --> C_bfa3219
+    C_bfa3219["<a href='https://github.com/ggml-org/llama.cpp/pull/24864'>#24864</a><br/><span style='font-size:smaller;color:gray'>server: add 'verbose' field to schema (#24864)</span>"]
+    C_bfa3219 --> C_2f89acc
+    C_2f89acc["<a href='https://github.com/ggml-org/llama.cpp/pull/24865'>#24865</a><br/><span style='font-size:smaller;color:gray'>mtmd: add load progress callback (#24865)</span>"]
+    C_2f89acc --> C_bf53382
+    C_bf53382["<a href='https://github.com/ggml-org/llama.cpp/pull/24847'>#24847</a><br/><span style='font-size:smaller;color:gray'>jinja : implement call statement (#24847)</span>"]
+    C_bf53382 --> C_0d135df
+    C_0d135df["<a href='https://github.com/ggml-org/llama.cpp/pull/24867'>#24867</a><br/><span style='font-size:smaller;color:gray'>mtmd: fix mtmd_get_memory_usage (#24867)</span>"]
+    C_0d135df --> C_bddfd2b
+    C_bddfd2b["<a href='https://github.com/ggml-org/llama.cpp/pull/24843'>#24843</a><br/><span style='font-size:smaller;color:gray'>server: refactor batch construction (#24843)</span>"]
     COMMON -->|dev-metal| C_5d3eb99
     C_5d3eb99["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
