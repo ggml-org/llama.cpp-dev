@@ -1,44 +1,10 @@
 === Branch Analysis ===
 Repo: https://github.com/ggml-org/llama.cpp
-Common ancestor: 5fd2dc2c41c342a75c26f9756ca6b1814ed05fb4
+Common ancestor: f8cc15f163e784c58fe13aee58ebc03055bb0c40
 Branches analyzed: 2
 
---- master (tip: 0ef6f06d553b160d8fc1fba38f5848c7940873a2, commits from ancestor: 34) ---
-0ef6f06 docs/android.md: Add dependency `libandroid-spawn` for building in termux (#21812)
-52b3df0 common/peg : implement ac parser for stricter grammar generation (#24869)
-7c082bc server: fix report progress for loading spec models, add "stages" list (#24870)
-bddfd2b server: refactor batch construction (#24843)
-0d135df mtmd: fix mtmd_get_memory_usage (#24867)
-bf53382 jinja : implement call statement (#24847)
-2f89acc mtmd: add load progress callback (#24865)
-bfa3219 server: add "verbose" field to schema (#24864)
-d6d8995 server: real-time model load progress tracking via /models/sse (#24828)
-8a118ee minor : clean-up whitespaces (#24862)
-d789527 spec : Support Step3.5/3.7 flash mtp3 (#24340)
-063d9c1 common/peg : refactor until gbnf grammar generation (#24839)
-c576070 common/json-schema-to-grammar : align spacing rules with parsers (#24835)
-4a80943 fix(hexagon): use padded stride for ssm-conv weights (#24470)
-84de01a llama : use LLM_KV for quantization_version & file_type (#24802)
-75f460a arg: try fixing test-args-parser randomly fails (#24826)
-8452824 release: add missing link for win opencl adreno arm64 (#24809)
-e27f308 server: avoid forwarding auth headers in CORS proxy (#24373)
-67e9fd3 docker : prebuild web UI for s390x build [no release] (#24829)
-796f41b model : glm-dsa load DSA indexer tensors as optional (#24770)
-37a77fb ggml : optimize AMX (#24806)
-f4043fe convert : more consistent handling of rope_parameters (#24833)
-f449e05 ggml-webgpu: add adapter toggles for F16 on Vulkan + NVIDIA
-2b686a9 server: refactor child --> router communication (#24821)
-4b48a53 server : optimize get_token_probabilities (#24796)
-e475fa2 mtmd, arg: fix utf8 handling on windows (#24779)
-175147e server: remove all internal mentions about "webui" (#24817)
-fabde3b arg: Add comment line support to --api-key-file (#23168)
-0d2d9cc vendor : update cpp-httplib to 0.48.0 (#24787)
-8c2d6f6 server: add --agent arg, remove redundant webui naming compat (#24801)
-38724ab docker : build the UI (#24794)
-e2e7a9b mtmd: several bug fixes (#24784)
-b14e3fb spec: support eagle3 for qwen3.5 & 3.6 (#24593)
-159d093 server: fix non-bound n_discard value (ctx shifting) (#24786)
+--- master (tip: f8cc15f163e784c58fe13aee58ebc03055bb0c40, commits from ancestor: 0) ---
 
---- dev-metal (tip: 5d3eb999b6eb90d0da9c7eea8ea62ce1b7165e2e, commits from ancestor: 1) ---
-5d3eb99 metal : per-op source split + parallel compile (#24021)
+--- dev-metal (tip: bec308383071b25a0fd30048ee8cab1d9148d0f7, commits from ancestor: 1) ---
+bec3083 metal : per-op source split + parallel compile (#24021)
 
