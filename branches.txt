@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: f8cc15f163e784c58fe13aee58ebc03055bb0c40
 Branches analyzed: 2
 
---- master (tip: 721354fbdfb7743e2be2183d918a3cdb9276c70f, commits from ancestor: 3) ---
+--- master (tip: 9c0ac887f35eb4f3cdef57df422de47715b6f0f8, commits from ancestor: 4) ---
+9c0ac88 ui: Prioritize favorite models in model selection (#24766)
 721354f server: (router) move model downloading to dedicated process (#24834)
 6ee0f65 server: refactor/generalize input file schema (#24299)
 099b579 ui: model status and load progress via /models/sse feed (#24878)
