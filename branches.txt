@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 5fd2dc2c41c342a75c26f9756ca6b1814ed05fb4
 Branches analyzed: 2
 
---- master (tip: 52b3df0023659b142ce29f75c7a82cf437769c33, commits from ancestor: 33) ---
+--- master (tip: 0ef6f06d553b160d8fc1fba38f5848c7940873a2, commits from ancestor: 34) ---
+0ef6f06 docs/android.md: Add dependency `libandroid-spawn` for building in termux (#21812)
 52b3df0 common/peg : implement ac parser for stricter grammar generation (#24869)
 7c082bc server: fix report progress for loading spec models, add "stages" list (#24870)
 bddfd2b server: refactor batch construction (#24843)
