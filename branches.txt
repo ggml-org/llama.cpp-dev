@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: f8cc15f163e784c58fe13aee58ebc03055bb0c40
 Branches analyzed: 2
 
---- master (tip: 73618f27a801c0b8614ceaf3547d3c2a99baae14, commits from ancestor: 7) ---
+--- master (tip: 7c908502ea0868e6ae913f79ba84ba844a5b386a, commits from ancestor: 9) ---
+7c90850 ggml-webgpu: improve MTP inference by using mat-vec path for small batches (#24811)
+035cd8f codeowners: add yomaytk to ggml-webgpu (#24930)
 73618f2 server: improve user message detection and create checkpoints at every user message (#24176)
 23ee879 opencl: q8_0 gemv precision improvement (#24923)
 dec5ca5 server : Add id to tool call responses api (#24882)
