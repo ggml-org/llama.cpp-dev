@@ -3,7 +3,10 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: f8cc15f163e784c58fe13aee58ebc03055bb0c40
 Branches analyzed: 2
 
---- master (tip: 7c908502ea0868e6ae913f79ba84ba844a5b386a, commits from ancestor: 9) ---
+--- master (tip: 75ad0b23ed6dc98ce384953e1f9bc494c3de92ce, commits from ancestor: 12) ---
+75ad0b2 server: fix remote preset handling, add test (#24938)
+c926ad0 vulkan: link ggml-cpu when GGML_VULKAN_CHECK_RESULTS / RUN_TESTS are enabled (#24444)
+a3900a6 model: Granite Speech Plus (#24818)
 7c90850 ggml-webgpu: improve MTP inference by using mat-vec path for small batches (#24811)
 035cd8f codeowners: add yomaytk to ggml-webgpu (#24930)
 73618f2 server: improve user message detection and create checkpoints at every user message (#24176)
