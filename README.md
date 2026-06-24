@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-24 15:56:58 UTC
+Auto-generated on 2026-06-24 17:51:59 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -59,6 +59,10 @@ graph BT
     C_1191758["<a href='https://github.com/ggml-org/llama.cpp/pull/24450'>#24450</a><br/><span style='font-size:smaller;color:gray'>vulkan: fail the build when a shader fails to compile (#24450)</span>"]
     C_1191758 --> C_51eae8c
     C_51eae8c["<a href='https://github.com/ggml-org/llama.cpp/pull/24872'>#24872</a><br/><span style='font-size:smaller;color:gray'>vulkan: allow reducing the graph submission batches to avoid timeouts (#24872)</span>"]
+    C_51eae8c --> C_fb40104
+    C_fb40104["<a href='https://github.com/ggml-org/llama.cpp/pull/24968'>#24968</a><br/><span style='font-size:smaller;color:gray'>common: remove unused json-partial (#24968)</span>"]
+    C_fb40104 --> C_894bb27
+    C_894bb27["<a href='https://github.com/ggml-org/llama.cpp/pull/24969'>#24969</a><br/><span style='font-size:smaller;color:gray'>mtmd: model: unlimited-ocr: converter + parity test (#24969)</span>"]
     COMMON -->|dev-metal| C_bec3083
     C_bec3083["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```

@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: f8cc15f163e784c58fe13aee58ebc03055bb0c40
 Branches analyzed: 2
 
---- master (tip: 51eae8cfcac4fb403bcf91d1fb524fec0974f510, commits from ancestor: 23) ---
+--- master (tip: 894bb27af3bf063d465b251f2b1ca05e95e98610, commits from ancestor: 25) ---
+894bb27 mtmd: model: unlimited-ocr: converter + parity test (#24969)
+fb40104 common: remove unused json-partial (#24968)
 51eae8c vulkan: allow reducing the graph submission batches to avoid timeouts (#24872)
 1191758 vulkan: fail the build when a shader fails to compile (#24450)
 00139b6 ui: loading bar below the model picker (#24931)
