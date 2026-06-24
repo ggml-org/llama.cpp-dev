@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-24 11:29:01 UTC
+Auto-generated on 2026-06-24 15:56:58 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -57,6 +57,8 @@ graph BT
     C_00139b6["<a href='https://github.com/ggml-org/llama.cpp/pull/24931'>#24931</a><br/><span style='font-size:smaller;color:gray'>ui: loading bar below the model picker (#24931)</span>"]
     C_00139b6 --> C_1191758
     C_1191758["<a href='https://github.com/ggml-org/llama.cpp/pull/24450'>#24450</a><br/><span style='font-size:smaller;color:gray'>vulkan: fail the build when a shader fails to compile (#24450)</span>"]
+    C_1191758 --> C_51eae8c
+    C_51eae8c["<a href='https://github.com/ggml-org/llama.cpp/pull/24872'>#24872</a><br/><span style='font-size:smaller;color:gray'>vulkan: allow reducing the graph submission batches to avoid timeouts (#24872)</span>"]
     COMMON -->|dev-metal| C_bec3083
     C_bec3083["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
