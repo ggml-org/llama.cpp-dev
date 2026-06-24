@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: f8cc15f163e784c58fe13aee58ebc03055bb0c40
 Branches analyzed: 2
 
---- master (tip: 894bb27af3bf063d465b251f2b1ca05e95e98610, commits from ancestor: 25) ---
+--- master (tip: 8be759e6f70d629638a7eb70db3824cbdcea370b, commits from ancestor: 26) ---
+8be759e hexagon: MUL_MAT and MUL_MAT_ID rework : 32x32 tiled weight repack, kernel-params, cached graphs (#24954)
 894bb27 mtmd: model: unlimited-ocr: converter + parity test (#24969)
 fb40104 common: remove unused json-partial (#24968)
 51eae8c vulkan: allow reducing the graph submission batches to avoid timeouts (#24872)
