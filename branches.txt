@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: f8cc15f163e784c58fe13aee58ebc03055bb0c40
 Branches analyzed: 2
 
---- master (tip: ac4105d68b2955027115cf9bb50941ccf56974eb, commits from ancestor: 18) ---
+--- master (tip: ef9c13d4c27f1ad9804341a0187c33b621609c63, commits from ancestor: 20) ---
+ef9c13d ui: New Logo + Navigation cleanup & Mobile UI/UX improvements (#24897)
+88636e1 model : Add LFM2.5-ColBERT-350M and LFM2.5-Embedding-350M (#24913)
 ac4105d vulkan: Apply bias before softmax in FA, to avoid overflow (#24909)
 be4a6a6 server : check draft context creation error (#24922)
 72a9269 vulkan: support all backend tests for SQR/SQRT/SIN/COS/CLAMP/LEAKY_RELU/NORM (#24582)
