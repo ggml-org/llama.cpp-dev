@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: f8cc15f163e784c58fe13aee58ebc03055bb0c40
 Branches analyzed: 2
 
---- master (tip: be4a6a63eb2b848e19c277bdcf2bd399e8af76d9, commits from ancestor: 17) ---
+--- master (tip: ac4105d68b2955027115cf9bb50941ccf56974eb, commits from ancestor: 18) ---
+ac4105d vulkan: Apply bias before softmax in FA, to avoid overflow (#24909)
 be4a6a6 server : check draft context creation error (#24922)
 72a9269 vulkan: support all backend tests for SQR/SQRT/SIN/COS/CLAMP/LEAKY_RELU/NORM (#24582)
 92e854a vulkan: Support GET_ROWS_BACK (#24883)
