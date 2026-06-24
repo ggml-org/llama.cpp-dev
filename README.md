@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-24 08:41:10 UTC
+Auto-generated on 2026-06-24 11:29:01 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -53,6 +53,10 @@ graph BT
     C_88636e1["<a href='https://github.com/ggml-org/llama.cpp/pull/24913'>#24913</a><br/><span style='font-size:smaller;color:gray'>model : Add LFM2.5-ColBERT-350M and LFM2.5-Embedding-350M (#24913)</span>"]
     C_88636e1 --> C_ef9c13d
     C_ef9c13d["<a href='https://github.com/ggml-org/llama.cpp/pull/24897'>#24897</a><br/><span style='font-size:smaller;color:gray'>ui: New Logo + Navigation cleanup & Mobile UI/UX improvements (#24897)</span>"]
+    C_ef9c13d --> C_00139b6
+    C_00139b6["<a href='https://github.com/ggml-org/llama.cpp/pull/24931'>#24931</a><br/><span style='font-size:smaller;color:gray'>ui: loading bar below the model picker (#24931)</span>"]
+    C_00139b6 --> C_1191758
+    C_1191758["<a href='https://github.com/ggml-org/llama.cpp/pull/24450'>#24450</a><br/><span style='font-size:smaller;color:gray'>vulkan: fail the build when a shader fails to compile (#24450)</span>"]
     COMMON -->|dev-metal| C_bec3083
     C_bec3083["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
