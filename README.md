@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-25 08:41:14 UTC
+Auto-generated on 2026-06-25 13:30:57 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -83,6 +83,12 @@ graph BT
     C_3e61ea0["<a href='https://github.com/ggml-org/llama.cpp/pull/24979'>#24979</a><br/><span style='font-size:smaller;color:gray'>ui: fix always-show-sidebar-on-desktop setting after navigation refactor (#24979)</span>"]
     C_3e61ea0 --> C_f728ada
     C_f728ada["<a href='https://github.com/ggml-org/llama.cpp/pull/24706'>#24706</a><br/><span style='font-size:smaller;color:gray'>ggml : address integer overflows in binary ops CUDA implementation (#24706)</span>"]
+    C_f728ada --> C_683b04c
+    C_683b04c["<a href='https://github.com/ggml-org/llama.cpp/pull/24982'>#24982</a><br/><span style='font-size:smaller;color:gray'>app : add the llama download subcommand (#24982)</span>"]
+    C_683b04c --> C_e8ecce5
+    C_e8ecce5["<a href='https://github.com/ggml-org/llama.cpp/pull/24977'>#24977</a><br/><span style='font-size:smaller;color:gray'>docs : Eagle3 qwen3 draft model support (#24977)</span>"]
+    C_e8ecce5 --> C_60bc886
+    C_60bc886["<a href='https://github.com/ggml-org/llama.cpp/pull/24980'>#24980</a><br/><span style='font-size:smaller;color:gray'>common: refactor model handling (#24980)</span>"]
     COMMON -->|dev-metal| C_bec3083
     C_bec3083["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```

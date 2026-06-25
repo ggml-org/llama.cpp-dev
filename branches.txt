@@ -3,7 +3,10 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: f8cc15f163e784c58fe13aee58ebc03055bb0c40
 Branches analyzed: 2
 
---- master (tip: f728adab683387b2bdb085b3854a0f3487a13d0a, commits from ancestor: 35) ---
+--- master (tip: 60bc8866b11fb9bfa7de08dfb2047fe7ac914b55, commits from ancestor: 38) ---
+60bc886 common: refactor model handling (#24980)
+e8ecce5 docs : Eagle3 qwen3 draft model support (#24977)
+683b04c app : add the llama download subcommand (#24982)
 f728ada ggml : address integer overflows in binary ops CUDA implementation (#24706)
 3e61ea0 ui: fix always-show-sidebar-on-desktop setting after navigation refactor (#24979)
 fdbd6ab tests : synchronize contexts at end of test-thread-safety (#24935)
