@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-24 19:21:23 UTC
+Auto-generated on 2026-06-25 01:35:35 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -65,6 +65,8 @@ graph BT
     C_894bb27["<a href='https://github.com/ggml-org/llama.cpp/pull/24969'>#24969</a><br/><span style='font-size:smaller;color:gray'>mtmd: model: unlimited-ocr: converter + parity test (#24969)</span>"]
     C_894bb27 --> C_8be759e
     C_8be759e["<a href='https://github.com/ggml-org/llama.cpp/pull/24954'>#24954</a><br/><span style='font-size:smaller;color:gray'>hexagon: MUL_MAT and MUL_MAT_ID rework : 32x32 tiled weight repack, kernel-params, cached graphs (#24954)</span>"]
+    C_8be759e --> C_09cedfd
+    C_09cedfd["<a href='https://github.com/ggml-org/llama.cpp/pull/24973'>#24973</a><br/><span style='font-size:smaller;color:gray'>chat: harden caps check (#24973)</span>"]
     COMMON -->|dev-metal| C_bec3083
     C_bec3083["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```

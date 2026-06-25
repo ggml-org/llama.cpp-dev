@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: f8cc15f163e784c58fe13aee58ebc03055bb0c40
 Branches analyzed: 2
 
---- master (tip: 8be759e6f70d629638a7eb70db3824cbdcea370b, commits from ancestor: 26) ---
+--- master (tip: 09cedfd6996d2ff90b4e617f56230212005c0166, commits from ancestor: 27) ---
+09cedfd chat: harden caps check (#24973)
 8be759e hexagon: MUL_MAT and MUL_MAT_ID rework : 32x32 tiled weight repack, kernel-params, cached graphs (#24954)
 894bb27 mtmd: model: unlimited-ocr: converter + parity test (#24969)
 fb40104 common: remove unused json-partial (#24968)
