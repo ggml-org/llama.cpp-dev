@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-25 16:04:22 UTC
+Auto-generated on 2026-06-25 18:22:21 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -97,6 +97,8 @@ graph BT
     C_c7cddef["<a href='https://github.com/ggml-org/llama.cpp/pull/25012'>#25012</a><br/><span style='font-size:smaller;color:gray'>misc: fix labeler (#25012)</span>"]
     C_c7cddef --> C_1ec44d1
     C_1ec44d1["<a href='https://github.com/ggml-org/llama.cpp/pull/25000'>#25000</a><br/><span style='font-size:smaller;color:gray'>CUDA: Various fixes to `cpy.cu` (#25000)</span>"]
+    C_1ec44d1 --> C_9d5d882
+    C_9d5d882["<a href='https://github.com/ggml-org/llama.cpp/pull/25008'>#25008</a><br/><span style='font-size:smaller;color:gray'>model : Add label for LFM2.5-230M (#25008)</span>"]
     COMMON -->|dev-metal| C_bec3083
     C_bec3083["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```

@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: f8cc15f163e784c58fe13aee58ebc03055bb0c40
 Branches analyzed: 2
 
---- master (tip: 1ec44d178dcfc0ce6a61f357ccbde914821e1ae0, commits from ancestor: 42) ---
+--- master (tip: 9d5d882d8cd0f0a9283d87ed5e6fe3ee0d925fb1, commits from ancestor: 43) ---
+9d5d882 model : Add label for LFM2.5-230M (#25008)
 1ec44d1 CUDA: Various fixes to `cpy.cu` (#25000)
 c7cddef misc: fix labeler (#25012)
 e9d1b76 server: use status code 403 for disabled features (#24970)
