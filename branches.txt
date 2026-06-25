@@ -3,7 +3,10 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: f8cc15f163e784c58fe13aee58ebc03055bb0c40
 Branches analyzed: 2
 
---- master (tip: e12a0128ab0be91d500d25d18db05067d3f7b4e8, commits from ancestor: 32) ---
+--- master (tip: f728adab683387b2bdb085b3854a0f3487a13d0a, commits from ancestor: 35) ---
+f728ada ggml : address integer overflows in binary ops CUDA implementation (#24706)
+3e61ea0 ui: fix always-show-sidebar-on-desktop setting after navigation refactor (#24979)
+fdbd6ab tests : synchronize contexts at end of test-thread-safety (#24935)
 e12a012 build: include libmtmd in Apple XCFramework (#21935)
 b3ce5ce quant : fix quantizing moe with mtp (#24986)
 e9fb3b3 sycl : support --split-mode tensor (#24152)

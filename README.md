@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-25 05:49:00 UTC
+Auto-generated on 2026-06-25 08:41:14 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -77,6 +77,12 @@ graph BT
     C_b3ce5ce["<a href='https://github.com/ggml-org/llama.cpp/pull/24986'>#24986</a><br/><span style='font-size:smaller;color:gray'>quant : fix quantizing moe with mtp (#24986)</span>"]
     C_b3ce5ce --> C_e12a012
     C_e12a012["<a href='https://github.com/ggml-org/llama.cpp/pull/21935'>#21935</a><br/><span style='font-size:smaller;color:gray'>build: include libmtmd in Apple XCFramework (#21935)</span>"]
+    C_e12a012 --> C_fdbd6ab
+    C_fdbd6ab["<a href='https://github.com/ggml-org/llama.cpp/pull/24935'>#24935</a><br/><span style='font-size:smaller;color:gray'>tests : synchronize contexts at end of test-thread-safety (#24935)</span>"]
+    C_fdbd6ab --> C_3e61ea0
+    C_3e61ea0["<a href='https://github.com/ggml-org/llama.cpp/pull/24979'>#24979</a><br/><span style='font-size:smaller;color:gray'>ui: fix always-show-sidebar-on-desktop setting after navigation refactor (#24979)</span>"]
+    C_3e61ea0 --> C_f728ada
+    C_f728ada["<a href='https://github.com/ggml-org/llama.cpp/pull/24706'>#24706</a><br/><span style='font-size:smaller;color:gray'>ggml : address integer overflows in binary ops CUDA implementation (#24706)</span>"]
     COMMON -->|dev-metal| C_bec3083
     C_bec3083["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
