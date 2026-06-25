@@ -3,7 +3,11 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: f8cc15f163e784c58fe13aee58ebc03055bb0c40
 Branches analyzed: 2
 
---- master (tip: 60bc8866b11fb9bfa7de08dfb2047fe7ac914b55, commits from ancestor: 38) ---
+--- master (tip: 1ec44d178dcfc0ce6a61f357ccbde914821e1ae0, commits from ancestor: 42) ---
+1ec44d1 CUDA: Various fixes to `cpy.cu` (#25000)
+c7cddef misc: fix labeler (#25012)
+e9d1b76 server: use status code 403 for disabled features (#24970)
+099bf06 misc: update lables (#24920)
 60bc886 common: refactor model handling (#24980)
 e8ecce5 docs : Eagle3 qwen3 draft model support (#24977)
 683b04c app : add the llama download subcommand (#24982)

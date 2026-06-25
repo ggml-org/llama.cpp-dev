@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-25 13:30:57 UTC
+Auto-generated on 2026-06-25 16:04:22 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -89,6 +89,14 @@ graph BT
     C_e8ecce5["<a href='https://github.com/ggml-org/llama.cpp/pull/24977'>#24977</a><br/><span style='font-size:smaller;color:gray'>docs : Eagle3 qwen3 draft model support (#24977)</span>"]
     C_e8ecce5 --> C_60bc886
     C_60bc886["<a href='https://github.com/ggml-org/llama.cpp/pull/24980'>#24980</a><br/><span style='font-size:smaller;color:gray'>common: refactor model handling (#24980)</span>"]
+    C_60bc886 --> C_099bf06
+    C_099bf06["<a href='https://github.com/ggml-org/llama.cpp/pull/24920'>#24920</a><br/><span style='font-size:smaller;color:gray'>misc: update lables (#24920)</span>"]
+    C_099bf06 --> C_e9d1b76
+    C_e9d1b76["<a href='https://github.com/ggml-org/llama.cpp/pull/24970'>#24970</a><br/><span style='font-size:smaller;color:gray'>server: use status code 403 for disabled features (#24970)</span>"]
+    C_e9d1b76 --> C_c7cddef
+    C_c7cddef["<a href='https://github.com/ggml-org/llama.cpp/pull/25012'>#25012</a><br/><span style='font-size:smaller;color:gray'>misc: fix labeler (#25012)</span>"]
+    C_c7cddef --> C_1ec44d1
+    C_1ec44d1["<a href='https://github.com/ggml-org/llama.cpp/pull/25000'>#25000</a><br/><span style='font-size:smaller;color:gray'>CUDA: Various fixes to `cpy.cu` (#25000)</span>"]
     COMMON -->|dev-metal| C_bec3083
     C_bec3083["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
