@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-25 01:35:35 UTC
+Auto-generated on 2026-06-25 05:49:00 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -67,6 +67,16 @@ graph BT
     C_8be759e["<a href='https://github.com/ggml-org/llama.cpp/pull/24954'>#24954</a><br/><span style='font-size:smaller;color:gray'>hexagon: MUL_MAT and MUL_MAT_ID rework : 32x32 tiled weight repack, kernel-params, cached graphs (#24954)</span>"]
     C_8be759e --> C_09cedfd
     C_09cedfd["<a href='https://github.com/ggml-org/llama.cpp/pull/24973'>#24973</a><br/><span style='font-size:smaller;color:gray'>chat: harden caps check (#24973)</span>"]
+    C_09cedfd --> C_fdb2c11
+    C_fdb2c11["<a href='https://github.com/ggml-org/llama.cpp/pull/24965'>#24965</a><br/><span style='font-size:smaller;color:gray'>opencl: support non-contig rows in norm (#24965)</span>"]
+    C_fdb2c11 --> C_9c10954
+    C_9c10954["<a href='https://github.com/ggml-org/llama.cpp/pull/24900'>#24900</a><br/><span style='font-size:smaller;color:gray'>sycl : fix the failed UT cases of conv_3d (#24900)</span>"]
+    C_9c10954 --> C_e9fb3b3
+    C_e9fb3b3["<a href='https://github.com/ggml-org/llama.cpp/pull/24152'>#24152</a><br/><span style='font-size:smaller;color:gray'>sycl : support --split-mode tensor (#24152)</span>"]
+    C_e9fb3b3 --> C_b3ce5ce
+    C_b3ce5ce["<a href='https://github.com/ggml-org/llama.cpp/pull/24986'>#24986</a><br/><span style='font-size:smaller;color:gray'>quant : fix quantizing moe with mtp (#24986)</span>"]
+    C_b3ce5ce --> C_e12a012
+    C_e12a012["<a href='https://github.com/ggml-org/llama.cpp/pull/21935'>#21935</a><br/><span style='font-size:smaller;color:gray'>build: include libmtmd in Apple XCFramework (#21935)</span>"]
     COMMON -->|dev-metal| C_bec3083
     C_bec3083["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```

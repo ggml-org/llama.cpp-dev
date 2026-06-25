@@ -3,7 +3,12 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: f8cc15f163e784c58fe13aee58ebc03055bb0c40
 Branches analyzed: 2
 
---- master (tip: 09cedfd6996d2ff90b4e617f56230212005c0166, commits from ancestor: 27) ---
+--- master (tip: e12a0128ab0be91d500d25d18db05067d3f7b4e8, commits from ancestor: 32) ---
+e12a012 build: include libmtmd in Apple XCFramework (#21935)
+b3ce5ce quant : fix quantizing moe with mtp (#24986)
+e9fb3b3 sycl : support --split-mode tensor (#24152)
+9c10954 sycl : fix the failed UT cases of conv_3d (#24900)
+fdb2c11 opencl: support non-contig rows in norm (#24965)
 09cedfd chat: harden caps check (#24973)
 8be759e hexagon: MUL_MAT and MUL_MAT_ID rework : 32x32 tiled weight repack, kernel-params, cached graphs (#24954)
 894bb27 mtmd: model: unlimited-ocr: converter + parity test (#24969)
