@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-25 18:22:21 UTC
+Auto-generated on 2026-06-25 23:21:01 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -99,6 +99,8 @@ graph BT
     C_1ec44d1["<a href='https://github.com/ggml-org/llama.cpp/pull/25000'>#25000</a><br/><span style='font-size:smaller;color:gray'>CUDA: Various fixes to `cpy.cu` (#25000)</span>"]
     C_1ec44d1 --> C_9d5d882
     C_9d5d882["<a href='https://github.com/ggml-org/llama.cpp/pull/25008'>#25008</a><br/><span style='font-size:smaller;color:gray'>model : Add label for LFM2.5-230M (#25008)</span>"]
+    C_9d5d882 --> C_beac530
+    C_beac530["<a href='https://github.com/ggml-org/llama.cpp/pull/25018'>#25018</a><br/><span style='font-size:smaller;color:gray'>xcframework : disable mtmd video on i/tv/visionos (#25018)</span>"]
     COMMON -->|dev-metal| C_bec3083
     C_bec3083["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
