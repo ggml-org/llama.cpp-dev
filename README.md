@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-25 23:21:01 UTC
+Auto-generated on 2026-06-26 05:52:53 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -101,6 +101,12 @@ graph BT
     C_9d5d882["<a href='https://github.com/ggml-org/llama.cpp/pull/25008'>#25008</a><br/><span style='font-size:smaller;color:gray'>model : Add label for LFM2.5-230M (#25008)</span>"]
     C_9d5d882 --> C_beac530
     C_beac530["<a href='https://github.com/ggml-org/llama.cpp/pull/25018'>#25018</a><br/><span style='font-size:smaller;color:gray'>xcframework : disable mtmd video on i/tv/visionos (#25018)</span>"]
+    C_beac530 --> C_5c7c22c
+    C_5c7c22c["<a href='https://github.com/ggml-org/llama.cpp/pull/25016'>#25016</a><br/><span style='font-size:smaller;color:gray'>opencl: flush profiling batch at shutdown for incomplete batches (#25016)</span>"]
+    C_5c7c22c --> C_960d628
+    C_960d628["<a href='https://github.com/ggml-org/llama.cpp/pull/23082'>#23082</a><br/><span style='font-size:smaller;color:gray'>mamba2: remove hardcoded 2x expansion factor and invalid d_inner % d_state check (#23082)</span>"]
+    C_960d628 --> C_f818065
+    C_f818065["<a href='https://github.com/ggml-org/llama.cpp/pull/24426'>#24426</a><br/><span style='font-size:smaller;color:gray'>CUDA: batch out_prod broadcast (dps2>1) path with cublasSgemmBatched (#24426)</span>"]
     COMMON -->|dev-metal| C_bec3083
     C_bec3083["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
