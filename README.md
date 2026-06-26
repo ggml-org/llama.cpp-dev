@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-26 05:52:53 UTC
+Auto-generated on 2026-06-26 08:43:44 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -107,6 +107,14 @@ graph BT
     C_960d628["<a href='https://github.com/ggml-org/llama.cpp/pull/23082'>#23082</a><br/><span style='font-size:smaller;color:gray'>mamba2: remove hardcoded 2x expansion factor and invalid d_inner % d_state check (#23082)</span>"]
     C_960d628 --> C_f818065
     C_f818065["<a href='https://github.com/ggml-org/llama.cpp/pull/24426'>#24426</a><br/><span style='font-size:smaller;color:gray'>CUDA: batch out_prod broadcast (dps2>1) path with cublasSgemmBatched (#24426)</span>"]
+    C_f818065 --> C_b11f7c1
+    C_b11f7c1["<a href='https://github.com/ggml-org/llama.cpp/pull/25013'>#25013</a><br/><span style='font-size:smaller;color:gray'>mtmd: add more validations (#25013)</span>"]
+    C_b11f7c1 --> C_e7e3f35
+    C_e7e3f35["<a href='https://github.com/ggml-org/llama.cpp/pull/24941'>#24941</a><br/><span style='font-size:smaller;color:gray'>sycl : clamp softmax input to avoid underflow (#24941)</span>"]
+    C_e7e3f35 --> C_1a87dcd
+    C_1a87dcd["<a href='https://github.com/ggml-org/llama.cpp/pull/23226'>#23226</a><br/><span style='font-size:smaller;color:gray'>server + ui: SSE Replay Buffer (#23226)</span>"]
+    C_1a87dcd --> C_c16c35b
+    C_c16c35b["<a href='https://github.com/ggml-org/llama.cpp/pull/24699'>#24699</a><br/><span style='font-size:smaller;color:gray'>ggml-cpu: fix SVE leftover path in ggml_vec_dot_f32 (#24699)</span>"]
     COMMON -->|dev-metal| C_bec3083
     C_bec3083["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```

@@ -3,7 +3,11 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: f8cc15f163e784c58fe13aee58ebc03055bb0c40
 Branches analyzed: 2
 
---- master (tip: f818065d753700341b5355ce36ca676ecfb5d139, commits from ancestor: 47) ---
+--- master (tip: c16c35b8142ac34b4559a5e8584e8daaf3958416, commits from ancestor: 51) ---
+c16c35b ggml-cpu: fix SVE leftover path in ggml_vec_dot_f32 (#24699)
+1a87dcd server + ui: SSE Replay Buffer (#23226)
+e7e3f35 sycl : clamp softmax input to avoid underflow (#24941)
+b11f7c1 mtmd: add more validations (#25013)
 f818065 CUDA: batch out_prod broadcast (dps2>1) path with cublasSgemmBatched (#24426)
 960d628 mamba2: remove hardcoded 2x expansion factor and invalid d_inner % d_state check (#23082)
 5c7c22c opencl: flush profiling batch at shutdown for incomplete batches (#25016)
