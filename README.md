@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-26 13:33:33 UTC
+Auto-generated on 2026-06-26 15:55:55 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -135,6 +135,8 @@ graph BT
     C_024930c["<a href='https://github.com/ggml-org/llama.cpp/pull/25043'>#25043</a><br/><span style='font-size:smaller;color:gray'>arg: fix handling --spec-draft-hf and --hf-repo-v (#25043)</span>"]
     C_024930c --> C_5d8ccdf
     C_5d8ccdf["<a href='https://github.com/ggml-org/llama.cpp/pull/25035'>#25035</a><br/><span style='font-size:smaller;color:gray'>devops : add llama in all docker images (#25035)</span>"]
+    C_5d8ccdf --> C_3fc4e10
+    C_3fc4e10["<a href='https://github.com/ggml-org/llama.cpp/pull/20793'>#20793</a><br/><span style='font-size:smaller;color:gray'>sched : reintroduce less synchronizations during split compute (#20793)</span>"]
     COMMON -->|dev-metal| C_bec3083
     C_bec3083["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```

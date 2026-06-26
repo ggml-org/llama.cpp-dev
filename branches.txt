@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: f8cc15f163e784c58fe13aee58ebc03055bb0c40
 Branches analyzed: 2
 
---- master (tip: 5d8ccdf9d1273bfd83ad8f72565885acc450997e, commits from ancestor: 61) ---
+--- master (tip: 3fc4e105279105106b08a133a4e3e483116e621f, commits from ancestor: 62) ---
+3fc4e10 sched : reintroduce less synchronizations during split compute (#20793)
 5d8ccdf devops : add llama in all docker images (#25035)
 024930c arg: fix handling --spec-draft-hf and --hf-repo-v (#25043)
 5397c36 openvino: Update to OV 2026.2.1, self-contained release packages, operator improvements (#24974)
