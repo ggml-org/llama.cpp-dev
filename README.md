@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-26 08:43:44 UTC
+Auto-generated on 2026-06-26 11:32:40 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -115,6 +115,14 @@ graph BT
     C_1a87dcd["<a href='https://github.com/ggml-org/llama.cpp/pull/23226'>#23226</a><br/><span style='font-size:smaller;color:gray'>server + ui: SSE Replay Buffer (#23226)</span>"]
     C_1a87dcd --> C_c16c35b
     C_c16c35b["<a href='https://github.com/ggml-org/llama.cpp/pull/24699'>#24699</a><br/><span style='font-size:smaller;color:gray'>ggml-cpu: fix SVE leftover path in ggml_vec_dot_f32 (#24699)</span>"]
+    C_c16c35b --> C_2f18fe1
+    C_2f18fe1["<a href='https://github.com/ggml-org/llama.cpp/pull/25033'>#25033</a><br/><span style='font-size:smaller;color:gray'>CUDA: add cublasSgemmBatched mapping for HIP/MUSA vendor headers (#25033)</span>"]
+    C_2f18fe1 --> C_9df0680
+    C_9df0680["<a href='https://github.com/ggml-org/llama.cpp/pull/24924'>#24924</a><br/><span style='font-size:smaller;color:gray'>vulkan: Workaround compiler bug in conv2d coopmat2 path (#24924)</span>"]
+    C_9df0680 --> C_ded1561
+    C_ded1561["<a href='https://github.com/ggml-org/llama.cpp/pull/24727'>#24727</a><br/><span style='font-size:smaller;color:gray'>ui: fix accessibility for hover-gated interactive elements assisted by claude(in debugging and tests) (#24727)</span>"]
+    C_ded1561 --> C_5a6a0dd
+    C_5a6a0dd["<a href='https://github.com/ggml-org/llama.cpp/pull/24404'>#24404</a><br/><span style='font-size:smaller;color:gray'>vulkan: add INTEL_XE1 arch enum and enable coopmat1 on Intel Xe-LPG Plus (#24404)</span>"]
     COMMON -->|dev-metal| C_bec3083
     C_bec3083["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```

@@ -3,7 +3,11 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: f8cc15f163e784c58fe13aee58ebc03055bb0c40
 Branches analyzed: 2
 
---- master (tip: c16c35b8142ac34b4559a5e8584e8daaf3958416, commits from ancestor: 51) ---
+--- master (tip: 5a6a0dd7e1f7342bac4618a223fc21f9cece3b48, commits from ancestor: 55) ---
+5a6a0dd vulkan: add INTEL_XE1 arch enum and enable coopmat1 on Intel Xe-LPG Plus (#24404)
+ded1561 ui: fix accessibility for hover-gated interactive elements assisted by claude(in debugging and tests) (#24727)
+9df0680 vulkan: Workaround compiler bug in conv2d coopmat2 path (#24924)
+2f18fe1 CUDA: add cublasSgemmBatched mapping for HIP/MUSA vendor headers (#25033)
 c16c35b ggml-cpu: fix SVE leftover path in ggml_vec_dot_f32 (#24699)
 1a87dcd server + ui: SSE Replay Buffer (#23226)
 e7e3f35 sycl : clamp softmax input to avoid underflow (#24941)
