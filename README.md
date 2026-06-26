@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-26 11:32:40 UTC
+Auto-generated on 2026-06-26 13:33:33 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -123,6 +123,18 @@ graph BT
     C_ded1561["<a href='https://github.com/ggml-org/llama.cpp/pull/24727'>#24727</a><br/><span style='font-size:smaller;color:gray'>ui: fix accessibility for hover-gated interactive elements assisted by claude(in debugging and tests) (#24727)</span>"]
     C_ded1561 --> C_5a6a0dd
     C_5a6a0dd["<a href='https://github.com/ggml-org/llama.cpp/pull/24404'>#24404</a><br/><span style='font-size:smaller;color:gray'>vulkan: add INTEL_XE1 arch enum and enable coopmat1 on Intel Xe-LPG Plus (#24404)</span>"]
+    C_5a6a0dd --> C_487a6cc
+    C_487a6cc["<a href='https://github.com/ggml-org/llama.cpp/pull/22933'>#22933</a><br/><span style='font-size:smaller;color:gray'>vulkan: opt mul_mat_vecq for mi50 (#22933)</span>"]
+    C_487a6cc --> C_96183e9
+    C_96183e9["<a href='https://github.com/ggml-org/llama.cpp/commit/96183e9'>96183e9</a><br/><span style='font-size:smaller;color:gray'>ggml : bump version to 0.15.3 (ggml/1550)</span>"]
+    C_96183e9 --> C_e7ea94a
+    C_e7ea94a["<a href='https://github.com/ggml-org/llama.cpp/commit/e7ea94a'>e7ea94a</a><br/><span style='font-size:smaller;color:gray'>sync : ggml</span>"]
+    C_e7ea94a --> C_5397c36
+    C_5397c36["<a href='https://github.com/ggml-org/llama.cpp/pull/24974'>#24974</a><br/><span style='font-size:smaller;color:gray'>openvino: Update to OV 2026.2.1, self-contained release packages, operator improvements (#24974)</span>"]
+    C_5397c36 --> C_024930c
+    C_024930c["<a href='https://github.com/ggml-org/llama.cpp/pull/25043'>#25043</a><br/><span style='font-size:smaller;color:gray'>arg: fix handling --spec-draft-hf and --hf-repo-v (#25043)</span>"]
+    C_024930c --> C_5d8ccdf
+    C_5d8ccdf["<a href='https://github.com/ggml-org/llama.cpp/pull/25035'>#25035</a><br/><span style='font-size:smaller;color:gray'>devops : add llama in all docker images (#25035)</span>"]
     COMMON -->|dev-metal| C_bec3083
     C_bec3083["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
