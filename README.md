@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-26 22:17:09 UTC
+Auto-generated on 2026-06-27 08:11:15 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -139,6 +139,12 @@ graph BT
     C_3fc4e10["<a href='https://github.com/ggml-org/llama.cpp/pull/20793'>#20793</a><br/><span style='font-size:smaller;color:gray'>sched : reintroduce less synchronizations during split compute (#20793)</span>"]
     C_3fc4e10 --> C_050ee92
     C_050ee92["<a href='https://github.com/ggml-org/llama.cpp/pull/25054'>#25054</a><br/><span style='font-size:smaller;color:gray'>app : allow --version, --licenses & --help (#25054)</span>"]
+    C_050ee92 --> C_83d385b
+    C_83d385b["<a href='https://github.com/ggml-org/llama.cpp/pull/25075'>#25075</a><br/><span style='font-size:smaller;color:gray'>tests : fix test-chat-template --no-common option (#25075)</span>"]
+    C_83d385b --> C_0275c0f
+    C_0275c0f["<a href='https://github.com/ggml-org/llama.cpp/pull/25022'>#25022</a><br/><span style='font-size:smaller;color:gray'>ci : add windows-openvino to check-release (#25022)</span>"]
+    C_0275c0f --> C_c299a92
+    C_c299a92["<a href='https://github.com/ggml-org/llama.cpp/pull/25045'>#25045</a><br/><span style='font-size:smaller;color:gray'>binaries : Improve rpc-server and export-graph-ops names. (#25045)</span>"]
     COMMON -->|dev-metal| C_bec3083
     C_bec3083["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```

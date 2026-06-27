@@ -3,7 +3,10 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: f8cc15f163e784c58fe13aee58ebc03055bb0c40
 Branches analyzed: 2
 
---- master (tip: 050ee92d04c2e1f639025786dea701c70e7d4204, commits from ancestor: 63) ---
+--- master (tip: c299a92c38b6de6a1139617652b66081828648db, commits from ancestor: 66) ---
+c299a92 binaries : Improve rpc-server and export-graph-ops names. (#25045)
+0275c0f ci : add windows-openvino to check-release (#25022)
+83d385b tests : fix test-chat-template --no-common option (#25075)
 050ee92 app : allow --version, --licenses & --help (#25054)
 3fc4e10 sched : reintroduce less synchronizations during split compute (#20793)
 5d8ccdf devops : add llama in all docker images (#25035)
