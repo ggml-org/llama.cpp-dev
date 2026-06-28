@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 9bebfcb4bc8b12a316e96ae03f33671eac1e72fd
 Branches analyzed: 2
 
---- master (tip: c1a1c8ee94e37ff7ba2c872e783aaf7f77e0f320, commits from ancestor: 4) ---
+--- master (tip: f68a788b0bf41d88cb90fd93c7027471a2ebe30a, commits from ancestor: 6) ---
+f68a788 jinja: add --dump-prog for debugging (#25086)
+d1b3425 spec : add DFlash support (#22105)
 c1a1c8e common : allow --offline in llama download (#25091)
 27c8bb4 logs : reduce v2 (#25078)
 ebd048f opencl: flash attention improvement (#25069)
