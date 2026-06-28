@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 9bebfcb4bc8b12a316e96ae03f33671eac1e72fd
 Branches analyzed: 2
 
---- master (tip: ebd048fc5e4b43ec4e0b4abe0b9bf66e1724dad0, commits from ancestor: 2) ---
+--- master (tip: 27c8bb4f63ad9f20bf5901067810a4be5ffe20c4, commits from ancestor: 3) ---
+27c8bb4 logs : reduce v2 (#25078)
 ebd048f opencl: flash attention improvement (#25069)
 0ed235e [CUDA] Added a cudaMemcpy2DAsync fast path to ggml_cuda_cpy (#25057)
 
