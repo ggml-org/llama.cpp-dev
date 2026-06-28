@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 9bebfcb4bc8b12a316e96ae03f33671eac1e72fd
 Branches analyzed: 2
 
---- master (tip: fa72bc6826a5ff30dda3abd1e2fd87ba91df5762, commits from ancestor: 8) ---
+--- master (tip: dbdaece23de9ac63f2e7ca9e6bfcdc4fc156a3fa, commits from ancestor: 10) ---
+dbdaece Revert "ui: fix accessibility for hover-gated interactive elements assisted by claude(in debugging and tests) (#24727)" (#25098)
+7cb8576 ui: fix stop and reasoning skip in single-model mode (#25084)
 fa72bc6 dflash: refactor draft model conversion (#25110)
 c818263 chat : implement minicpm5 parser (#24889)
 f68a788 jinja: add --dump-prog for debugging (#25086)
