@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 9bebfcb4bc8b12a316e96ae03f33671eac1e72fd
 Branches analyzed: 2
 
---- master (tip: dbdaece23de9ac63f2e7ca9e6bfcdc4fc156a3fa, commits from ancestor: 10) ---
+--- master (tip: b3fed31b99f9bd37725833674252bccb429bb183, commits from ancestor: 11) ---
+b3fed31 jinja, chat: add --reasoning-preserve flag (#25105)
 dbdaece Revert "ui: fix accessibility for hover-gated interactive elements assisted by claude(in debugging and tests) (#24727)" (#25098)
 7cb8576 ui: fix stop and reasoning skip in single-model mode (#25084)
 fa72bc6 dflash: refactor draft model conversion (#25110)

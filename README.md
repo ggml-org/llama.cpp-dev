@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-28 20:14:16 UTC
+Auto-generated on 2026-06-28 22:31:19 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -33,6 +33,8 @@ graph BT
     C_7cb8576["<a href='https://github.com/ggml-org/llama.cpp/pull/25084'>#25084</a><br/><span style='font-size:smaller;color:gray'>ui: fix stop and reasoning skip in single-model mode (#25084)</span>"]
     C_7cb8576 --> C_dbdaece
     C_dbdaece["<a href='https://github.com/ggml-org/llama.cpp/pull/24727'>#24727</a><br/><span style='font-size:smaller;color:gray'>Revert 'ui: fix accessibility for hover-gated interactive elements assisted by claude(in debugging and tests) (#24727)' (#25098)</span>"]
+    C_dbdaece --> C_b3fed31
+    C_b3fed31["<a href='https://github.com/ggml-org/llama.cpp/pull/25105'>#25105</a><br/><span style='font-size:smaller;color:gray'>jinja, chat: add --reasoning-preserve flag (#25105)</span>"]
     COMMON -->|dev-metal| C_f7c1df6
     C_f7c1df6["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
