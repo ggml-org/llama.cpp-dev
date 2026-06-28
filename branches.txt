@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 9bebfcb4bc8b12a316e96ae03f33671eac1e72fd
 Branches analyzed: 2
 
---- master (tip: c818263f2a5ddab028dea5f169ea2b2266421125, commits from ancestor: 7) ---
+--- master (tip: fa72bc6826a5ff30dda3abd1e2fd87ba91df5762, commits from ancestor: 8) ---
+fa72bc6 dflash: refactor draft model conversion (#25110)
 c818263 chat : implement minicpm5 parser (#24889)
 f68a788 jinja: add --dump-prog for debugging (#25086)
 d1b3425 spec : add DFlash support (#22105)
