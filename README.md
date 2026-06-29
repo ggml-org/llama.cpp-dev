@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-29 15:00:01 UTC
+Auto-generated on 2026-06-29 17:42:54 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -43,6 +43,8 @@ graph BT
     C_8c146a8["<a href='https://github.com/ggml-org/llama.cpp/pull/24162'>#24162</a><br/><span style='font-size:smaller;color:gray'>DeepSeek V4  (#24162)</span>"]
     C_8c146a8 --> C_25a1d63
     C_25a1d63["<a href='https://github.com/ggml-org/llama.cpp/pull/25005'>#25005</a><br/><span style='font-size:smaller;color:gray'>vulkan: use flops instead of weight tensor size for submission heuristic (#25005)</span>"]
+    C_25a1d63 --> C_6f4f53f
+    C_6f4f53f["<a href='https://github.com/ggml-org/llama.cpp/pull/25131'>#25131</a><br/><span style='font-size:smaller;color:gray'>common : dedup preset and cached model entries in /v1/models (#25131)</span>"]
     COMMON -->|dev-metal| C_f7c1df6
     C_f7c1df6["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
