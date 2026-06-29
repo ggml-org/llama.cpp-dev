@@ -3,7 +3,10 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 9bebfcb4bc8b12a316e96ae03f33671eac1e72fd
 Branches analyzed: 2
 
---- master (tip: b3fed31b99f9bd37725833674252bccb429bb183, commits from ancestor: 11) ---
+--- master (tip: 8c146a8366304c871efc26057cc90370ccf58dad, commits from ancestor: 14) ---
+8c146a8 DeepSeek V4  (#24162)
+6cb18b2 tools/ui: restore Tailwind scanning in ignored worktrees (#24879)
+277a105 common : remove unused regex-partial (#25118)
 b3fed31 jinja, chat: add --reasoning-preserve flag (#25105)
 dbdaece Revert "ui: fix accessibility for hover-gated interactive elements assisted by claude(in debugging and tests) (#24727)" (#25098)
 7cb8576 ui: fix stop and reasoning skip in single-model mode (#25084)

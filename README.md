@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-28 22:31:19 UTC
+Auto-generated on 2026-06-29 11:31:40 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -35,6 +35,12 @@ graph BT
     C_dbdaece["<a href='https://github.com/ggml-org/llama.cpp/pull/24727'>#24727</a><br/><span style='font-size:smaller;color:gray'>Revert 'ui: fix accessibility for hover-gated interactive elements assisted by claude(in debugging and tests) (#24727)' (#25098)</span>"]
     C_dbdaece --> C_b3fed31
     C_b3fed31["<a href='https://github.com/ggml-org/llama.cpp/pull/25105'>#25105</a><br/><span style='font-size:smaller;color:gray'>jinja, chat: add --reasoning-preserve flag (#25105)</span>"]
+    C_b3fed31 --> C_277a105
+    C_277a105["<a href='https://github.com/ggml-org/llama.cpp/pull/25118'>#25118</a><br/><span style='font-size:smaller;color:gray'>common : remove unused regex-partial (#25118)</span>"]
+    C_277a105 --> C_6cb18b2
+    C_6cb18b2["<a href='https://github.com/ggml-org/llama.cpp/pull/24879'>#24879</a><br/><span style='font-size:smaller;color:gray'>tools/ui: restore Tailwind scanning in ignored worktrees (#24879)</span>"]
+    C_6cb18b2 --> C_8c146a8
+    C_8c146a8["<a href='https://github.com/ggml-org/llama.cpp/pull/24162'>#24162</a><br/><span style='font-size:smaller;color:gray'>DeepSeek V4  (#24162)</span>"]
     COMMON -->|dev-metal| C_f7c1df6
     C_f7c1df6["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
