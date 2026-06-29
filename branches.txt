@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 9bebfcb4bc8b12a316e96ae03f33671eac1e72fd
 Branches analyzed: 2
 
---- master (tip: 8c146a8366304c871efc26057cc90370ccf58dad, commits from ancestor: 14) ---
+--- master (tip: 25a1d63f4346b472e508c6dbd9ab2ed1d81ace2e, commits from ancestor: 15) ---
+25a1d63 vulkan: use flops instead of weight tensor size for submission heuristic (#25005)
 8c146a8 DeepSeek V4  (#24162)
 6cb18b2 tools/ui: restore Tailwind scanning in ignored worktrees (#24879)
 277a105 common : remove unused regex-partial (#25118)
