@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 9bebfcb4bc8b12a316e96ae03f33671eac1e72fd
 Branches analyzed: 2
 
---- master (tip: 6c5de1cc83537bce5616ed08474f6fe119973a27, commits from ancestor: 18) ---
+--- master (tip: f708a5b2caaee0226c0af220e366785699ba41e2, commits from ancestor: 20) ---
+f708a5b vulkan: roll bk loop in matmul for asahi linux (#24663)
+d9df110 HIP: use hipBLAS for dense prefill on gfx900, keep MMQ for MoE (#24588)
 6c5de1c ggml-webgpu: add support for NVFP4 (#25143)
 86b9470 Revert "sched : reintroduce less synchronizations during split compute (#20793)" (#25138)
 6f4f53f common : dedup preset and cached model entries in /v1/models (#25131)
