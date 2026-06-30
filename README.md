@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-30 13:26:35 UTC
+Auto-generated on 2026-06-30 16:01:49 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -57,6 +57,10 @@ graph BT
     C_e495d1e["<a href='https://github.com/ggml-org/llama.cpp/pull/25148'>#25148</a><br/><span style='font-size:smaller;color:gray'>CUDA: fix Gemma E4B MTP FlashAttention (#25148)</span>"]
     C_e495d1e --> C_931eb37
     C_931eb37["<a href='https://github.com/ggml-org/llama.cpp/pull/25103'>#25103</a><br/><span style='font-size:smaller;color:gray'>CUDA: fix get_rows_back for tables with more than 65535 rows (grid-y clamp + stride) (#25103)</span>"]
+    C_931eb37 --> C_799fcc0
+    C_799fcc0["<a href='https://github.com/ggml-org/llama.cpp/pull/25140'>#25140</a><br/><span style='font-size:smaller;color:gray'>common,server: handle bracketed IPv6 literals in URL authority (#25140)</span>"]
+    C_799fcc0 --> C_4f31eed
+    C_4f31eed["<a href='https://github.com/ggml-org/llama.cpp/pull/25141'>#25141</a><br/><span style='font-size:smaller;color:gray'>model : register t_layer_inp for qwen3next (#25141)</span>"]
     COMMON -->|dev-metal| C_f7c1df6
     C_f7c1df6["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
