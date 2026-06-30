@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-30 01:27:42 UTC
+Auto-generated on 2026-06-30 08:46:34 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -47,6 +47,8 @@ graph BT
     C_6f4f53f["<a href='https://github.com/ggml-org/llama.cpp/pull/25131'>#25131</a><br/><span style='font-size:smaller;color:gray'>common : dedup preset and cached model entries in /v1/models (#25131)</span>"]
     C_6f4f53f --> C_86b9470
     C_86b9470["<a href='https://github.com/ggml-org/llama.cpp/pull/20793'>#20793</a><br/><span style='font-size:smaller;color:gray'>Revert 'sched : reintroduce less synchronizations during split compute (#20793)' (#25138)</span>"]
+    C_86b9470 --> C_6c5de1c
+    C_6c5de1c["<a href='https://github.com/ggml-org/llama.cpp/pull/25143'>#25143</a><br/><span style='font-size:smaller;color:gray'>ggml-webgpu: add support for NVFP4 (#25143)</span>"]
     COMMON -->|dev-metal| C_f7c1df6
     C_f7c1df6["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
