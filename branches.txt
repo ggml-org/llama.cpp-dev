@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 9bebfcb4bc8b12a316e96ae03f33671eac1e72fd
 Branches analyzed: 2
 
---- master (tip: 4f31eedb0ccf546b7e8d6bb243b170f12522f54d, commits from ancestor: 24) ---
+--- master (tip: 0eca4d490e591d4e93058d07540cf47278a72577, commits from ancestor: 25) ---
+0eca4d4 cuda : prevent integer truncation and overflow errors when using KQ mask strides in flash_attn_mask_to_KV_max kernel (#24945)
 4f31eed model : register t_layer_inp for qwen3next (#25141)
 799fcc0 common,server: handle bracketed IPv6 literals in URL authority (#25140)
 931eb37 CUDA: fix get_rows_back for tables with more than 65535 rows (grid-y clamp + stride) (#25103)

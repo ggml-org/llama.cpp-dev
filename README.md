@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-30 16:01:49 UTC
+Auto-generated on 2026-06-30 20:14:05 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -61,6 +61,8 @@ graph BT
     C_799fcc0["<a href='https://github.com/ggml-org/llama.cpp/pull/25140'>#25140</a><br/><span style='font-size:smaller;color:gray'>common,server: handle bracketed IPv6 literals in URL authority (#25140)</span>"]
     C_799fcc0 --> C_4f31eed
     C_4f31eed["<a href='https://github.com/ggml-org/llama.cpp/pull/25141'>#25141</a><br/><span style='font-size:smaller;color:gray'>model : register t_layer_inp for qwen3next (#25141)</span>"]
+    C_4f31eed --> C_0eca4d4
+    C_0eca4d4["<a href='https://github.com/ggml-org/llama.cpp/pull/24945'>#24945</a><br/><span style='font-size:smaller;color:gray'>cuda : prevent integer truncation and overflow errors when using KQ mask strides in flash_attn_mask_to_KV_max kernel (#24945)</span>"]
     COMMON -->|dev-metal| C_f7c1df6
     C_f7c1df6["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
