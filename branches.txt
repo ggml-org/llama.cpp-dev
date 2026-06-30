@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 9bebfcb4bc8b12a316e96ae03f33671eac1e72fd
 Branches analyzed: 2
 
---- master (tip: 6f4f53f2b7da54fcdbbecaaa734337c337ad6176, commits from ancestor: 16) ---
+--- master (tip: 86b94708f22478f900b76ca02e316f4f3418faff, commits from ancestor: 17) ---
+86b9470 Revert "sched : reintroduce less synchronizations during split compute (#20793)" (#25138)
 6f4f53f common : dedup preset and cached model entries in /v1/models (#25131)
 25a1d63 vulkan: use flops instead of weight tensor size for submission heuristic (#25005)
 8c146a8 DeepSeek V4  (#24162)
