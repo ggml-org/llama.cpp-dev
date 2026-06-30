@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-30 11:34:18 UTC
+Auto-generated on 2026-06-30 13:26:35 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -53,6 +53,10 @@ graph BT
     C_d9df110["<a href='https://github.com/ggml-org/llama.cpp/pull/24588'>#24588</a><br/><span style='font-size:smaller;color:gray'>HIP: use hipBLAS for dense prefill on gfx900, keep MMQ for MoE (#24588)</span>"]
     C_d9df110 --> C_f708a5b
     C_f708a5b["<a href='https://github.com/ggml-org/llama.cpp/pull/24663'>#24663</a><br/><span style='font-size:smaller;color:gray'>vulkan: roll bk loop in matmul for asahi linux (#24663)</span>"]
+    C_f708a5b --> C_e495d1e
+    C_e495d1e["<a href='https://github.com/ggml-org/llama.cpp/pull/25148'>#25148</a><br/><span style='font-size:smaller;color:gray'>CUDA: fix Gemma E4B MTP FlashAttention (#25148)</span>"]
+    C_e495d1e --> C_931eb37
+    C_931eb37["<a href='https://github.com/ggml-org/llama.cpp/pull/25103'>#25103</a><br/><span style='font-size:smaller;color:gray'>CUDA: fix get_rows_back for tables with more than 65535 rows (grid-y clamp + stride) (#25103)</span>"]
     COMMON -->|dev-metal| C_f7c1df6
     C_f7c1df6["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
