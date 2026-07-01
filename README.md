@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-06-30 20:14:05 UTC
+Auto-generated on 2026-07-01 04:49:30 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -63,6 +63,8 @@ graph BT
     C_4f31eed["<a href='https://github.com/ggml-org/llama.cpp/pull/25141'>#25141</a><br/><span style='font-size:smaller;color:gray'>model : register t_layer_inp for qwen3next (#25141)</span>"]
     C_4f31eed --> C_0eca4d4
     C_0eca4d4["<a href='https://github.com/ggml-org/llama.cpp/pull/24945'>#24945</a><br/><span style='font-size:smaller;color:gray'>cuda : prevent integer truncation and overflow errors when using KQ mask strides in flash_attn_mask_to_KV_max kernel (#24945)</span>"]
+    C_0eca4d4 --> C_fd1a057
+    C_fd1a057["<a href='https://github.com/ggml-org/llama.cpp/pull/25160'>#25160</a><br/><span style='font-size:smaller;color:gray'>opencl: initial q1_0 support (#25160)</span>"]
     COMMON -->|dev-metal| C_f7c1df6
     C_f7c1df6["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```

@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 9bebfcb4bc8b12a316e96ae03f33671eac1e72fd
 Branches analyzed: 2
 
---- master (tip: 0eca4d490e591d4e93058d07540cf47278a72577, commits from ancestor: 25) ---
+--- master (tip: fd1a05791da1c06dc8bebdd537aa5212831d7cf6, commits from ancestor: 26) ---
+fd1a057 opencl: initial q1_0 support (#25160)
 0eca4d4 cuda : prevent integer truncation and overflow errors when using KQ mask strides in flash_attn_mask_to_KV_max kernel (#24945)
 4f31eed model : register t_layer_inp for qwen3next (#25141)
 799fcc0 common,server: handle bracketed IPv6 literals in URL authority (#25140)
