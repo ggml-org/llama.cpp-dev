@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-01 11:43:14 UTC
+Auto-generated on 2026-07-01 16:16:22 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -73,6 +73,8 @@ graph BT
     C_6dbc117["<a href='https://github.com/ggml-org/llama.cpp/pull/23961'>#23961</a><br/><span style='font-size:smaller;color:gray'>ggml-cpu: add AVX2 optimization for nvfp4 dot product and use UE4M3 LUT (#23961)</span>"]
     C_6dbc117 --> C_b820cc8
     C_b820cc8["<a href='https://github.com/ggml-org/llama.cpp/pull/25185'>#25185</a><br/><span style='font-size:smaller;color:gray'>CUDA: consistent use of __restrict__ + PDL for FA (#25185)</span>"]
+    C_b820cc8 --> C_13e6738
+    C_13e6738["<a href='https://github.com/ggml-org/llama.cpp/pull/25085'>#25085</a><br/><span style='font-size:smaller;color:gray'>hexagon: flash attention rework (optimizations, accuracy improvements, etc) (#25085)</span>"]
     COMMON -->|dev-metal| C_f7c1df6
     C_f7c1df6["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
