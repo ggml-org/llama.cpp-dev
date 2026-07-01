@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 9bebfcb4bc8b12a316e96ae03f33671eac1e72fd
 Branches analyzed: 2
 
---- master (tip: 13e673863b36993d9e80c0a9ee3c1e02f8b9ace4, commits from ancestor: 31) ---
+--- master (tip: 4fc4ec5541b243957ae5099edb67372f8f3b550e, commits from ancestor: 33) ---
+4fc4ec5 opencl: allow loading precompiled binary kernels from library (#23042)
+a6647b1 common : use hf primary split as model path (#25194)
 13e6738 hexagon: flash attention rework (optimizations, accuracy improvements, etc) (#25085)
 b820cc8 CUDA: consistent use of __restrict__ + PDL for FA (#25185)
 6dbc117 ggml-cpu: add AVX2 optimization for nvfp4 dot product and use UE4M3 LUT (#23961)
