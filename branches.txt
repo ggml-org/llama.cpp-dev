@@ -3,7 +3,10 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 9bebfcb4bc8b12a316e96ae03f33671eac1e72fd
 Branches analyzed: 2
 
---- master (tip: fd1a05791da1c06dc8bebdd537aa5212831d7cf6, commits from ancestor: 26) ---
+--- master (tip: 6dbc1174b8f46a8e064259985d84c81a472beea4, commits from ancestor: 29) ---
+6dbc117 ggml-cpu: add AVX2 optimization for nvfp4 dot product and use UE4M3 LUT (#23961)
+9d88e7c ui Prevent tool messages from incorrectly appending to other conversations (#25177)
+7af4279 ui: Remove PWA navigate fallback to prevent caching API endpoint requests (#25174)
 fd1a057 opencl: initial q1_0 support (#25160)
 0eca4d4 cuda : prevent integer truncation and overflow errors when using KQ mask strides in flash_attn_mask_to_KV_max kernel (#24945)
 4f31eed model : register t_layer_inp for qwen3next (#25141)

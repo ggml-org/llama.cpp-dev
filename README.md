@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-01 04:49:30 UTC
+Auto-generated on 2026-07-01 08:41:28 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -65,6 +65,12 @@ graph BT
     C_0eca4d4["<a href='https://github.com/ggml-org/llama.cpp/pull/24945'>#24945</a><br/><span style='font-size:smaller;color:gray'>cuda : prevent integer truncation and overflow errors when using KQ mask strides in flash_attn_mask_to_KV_max kernel (#24945)</span>"]
     C_0eca4d4 --> C_fd1a057
     C_fd1a057["<a href='https://github.com/ggml-org/llama.cpp/pull/25160'>#25160</a><br/><span style='font-size:smaller;color:gray'>opencl: initial q1_0 support (#25160)</span>"]
+    C_fd1a057 --> C_7af4279
+    C_7af4279["<a href='https://github.com/ggml-org/llama.cpp/pull/25174'>#25174</a><br/><span style='font-size:smaller;color:gray'>ui: Remove PWA navigate fallback to prevent caching API endpoint requests (#25174)</span>"]
+    C_7af4279 --> C_9d88e7c
+    C_9d88e7c["<a href='https://github.com/ggml-org/llama.cpp/pull/25177'>#25177</a><br/><span style='font-size:smaller;color:gray'>ui Prevent tool messages from incorrectly appending to other conversations (#25177)</span>"]
+    C_9d88e7c --> C_6dbc117
+    C_6dbc117["<a href='https://github.com/ggml-org/llama.cpp/pull/23961'>#23961</a><br/><span style='font-size:smaller;color:gray'>ggml-cpu: add AVX2 optimization for nvfp4 dot product and use UE4M3 LUT (#23961)</span>"]
     COMMON -->|dev-metal| C_f7c1df6
     C_f7c1df6["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
