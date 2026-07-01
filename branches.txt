@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 9bebfcb4bc8b12a316e96ae03f33671eac1e72fd
 Branches analyzed: 2
 
---- master (tip: 6dbc1174b8f46a8e064259985d84c81a472beea4, commits from ancestor: 29) ---
+--- master (tip: b820cc8e6f94843d32f92c8ebd7db837dae2bd8b, commits from ancestor: 30) ---
+b820cc8 CUDA: consistent use of __restrict__ + PDL for FA (#25185)
 6dbc117 ggml-cpu: add AVX2 optimization for nvfp4 dot product and use UE4M3 LUT (#23961)
 9d88e7c ui Prevent tool messages from incorrectly appending to other conversations (#25177)
 7af4279 ui: Remove PWA navigate fallback to prevent caching API endpoint requests (#25174)
