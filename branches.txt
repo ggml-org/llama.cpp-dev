@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 9bebfcb4bc8b12a316e96ae03f33671eac1e72fd
 Branches analyzed: 2
 
---- master (tip: 4fc4ec5541b243957ae5099edb67372f8f3b550e, commits from ancestor: 33) ---
+--- master (tip: fdb1db877c526ec90f668eca1b858da5dba85560, commits from ancestor: 34) ---
+fdb1db8 llama : add llama_model_ftype_name() (#25134)
 4fc4ec5 opencl: allow loading precompiled binary kernels from library (#23042)
 a6647b1 common : use hf primary split as model path (#25194)
 13e6738 hexagon: flash attention rework (optimizations, accuracy improvements, etc) (#25085)

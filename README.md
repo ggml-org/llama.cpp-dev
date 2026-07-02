@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-01 18:18:13 UTC
+Auto-generated on 2026-07-02 16:22:19 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -79,6 +79,8 @@ graph BT
     C_a6647b1["<a href='https://github.com/ggml-org/llama.cpp/pull/25194'>#25194</a><br/><span style='font-size:smaller;color:gray'>common : use hf primary split as model path (#25194)</span>"]
     C_a6647b1 --> C_4fc4ec5
     C_4fc4ec5["<a href='https://github.com/ggml-org/llama.cpp/pull/23042'>#23042</a><br/><span style='font-size:smaller;color:gray'>opencl: allow loading precompiled binary kernels from library (#23042)</span>"]
+    C_4fc4ec5 --> C_fdb1db8
+    C_fdb1db8["<a href='https://github.com/ggml-org/llama.cpp/pull/25134'>#25134</a><br/><span style='font-size:smaller;color:gray'>llama : add llama_model_ftype_name() (#25134)</span>"]
     COMMON -->|dev-metal| C_f7c1df6
     C_f7c1df6["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
