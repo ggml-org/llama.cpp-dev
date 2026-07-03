@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 9bebfcb4bc8b12a316e96ae03f33671eac1e72fd
 Branches analyzed: 2
 
---- master (tip: 067de937183141f54c681ed684f540706d2c420a, commits from ancestor: 39) ---
+--- master (tip: 152d337fadb93c2a099653c4072d5512c92c5bfd, commits from ancestor: 41) ---
+152d337 spec: support spec-draft-p-min in DFlash (#25246)
+75a48a9 cuda: enable topk-moe fusion for 288 experts (#25267)
 067de93 ui: align persisted config with strict server schema and enable thinking by default (#25242)
 b5315e1 server + ui: ping silent SSE streams every 1s and kick only after 3s so slow prefill never drops healthy connections (#25241)
 9487528 ui: Add MCP Servers Opt-In for first time visitors (#25239)

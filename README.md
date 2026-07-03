@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-03 13:02:29 UTC
+Auto-generated on 2026-07-03 15:18:22 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -91,6 +91,10 @@ graph BT
     C_b5315e1["<a href='https://github.com/ggml-org/llama.cpp/pull/25241'>#25241</a><br/><span style='font-size:smaller;color:gray'>server + ui: ping silent SSE streams every 1s and kick only after 3s so slow prefill never drops healthy connections (#25241)</span>"]
     C_b5315e1 --> C_067de93
     C_067de93["<a href='https://github.com/ggml-org/llama.cpp/pull/25242'>#25242</a><br/><span style='font-size:smaller;color:gray'>ui: align persisted config with strict server schema and enable thinking by default (#25242)</span>"]
+    C_067de93 --> C_75a48a9
+    C_75a48a9["<a href='https://github.com/ggml-org/llama.cpp/pull/25267'>#25267</a><br/><span style='font-size:smaller;color:gray'>cuda: enable topk-moe fusion for 288 experts (#25267)</span>"]
+    C_75a48a9 --> C_152d337
+    C_152d337["<a href='https://github.com/ggml-org/llama.cpp/pull/25246'>#25246</a><br/><span style='font-size:smaller;color:gray'>spec: support spec-draft-p-min in DFlash (#25246)</span>"]
     COMMON -->|dev-metal| C_f7c1df6
     C_f7c1df6["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
