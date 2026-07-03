@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-02 16:22:19 UTC
+Auto-generated on 2026-07-03 11:02:36 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -81,6 +81,14 @@ graph BT
     C_4fc4ec5["<a href='https://github.com/ggml-org/llama.cpp/pull/23042'>#23042</a><br/><span style='font-size:smaller;color:gray'>opencl: allow loading precompiled binary kernels from library (#23042)</span>"]
     C_4fc4ec5 --> C_fdb1db8
     C_fdb1db8["<a href='https://github.com/ggml-org/llama.cpp/pull/25134'>#25134</a><br/><span style='font-size:smaller;color:gray'>llama : add llama_model_ftype_name() (#25134)</span>"]
+    C_fdb1db8 --> C_c8ae9a7
+    C_c8ae9a7["<a href='https://github.com/ggml-org/llama.cpp/pull/25218'>#25218</a><br/><span style='font-size:smaller;color:gray'>vendor : update cpp-httplib to 0.49.0 (#25218)</span>"]
+    C_c8ae9a7 --> C_5a460de
+    C_5a460de["<a href='https://github.com/ggml-org/llama.cpp/pull/23940'>#23940</a><br/><span style='font-size:smaller;color:gray'>Remove redundant CUDA copies after gated_delta_net. (#23940)</span>"]
+    C_5a460de --> C_9487528
+    C_9487528["<a href='https://github.com/ggml-org/llama.cpp/pull/25239'>#25239</a><br/><span style='font-size:smaller;color:gray'>ui: Add MCP Servers Opt-In for first time visitors (#25239)</span>"]
+    C_9487528 --> C_b5315e1
+    C_b5315e1["<a href='https://github.com/ggml-org/llama.cpp/pull/25241'>#25241</a><br/><span style='font-size:smaller;color:gray'>server + ui: ping silent SSE streams every 1s and kick only after 3s so slow prefill never drops healthy connections (#25241)</span>"]
     COMMON -->|dev-metal| C_f7c1df6
     C_f7c1df6["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```

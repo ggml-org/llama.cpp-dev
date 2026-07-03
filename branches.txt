@@ -3,7 +3,11 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 9bebfcb4bc8b12a316e96ae03f33671eac1e72fd
 Branches analyzed: 2
 
---- master (tip: fdb1db877c526ec90f668eca1b858da5dba85560, commits from ancestor: 34) ---
+--- master (tip: b5315e16e0c3d19707d4a3e3a9f727f1141d2282, commits from ancestor: 38) ---
+b5315e1 server + ui: ping silent SSE streams every 1s and kick only after 3s so slow prefill never drops healthy connections (#25241)
+9487528 ui: Add MCP Servers Opt-In for first time visitors (#25239)
+5a460de Remove redundant CUDA copies after gated_delta_net. (#23940)
+c8ae9a7 vendor : update cpp-httplib to 0.49.0 (#25218)
 fdb1db8 llama : add llama_model_ftype_name() (#25134)
 4fc4ec5 opencl: allow loading precompiled binary kernels from library (#23042)
 a6647b1 common : use hf primary split as model path (#25194)
