@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-03 15:18:22 UTC
+Auto-generated on 2026-07-03 16:47:35 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -95,6 +95,8 @@ graph BT
     C_75a48a9["<a href='https://github.com/ggml-org/llama.cpp/pull/25267'>#25267</a><br/><span style='font-size:smaller;color:gray'>cuda: enable topk-moe fusion for 288 experts (#25267)</span>"]
     C_75a48a9 --> C_152d337
     C_152d337["<a href='https://github.com/ggml-org/llama.cpp/pull/25246'>#25246</a><br/><span style='font-size:smaller;color:gray'>spec: support spec-draft-p-min in DFlash (#25246)</span>"]
+    C_152d337 --> C_f113e02
+    C_f113e02["<a href='https://github.com/ggml-org/llama.cpp/pull/25137'>#25137</a><br/><span style='font-size:smaller;color:gray'>ui: strip path and weight extension from model id in single model mode (#25137)</span>"]
     COMMON -->|dev-metal| C_f7c1df6
     C_f7c1df6["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
