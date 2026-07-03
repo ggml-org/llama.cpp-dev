@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 9bebfcb4bc8b12a316e96ae03f33671eac1e72fd
 Branches analyzed: 2
 
---- master (tip: f113e02d5ab4c4910709d46e8d81af92ef945289, commits from ancestor: 42) ---
+--- master (tip: d4cff114c0084f1fbc9b4c62717eca8fb2ae494a, commits from ancestor: 43) ---
+d4cff11 ui: Improve performance when streaming (#25225)
 f113e02 ui: strip path and weight extension from model id in single model mode (#25137)
 152d337 spec: support spec-draft-p-min in DFlash (#25246)
 75a48a9 cuda: enable topk-moe fusion for 288 experts (#25267)
