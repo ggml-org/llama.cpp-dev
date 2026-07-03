@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-03 11:02:36 UTC
+Auto-generated on 2026-07-03 13:02:29 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -89,6 +89,8 @@ graph BT
     C_9487528["<a href='https://github.com/ggml-org/llama.cpp/pull/25239'>#25239</a><br/><span style='font-size:smaller;color:gray'>ui: Add MCP Servers Opt-In for first time visitors (#25239)</span>"]
     C_9487528 --> C_b5315e1
     C_b5315e1["<a href='https://github.com/ggml-org/llama.cpp/pull/25241'>#25241</a><br/><span style='font-size:smaller;color:gray'>server + ui: ping silent SSE streams every 1s and kick only after 3s so slow prefill never drops healthy connections (#25241)</span>"]
+    C_b5315e1 --> C_067de93
+    C_067de93["<a href='https://github.com/ggml-org/llama.cpp/pull/25242'>#25242</a><br/><span style='font-size:smaller;color:gray'>ui: align persisted config with strict server schema and enable thinking by default (#25242)</span>"]
     COMMON -->|dev-metal| C_f7c1df6
     C_f7c1df6["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```

@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 9bebfcb4bc8b12a316e96ae03f33671eac1e72fd
 Branches analyzed: 2
 
---- master (tip: b5315e16e0c3d19707d4a3e3a9f727f1141d2282, commits from ancestor: 38) ---
+--- master (tip: 067de937183141f54c681ed684f540706d2c420a, commits from ancestor: 39) ---
+067de93 ui: align persisted config with strict server schema and enable thinking by default (#25242)
 b5315e1 server + ui: ping silent SSE streams every 1s and kick only after 3s so slow prefill never drops healthy connections (#25241)
 9487528 ui: Add MCP Servers Opt-In for first time visitors (#25239)
 5a460de Remove redundant CUDA copies after gated_delta_net. (#23940)
