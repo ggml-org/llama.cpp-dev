@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 9bebfcb4bc8b12a316e96ae03f33671eac1e72fd
 Branches analyzed: 2
 
---- master (tip: 665892536dfb1b7532161e3182304bd35c33e768, commits from ancestor: 46) ---
+--- master (tip: a4107133a634250c8c9d888bc0bc8520dcfd6105, commits from ancestor: 47) ---
+a410713 llama : add guard for K/V rotation input when buffer is unallocated (#25215)
 6658925 ui: add sync blocks so display/behavior settings can be set via --ui-config-file (#25132)
 ef2d770 ggml : fix broken CPU concat implementation for quantized types (#25247)
 2d97363 chat: trim messages sent to StepFun parser (fixes long reasoning loops) (#25238)
