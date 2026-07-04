@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-04 12:17:26 UTC
+Auto-generated on 2026-07-04 15:14:26 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -103,6 +103,8 @@ graph BT
     C_2d97363["<a href='https://github.com/ggml-org/llama.cpp/pull/25238'>#25238</a><br/><span style='font-size:smaller;color:gray'>chat: trim messages sent to StepFun parser (fixes long reasoning loops) (#25238)</span>"]
     C_2d97363 --> C_ef2d770
     C_ef2d770["<a href='https://github.com/ggml-org/llama.cpp/pull/25247'>#25247</a><br/><span style='font-size:smaller;color:gray'>ggml : fix broken CPU concat implementation for quantized types (#25247)</span>"]
+    C_ef2d770 --> C_6658925
+    C_6658925["<a href='https://github.com/ggml-org/llama.cpp/pull/25132'>#25132</a><br/><span style='font-size:smaller;color:gray'>ui: add sync blocks so display/behavior settings can be set via --ui-config-file (#25132)</span>"]
     COMMON -->|dev-metal| C_f7c1df6
     C_f7c1df6["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```

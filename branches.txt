@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 9bebfcb4bc8b12a316e96ae03f33671eac1e72fd
 Branches analyzed: 2
 
---- master (tip: ef2d770117db45b05aa7ecd1b0acca36370c5470, commits from ancestor: 45) ---
+--- master (tip: 665892536dfb1b7532161e3182304bd35c33e768, commits from ancestor: 46) ---
+6658925 ui: add sync blocks so display/behavior settings can be set via --ui-config-file (#25132)
 ef2d770 ggml : fix broken CPU concat implementation for quantized types (#25247)
 2d97363 chat: trim messages sent to StepFun parser (fixes long reasoning loops) (#25238)
 d4cff11 ui: Improve performance when streaming (#25225)
