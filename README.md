@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-04 21:34:59 UTC
+Auto-generated on 2026-07-05 15:57:04 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -107,6 +107,8 @@ graph BT
     C_6658925["<a href='https://github.com/ggml-org/llama.cpp/pull/25132'>#25132</a><br/><span style='font-size:smaller;color:gray'>ui: add sync blocks so display/behavior settings can be set via --ui-config-file (#25132)</span>"]
     C_6658925 --> C_a410713
     C_a410713["<a href='https://github.com/ggml-org/llama.cpp/pull/25215'>#25215</a><br/><span style='font-size:smaller;color:gray'>llama : add guard for K/V rotation input when buffer is unallocated (#25215)</span>"]
+    C_a410713 --> C_78d2f52
+    C_78d2f52["<a href='https://github.com/ggml-org/llama.cpp/pull/25303'>#25303</a><br/><span style='font-size:smaller;color:gray'>cuda : concat implementation for quantized types (#25303)</span>"]
     COMMON -->|dev-metal| C_f7c1df6
     C_f7c1df6["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
