@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-05 18:12:56 UTC
+Auto-generated on 2026-07-05 19:41:35 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -113,6 +113,10 @@ graph BT
     C_7a63fde["<a href='https://github.com/ggml-org/llama.cpp/pull/24491'>#24491</a><br/><span style='font-size:smaller;color:gray'>ggml: Update VMM Pool allocation ggml-cuda.cu - Turing P2P access fix (fixes #24489) (#24491)</span>"]
     C_7a63fde --> C_4b2a0cd
     C_4b2a0cd["<a href='https://github.com/ggml-org/llama.cpp/pull/25028'>#25028</a><br/><span style='font-size:smaller;color:gray'>ggml : fix tensor-parallel + -ncmoe crash on MoE models (#25028)</span>"]
+    C_4b2a0cd --> C_3e5036f
+    C_3e5036f["<a href='https://github.com/ggml-org/llama.cpp/pull/25276'>#25276</a><br/><span style='font-size:smaller;color:gray'>abort if we see a multi buffer (#25276)</span>"]
+    C_3e5036f --> C_2da6686
+    C_2da6686["<a href='https://github.com/ggml-org/llama.cpp/pull/24814'>#24814</a><br/><span style='font-size:smaller;color:gray'>Fix stale tensor-split params for draft models (#24814)</span>"]
     COMMON -->|dev-metal| C_f7c1df6
     C_f7c1df6["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```

@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 9bebfcb4bc8b12a316e96ae03f33671eac1e72fd
 Branches analyzed: 2
 
---- master (tip: 4b2a0cdee141d7906f661ba573e4b455f684bbc3, commits from ancestor: 50) ---
+--- master (tip: 2da668617612d2df773f966e3b0ee22dc2beef7b, commits from ancestor: 52) ---
+2da6686 Fix stale tensor-split params for draft models (#24814)
+3e5036f abort if we see a multi buffer (#25276)
 4b2a0cd ggml : fix tensor-parallel + -ncmoe crash on MoE models (#25028)
 7a63fde ggml: Update VMM Pool allocation ggml-cuda.cu - Turing P2P access fix (fixes #24489) (#24491)
 78d2f52 cuda : concat implementation for quantized types (#25303)
