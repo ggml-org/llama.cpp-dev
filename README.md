@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-05 15:57:04 UTC
+Auto-generated on 2026-07-05 18:12:56 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -109,6 +109,10 @@ graph BT
     C_a410713["<a href='https://github.com/ggml-org/llama.cpp/pull/25215'>#25215</a><br/><span style='font-size:smaller;color:gray'>llama : add guard for K/V rotation input when buffer is unallocated (#25215)</span>"]
     C_a410713 --> C_78d2f52
     C_78d2f52["<a href='https://github.com/ggml-org/llama.cpp/pull/25303'>#25303</a><br/><span style='font-size:smaller;color:gray'>cuda : concat implementation for quantized types (#25303)</span>"]
+    C_78d2f52 --> C_7a63fde
+    C_7a63fde["<a href='https://github.com/ggml-org/llama.cpp/pull/24491'>#24491</a><br/><span style='font-size:smaller;color:gray'>ggml: Update VMM Pool allocation ggml-cuda.cu - Turing P2P access fix (fixes #24489) (#24491)</span>"]
+    C_7a63fde --> C_4b2a0cd
+    C_4b2a0cd["<a href='https://github.com/ggml-org/llama.cpp/pull/25028'>#25028</a><br/><span style='font-size:smaller;color:gray'>ggml : fix tensor-parallel + -ncmoe crash on MoE models (#25028)</span>"]
     COMMON -->|dev-metal| C_f7c1df6
     C_f7c1df6["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
