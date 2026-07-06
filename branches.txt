@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 20a04b22063020cd0f29b7781f5352d7a6abf786
 Branches analyzed: 2
 
---- master (tip: f36e5c348bc8795c34f9a038e58876e7a8423d4d, commits from ancestor: 5) ---
+--- master (tip: ee445f93d8a0a5033a46d1960e901ef5caec9a41, commits from ancestor: 6) ---
+ee445f9 common: Set optimal default thread count for ppc ( linux as well as AIX) (#25237)
 f36e5c3 metal: add col2im_1d op (f32/f16/bf16) (#25176)
 74976e1 CUDA: remove -sm row, refactor cuBLAS (#24216)
 9abce74 server: fix deadlock in load_models() when erasing a finished download (#25358)

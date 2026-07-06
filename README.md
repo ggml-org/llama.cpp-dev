@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-06 20:25:16 UTC
+Auto-generated on 2026-07-06 21:52:46 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -23,6 +23,8 @@ graph BT
     C_74976e1["<a href='https://github.com/ggml-org/llama.cpp/pull/24216'>#24216</a><br/><span style='font-size:smaller;color:gray'>CUDA: remove -sm row, refactor cuBLAS (#24216)</span>"]
     C_74976e1 --> C_f36e5c3
     C_f36e5c3["<a href='https://github.com/ggml-org/llama.cpp/pull/25176'>#25176</a><br/><span style='font-size:smaller;color:gray'>metal: add col2im_1d op (f32/f16/bf16) (#25176)</span>"]
+    C_f36e5c3 --> C_ee445f9
+    C_ee445f9["<a href='https://github.com/ggml-org/llama.cpp/pull/25237'>#25237</a><br/><span style='font-size:smaller;color:gray'>common: Set optimal default thread count for ppc ( linux as well as AIX) (#25237)</span>"]
     COMMON -->|dev-metal| C_437f21a
     C_437f21a["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
