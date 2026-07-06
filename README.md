@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-06 16:37:46 UTC
+Auto-generated on 2026-07-06 18:29:05 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -17,6 +17,10 @@ graph BT
     C_bfdf581["<a href='https://github.com/ggml-org/llama.cpp/pull/25355'>#25355</a><br/><span style='font-size:smaller;color:gray'>server: temporary skip model downloading API test (#25355)</span>"]
     C_bfdf581 --> C_cb295bf
     C_cb295bf["<a href='https://github.com/ggml-org/llama.cpp/pull/24403'>#24403</a><br/><span style='font-size:smaller;color:gray'>CUDA: extend K-type validation to V-types for flash attention (#24403)</span>"]
+    C_cb295bf --> C_9abce74
+    C_9abce74["<a href='https://github.com/ggml-org/llama.cpp/pull/25358'>#25358</a><br/><span style='font-size:smaller;color:gray'>server: fix deadlock in load_models() when erasing a finished download (#25358)</span>"]
+    C_9abce74 --> C_74976e1
+    C_74976e1["<a href='https://github.com/ggml-org/llama.cpp/pull/24216'>#24216</a><br/><span style='font-size:smaller;color:gray'>CUDA: remove -sm row, refactor cuBLAS (#24216)</span>"]
     COMMON -->|dev-metal| C_437f21a
     C_437f21a["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```

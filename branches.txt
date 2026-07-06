@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 20a04b22063020cd0f29b7781f5352d7a6abf786
 Branches analyzed: 2
 
---- master (tip: cb295bf59663cd3577389315636772f4060bd1f5, commits from ancestor: 2) ---
+--- master (tip: 74976e1aefd8d64845ae5510674b36079c855c0c, commits from ancestor: 4) ---
+74976e1 CUDA: remove -sm row, refactor cuBLAS (#24216)
+9abce74 server: fix deadlock in load_models() when erasing a finished download (#25358)
 cb295bf CUDA: extend K-type validation to V-types for flash attention (#24403)
 bfdf581 server: temporary skip model downloading API test (#25355)
 
