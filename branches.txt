@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 20a04b22063020cd0f29b7781f5352d7a6abf786
 Branches analyzed: 2
 
---- master (tip: 20a04b22063020cd0f29b7781f5352d7a6abf786, commits from ancestor: 0) ---
+--- master (tip: cb295bf59663cd3577389315636772f4060bd1f5, commits from ancestor: 2) ---
+cb295bf CUDA: extend K-type validation to V-types for flash attention (#24403)
+bfdf581 server: temporary skip model downloading API test (#25355)
 
 --- dev-metal (tip: 437f21a918ce42f9c9cbdfc999828a9868e28eba, commits from ancestor: 1) ---
 437f21a metal : per-op source split + parallel compile (#24021)
