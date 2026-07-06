@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-05 19:41:35 UTC
+Auto-generated on 2026-07-06 05:41:52 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -117,6 +117,8 @@ graph BT
     C_3e5036f["<a href='https://github.com/ggml-org/llama.cpp/pull/25276'>#25276</a><br/><span style='font-size:smaller;color:gray'>abort if we see a multi buffer (#25276)</span>"]
     C_3e5036f --> C_2da6686
     C_2da6686["<a href='https://github.com/ggml-org/llama.cpp/pull/24814'>#24814</a><br/><span style='font-size:smaller;color:gray'>Fix stale tensor-split params for draft models (#24814)</span>"]
+    C_2da6686 --> C_72874f5
+    C_72874f5["<a href='https://github.com/ggml-org/llama.cpp/pull/25310'>#25310</a><br/><span style='font-size:smaller;color:gray'>ggml-cuda: optimize conv_transpose_1d indexing (#25310)</span>"]
     COMMON -->|dev-metal| C_f7c1df6
     C_f7c1df6["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
