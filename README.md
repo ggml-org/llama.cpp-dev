@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-06 05:41:52 UTC
+Auto-generated on 2026-07-06 09:42:49 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -119,6 +119,16 @@ graph BT
     C_2da6686["<a href='https://github.com/ggml-org/llama.cpp/pull/24814'>#24814</a><br/><span style='font-size:smaller;color:gray'>Fix stale tensor-split params for draft models (#24814)</span>"]
     C_2da6686 --> C_72874f5
     C_72874f5["<a href='https://github.com/ggml-org/llama.cpp/pull/25310'>#25310</a><br/><span style='font-size:smaller;color:gray'>ggml-cuda: optimize conv_transpose_1d indexing (#25310)</span>"]
+    C_72874f5 --> C_898b088
+    C_898b088["<a href='https://github.com/ggml-org/llama.cpp/pull/25298'>#25298</a><br/><span style='font-size:smaller;color:gray'>ui: fake 200 for proxy DELETE req (#25298)</span>"]
+    C_898b088 --> C_d06ddd3
+    C_d06ddd3["<a href='https://github.com/ggml-org/llama.cpp/pull/23862'>#23862</a><br/><span style='font-size:smaller;color:gray'>ggml-hip: enable -ffast-math for HIP builds (#23862)</span>"]
+    C_d06ddd3 --> C_4871961
+    C_4871961["<a href='https://github.com/ggml-org/llama.cpp/pull/25280'>#25280</a><br/><span style='font-size:smaller;color:gray'>scripts : use HF_TOKEN when downloading UI assets (#25280)</span>"]
+    C_4871961 --> C_d80e878
+    C_d80e878["<a href='https://github.com/ggml-org/llama.cpp/pull/25307'>#25307</a><br/><span style='font-size:smaller;color:gray'>ui: restore Ctrl+B sidebar toggle shortcut (#25307)</span>"]
+    C_d80e878 --> C_86961ef
+    C_86961ef["<a href='https://github.com/ggml-org/llama.cpp/pull/25245'>#25245</a><br/><span style='font-size:smaller;color:gray'>vulkan: fix 32-bit integer overflow in CEIL_DIV (#25245)</span>"]
     COMMON -->|dev-metal| C_f7c1df6
     C_f7c1df6["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```

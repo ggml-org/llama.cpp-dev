@@ -3,7 +3,12 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 9bebfcb4bc8b12a316e96ae03f33671eac1e72fd
 Branches analyzed: 2
 
---- master (tip: 72874f559c598b8f89fbb24864868337cf5afb4c, commits from ancestor: 53) ---
+--- master (tip: 86961efd5675279a4ec2f3d1a3c7d6e3803c1935, commits from ancestor: 58) ---
+86961ef vulkan: fix 32-bit integer overflow in CEIL_DIV (#25245)
+d80e878 ui: restore Ctrl+B sidebar toggle shortcut (#25307)
+4871961 scripts : use HF_TOKEN when downloading UI assets (#25280)
+d06ddd3 ggml-hip: enable -ffast-math for HIP builds (#23862)
+898b088 ui: fake 200 for proxy DELETE req (#25298)
 72874f5 ggml-cuda: optimize conv_transpose_1d indexing (#25310)
 2da6686 Fix stale tensor-split params for draft models (#24814)
 3e5036f abort if we see a multi buffer (#25276)
