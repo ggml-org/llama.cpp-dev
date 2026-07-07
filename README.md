@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-07 13:04:15 UTC
+Auto-generated on 2026-07-07 15:47:49 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -53,6 +53,16 @@ graph BT
     C_024c46a["<a href='https://github.com/ggml-org/llama.cpp/pull/25202'>#25202</a><br/><span style='font-size:smaller;color:gray'>llama: fix quantized kv-cache for dsv4 (#25202)</span>"]
     C_024c46a --> C_33ca0dc
     C_33ca0dc["<a href='https://github.com/ggml-org/llama.cpp/pull/25373'>#25373</a><br/><span style='font-size:smaller;color:gray'>ggml-hip : add -fno-finite-math-only alongside -ffast-math (#25373)</span>"]
+    C_33ca0dc --> C_c1a411f
+    C_c1a411f["<a href='https://github.com/ggml-org/llama.cpp/pull/25220'>#25220</a><br/><span style='font-size:smaller;color:gray'>common : add missing <fstream> include in common.h (#25220)</span>"]
+    C_c1a411f --> C_6c487e2
+    C_6c487e2["<a href='https://github.com/ggml-org/llama.cpp/pull/25070'>#25070</a><br/><span style='font-size:smaller;color:gray'>server: enforce prompt cache RAM limit (#25070)</span>"]
+    C_6c487e2 --> C_5eca4e3
+    C_5eca4e3["<a href='https://github.com/ggml-org/llama.cpp/pull/25348'>#25348</a><br/><span style='font-size:smaller;color:gray'>server : add timings and progress to /responses API stream (#25348)</span>"]
+    C_5eca4e3 --> C_f5525f7
+    C_f5525f7["<a href='https://github.com/ggml-org/llama.cpp/pull/25056'>#25056</a><br/><span style='font-size:smaller;color:gray'>server : fix draft model fit vs load inconsistency (#25056)</span>"]
+    C_f5525f7 --> C_3899b39
+    C_3899b39["<a href='https://github.com/ggml-org/llama.cpp/pull/24481'>#24481</a><br/><span style='font-size:smaller;color:gray'>CUDA: Fuse MMVQ post-scale for NVFP4 (#24481)</span>"]
     COMMON -->|dev-metal| C_437f21a
     C_437f21a["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```

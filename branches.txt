@@ -3,7 +3,12 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 20a04b22063020cd0f29b7781f5352d7a6abf786
 Branches analyzed: 2
 
---- master (tip: 33ca0dcb9d78c7c3a3b543db4c5fc9182abfe519, commits from ancestor: 20) ---
+--- master (tip: 3899b39ce2acc2e019f149b7107f24b6ca297390, commits from ancestor: 25) ---
+3899b39 CUDA: Fuse MMVQ post-scale for NVFP4 (#24481)
+f5525f7 server : fix draft model fit vs load inconsistency (#25056)
+5eca4e3 server : add timings and progress to /responses API stream (#25348)
+6c487e2 server: enforce prompt cache RAM limit (#25070)
+c1a411f common : add missing <fstream> include in common.h (#25220)
 33ca0dc ggml-hip : add -fno-finite-math-only alongside -ffast-math (#25373)
 024c46a llama: fix quantized kv-cache for dsv4 (#25202)
 108f186 [SYCL] fix unsupported UT cases of CONT & CPY (#25231)
