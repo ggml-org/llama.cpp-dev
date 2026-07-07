@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 20a04b22063020cd0f29b7781f5352d7a6abf786
 Branches analyzed: 2
 
---- master (tip: 3899b39ce2acc2e019f149b7107f24b6ca297390, commits from ancestor: 25) ---
+--- master (tip: c198af4dc24f8e0ab8a569a60f931e03a192fd79, commits from ancestor: 26) ---
+c198af4 spec : fix naming, spacing (#25410)
 3899b39 CUDA: Fuse MMVQ post-scale for NVFP4 (#24481)
 f5525f7 server : fix draft model fit vs load inconsistency (#25056)
 5eca4e3 server : add timings and progress to /responses API stream (#25348)
