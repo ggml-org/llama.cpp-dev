@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-07 10:41:02 UTC
+Auto-generated on 2026-07-07 13:04:15 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -51,6 +51,8 @@ graph BT
     C_108f186["<a href='https://github.com/ggml-org/llama.cpp/pull/25231'>#25231</a><br/><span style='font-size:smaller;color:gray'>[SYCL] fix unsupported UT cases of CONT & CPY (#25231)</span>"]
     C_108f186 --> C_024c46a
     C_024c46a["<a href='https://github.com/ggml-org/llama.cpp/pull/25202'>#25202</a><br/><span style='font-size:smaller;color:gray'>llama: fix quantized kv-cache for dsv4 (#25202)</span>"]
+    C_024c46a --> C_33ca0dc
+    C_33ca0dc["<a href='https://github.com/ggml-org/llama.cpp/pull/25373'>#25373</a><br/><span style='font-size:smaller;color:gray'>ggml-hip : add -fno-finite-math-only alongside -ffast-math (#25373)</span>"]
     COMMON -->|dev-metal| C_437f21a
     C_437f21a["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```

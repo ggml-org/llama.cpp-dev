@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 20a04b22063020cd0f29b7781f5352d7a6abf786
 Branches analyzed: 2
 
---- master (tip: 024c46ae4e375f20cf51bd7dbaed445f1b02675e, commits from ancestor: 19) ---
+--- master (tip: 33ca0dcb9d78c7c3a3b543db4c5fc9182abfe519, commits from ancestor: 20) ---
+33ca0dc ggml-hip : add -fno-finite-math-only alongside -ffast-math (#25373)
 024c46a llama: fix quantized kv-cache for dsv4 (#25202)
 108f186 [SYCL] fix unsupported UT cases of CONT & CPY (#25231)
 47e1de7 [SYCL] support op col2im_1d (#25264)
