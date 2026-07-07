@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-07 07:50:33 UTC
+Auto-generated on 2026-07-07 10:41:02 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -45,6 +45,12 @@ graph BT
     C_d209086["<a href='https://github.com/ggml-org/llama.cpp/pull/25063'>#25063</a><br/><span style='font-size:smaller;color:gray'>sycl : set K_QUANTS_PER_ITERATION to 1 on DMMV path (#25063)</span>"]
     C_d209086 --> C_55edb2d
     C_55edb2d["<a href='https://github.com/ggml-org/llama.cpp/pull/25236'>#25236</a><br/><span style='font-size:smaller;color:gray'>[SYCL] support OP cross_entropy_loss, cross_entropy_loss_back (#25236)</span>"]
+    C_55edb2d --> C_47e1de7
+    C_47e1de7["<a href='https://github.com/ggml-org/llama.cpp/pull/25264'>#25264</a><br/><span style='font-size:smaller;color:gray'>[SYCL] support op col2im_1d (#25264)</span>"]
+    C_47e1de7 --> C_108f186
+    C_108f186["<a href='https://github.com/ggml-org/llama.cpp/pull/25231'>#25231</a><br/><span style='font-size:smaller;color:gray'>[SYCL] fix unsupported UT cases of CONT & CPY (#25231)</span>"]
+    C_108f186 --> C_024c46a
+    C_024c46a["<a href='https://github.com/ggml-org/llama.cpp/pull/25202'>#25202</a><br/><span style='font-size:smaller;color:gray'>llama: fix quantized kv-cache for dsv4 (#25202)</span>"]
     COMMON -->|dev-metal| C_437f21a
     C_437f21a["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```

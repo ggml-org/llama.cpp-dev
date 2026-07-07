@@ -3,7 +3,10 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 20a04b22063020cd0f29b7781f5352d7a6abf786
 Branches analyzed: 2
 
---- master (tip: 55edb2de442b50be0a29c2ed2ec88488560a96c5, commits from ancestor: 16) ---
+--- master (tip: 024c46ae4e375f20cf51bd7dbaed445f1b02675e, commits from ancestor: 19) ---
+024c46a llama: fix quantized kv-cache for dsv4 (#25202)
+108f186 [SYCL] fix unsupported UT cases of CONT & CPY (#25231)
+47e1de7 [SYCL] support op col2im_1d (#25264)
 55edb2d [SYCL] support OP cross_entropy_loss, cross_entropy_loss_back (#25236)
 d209086 sycl : set K_QUANTS_PER_ITERATION to 1 on DMMV path (#25063)
 95e5254 [SYCL] fix unsupport ACC UT cases for noncontiguous (#25124)
