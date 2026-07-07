@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-07 17:46:13 UTC
+Auto-generated on 2026-07-07 19:26:33 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -65,6 +65,8 @@ graph BT
     C_3899b39["<a href='https://github.com/ggml-org/llama.cpp/pull/24481'>#24481</a><br/><span style='font-size:smaller;color:gray'>CUDA: Fuse MMVQ post-scale for NVFP4 (#24481)</span>"]
     C_3899b39 --> C_c198af4
     C_c198af4["<a href='https://github.com/ggml-org/llama.cpp/pull/25410'>#25410</a><br/><span style='font-size:smaller;color:gray'>spec : fix naming, spacing (#25410)</span>"]
+    C_c198af4 --> C_bec4772
+    C_bec4772["<a href='https://github.com/ggml-org/llama.cpp/pull/24448'>#24448</a><br/><span style='font-size:smaller;color:gray'>Add Q2_0 quantization: type definition and CPU backend (#24448)</span>"]
     COMMON -->|dev-metal| C_437f21a
     C_437f21a["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
