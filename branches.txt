@@ -3,7 +3,16 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 20a04b22063020cd0f29b7781f5352d7a6abf786
 Branches analyzed: 2
 
---- master (tip: 6f8895feec96773574c7e10fcf7b56965d23550a, commits from ancestor: 7) ---
+--- master (tip: 55edb2de442b50be0a29c2ed2ec88488560a96c5, commits from ancestor: 16) ---
+55edb2d [SYCL] support OP cross_entropy_loss, cross_entropy_loss_back (#25236)
+d209086 sycl : set K_QUANTS_PER_ITERATION to 1 on DMMV path (#25063)
+95e5254 [SYCL] fix unsupport ACC UT cases for noncontiguous (#25124)
+9e5ef0d sycl : enhance argsort to support all UT cases (#25125)
+3d4cbdf sycl : use sycl func to fix AOT double type issue (#25081)
+26145b3 sycl : rename the env vars from "disable" to "enable" (#25042)
+1a7c25b ggml : make ggml_time_init idempotent (#24422)
+defa95c speculative : fix out-of-bounds read in ngram-map on prompt shrink (#23936)
+a8cfdbb vulkan : check src0 type in GGML_OP_SET_ROWS to avoid failures due to unimplemented f16 support (#25351)
 6f8895f opencl: general flash attention decode performance optimizations (#25366)
 ee445f9 common: Set optimal default thread count for ppc ( linux as well as AIX) (#25237)
 f36e5c3 metal: add col2im_1d op (f32/f16/bf16) (#25176)

@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-07 04:07:57 UTC
+Auto-generated on 2026-07-07 07:50:33 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -27,6 +27,24 @@ graph BT
     C_ee445f9["<a href='https://github.com/ggml-org/llama.cpp/pull/25237'>#25237</a><br/><span style='font-size:smaller;color:gray'>common: Set optimal default thread count for ppc ( linux as well as AIX) (#25237)</span>"]
     C_ee445f9 --> C_6f8895f
     C_6f8895f["<a href='https://github.com/ggml-org/llama.cpp/pull/25366'>#25366</a><br/><span style='font-size:smaller;color:gray'>opencl: general flash attention decode performance optimizations (#25366)</span>"]
+    C_6f8895f --> C_a8cfdbb
+    C_a8cfdbb["<a href='https://github.com/ggml-org/llama.cpp/pull/25351'>#25351</a><br/><span style='font-size:smaller;color:gray'>vulkan : check src0 type in GGML_OP_SET_ROWS to avoid failures due to unimplemented f16 support (#25351)</span>"]
+    C_a8cfdbb --> C_defa95c
+    C_defa95c["<a href='https://github.com/ggml-org/llama.cpp/pull/23936'>#23936</a><br/><span style='font-size:smaller;color:gray'>speculative : fix out-of-bounds read in ngram-map on prompt shrink (#23936)</span>"]
+    C_defa95c --> C_1a7c25b
+    C_1a7c25b["<a href='https://github.com/ggml-org/llama.cpp/pull/24422'>#24422</a><br/><span style='font-size:smaller;color:gray'>ggml : make ggml_time_init idempotent (#24422)</span>"]
+    C_1a7c25b --> C_26145b3
+    C_26145b3["<a href='https://github.com/ggml-org/llama.cpp/pull/25042'>#25042</a><br/><span style='font-size:smaller;color:gray'>sycl : rename the env vars from 'disable' to 'enable' (#25042)</span>"]
+    C_26145b3 --> C_3d4cbdf
+    C_3d4cbdf["<a href='https://github.com/ggml-org/llama.cpp/pull/25081'>#25081</a><br/><span style='font-size:smaller;color:gray'>sycl : use sycl func to fix AOT double type issue (#25081)</span>"]
+    C_3d4cbdf --> C_9e5ef0d
+    C_9e5ef0d["<a href='https://github.com/ggml-org/llama.cpp/pull/25125'>#25125</a><br/><span style='font-size:smaller;color:gray'>sycl : enhance argsort to support all UT cases (#25125)</span>"]
+    C_9e5ef0d --> C_95e5254
+    C_95e5254["<a href='https://github.com/ggml-org/llama.cpp/pull/25124'>#25124</a><br/><span style='font-size:smaller;color:gray'>[SYCL] fix unsupport ACC UT cases for noncontiguous (#25124)</span>"]
+    C_95e5254 --> C_d209086
+    C_d209086["<a href='https://github.com/ggml-org/llama.cpp/pull/25063'>#25063</a><br/><span style='font-size:smaller;color:gray'>sycl : set K_QUANTS_PER_ITERATION to 1 on DMMV path (#25063)</span>"]
+    C_d209086 --> C_55edb2d
+    C_55edb2d["<a href='https://github.com/ggml-org/llama.cpp/pull/25236'>#25236</a><br/><span style='font-size:smaller;color:gray'>[SYCL] support OP cross_entropy_loss, cross_entropy_loss_back (#25236)</span>"]
     COMMON -->|dev-metal| C_437f21a
     C_437f21a["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
