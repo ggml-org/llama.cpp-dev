@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 20a04b22063020cd0f29b7781f5352d7a6abf786
 Branches analyzed: 2
 
---- master (tip: 230ea9d214320c5e79cc8166ed708ac60514c71e, commits from ancestor: 36) ---
+--- master (tip: 90e0f5cfcb6cdb4b7b60a4f81b0a26e542149ad5, commits from ancestor: 38) ---
+90e0f5c llama: refactor fused ops (#24646)
+bbebeec server-stream: follow-up on SSE Replay Buffer (#23226) (#25047)
 230ea9d llama-batch: add n_keep_tail in split_equal for recurrent models (#25278)
 f296fdf common: auto-create prompts-log-dir at argument parsing, so all tools using the flag benefit (#25322)
 f1161b1 ui: Context usage gauge and panel (#25340)
