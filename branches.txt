@@ -3,7 +3,10 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 20a04b22063020cd0f29b7781f5352d7a6abf786
 Branches analyzed: 2
 
---- master (tip: 931ca30bef7ef930b1fecb573b2f44dc60c1b01a, commits from ancestor: 28) ---
+--- master (tip: 4a7ee3126d529618b330269f7a68c53d1ca012c1, commits from ancestor: 31) ---
+4a7ee31 fix: OOB reads in UGM tokenizer (precompiled_charsmap handling) (#18750)
+57b50e1 ggml : fix A indexing in simd_gemm scalar tail-column path (#25390)
+68a521b ggml : add support for CPU f16->f16 GGML_OP_SET_ROWS (#25344)
 931ca30 opencl: fix potential crash in aos reconstruct (#25383)
 bec4772 Add Q2_0 quantization: type definition and CPU backend (#24448)
 c198af4 spec : fix naming, spacing (#25410)

@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-08 03:45:40 UTC
+Auto-generated on 2026-07-08 06:16:26 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -69,6 +69,12 @@ graph BT
     C_bec4772["<a href='https://github.com/ggml-org/llama.cpp/pull/24448'>#24448</a><br/><span style='font-size:smaller;color:gray'>Add Q2_0 quantization: type definition and CPU backend (#24448)</span>"]
     C_bec4772 --> C_931ca30
     C_931ca30["<a href='https://github.com/ggml-org/llama.cpp/pull/25383'>#25383</a><br/><span style='font-size:smaller;color:gray'>opencl: fix potential crash in aos reconstruct (#25383)</span>"]
+    C_931ca30 --> C_68a521b
+    C_68a521b["<a href='https://github.com/ggml-org/llama.cpp/pull/25344'>#25344</a><br/><span style='font-size:smaller;color:gray'>ggml : add support for CPU f16->f16 GGML_OP_SET_ROWS (#25344)</span>"]
+    C_68a521b --> C_57b50e1
+    C_57b50e1["<a href='https://github.com/ggml-org/llama.cpp/pull/25390'>#25390</a><br/><span style='font-size:smaller;color:gray'>ggml : fix A indexing in simd_gemm scalar tail-column path (#25390)</span>"]
+    C_57b50e1 --> C_4a7ee31
+    C_4a7ee31["<a href='https://github.com/ggml-org/llama.cpp/pull/18750'>#18750</a><br/><span style='font-size:smaller;color:gray'>fix: OOB reads in UGM tokenizer (precompiled_charsmap handling) (#18750)</span>"]
     COMMON -->|dev-metal| C_437f21a
     C_437f21a["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
