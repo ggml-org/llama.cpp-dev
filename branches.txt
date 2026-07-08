@@ -1,49 +1,12 @@
 === Branch Analysis ===
 Repo: https://github.com/ggml-org/llama.cpp
-Common ancestor: 20a04b22063020cd0f29b7781f5352d7a6abf786
+Common ancestor: c264f65ff9d8f592a590e3221f712a8883b7dd81
 Branches analyzed: 2
 
---- master (tip: ed8c26150e6b0ed6e2635cab75ace5ed121482ca, commits from ancestor: 39) ---
-ed8c261 cuda : add support for f16->f16 GGML_OP_SET_ROWS (#25367)
-90e0f5c llama: refactor fused ops (#24646)
-bbebeec server-stream: follow-up on SSE Replay Buffer (#23226) (#25047)
-230ea9d llama-batch: add n_keep_tail in split_equal for recurrent models (#25278)
-f296fdf common: auto-create prompts-log-dir at argument parsing, so all tools using the flag benefit (#25322)
-f1161b1 ui: Context usage gauge and panel (#25340)
-da46e59 llama-eval : fix crash when answer is None in HTML dump (#25435)
-0512ef1 metal : add set_rows with src0 f16 (#25434)
-4a7ee31 fix: OOB reads in UGM tokenizer (precompiled_charsmap handling) (#18750)
-57b50e1 ggml : fix A indexing in simd_gemm scalar tail-column path (#25390)
-68a521b ggml : add support for CPU f16->f16 GGML_OP_SET_ROWS (#25344)
-931ca30 opencl: fix potential crash in aos reconstruct (#25383)
-bec4772 Add Q2_0 quantization: type definition and CPU backend (#24448)
-c198af4 spec : fix naming, spacing (#25410)
-3899b39 CUDA: Fuse MMVQ post-scale for NVFP4 (#24481)
-f5525f7 server : fix draft model fit vs load inconsistency (#25056)
-5eca4e3 server : add timings and progress to /responses API stream (#25348)
-6c487e2 server: enforce prompt cache RAM limit (#25070)
-c1a411f common : add missing <fstream> include in common.h (#25220)
-33ca0dc ggml-hip : add -fno-finite-math-only alongside -ffast-math (#25373)
-024c46a llama: fix quantized kv-cache for dsv4 (#25202)
-108f186 [SYCL] fix unsupported UT cases of CONT & CPY (#25231)
-47e1de7 [SYCL] support op col2im_1d (#25264)
-55edb2d [SYCL] support OP cross_entropy_loss, cross_entropy_loss_back (#25236)
-d209086 sycl : set K_QUANTS_PER_ITERATION to 1 on DMMV path (#25063)
-95e5254 [SYCL] fix unsupport ACC UT cases for noncontiguous (#25124)
-9e5ef0d sycl : enhance argsort to support all UT cases (#25125)
-3d4cbdf sycl : use sycl func to fix AOT double type issue (#25081)
-26145b3 sycl : rename the env vars from "disable" to "enable" (#25042)
-1a7c25b ggml : make ggml_time_init idempotent (#24422)
-defa95c speculative : fix out-of-bounds read in ngram-map on prompt shrink (#23936)
-a8cfdbb vulkan : check src0 type in GGML_OP_SET_ROWS to avoid failures due to unimplemented f16 support (#25351)
-6f8895f opencl: general flash attention decode performance optimizations (#25366)
-ee445f9 common: Set optimal default thread count for ppc ( linux as well as AIX) (#25237)
-f36e5c3 metal: add col2im_1d op (f32/f16/bf16) (#25176)
-74976e1 CUDA: remove -sm row, refactor cuBLAS (#24216)
-9abce74 server: fix deadlock in load_models() when erasing a finished download (#25358)
-cb295bf CUDA: extend K-type validation to V-types for flash attention (#24403)
-bfdf581 server: temporary skip model downloading API test (#25355)
+--- master (tip: c264f65ff9d8f592a590e3221f712a8883b7dd81, commits from ancestor: 0) ---
 
---- dev-metal (tip: 437f21a918ce42f9c9cbdfc999828a9868e28eba, commits from ancestor: 1) ---
-437f21a metal : per-op source split + parallel compile (#24021)
+--- dev-metal (tip: 8cb1ad5a2c2c6647a3eca629a558076fcf7ce89f, commits from ancestor: 3) ---
+8cb1ad5 metal : add set_rows with src0 f16 (#25434)
+400d4bf metal: add col2im_1d op (f32/f16/bf16) (#25176)
+5dca9f3 metal : per-op source split + parallel compile (#24021)
 
