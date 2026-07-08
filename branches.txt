@@ -3,7 +3,10 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: c264f65ff9d8f592a590e3221f712a8883b7dd81
 Branches analyzed: 2
 
---- master (tip: 0bbc87b163ff7826656b1024dac5703e3f2bd6b6, commits from ancestor: 2) ---
+--- master (tip: a646006f09d2f76f2d62d6c0d5e8e8490d570720, commits from ancestor: 5) ---
+a646006 vulkan: disable FA mask_opt on GCN to improve performance (#24362)
+167d057 opencl: ragged-tile MoE prefill FP16 GEMM optimization (skip padded expert tiles) (#25433)
+1ee0939 llama-batch: fix allowed decreasing pos in a seq (#25449)
 0bbc87b vulkan: for small AMD GPUs, reduce submission threshold based on CU count (#25240)
 81ff7ab hexagon: new vtcm layouts and improved pipelines for MUL_MAT, MUL_MAT_ID and FLASH_ATTN_EXT (#25425)
 
