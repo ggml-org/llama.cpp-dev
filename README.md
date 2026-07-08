@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-08 06:16:26 UTC
+Auto-generated on 2026-07-08 08:45:48 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -75,6 +75,16 @@ graph BT
     C_57b50e1["<a href='https://github.com/ggml-org/llama.cpp/pull/25390'>#25390</a><br/><span style='font-size:smaller;color:gray'>ggml : fix A indexing in simd_gemm scalar tail-column path (#25390)</span>"]
     C_57b50e1 --> C_4a7ee31
     C_4a7ee31["<a href='https://github.com/ggml-org/llama.cpp/pull/18750'>#18750</a><br/><span style='font-size:smaller;color:gray'>fix: OOB reads in UGM tokenizer (precompiled_charsmap handling) (#18750)</span>"]
+    C_4a7ee31 --> C_0512ef1
+    C_0512ef1["<a href='https://github.com/ggml-org/llama.cpp/pull/25434'>#25434</a><br/><span style='font-size:smaller;color:gray'>metal : add set_rows with src0 f16 (#25434)</span>"]
+    C_0512ef1 --> C_da46e59
+    C_da46e59["<a href='https://github.com/ggml-org/llama.cpp/pull/25435'>#25435</a><br/><span style='font-size:smaller;color:gray'>llama-eval : fix crash when answer is None in HTML dump (#25435)</span>"]
+    C_da46e59 --> C_f1161b1
+    C_f1161b1["<a href='https://github.com/ggml-org/llama.cpp/pull/25340'>#25340</a><br/><span style='font-size:smaller;color:gray'>ui: Context usage gauge and panel (#25340)</span>"]
+    C_f1161b1 --> C_f296fdf
+    C_f296fdf["<a href='https://github.com/ggml-org/llama.cpp/pull/25322'>#25322</a><br/><span style='font-size:smaller;color:gray'>common: auto-create prompts-log-dir at argument parsing, so all tools using the flag benefit (#25322)</span>"]
+    C_f296fdf --> C_230ea9d
+    C_230ea9d["<a href='https://github.com/ggml-org/llama.cpp/pull/25278'>#25278</a><br/><span style='font-size:smaller;color:gray'>llama-batch: add n_keep_tail in split_equal for recurrent models (#25278)</span>"]
     COMMON -->|dev-metal| C_437f21a
     C_437f21a["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
