@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-08 10:50:02 UTC
+Auto-generated on 2026-07-08 12:09:09 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -89,6 +89,8 @@ graph BT
     C_bbebeec["<a href='https://github.com/ggml-org/llama.cpp/pull/23226'>#23226</a><br/><span style='font-size:smaller;color:gray'>server-stream: follow-up on SSE Replay Buffer (#23226) (#25047)</span>"]
     C_bbebeec --> C_90e0f5c
     C_90e0f5c["<a href='https://github.com/ggml-org/llama.cpp/pull/24646'>#24646</a><br/><span style='font-size:smaller;color:gray'>llama: refactor fused ops (#24646)</span>"]
+    C_90e0f5c --> C_ed8c261
+    C_ed8c261["<a href='https://github.com/ggml-org/llama.cpp/pull/25367'>#25367</a><br/><span style='font-size:smaller;color:gray'>cuda : add support for f16->f16 GGML_OP_SET_ROWS (#25367)</span>"]
     COMMON -->|dev-metal| C_437f21a
     C_437f21a["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
 ```
