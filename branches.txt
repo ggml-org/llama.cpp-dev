@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 20a04b22063020cd0f29b7781f5352d7a6abf786
 Branches analyzed: 2
 
---- master (tip: bec4772f6a2527d371557b5d2032641e5ff7619c, commits from ancestor: 27) ---
+--- master (tip: 931ca30bef7ef930b1fecb573b2f44dc60c1b01a, commits from ancestor: 28) ---
+931ca30 opencl: fix potential crash in aos reconstruct (#25383)
 bec4772 Add Q2_0 quantization: type definition and CPU backend (#24448)
 c198af4 spec : fix naming, spacing (#25410)
 3899b39 CUDA: Fuse MMVQ post-scale for NVFP4 (#24481)
