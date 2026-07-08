@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-08 13:53:30 UTC
+Auto-generated on 2026-07-08 16:18:15 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -13,7 +13,10 @@ Auto-generated on 2026-07-08 13:53:30 UTC
 ```mermaid
 graph BT
     COMMON["<a href='https://github.com/ggml-org/llama.cpp/pull/24948'>#24948</a><br/><span style='font-size:smaller;color:gray'>cli : move to HTTP-based implementation (#24948)</span>"]
-    COMMON -->|master| none
+    COMMON -->|master| C_81ff7ab
+    C_81ff7ab["<a href='https://github.com/ggml-org/llama.cpp/pull/25425'>#25425</a><br/><span style='font-size:smaller;color:gray'>hexagon: new vtcm layouts and improved pipelines for MUL_MAT, MUL_MAT_ID and FLASH_ATTN_EXT (#25425)</span>"]
+    C_81ff7ab --> C_0bbc87b
+    C_0bbc87b["<a href='https://github.com/ggml-org/llama.cpp/pull/25240'>#25240</a><br/><span style='font-size:smaller;color:gray'>vulkan: for small AMD GPUs, reduce submission threshold based on CU count (#25240)</span>"]
     COMMON -->|dev-metal| C_5dca9f3
     C_5dca9f3["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_5dca9f3 --> C_400d4bf
