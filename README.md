@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-09 14:08:10 UTC
+Auto-generated on 2026-07-09 16:37:11 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -45,6 +45,8 @@ graph BT
     C_f84a519["<a href='https://github.com/ggml-org/llama.cpp/pull/25440'>#25440</a><br/><span style='font-size:smaller;color:gray'>Refactor: Consistently use smart pointers in `test-backend-ops` (#25440)</span>"]
     C_f84a519 --> C_c15c5c7
     C_c15c5c7["<a href='https://github.com/ggml-org/llama.cpp/pull/25480'>#25480</a><br/><span style='font-size:smaller;color:gray'>meta: add hard emphasis on agents not writing descriptions/comments (#25480)</span>"]
+    C_c15c5c7 --> C_5c3a586
+    C_5c3a586["<a href='https://github.com/ggml-org/llama.cpp/pull/25490'>#25490</a><br/><span style='font-size:smaller;color:gray'>ggml : fix conv 2d dw (#25490)</span>"]
     COMMON -->|dev-metal| C_5dca9f3
     C_5dca9f3["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_5dca9f3 --> C_400d4bf

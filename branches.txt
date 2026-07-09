@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: c264f65ff9d8f592a590e3221f712a8883b7dd81
 Branches analyzed: 2
 
---- master (tip: c15c5c77a426f73ff74884219330590ab3db9ddf, commits from ancestor: 16) ---
+--- master (tip: 5c3a586860360394524d83f963a4a88ea08cce2d, commits from ancestor: 17) ---
+5c3a586 ggml : fix conv 2d dw (#25490)
 c15c5c7 meta: add hard emphasis on agents not writing descriptions/comments (#25480)
 f84a519 Refactor: Consistently use smart pointers in `test-backend-ops` (#25440)
 683f0c7 Only index by compile times + always multiply/add (#25445)
