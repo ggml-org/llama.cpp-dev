@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: c264f65ff9d8f592a590e3221f712a8883b7dd81
 Branches analyzed: 2
 
---- master (tip: 683f0c72e5b3c07fab90bfd9ec2ce8661d624228, commits from ancestor: 14) ---
+--- master (tip: c15c5c77a426f73ff74884219330590ab3db9ddf, commits from ancestor: 16) ---
+c15c5c7 meta: add hard emphasis on agents not writing descriptions/comments (#25480)
+f84a519 Refactor: Consistently use smart pointers in `test-backend-ops` (#25440)
 683f0c7 Only index by compile times + always multiply/add (#25445)
 259f2e2 llama-bench : init params.offline (#25476)
 92b187c metal : add CONV_2D_DW (depthwise convolution) support (#21565)

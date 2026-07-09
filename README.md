@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-09 11:31:58 UTC
+Auto-generated on 2026-07-09 14:08:10 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -41,6 +41,10 @@ graph BT
     C_259f2e2["<a href='https://github.com/ggml-org/llama.cpp/pull/25476'>#25476</a><br/><span style='font-size:smaller;color:gray'>llama-bench : init params.offline (#25476)</span>"]
     C_259f2e2 --> C_683f0c7
     C_683f0c7["<a href='https://github.com/ggml-org/llama.cpp/pull/25445'>#25445</a><br/><span style='font-size:smaller;color:gray'>Only index by compile times + always multiply/add (#25445)</span>"]
+    C_683f0c7 --> C_f84a519
+    C_f84a519["<a href='https://github.com/ggml-org/llama.cpp/pull/25440'>#25440</a><br/><span style='font-size:smaller;color:gray'>Refactor: Consistently use smart pointers in `test-backend-ops` (#25440)</span>"]
+    C_f84a519 --> C_c15c5c7
+    C_c15c5c7["<a href='https://github.com/ggml-org/llama.cpp/pull/25480'>#25480</a><br/><span style='font-size:smaller;color:gray'>meta: add hard emphasis on agents not writing descriptions/comments (#25480)</span>"]
     COMMON -->|dev-metal| C_5dca9f3
     C_5dca9f3["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_5dca9f3 --> C_400d4bf
