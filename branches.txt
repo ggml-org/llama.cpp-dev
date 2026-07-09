@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: c264f65ff9d8f592a590e3221f712a8883b7dd81
 Branches analyzed: 2
 
---- master (tip: 32e41fa5b48e15b93c7a40ce677226b2e773c351, commits from ancestor: 7) ---
+--- master (tip: f2d1c2f3984cb0934b575069489a052654b4037b, commits from ancestor: 8) ---
+f2d1c2f hexagon: add VISION RoPE support (#25216)
 32e41fa ggml-webgpu: tune subgroup split (d_split) in flash_attn_vec (#25418)
 92366df opencl:  Q6_K GEMM/GEMV fix for ne01 of weights that are not multiples of 128.  (#25464)
 a646006 vulkan: disable FA mask_opt on GCN to improve performance (#24362)

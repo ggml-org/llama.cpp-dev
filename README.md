@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-08 23:42:37 UTC
+Auto-generated on 2026-07-09 05:07:39 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -27,6 +27,8 @@ graph BT
     C_92366df["<a href='https://github.com/ggml-org/llama.cpp/pull/25464'>#25464</a><br/><span style='font-size:smaller;color:gray'>opencl:  Q6_K GEMM/GEMV fix for ne01 of weights that are not multiples of 128.  (#25464)</span>"]
     C_92366df --> C_32e41fa
     C_32e41fa["<a href='https://github.com/ggml-org/llama.cpp/pull/25418'>#25418</a><br/><span style='font-size:smaller;color:gray'>ggml-webgpu: tune subgroup split (d_split) in flash_attn_vec (#25418)</span>"]
+    C_32e41fa --> C_f2d1c2f
+    C_f2d1c2f["<a href='https://github.com/ggml-org/llama.cpp/pull/25216'>#25216</a><br/><span style='font-size:smaller;color:gray'>hexagon: add VISION RoPE support (#25216)</span>"]
     COMMON -->|dev-metal| C_5dca9f3
     C_5dca9f3["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_5dca9f3 --> C_400d4bf
