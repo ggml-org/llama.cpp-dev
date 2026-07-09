@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-09 05:07:39 UTC
+Auto-generated on 2026-07-09 08:39:05 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -29,6 +29,12 @@ graph BT
     C_32e41fa["<a href='https://github.com/ggml-org/llama.cpp/pull/25418'>#25418</a><br/><span style='font-size:smaller;color:gray'>ggml-webgpu: tune subgroup split (d_split) in flash_attn_vec (#25418)</span>"]
     C_32e41fa --> C_f2d1c2f
     C_f2d1c2f["<a href='https://github.com/ggml-org/llama.cpp/pull/25216'>#25216</a><br/><span style='font-size:smaller;color:gray'>hexagon: add VISION RoPE support (#25216)</span>"]
+    C_f2d1c2f --> C_64c8b7d
+    C_64c8b7d["<a href='https://github.com/ggml-org/llama.cpp/pull/25420'>#25420</a><br/><span style='font-size:smaller;color:gray'>server : respect min-step when splitting prompt batches (#25420)</span>"]
+    C_64c8b7d --> C_2021515
+    C_2021515["<a href='https://github.com/ggml-org/llama.cpp/pull/25460'>#25460</a><br/><span style='font-size:smaller;color:gray'>cuda: align snake fusion matcher with the other backends (#25460)</span>"]
+    C_2021515 --> C_ccb0c34
+    C_ccb0c34["<a href='https://github.com/ggml-org/llama.cpp/pull/24668'>#24668</a><br/><span style='font-size:smaller;color:gray'>ggml-hip: enable -funsafe-math-optimizations (#24668)</span>"]
     COMMON -->|dev-metal| C_5dca9f3
     C_5dca9f3["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_5dca9f3 --> C_400d4bf

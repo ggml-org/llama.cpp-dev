@@ -3,7 +3,10 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: c264f65ff9d8f592a590e3221f712a8883b7dd81
 Branches analyzed: 2
 
---- master (tip: f2d1c2f3984cb0934b575069489a052654b4037b, commits from ancestor: 8) ---
+--- master (tip: ccb0c3422394fbbfc28fd91f8c77111b748cfa09, commits from ancestor: 11) ---
+ccb0c34 ggml-hip: enable -funsafe-math-optimizations (#24668)
+2021515 cuda: align snake fusion matcher with the other backends (#25460)
+64c8b7d server : respect min-step when splitting prompt batches (#25420)
 f2d1c2f hexagon: add VISION RoPE support (#25216)
 32e41fa ggml-webgpu: tune subgroup split (d_split) in flash_attn_vec (#25418)
 92366df opencl:  Q6_K GEMM/GEMV fix for ne01 of weights that are not multiples of 128.  (#25464)
