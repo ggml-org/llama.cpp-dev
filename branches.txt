@@ -3,7 +3,12 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: c264f65ff9d8f592a590e3221f712a8883b7dd81
 Branches analyzed: 2
 
---- master (tip: 5c3a586860360394524d83f963a4a88ea08cce2d, commits from ancestor: 17) ---
+--- master (tip: 049326a00025d00b08cc188ed716b681e984a3f8, commits from ancestor: 22) ---
+049326a opencl: cluster-parallel decode FA for Adreno (#25473)
+0749449 ggml : process data in smaller chunks in CUDA ggml_top_k() and ggml_argsort() to reduce temporary buffers memory usage (#24776)
+3de7dd4 cli: add --output option (#25484)
+fb30ba9 hexagon: tiling, tracing and optimizations for unary ops (#25474)
+82fce65 server : move chat-template thinking probe inside the init try/catch (#24093)
 5c3a586 ggml : fix conv 2d dw (#25490)
 c15c5c7 meta: add hard emphasis on agents not writing descriptions/comments (#25480)
 f84a519 Refactor: Consistently use smart pointers in `test-backend-ops` (#25440)

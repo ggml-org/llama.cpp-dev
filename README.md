@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-09 16:37:11 UTC
+Auto-generated on 2026-07-09 18:22:29 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -47,6 +47,16 @@ graph BT
     C_c15c5c7["<a href='https://github.com/ggml-org/llama.cpp/pull/25480'>#25480</a><br/><span style='font-size:smaller;color:gray'>meta: add hard emphasis on agents not writing descriptions/comments (#25480)</span>"]
     C_c15c5c7 --> C_5c3a586
     C_5c3a586["<a href='https://github.com/ggml-org/llama.cpp/pull/25490'>#25490</a><br/><span style='font-size:smaller;color:gray'>ggml : fix conv 2d dw (#25490)</span>"]
+    C_5c3a586 --> C_82fce65
+    C_82fce65["<a href='https://github.com/ggml-org/llama.cpp/pull/24093'>#24093</a><br/><span style='font-size:smaller;color:gray'>server : move chat-template thinking probe inside the init try/catch (#24093)</span>"]
+    C_82fce65 --> C_fb30ba9
+    C_fb30ba9["<a href='https://github.com/ggml-org/llama.cpp/pull/25474'>#25474</a><br/><span style='font-size:smaller;color:gray'>hexagon: tiling, tracing and optimizations for unary ops (#25474)</span>"]
+    C_fb30ba9 --> C_3de7dd4
+    C_3de7dd4["<a href='https://github.com/ggml-org/llama.cpp/pull/25484'>#25484</a><br/><span style='font-size:smaller;color:gray'>cli: add --output option (#25484)</span>"]
+    C_3de7dd4 --> C_0749449
+    C_0749449["<a href='https://github.com/ggml-org/llama.cpp/pull/24776'>#24776</a><br/><span style='font-size:smaller;color:gray'>ggml : process data in smaller chunks in CUDA ggml_top_k() and ggml_argsort() to reduce temporary buffers memory usage (#24776)</span>"]
+    C_0749449 --> C_049326a
+    C_049326a["<a href='https://github.com/ggml-org/llama.cpp/pull/25473'>#25473</a><br/><span style='font-size:smaller;color:gray'>opencl: cluster-parallel decode FA for Adreno (#25473)</span>"]
     COMMON -->|dev-metal| C_5dca9f3
     C_5dca9f3["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_5dca9f3 --> C_400d4bf
