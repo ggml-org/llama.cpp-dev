@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-09 08:39:05 UTC
+Auto-generated on 2026-07-09 11:31:58 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -35,6 +35,12 @@ graph BT
     C_2021515["<a href='https://github.com/ggml-org/llama.cpp/pull/25460'>#25460</a><br/><span style='font-size:smaller;color:gray'>cuda: align snake fusion matcher with the other backends (#25460)</span>"]
     C_2021515 --> C_ccb0c34
     C_ccb0c34["<a href='https://github.com/ggml-org/llama.cpp/pull/24668'>#24668</a><br/><span style='font-size:smaller;color:gray'>ggml-hip: enable -funsafe-math-optimizations (#24668)</span>"]
+    C_ccb0c34 --> C_92b187c
+    C_92b187c["<a href='https://github.com/ggml-org/llama.cpp/pull/21565'>#21565</a><br/><span style='font-size:smaller;color:gray'>metal : add CONV_2D_DW (depthwise convolution) support (#21565)</span>"]
+    C_92b187c --> C_259f2e2
+    C_259f2e2["<a href='https://github.com/ggml-org/llama.cpp/pull/25476'>#25476</a><br/><span style='font-size:smaller;color:gray'>llama-bench : init params.offline (#25476)</span>"]
+    C_259f2e2 --> C_683f0c7
+    C_683f0c7["<a href='https://github.com/ggml-org/llama.cpp/pull/25445'>#25445</a><br/><span style='font-size:smaller;color:gray'>Only index by compile times + always multiply/add (#25445)</span>"]
     COMMON -->|dev-metal| C_5dca9f3
     C_5dca9f3["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_5dca9f3 --> C_400d4bf

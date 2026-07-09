@@ -3,7 +3,10 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: c264f65ff9d8f592a590e3221f712a8883b7dd81
 Branches analyzed: 2
 
---- master (tip: ccb0c3422394fbbfc28fd91f8c77111b748cfa09, commits from ancestor: 11) ---
+--- master (tip: 683f0c72e5b3c07fab90bfd9ec2ce8661d624228, commits from ancestor: 14) ---
+683f0c7 Only index by compile times + always multiply/add (#25445)
+259f2e2 llama-bench : init params.offline (#25476)
+92b187c metal : add CONV_2D_DW (depthwise convolution) support (#21565)
 ccb0c34 ggml-hip: enable -funsafe-math-optimizations (#24668)
 2021515 cuda: align snake fusion matcher with the other backends (#25460)
 64c8b7d server : respect min-step when splitting prompt batches (#25420)
