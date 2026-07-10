@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-10 11:52:10 UTC
+Auto-generated on 2026-07-10 12:56:49 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -13,7 +13,8 @@ Auto-generated on 2026-07-10 11:52:10 UTC
 ```mermaid
 graph BT
     COMMON["<a href='https://github.com/ggml-org/llama.cpp/commit/0badc06ab53a8eb96e01242b92ec1365c4465a2a'>0badc06</a><br/><span style='font-size:smaller;color:gray'>sync : ggml</span>"]
-    COMMON -->|master| none
+    COMMON -->|master| C_a935fbf
+    C_a935fbf["<a href='https://github.com/ggml-org/llama.cpp/pull/25500'>#25500</a><br/><span style='font-size:smaller;color:gray'>server: remove loading.html (#25500)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

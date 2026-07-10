@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 0badc06ab53a8eb96e01242b92ec1365c4465a2a, commits from ancestor: 0) ---
+--- master (tip: a935fbffe1a3d31509c325c116454ab5d56b2eb8, commits from ancestor: 1) ---
+a935fbf server: remove loading.html (#25500)
 
 --- dev-metal (tip: 65dd9133baf3bdebe783af71c67fc4e24a51d55a, commits from ancestor: 4) ---
 65dd913 metal : add CONV_2D_DW (depthwise convolution) support (#21565)
