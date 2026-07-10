@@ -3,7 +3,11 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: a935fbffe1a3d31509c325c116454ab5d56b2eb8, commits from ancestor: 1) ---
+--- master (tip: 22b69b6e92e831442fdd287901816ce3aa8a2b43, commits from ancestor: 5) ---
+22b69b6 arg: prevent duplicate spec model downloads (#25527)
+3e706dd mtmd: deepseek-ocr v1 multi-tile (#24717)
+07d9378 feat: pre-select models in the webui using alias (#25492)
+9f623c6 ui: use server modalities in non-router mode (#24874)
 a935fbf server: remove loading.html (#25500)
 
 --- dev-metal (tip: 65dd9133baf3bdebe783af71c67fc4e24a51d55a, commits from ancestor: 4) ---
