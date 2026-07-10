@@ -3,7 +3,12 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: c264f65ff9d8f592a590e3221f712a8883b7dd81
 Branches analyzed: 2
 
---- master (tip: 8f114a9b573b69035299f9b924047f53c1e22c7e, commits from ancestor: 27) ---
+--- master (tip: 0badc06ab53a8eb96e01242b92ec1365c4465a2a, commits from ancestor: 32) ---
+0badc06 sync : ggml
+ac17f8a ggml : use ggml_vqtbl1q_u8 for 32-bit compat (whisper/0)
+c4ae9a8 server: improve tools, remove apply_diff (#25498)
+1b9691b cli: fix crash on wrong server base url (#25497)
+c7af942 ui: prevent tooltip from flickering open and closed on hover (#25503)
 8f114a9 sync : ggml (#25517)
 d46786f ui: export full message tree instead of active path only (#25501)
 2ed3c1a llama : make all KQ masks f16 if FA is used, remove zero attention bias, remove raw_k repeats in DeepSeek V4 (#25370)

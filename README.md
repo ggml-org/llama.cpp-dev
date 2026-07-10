@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-10 07:41:55 UTC
+Auto-generated on 2026-07-10 10:37:52 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -67,6 +67,16 @@ graph BT
     C_d46786f["<a href='https://github.com/ggml-org/llama.cpp/pull/25501'>#25501</a><br/><span style='font-size:smaller;color:gray'>ui: export full message tree instead of active path only (#25501)</span>"]
     C_d46786f --> C_8f114a9
     C_8f114a9["<a href='https://github.com/ggml-org/llama.cpp/pull/25517'>#25517</a><br/><span style='font-size:smaller;color:gray'>sync : ggml (#25517)</span>"]
+    C_8f114a9 --> C_c7af942
+    C_c7af942["<a href='https://github.com/ggml-org/llama.cpp/pull/25503'>#25503</a><br/><span style='font-size:smaller;color:gray'>ui: prevent tooltip from flickering open and closed on hover (#25503)</span>"]
+    C_c7af942 --> C_1b9691b
+    C_1b9691b["<a href='https://github.com/ggml-org/llama.cpp/pull/25497'>#25497</a><br/><span style='font-size:smaller;color:gray'>cli: fix crash on wrong server base url (#25497)</span>"]
+    C_1b9691b --> C_c4ae9a8
+    C_c4ae9a8["<a href='https://github.com/ggml-org/llama.cpp/pull/25498'>#25498</a><br/><span style='font-size:smaller;color:gray'>server: improve tools, remove apply_diff (#25498)</span>"]
+    C_c4ae9a8 --> C_ac17f8a
+    C_ac17f8a["<a href='https://github.com/ggml-org/llama.cpp/commit/ac17f8a'>ac17f8a</a><br/><span style='font-size:smaller;color:gray'>ggml : use ggml_vqtbl1q_u8 for 32-bit compat (whisper/0)</span>"]
+    C_ac17f8a --> C_0badc06
+    C_0badc06["<a href='https://github.com/ggml-org/llama.cpp/commit/0badc06'>0badc06</a><br/><span style='font-size:smaller;color:gray'>sync : ggml</span>"]
     COMMON -->|dev-metal| C_5dca9f3
     C_5dca9f3["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_5dca9f3 --> C_400d4bf
