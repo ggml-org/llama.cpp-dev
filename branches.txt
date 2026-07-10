@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 22b69b6e92e831442fdd287901816ce3aa8a2b43, commits from ancestor: 5) ---
+--- master (tip: c749cb041706647f460bb918cccc9d91995205ab, commits from ancestor: 7) ---
+c749cb0 llama : make tensor-split regex patterns static (#24710)
+67776ea hexagon: improve ARGSORT performance for small tensors (#25512)
 22b69b6 arg: prevent duplicate spec model downloads (#25527)
 3e706dd mtmd: deepseek-ocr v1 multi-tile (#24717)
 07d9378 feat: pre-select models in the webui using alias (#25492)
