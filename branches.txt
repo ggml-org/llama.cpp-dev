@@ -1,44 +1,13 @@
 === Branch Analysis ===
 Repo: https://github.com/ggml-org/llama.cpp
-Common ancestor: c264f65ff9d8f592a590e3221f712a8883b7dd81
+Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 0badc06ab53a8eb96e01242b92ec1365c4465a2a, commits from ancestor: 32) ---
-0badc06 sync : ggml
-ac17f8a ggml : use ggml_vqtbl1q_u8 for 32-bit compat (whisper/0)
-c4ae9a8 server: improve tools, remove apply_diff (#25498)
-1b9691b cli: fix crash on wrong server base url (#25497)
-c7af942 ui: prevent tooltip from flickering open and closed on hover (#25503)
-8f114a9 sync : ggml (#25517)
-d46786f ui: export full message tree instead of active path only (#25501)
-2ed3c1a llama : make all KQ masks f16 if FA is used, remove zero attention bias, remove raw_k repeats in DeepSeek V4 (#25370)
-082b326 ggml-et: Initial ET backend  (#24179)
-961e4b2 llama-batch: add unit test (#25471)
-049326a opencl: cluster-parallel decode FA for Adreno (#25473)
-0749449 ggml : process data in smaller chunks in CUDA ggml_top_k() and ggml_argsort() to reduce temporary buffers memory usage (#24776)
-3de7dd4 cli: add --output option (#25484)
-fb30ba9 hexagon: tiling, tracing and optimizations for unary ops (#25474)
-82fce65 server : move chat-template thinking probe inside the init try/catch (#24093)
-5c3a586 ggml : fix conv 2d dw (#25490)
-c15c5c7 meta: add hard emphasis on agents not writing descriptions/comments (#25480)
-f84a519 Refactor: Consistently use smart pointers in `test-backend-ops` (#25440)
-683f0c7 Only index by compile times + always multiply/add (#25445)
-259f2e2 llama-bench : init params.offline (#25476)
-92b187c metal : add CONV_2D_DW (depthwise convolution) support (#21565)
-ccb0c34 ggml-hip: enable -funsafe-math-optimizations (#24668)
-2021515 cuda: align snake fusion matcher with the other backends (#25460)
-64c8b7d server : respect min-step when splitting prompt batches (#25420)
-f2d1c2f hexagon: add VISION RoPE support (#25216)
-32e41fa ggml-webgpu: tune subgroup split (d_split) in flash_attn_vec (#25418)
-92366df opencl:  Q6_K GEMM/GEMV fix for ne01 of weights that are not multiples of 128.  (#25464)
-a646006 vulkan: disable FA mask_opt on GCN to improve performance (#24362)
-167d057 opencl: ragged-tile MoE prefill FP16 GEMM optimization (skip padded expert tiles) (#25433)
-1ee0939 llama-batch: fix allowed decreasing pos in a seq (#25449)
-0bbc87b vulkan: for small AMD GPUs, reduce submission threshold based on CU count (#25240)
-81ff7ab hexagon: new vtcm layouts and improved pipelines for MUL_MAT, MUL_MAT_ID and FLASH_ATTN_EXT (#25425)
+--- master (tip: 0badc06ab53a8eb96e01242b92ec1365c4465a2a, commits from ancestor: 0) ---
 
---- dev-metal (tip: 8cb1ad5a2c2c6647a3eca629a558076fcf7ce89f, commits from ancestor: 3) ---
-8cb1ad5 metal : add set_rows with src0 f16 (#25434)
-400d4bf metal: add col2im_1d op (f32/f16/bf16) (#25176)
-5dca9f3 metal : per-op source split + parallel compile (#24021)
+--- dev-metal (tip: 65dd9133baf3bdebe783af71c67fc4e24a51d55a, commits from ancestor: 4) ---
+65dd913 metal : add CONV_2D_DW (depthwise convolution) support (#21565)
+e3ea5de metal : add set_rows with src0 f16 (#25434)
+de75555 metal: add col2im_1d op (f32/f16/bf16) (#25176)
+3835214 metal : per-op source split + parallel compile (#24021)
 
