@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-10 17:18:24 UTC
+Auto-generated on 2026-07-10 20:08:00 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -27,6 +27,8 @@ graph BT
     C_67776ea["<a href='https://github.com/ggml-org/llama.cpp/pull/25512'>#25512</a><br/><span style='font-size:smaller;color:gray'>hexagon: improve ARGSORT performance for small tensors (#25512)</span>"]
     C_67776ea --> C_c749cb0
     C_c749cb0["<a href='https://github.com/ggml-org/llama.cpp/pull/24710'>#24710</a><br/><span style='font-size:smaller;color:gray'>llama : make tensor-split regex patterns static (#24710)</span>"]
+    C_c749cb0 --> C_4f37f51
+    C_4f37f51["<a href='https://github.com/ggml-org/llama.cpp/pull/25538'>#25538</a><br/><span style='font-size:smaller;color:gray'>server: accept null sampling params (#25538)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
