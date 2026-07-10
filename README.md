@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-10 04:00:16 UTC
+Auto-generated on 2026-07-10 07:41:55 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -59,6 +59,14 @@ graph BT
     C_049326a["<a href='https://github.com/ggml-org/llama.cpp/pull/25473'>#25473</a><br/><span style='font-size:smaller;color:gray'>opencl: cluster-parallel decode FA for Adreno (#25473)</span>"]
     C_049326a --> C_961e4b2
     C_961e4b2["<a href='https://github.com/ggml-org/llama.cpp/pull/25471'>#25471</a><br/><span style='font-size:smaller;color:gray'>llama-batch: add unit test (#25471)</span>"]
+    C_961e4b2 --> C_082b326
+    C_082b326["<a href='https://github.com/ggml-org/llama.cpp/pull/24179'>#24179</a><br/><span style='font-size:smaller;color:gray'>ggml-et: Initial ET backend  (#24179)</span>"]
+    C_082b326 --> C_2ed3c1a
+    C_2ed3c1a["<a href='https://github.com/ggml-org/llama.cpp/pull/25370'>#25370</a><br/><span style='font-size:smaller;color:gray'>llama : make all KQ masks f16 if FA is used, remove zero attention bias, remove raw_k repeats in DeepSeek V4 (#25370)</span>"]
+    C_2ed3c1a --> C_d46786f
+    C_d46786f["<a href='https://github.com/ggml-org/llama.cpp/pull/25501'>#25501</a><br/><span style='font-size:smaller;color:gray'>ui: export full message tree instead of active path only (#25501)</span>"]
+    C_d46786f --> C_8f114a9
+    C_8f114a9["<a href='https://github.com/ggml-org/llama.cpp/pull/25517'>#25517</a><br/><span style='font-size:smaller;color:gray'>sync : ggml (#25517)</span>"]
     COMMON -->|dev-metal| C_5dca9f3
     C_5dca9f3["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_5dca9f3 --> C_400d4bf
