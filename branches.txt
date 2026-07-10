@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: c264f65ff9d8f592a590e3221f712a8883b7dd81
 Branches analyzed: 2
 
---- master (tip: 049326a00025d00b08cc188ed716b681e984a3f8, commits from ancestor: 22) ---
+--- master (tip: 961e4b26a7dd0e01e20599b27d709a74788ecb55, commits from ancestor: 23) ---
+961e4b2 llama-batch: add unit test (#25471)
 049326a opencl: cluster-parallel decode FA for Adreno (#25473)
 0749449 ggml : process data in smaller chunks in CUDA ggml_top_k() and ggml_argsort() to reduce temporary buffers memory usage (#24776)
 3de7dd4 cli: add --output option (#25484)

@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-09 18:22:29 UTC
+Auto-generated on 2026-07-10 04:00:16 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -57,6 +57,8 @@ graph BT
     C_0749449["<a href='https://github.com/ggml-org/llama.cpp/pull/24776'>#24776</a><br/><span style='font-size:smaller;color:gray'>ggml : process data in smaller chunks in CUDA ggml_top_k() and ggml_argsort() to reduce temporary buffers memory usage (#24776)</span>"]
     C_0749449 --> C_049326a
     C_049326a["<a href='https://github.com/ggml-org/llama.cpp/pull/25473'>#25473</a><br/><span style='font-size:smaller;color:gray'>opencl: cluster-parallel decode FA for Adreno (#25473)</span>"]
+    C_049326a --> C_961e4b2
+    C_961e4b2["<a href='https://github.com/ggml-org/llama.cpp/pull/25471'>#25471</a><br/><span style='font-size:smaller;color:gray'>llama-batch: add unit test (#25471)</span>"]
     COMMON -->|dev-metal| C_5dca9f3
     C_5dca9f3["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_5dca9f3 --> C_400d4bf
