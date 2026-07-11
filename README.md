@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-11 06:23:50 UTC
+Auto-generated on 2026-07-11 09:54:12 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -31,6 +31,10 @@ graph BT
     C_4f37f51["<a href='https://github.com/ggml-org/llama.cpp/pull/25538'>#25538</a><br/><span style='font-size:smaller;color:gray'>server: accept null sampling params (#25538)</span>"]
     C_4f37f51 --> C_1d1d9a9
     C_1d1d9a9["<a href='https://github.com/ggml-org/llama.cpp/pull/25537'>#25537</a><br/><span style='font-size:smaller;color:gray'>opencl: add int8 dp4 dense and MoE prefill optimization for Adreno GPUs (#25537)</span>"]
+    C_1d1d9a9 --> C_76f2798
+    C_76f2798["<a href='https://github.com/ggml-org/llama.cpp/pull/24877'>#24877</a><br/><span style='font-size:smaller;color:gray'>Vulkan: route large matmuls to medium tile on Adreno (#24877)</span>"]
+    C_76f2798 --> C_00f5442
+    C_00f5442["<a href='https://github.com/ggml-org/llama.cpp/pull/24231'>#24231</a><br/><span style='font-size:smaller;color:gray'>ggml : add GGML_OP_LIGHTNING_INDEXER that implements DeepSeek V3.2/V4 lightning indexer (#24231)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

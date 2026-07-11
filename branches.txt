@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 1d1d9a9ed7a4f09c4225ea4cc8fd3bd1cf2c940f, commits from ancestor: 9) ---
+--- master (tip: 00f5442cc4e805293280c8f85d21d8f9d4aad206, commits from ancestor: 11) ---
+00f5442 ggml : add GGML_OP_LIGHTNING_INDEXER that implements DeepSeek V3.2/V4 lightning indexer (#24231)
+76f2798 Vulkan: route large matmuls to medium tile on Adreno (#24877)
 1d1d9a9 opencl: add int8 dp4 dense and MoE prefill optimization for Adreno GPUs (#25537)
 4f37f51 server: accept null sampling params (#25538)
 c749cb0 llama : make tensor-split regex patterns static (#24710)
