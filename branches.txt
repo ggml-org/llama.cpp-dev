@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 4f37f519722aa3242eecb7649466b4a4a2d6d6da, commits from ancestor: 8) ---
+--- master (tip: 1d1d9a9ed7a4f09c4225ea4cc8fd3bd1cf2c940f, commits from ancestor: 9) ---
+1d1d9a9 opencl: add int8 dp4 dense and MoE prefill optimization for Adreno GPUs (#25537)
 4f37f51 server: accept null sampling params (#25538)
 c749cb0 llama : make tensor-split regex patterns static (#24710)
 67776ea hexagon: improve ARGSORT performance for small tensors (#25512)

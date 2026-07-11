@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-10 20:08:00 UTC
+Auto-generated on 2026-07-11 06:23:50 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -29,6 +29,8 @@ graph BT
     C_c749cb0["<a href='https://github.com/ggml-org/llama.cpp/pull/24710'>#24710</a><br/><span style='font-size:smaller;color:gray'>llama : make tensor-split regex patterns static (#24710)</span>"]
     C_c749cb0 --> C_4f37f51
     C_4f37f51["<a href='https://github.com/ggml-org/llama.cpp/pull/25538'>#25538</a><br/><span style='font-size:smaller;color:gray'>server: accept null sampling params (#25538)</span>"]
+    C_4f37f51 --> C_1d1d9a9
+    C_1d1d9a9["<a href='https://github.com/ggml-org/llama.cpp/pull/25537'>#25537</a><br/><span style='font-size:smaller;color:gray'>opencl: add int8 dp4 dense and MoE prefill optimization for Adreno GPUs (#25537)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
