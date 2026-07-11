@@ -3,7 +3,10 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 13f2b28b098623391b1aacfd27995e1c8b7de9a9, commits from ancestor: 14) ---
+--- master (tip: e3546c7948e3af463d0b401e6421d5a4c2faf565, commits from ancestor: 17) ---
+e3546c7 Fix conditional to display 'LLAMA_SPLIT_MODE_TENSOR not implemented for architecture' message (#24926)
+d72bfa3 gguf : reject empty metadata keys (#24917)
+3cec3bc cuda: Don't crash when querying memory on device with no free memory. (#25157)
 13f2b28 DeepseekV4: clear cache only for seq rather than full (#25521)
 c92e806 server: allow stream for exec_shell_command (#25526)
 ea1f7bb server: refactor server_stream (#25541)

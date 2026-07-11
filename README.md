@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-11 16:08:15 UTC
+Auto-generated on 2026-07-11 18:06:28 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -41,6 +41,12 @@ graph BT
     C_c92e806["<a href='https://github.com/ggml-org/llama.cpp/pull/25526'>#25526</a><br/><span style='font-size:smaller;color:gray'>server: allow stream for exec_shell_command (#25526)</span>"]
     C_c92e806 --> C_13f2b28
     C_13f2b28["<a href='https://github.com/ggml-org/llama.cpp/pull/25521'>#25521</a><br/><span style='font-size:smaller;color:gray'>DeepseekV4: clear cache only for seq rather than full (#25521)</span>"]
+    C_13f2b28 --> C_3cec3bc
+    C_3cec3bc["<a href='https://github.com/ggml-org/llama.cpp/pull/25157'>#25157</a><br/><span style='font-size:smaller;color:gray'>cuda: Don't crash when querying memory on device with no free memory. (#25157)</span>"]
+    C_3cec3bc --> C_d72bfa3
+    C_d72bfa3["<a href='https://github.com/ggml-org/llama.cpp/pull/24917'>#24917</a><br/><span style='font-size:smaller;color:gray'>gguf : reject empty metadata keys (#24917)</span>"]
+    C_d72bfa3 --> C_e3546c7
+    C_e3546c7["<a href='https://github.com/ggml-org/llama.cpp/pull/24926'>#24926</a><br/><span style='font-size:smaller;color:gray'>Fix conditional to display 'LLAMA_SPLIT_MODE_TENSOR not implemented for architecture' message (#24926)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
