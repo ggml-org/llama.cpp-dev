@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: c92e806d1c81091c9035edce99c35374da1b465e, commits from ancestor: 13) ---
+--- master (tip: 13f2b28b098623391b1aacfd27995e1c8b7de9a9, commits from ancestor: 14) ---
+13f2b28 DeepseekV4: clear cache only for seq rather than full (#25521)
 c92e806 server: allow stream for exec_shell_command (#25526)
 ea1f7bb server: refactor server_stream (#25541)
 00f5442 ggml : add GGML_OP_LIGHTNING_INDEXER that implements DeepSeek V3.2/V4 lightning indexer (#24231)

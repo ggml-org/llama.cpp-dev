@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-11 10:47:53 UTC
+Auto-generated on 2026-07-11 16:08:15 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -39,6 +39,8 @@ graph BT
     C_ea1f7bb["<a href='https://github.com/ggml-org/llama.cpp/pull/25541'>#25541</a><br/><span style='font-size:smaller;color:gray'>server: refactor server_stream (#25541)</span>"]
     C_ea1f7bb --> C_c92e806
     C_c92e806["<a href='https://github.com/ggml-org/llama.cpp/pull/25526'>#25526</a><br/><span style='font-size:smaller;color:gray'>server: allow stream for exec_shell_command (#25526)</span>"]
+    C_c92e806 --> C_13f2b28
+    C_13f2b28["<a href='https://github.com/ggml-org/llama.cpp/pull/25521'>#25521</a><br/><span style='font-size:smaller;color:gray'>DeepseekV4: clear cache only for seq rather than full (#25521)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
