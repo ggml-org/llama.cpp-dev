@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: e3546c7948e3af463d0b401e6421d5a4c2faf565, commits from ancestor: 17) ---
+--- master (tip: 6b4dc2116a92c5c8f2782bfe51fabe5ee66fb5ef, commits from ancestor: 18) ---
+6b4dc21 server : fix image blocks in tool_result being dropped during Anthropic OpenAI conversion (#22536)
 e3546c7 Fix conditional to display 'LLAMA_SPLIT_MODE_TENSOR not implemented for architecture' message (#24926)
 d72bfa3 gguf : reject empty metadata keys (#24917)
 3cec3bc cuda: Don't crash when querying memory on device with no free memory. (#25157)

@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-11 18:06:28 UTC
+Auto-generated on 2026-07-12 16:14:35 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -47,6 +47,8 @@ graph BT
     C_d72bfa3["<a href='https://github.com/ggml-org/llama.cpp/pull/24917'>#24917</a><br/><span style='font-size:smaller;color:gray'>gguf : reject empty metadata keys (#24917)</span>"]
     C_d72bfa3 --> C_e3546c7
     C_e3546c7["<a href='https://github.com/ggml-org/llama.cpp/pull/24926'>#24926</a><br/><span style='font-size:smaller;color:gray'>Fix conditional to display 'LLAMA_SPLIT_MODE_TENSOR not implemented for architecture' message (#24926)</span>"]
+    C_e3546c7 --> C_6b4dc21
+    C_6b4dc21["<a href='https://github.com/ggml-org/llama.cpp/pull/22536'>#22536</a><br/><span style='font-size:smaller;color:gray'>server : fix image blocks in tool_result being dropped during Anthropic OpenAI conversion (#22536)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
