@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-12 21:09:37 UTC
+Auto-generated on 2026-07-12 23:02:44 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -51,6 +51,10 @@ graph BT
     C_6b4dc21["<a href='https://github.com/ggml-org/llama.cpp/pull/22536'>#22536</a><br/><span style='font-size:smaller;color:gray'>server : fix image blocks in tool_result being dropped during Anthropic OpenAI conversion (#22536)</span>"]
     C_6b4dc21 --> C_0c4fa7a
     C_0c4fa7a["<a href='https://github.com/ggml-org/llama.cpp/pull/25472'>#25472</a><br/><span style='font-size:smaller;color:gray'>server : evict checkpoints within min-step of each other (#25472)</span>"]
+    C_0c4fa7a --> C_4114ba1
+    C_4114ba1["<a href='https://github.com/ggml-org/llama.cpp/pull/25548'>#25548</a><br/><span style='font-size:smaller;color:gray'>mtmd: fix silent prompt truncation on embedded NUL (#25548)</span>"]
+    C_4114ba1 --> C_8014d2c
+    C_8014d2c["<a href='https://github.com/ggml-org/llama.cpp/pull/25590'>#25590</a><br/><span style='font-size:smaller;color:gray'>server: Don't consider models with --no-mmproj-auto as multimodal (#25590)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
