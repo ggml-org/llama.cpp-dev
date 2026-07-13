@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-13 17:26:56 UTC
+Auto-generated on 2026-07-13 23:08:38 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -79,6 +79,8 @@ graph BT
     C_e920c52["<a href='https://github.com/ggml-org/llama.cpp/pull/25338'>#25338</a><br/><span style='font-size:smaller;color:gray'>vulkan: Use native e2m1 and e4m3 conversions for mxfp4/nvfp4 (#25338)</span>"]
     C_e920c52 --> C_6eddde0
     C_6eddde0["<a href='https://github.com/ggml-org/llama.cpp/pull/24127'>#24127</a><br/><span style='font-size:smaller;color:gray'>CUDA: refactor MMQ kernel configuration (#24127)</span>"]
+    C_6eddde0 --> C_2969d6d
+    C_2969d6d["<a href='https://github.com/ggml-org/llama.cpp/pull/25395'>#25395</a><br/><span style='font-size:smaller;color:gray'>model: add Hy3 (hy_v3) support with MTP speculative decoding (#25395)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
