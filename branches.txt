@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: e920c523e3b8a0163fe498af5bf90df35ff51d25, commits from ancestor: 32) ---
+--- master (tip: 6eddde06a4f25d55d538b5d15628dcc2b6882147, commits from ancestor: 33) ---
+6eddde0 CUDA: refactor MMQ kernel configuration (#24127)
 e920c52 vulkan: Use native e2m1 and e4m3 conversions for mxfp4/nvfp4 (#25338)
 259ae1d spec: add Minimax2 eagle3 support
 4193ea6 readme : add link to maintainer PRs (#25621)
