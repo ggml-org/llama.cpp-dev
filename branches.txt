@@ -3,7 +3,11 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 99f3dc32296f825fec94f202da1e9fede1e78cf9, commits from ancestor: 23) ---
+--- master (tip: 91c631b21d6e5d09e9c6659efdf6baeef5a44ddb, commits from ancestor: 27) ---
+91c631b chat : fix reasoning leak with force-opened bare <think> templates (#24674)
+efb3036 sycl: add fused top-k MoE (#25217)
+e474bba sycl: add Q2_K to DMMV reorder path (#25064)
+38fd5c9 ui: Remove recommended MCP Servers + improve MCP Servers Settings UI/UX (#25535)
 99f3dc3 server: honour per-request reasoning_budget_tokens in chat completions (#23116)
 3455882 vendor : update cpp-httplib to 0.50.1 (#25576)
 8014d2c server: Don't consider models with --no-mmproj-auto as multimodal (#25590)

@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-13 00:03:23 UTC
+Auto-generated on 2026-07-13 09:57:45 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -59,6 +59,14 @@ graph BT
     C_3455882["<a href='https://github.com/ggml-org/llama.cpp/pull/25576'>#25576</a><br/><span style='font-size:smaller;color:gray'>vendor : update cpp-httplib to 0.50.1 (#25576)</span>"]
     C_3455882 --> C_99f3dc3
     C_99f3dc3["<a href='https://github.com/ggml-org/llama.cpp/pull/23116'>#23116</a><br/><span style='font-size:smaller;color:gray'>server: honour per-request reasoning_budget_tokens in chat completions (#23116)</span>"]
+    C_99f3dc3 --> C_38fd5c9
+    C_38fd5c9["<a href='https://github.com/ggml-org/llama.cpp/pull/25535'>#25535</a><br/><span style='font-size:smaller;color:gray'>ui: Remove recommended MCP Servers + improve MCP Servers Settings UI/UX (#25535)</span>"]
+    C_38fd5c9 --> C_e474bba
+    C_e474bba["<a href='https://github.com/ggml-org/llama.cpp/pull/25064'>#25064</a><br/><span style='font-size:smaller;color:gray'>sycl: add Q2_K to DMMV reorder path (#25064)</span>"]
+    C_e474bba --> C_efb3036
+    C_efb3036["<a href='https://github.com/ggml-org/llama.cpp/pull/25217'>#25217</a><br/><span style='font-size:smaller;color:gray'>sycl: add fused top-k MoE (#25217)</span>"]
+    C_efb3036 --> C_91c631b
+    C_91c631b["<a href='https://github.com/ggml-org/llama.cpp/pull/24674'>#24674</a><br/><span style='font-size:smaller;color:gray'>chat : fix reasoning leak with force-opened bare <think> templates (#24674)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
