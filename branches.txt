@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 91c631b21d6e5d09e9c6659efdf6baeef5a44ddb, commits from ancestor: 27) ---
+--- master (tip: ad8d8219915df8e423768d082d1dccfccb6e8437, commits from ancestor: 28) ---
+ad8d821 gguf : add tensor shape accessor (#24405)
 91c631b chat : fix reasoning leak with force-opened bare <think> templates (#24674)
 efb3036 sycl: add fused top-k MoE (#25217)
 e474bba sycl: add Q2_K to DMMV reorder path (#25064)

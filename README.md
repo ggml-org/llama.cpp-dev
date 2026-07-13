@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-13 09:57:45 UTC
+Auto-generated on 2026-07-13 12:30:37 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -67,6 +67,8 @@ graph BT
     C_efb3036["<a href='https://github.com/ggml-org/llama.cpp/pull/25217'>#25217</a><br/><span style='font-size:smaller;color:gray'>sycl: add fused top-k MoE (#25217)</span>"]
     C_efb3036 --> C_91c631b
     C_91c631b["<a href='https://github.com/ggml-org/llama.cpp/pull/24674'>#24674</a><br/><span style='font-size:smaller;color:gray'>chat : fix reasoning leak with force-opened bare <think> templates (#24674)</span>"]
+    C_91c631b --> C_ad8d821
+    C_ad8d821["<a href='https://github.com/ggml-org/llama.cpp/pull/24405'>#24405</a><br/><span style='font-size:smaller;color:gray'>gguf : add tensor shape accessor (#24405)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
