@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-13 12:30:37 UTC
+Auto-generated on 2026-07-13 15:24:07 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -69,6 +69,14 @@ graph BT
     C_91c631b["<a href='https://github.com/ggml-org/llama.cpp/pull/24674'>#24674</a><br/><span style='font-size:smaller;color:gray'>chat : fix reasoning leak with force-opened bare <think> templates (#24674)</span>"]
     C_91c631b --> C_ad8d821
     C_ad8d821["<a href='https://github.com/ggml-org/llama.cpp/pull/24405'>#24405</a><br/><span style='font-size:smaller;color:gray'>gguf : add tensor shape accessor (#24405)</span>"]
+    C_ad8d821 --> C_f4253ef
+    C_f4253ef["<a href='https://github.com/ggml-org/llama.cpp/pull/25616'>#25616</a><br/><span style='font-size:smaller;color:gray'>tests: Harmonize header use (#25616)</span>"]
+    C_f4253ef --> C_4193ea6
+    C_4193ea6["<a href='https://github.com/ggml-org/llama.cpp/pull/25621'>#25621</a><br/><span style='font-size:smaller;color:gray'>readme : add link to maintainer PRs (#25621)</span>"]
+    C_4193ea6 --> C_259ae1d
+    C_259ae1d["<a href='https://github.com/ggml-org/llama.cpp/commit/259ae1d'>259ae1d</a><br/><span style='font-size:smaller;color:gray'>spec: add Minimax2 eagle3 support</span>"]
+    C_259ae1d --> C_e920c52
+    C_e920c52["<a href='https://github.com/ggml-org/llama.cpp/pull/25338'>#25338</a><br/><span style='font-size:smaller;color:gray'>vulkan: Use native e2m1 and e4m3 conversions for mxfp4/nvfp4 (#25338)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
