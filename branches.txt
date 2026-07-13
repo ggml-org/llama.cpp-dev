@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 8014d2cf97a2419ca00d9d902be73ee411d61630, commits from ancestor: 21) ---
+--- master (tip: 99f3dc32296f825fec94f202da1e9fede1e78cf9, commits from ancestor: 23) ---
+99f3dc3 server: honour per-request reasoning_budget_tokens in chat completions (#23116)
+3455882 vendor : update cpp-httplib to 0.50.1 (#25576)
 8014d2c server: Don't consider models with --no-mmproj-auto as multimodal (#25590)
 4114ba1 mtmd: fix silent prompt truncation on embedded NUL (#25548)
 0c4fa7a server : evict checkpoints within min-step of each other (#25472)

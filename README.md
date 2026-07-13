@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-12 23:02:44 UTC
+Auto-generated on 2026-07-13 00:03:23 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -55,6 +55,10 @@ graph BT
     C_4114ba1["<a href='https://github.com/ggml-org/llama.cpp/pull/25548'>#25548</a><br/><span style='font-size:smaller;color:gray'>mtmd: fix silent prompt truncation on embedded NUL (#25548)</span>"]
     C_4114ba1 --> C_8014d2c
     C_8014d2c["<a href='https://github.com/ggml-org/llama.cpp/pull/25590'>#25590</a><br/><span style='font-size:smaller;color:gray'>server: Don't consider models with --no-mmproj-auto as multimodal (#25590)</span>"]
+    C_8014d2c --> C_3455882
+    C_3455882["<a href='https://github.com/ggml-org/llama.cpp/pull/25576'>#25576</a><br/><span style='font-size:smaller;color:gray'>vendor : update cpp-httplib to 0.50.1 (#25576)</span>"]
+    C_3455882 --> C_99f3dc3
+    C_99f3dc3["<a href='https://github.com/ggml-org/llama.cpp/pull/23116'>#23116</a><br/><span style='font-size:smaller;color:gray'>server: honour per-request reasoning_budget_tokens in chat completions (#23116)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
