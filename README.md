@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-14 11:02:55 UTC
+Auto-generated on 2026-07-14 14:18:01 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -97,6 +97,14 @@ graph BT
     C_47a3966["<a href='https://github.com/ggml-org/llama.cpp/pull/23660'>#23660</a><br/><span style='font-size:smaller;color:gray'>ggml: uniformize im2col dst_type for all conv ops (#23660)</span>"]
     C_47a3966 --> C_657e011
     C_657e011["<a href='https://github.com/ggml-org/llama.cpp/pull/25619'>#25619</a><br/><span style='font-size:smaller;color:gray'>tests: export-graph-ops: exit gracefully when called w/o arguments (#25619)</span>"]
+    C_657e011 --> C_a7312ae
+    C_a7312ae["<a href='https://github.com/ggml-org/llama.cpp/pull/25650'>#25650</a><br/><span style='font-size:smaller;color:gray'>ggml : add a set of functions for checking contiguity of inner tensor dimensions (#25650)</span>"]
+    C_a7312ae --> C_8ff8c42
+    C_8ff8c42["<a href='https://github.com/ggml-org/llama.cpp/pull/25516'>#25516</a><br/><span style='font-size:smaller;color:gray'>tokenize : align usage by using common args (#25516)</span>"]
+    C_8ff8c42 --> C_7cbd610
+    C_7cbd610["<a href='https://github.com/ggml-org/llama.cpp/pull/25432'>#25432</a><br/><span style='font-size:smaller;color:gray'>vulkan/cpu: Support f16 as SET_ROWS src. (#25432)</span>"]
+    C_7cbd610 --> C_7f575c3
+    C_7f575c3["<a href='https://github.com/ggml-org/llama.cpp/pull/25588'>#25588</a><br/><span style='font-size:smaller;color:gray'>DeepseekV4: fix seq_rm (#25588)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

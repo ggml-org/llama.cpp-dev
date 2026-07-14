@@ -3,7 +3,11 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 657e01125aa49577a62a5531fde24cbcc007006d, commits from ancestor: 42) ---
+--- master (tip: 7f575c39d6a29a40c0ef22278eca6bd4a573c8a6, commits from ancestor: 46) ---
+7f575c3 DeepseekV4: fix seq_rm (#25588)
+7cbd610 vulkan/cpu: Support f16 as SET_ROWS src. (#25432)
+8ff8c42 tokenize : align usage by using common args (#25516)
+a7312ae ggml : add a set of functions for checking contiguity of inner tensor dimensions (#25650)
 657e011 tests: export-graph-ops: exit gracefully when called w/o arguments (#25619)
 47a3966 ggml: uniformize im2col dst_type for all conv ops (#23660)
 47c7869 kleidiai : add SME2 f32 kernel (#24414)
