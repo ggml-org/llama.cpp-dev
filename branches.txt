@@ -3,7 +3,13 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 7f575c39d6a29a40c0ef22278eca6bd4a573c8a6, commits from ancestor: 46) ---
+--- master (tip: bf2c86ddc0685f580595954056c2e77ebabfab4f, commits from ancestor: 52) ---
+bf2c86d server : refactor prompt cache state ownership (#25649)
+6e52db5 server: add --cors-* options (#25655)
+236ab57 ui: Fix spacing in tool-call request (#25634)
+dfba90d webui: parse effective-parameter sizes (E2B, E4B) as params (#25529)
+00e79f6 opencl: fix a dp4a bug for devices where cl_khr_integer_dot_product is unavailable (#25639)
+17a05e4 ui: fix mcp panel for toggle + timeout + proxy + ON/OFF state (#25631)
 7f575c3 DeepseekV4: fix seq_rm (#25588)
 7cbd610 vulkan/cpu: Support f16 as SET_ROWS src. (#25432)
 8ff8c42 tokenize : align usage by using common args (#25516)

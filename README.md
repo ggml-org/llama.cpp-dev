@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-14 14:18:01 UTC
+Auto-generated on 2026-07-14 15:50:12 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -105,6 +105,18 @@ graph BT
     C_7cbd610["<a href='https://github.com/ggml-org/llama.cpp/pull/25432'>#25432</a><br/><span style='font-size:smaller;color:gray'>vulkan/cpu: Support f16 as SET_ROWS src. (#25432)</span>"]
     C_7cbd610 --> C_7f575c3
     C_7f575c3["<a href='https://github.com/ggml-org/llama.cpp/pull/25588'>#25588</a><br/><span style='font-size:smaller;color:gray'>DeepseekV4: fix seq_rm (#25588)</span>"]
+    C_7f575c3 --> C_17a05e4
+    C_17a05e4["<a href='https://github.com/ggml-org/llama.cpp/pull/25631'>#25631</a><br/><span style='font-size:smaller;color:gray'>ui: fix mcp panel for toggle + timeout + proxy + ON/OFF state (#25631)</span>"]
+    C_17a05e4 --> C_00e79f6
+    C_00e79f6["<a href='https://github.com/ggml-org/llama.cpp/pull/25639'>#25639</a><br/><span style='font-size:smaller;color:gray'>opencl: fix a dp4a bug for devices where cl_khr_integer_dot_product is unavailable (#25639)</span>"]
+    C_00e79f6 --> C_dfba90d
+    C_dfba90d["<a href='https://github.com/ggml-org/llama.cpp/pull/25529'>#25529</a><br/><span style='font-size:smaller;color:gray'>webui: parse effective-parameter sizes (E2B, E4B) as params (#25529)</span>"]
+    C_dfba90d --> C_236ab57
+    C_236ab57["<a href='https://github.com/ggml-org/llama.cpp/pull/25634'>#25634</a><br/><span style='font-size:smaller;color:gray'>ui: Fix spacing in tool-call request (#25634)</span>"]
+    C_236ab57 --> C_6e52db5
+    C_6e52db5["<a href='https://github.com/ggml-org/llama.cpp/pull/25655'>#25655</a><br/><span style='font-size:smaller;color:gray'>server: add --cors-* options (#25655)</span>"]
+    C_6e52db5 --> C_bf2c86d
+    C_bf2c86d["<a href='https://github.com/ggml-org/llama.cpp/pull/25649'>#25649</a><br/><span style='font-size:smaller;color:gray'>server : refactor prompt cache state ownership (#25649)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
