@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 14d3ba45f3369e75a308212399cfada5d349883b, commits from ancestor: 35) ---
+--- master (tip: ec0dbef81632bb4233971fe83d91cf0accbfd882, commits from ancestor: 37) ---
+ec0dbef arg: Flush log before exiting after usage() (#25504)
+c1063ac sycl: set fattn_vec_nthreads to 256 for Battlemage (#25205)
 14d3ba4 metal : add Q2_0 support (#25419)
 2969d6d model: add Hy3 (hy_v3) support with MTP speculative decoding (#25395)
 6eddde0 CUDA: refactor MMQ kernel configuration (#24127)
