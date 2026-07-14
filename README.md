@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-14 09:25:21 UTC
+Auto-generated on 2026-07-14 11:02:55 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -87,6 +87,16 @@ graph BT
     C_c1063ac["<a href='https://github.com/ggml-org/llama.cpp/pull/25205'>#25205</a><br/><span style='font-size:smaller;color:gray'>sycl: set fattn_vec_nthreads to 256 for Battlemage (#25205)</span>"]
     C_c1063ac --> C_ec0dbef
     C_ec0dbef["<a href='https://github.com/ggml-org/llama.cpp/pull/25504'>#25504</a><br/><span style='font-size:smaller;color:gray'>arg: Flush log before exiting after usage() (#25504)</span>"]
+    C_ec0dbef --> C_cb489bc
+    C_cb489bc["<a href='https://github.com/ggml-org/llama.cpp/pull/25641'>#25641</a><br/><span style='font-size:smaller;color:gray'>convert_hf_to_gguf: support split MTP export for HY V3 (#25641)</span>"]
+    C_cb489bc --> C_c9330ed
+    C_c9330ed["<a href='https://github.com/ggml-org/llama.cpp/pull/25539'>#25539</a><br/><span style='font-size:smaller;color:gray'>ui: add reasoning effort control to mobile add sheet (#25539)</span>"]
+    C_c9330ed --> C_47c7869
+    C_47c7869["<a href='https://github.com/ggml-org/llama.cpp/pull/24414'>#24414</a><br/><span style='font-size:smaller;color:gray'>kleidiai : add SME2 f32 kernel (#24414)</span>"]
+    C_47c7869 --> C_47a3966
+    C_47a3966["<a href='https://github.com/ggml-org/llama.cpp/pull/23660'>#23660</a><br/><span style='font-size:smaller;color:gray'>ggml: uniformize im2col dst_type for all conv ops (#23660)</span>"]
+    C_47a3966 --> C_657e011
+    C_657e011["<a href='https://github.com/ggml-org/llama.cpp/pull/25619'>#25619</a><br/><span style='font-size:smaller;color:gray'>tests: export-graph-ops: exit gracefully when called w/o arguments (#25619)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

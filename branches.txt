@@ -3,7 +3,12 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: ec0dbef81632bb4233971fe83d91cf0accbfd882, commits from ancestor: 37) ---
+--- master (tip: 657e01125aa49577a62a5531fde24cbcc007006d, commits from ancestor: 42) ---
+657e011 tests: export-graph-ops: exit gracefully when called w/o arguments (#25619)
+47a3966 ggml: uniformize im2col dst_type for all conv ops (#23660)
+47c7869 kleidiai : add SME2 f32 kernel (#24414)
+c9330ed ui: add reasoning effort control to mobile add sheet (#25539)
+cb489bc convert_hf_to_gguf: support split MTP export for HY V3 (#25641)
 ec0dbef arg: Flush log before exiting after usage() (#25504)
 c1063ac sycl: set fattn_vec_nthreads to 256 for Battlemage (#25205)
 14d3ba4 metal : add Q2_0 support (#25419)
