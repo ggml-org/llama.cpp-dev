@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: bf2c86ddc0685f580595954056c2e77ebabfab4f, commits from ancestor: 52) ---
+--- master (tip: a4ce2595c55eaed284f509fab398f4ddafe5a3a4, commits from ancestor: 54) ---
+a4ce259 opencl: avoid the vec path in GEMV for unaligned row stride (#25671)
+c718542 hexagon: fix hmx-queue signal enum-narrowing problem (#25677)
 bf2c86d server : refactor prompt cache state ownership (#25649)
 6e52db5 server: add --cors-* options (#25655)
 236ab57 ui: Fix spacing in tool-call request (#25634)
