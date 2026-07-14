@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 2969d6d15d67a08e7b83f26164b15350c79c5248, commits from ancestor: 34) ---
+--- master (tip: 14d3ba45f3369e75a308212399cfada5d349883b, commits from ancestor: 35) ---
+14d3ba4 metal : add Q2_0 support (#25419)
 2969d6d model: add Hy3 (hy_v3) support with MTP speculative decoding (#25395)
 6eddde0 CUDA: refactor MMQ kernel configuration (#24127)
 e920c52 vulkan: Use native e2m1 and e4m3 conversions for mxfp4/nvfp4 (#25338)
