@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-15 11:26:32 UTC
+Auto-generated on 2026-07-15 12:50:22 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -141,6 +141,14 @@ graph BT
     C_f955e39["<a href='https://github.com/ggml-org/llama.cpp/pull/23997'>#23997</a><br/><span style='font-size:smaller;color:gray'>ggml: add f16 out_prod support for CPU and out_prod op for Vulkan (#23997)</span>"]
     C_f955e39 --> C_b3c9d1b
     C_b3c9d1b["<a href='https://github.com/ggml-org/llama.cpp/pull/25459'>#25459</a><br/><span style='font-size:smaller;color:gray'>metal: fuse snake activation (mul, sin, sqr, mul, add) (#25459)</span>"]
+    C_b3c9d1b --> C_c810293
+    C_c810293["<a href='https://github.com/ggml-org/llama.cpp/pull/25706'>#25706</a><br/><span style='font-size:smaller;color:gray'>ci : add HF_TOKEN to self-hosted workflows (#25706)</span>"]
+    C_c810293 --> C_a3e5b96
+    C_a3e5b96["<a href='https://github.com/ggml-org/llama.cpp/pull/25678'>#25678</a><br/><span style='font-size:smaller;color:gray'>cuda : relax tensor contiguity requirements for quantized concat (#25678)</span>"]
+    C_a3e5b96 --> C_a05df0a
+    C_a05df0a["<a href='https://github.com/ggml-org/llama.cpp/pull/25637'>#25637</a><br/><span style='font-size:smaller;color:gray'>ui: fix thinking menu never appearing in single-model mode (#25637)</span>"]
+    C_a05df0a --> C_a582222
+    C_a582222["<a href='https://github.com/ggml-org/llama.cpp/pull/25705'>#25705</a><br/><span style='font-size:smaller;color:gray'>server: fix read_file append_loc space breaking edit_file match (#25705)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

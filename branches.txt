@@ -3,7 +3,11 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: b3c9d1b846cc80a6360adb6aeaa4fcd8c4c8dcac, commits from ancestor: 64) ---
+--- master (tip: a5822222909b785f23ddc74ce3c8f85bd0e38562, commits from ancestor: 68) ---
+a582222 server: fix read_file append_loc space breaking edit_file match (#25705)
+a05df0a ui: fix thinking menu never appearing in single-model mode (#25637)
+a3e5b96 cuda : relax tensor contiguity requirements for quantized concat (#25678)
+c810293 ci : add HF_TOKEN to self-hosted workflows (#25706)
 b3c9d1b metal: fuse snake activation (mul, sin, sqr, mul, add) (#25459)
 f955e39 ggml: add f16 out_prod support for CPU and out_prod op for Vulkan (#23997)
 33a75f4 DeepseekV4: reduce graph splits (#25702)
