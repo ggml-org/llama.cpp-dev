@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-15 18:40:49 UTC
+Auto-generated on 2026-07-15 19:49:50 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -161,6 +161,8 @@ graph BT
     C_3b53219["<a href='https://github.com/ggml-org/llama.cpp/pull/25545'>#25545</a><br/><span style='font-size:smaller;color:gray'>cuda : CUDA GGML_OP_LIGHTNING_INDEXER implementation (generic vector kernel + wmma kernel) (#25545)</span>"]
     C_3b53219 --> C_32beb24
     C_32beb24["<a href='https://github.com/ggml-org/llama.cpp/pull/25450'>#25450</a><br/><span style='font-size:smaller;color:gray'>ui: Agentic Content UX improvements (#25450)</span>"]
+    C_32beb24 --> C_505b1ed
+    C_505b1ed["<a href='https://github.com/ggml-org/llama.cpp/pull/25698'>#25698</a><br/><span style='font-size:smaller;color:gray'>opencl: exclude some moe kernels on Adreno a7x (#25698)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
