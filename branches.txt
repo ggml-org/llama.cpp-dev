@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 33a75f41c30052fd3d1c38e8ed2f86ee3c3f8fba, commits from ancestor: 62) ---
+--- master (tip: f955e394bf94e01e5e36186d13c985727e5ef5b5, commits from ancestor: 63) ---
+f955e39 ggml: add f16 out_prod support for CPU and out_prod op for Vulkan (#23997)
 33a75f4 DeepseekV4: reduce graph splits (#25702)
 d3fba0c sycl : fix get_rows Q2_K, Q4_K, Q5_K (#25656)
 ae9291e sycl : support kernel type fp16 for conv2d_dw (#25653)
