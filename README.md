@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-15 03:33:41 UTC
+Auto-generated on 2026-07-15 07:56:28 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -125,6 +125,18 @@ graph BT
     C_00fa7cb["<a href='https://github.com/ggml-org/llama.cpp/pull/25640'>#25640</a><br/><span style='font-size:smaller;color:gray'>opencl: handle OOB write in noshuffle GEMV kernels (odd ne01) (#25640)</span>"]
     C_00fa7cb --> C_12127de
     C_12127de["<a href='https://github.com/ggml-org/llama.cpp/pull/25673'>#25673</a><br/><span style='font-size:smaller;color:gray'>opencl: do not use `clCreateBufferWithProperties` when targeting CL 2.x (#25673)</span>"]
+    C_12127de --> C_32b741c
+    C_32b741c["<a href='https://github.com/ggml-org/llama.cpp/pull/25222'>#25222</a><br/><span style='font-size:smaller;color:gray'>[SYCL] Flash Attention with XMX engine via oneDNN (#25222)</span>"]
+    C_32b741c --> C_0e148a5
+    C_0e148a5["<a href='https://github.com/ggml-org/llama.cpp/pull/25525'>#25525</a><br/><span style='font-size:smaller;color:gray'>sycl: Increase minimum buffer size for USM system allocations (#25525)</span>"]
+    C_0e148a5 --> C_22b208b
+    C_22b208b["<a href='https://github.com/ggml-org/llama.cpp/pull/25550'>#25550</a><br/><span style='font-size:smaller;color:gray'>sycl : implement xielu op (#25550)</span>"]
+    C_22b208b --> C_ae9291e
+    C_ae9291e["<a href='https://github.com/ggml-org/llama.cpp/pull/25653'>#25653</a><br/><span style='font-size:smaller;color:gray'>sycl : support kernel type fp16 for conv2d_dw (#25653)</span>"]
+    C_ae9291e --> C_d3fba0c
+    C_d3fba0c["<a href='https://github.com/ggml-org/llama.cpp/pull/25656'>#25656</a><br/><span style='font-size:smaller;color:gray'>sycl : fix get_rows Q2_K, Q4_K, Q5_K (#25656)</span>"]
+    C_d3fba0c --> C_33a75f4
+    C_33a75f4["<a href='https://github.com/ggml-org/llama.cpp/pull/25702'>#25702</a><br/><span style='font-size:smaller;color:gray'>DeepseekV4: reduce graph splits (#25702)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

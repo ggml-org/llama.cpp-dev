@@ -3,7 +3,13 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 12127defda4f41b7679cb2477a4b0d65ee6a0c8f, commits from ancestor: 56) ---
+--- master (tip: 33a75f41c30052fd3d1c38e8ed2f86ee3c3f8fba, commits from ancestor: 62) ---
+33a75f4 DeepseekV4: reduce graph splits (#25702)
+d3fba0c sycl : fix get_rows Q2_K, Q4_K, Q5_K (#25656)
+ae9291e sycl : support kernel type fp16 for conv2d_dw (#25653)
+22b208b sycl : implement xielu op (#25550)
+0e148a5 sycl: Increase minimum buffer size for USM system allocations (#25525)
+32b741c [SYCL] Flash Attention with XMX engine via oneDNN (#25222)
 12127de opencl: do not use `clCreateBufferWithProperties` when targeting CL 2.x (#25673)
 00fa7cb opencl: handle OOB write in noshuffle GEMV kernels (odd ne01) (#25640)
 a4ce259 opencl: avoid the vec path in GEMV for unaligned row stride (#25671)
