@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-15 14:29:35 UTC
+Auto-generated on 2026-07-15 16:03:10 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -151,6 +151,8 @@ graph BT
     C_a582222["<a href='https://github.com/ggml-org/llama.cpp/pull/25705'>#25705</a><br/><span style='font-size:smaller;color:gray'>server: fix read_file append_loc space breaking edit_file match (#25705)</span>"]
     C_a582222 --> C_956973c
     C_956973c["<a href='https://github.com/ggml-org/llama.cpp/pull/25720'>#25720</a><br/><span style='font-size:smaller;color:gray'>Fix crash with draft-simple (#25720)</span>"]
+    C_956973c --> C_f6f12e4
+    C_f6f12e4["<a href='https://github.com/ggml-org/llama.cpp/pull/25613'>#25613</a><br/><span style='font-size:smaller;color:gray'>CUDA: tighter MMQ src1 buffer size for native fp4 (#25613)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
