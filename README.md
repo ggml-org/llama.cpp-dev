@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-14 21:32:27 UTC
+Auto-generated on 2026-07-15 03:33:41 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -123,6 +123,8 @@ graph BT
     C_a4ce259["<a href='https://github.com/ggml-org/llama.cpp/pull/25671'>#25671</a><br/><span style='font-size:smaller;color:gray'>opencl: avoid the vec path in GEMV for unaligned row stride (#25671)</span>"]
     C_a4ce259 --> C_00fa7cb
     C_00fa7cb["<a href='https://github.com/ggml-org/llama.cpp/pull/25640'>#25640</a><br/><span style='font-size:smaller;color:gray'>opencl: handle OOB write in noshuffle GEMV kernels (odd ne01) (#25640)</span>"]
+    C_00fa7cb --> C_12127de
+    C_12127de["<a href='https://github.com/ggml-org/llama.cpp/pull/25673'>#25673</a><br/><span style='font-size:smaller;color:gray'>opencl: do not use `clCreateBufferWithProperties` when targeting CL 2.x (#25673)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
