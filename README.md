@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-15 16:03:10 UTC
+Auto-generated on 2026-07-15 17:33:29 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -153,6 +153,10 @@ graph BT
     C_956973c["<a href='https://github.com/ggml-org/llama.cpp/pull/25720'>#25720</a><br/><span style='font-size:smaller;color:gray'>Fix crash with draft-simple (#25720)</span>"]
     C_956973c --> C_f6f12e4
     C_f6f12e4["<a href='https://github.com/ggml-org/llama.cpp/pull/25613'>#25613</a><br/><span style='font-size:smaller;color:gray'>CUDA: tighter MMQ src1 buffer size for native fp4 (#25613)</span>"]
+    C_f6f12e4 --> C_c3d47e6
+    C_c3d47e6["<a href='https://github.com/ggml-org/llama.cpp/pull/25697'>#25697</a><br/><span style='font-size:smaller;color:gray'>opencl: fix two issues on flash attention for Adreno a7x (#25697)</span>"]
+    C_c3d47e6 --> C_aff6eb6
+    C_aff6eb6["<a href='https://github.com/ggml-org/llama.cpp/pull/25672'>#25672</a><br/><span style='font-size:smaller;color:gray'>tokenize : drop --stdin mutual-exclusion check (#25672)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
