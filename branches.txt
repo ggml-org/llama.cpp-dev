@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: f955e394bf94e01e5e36186d13c985727e5ef5b5, commits from ancestor: 63) ---
+--- master (tip: b3c9d1b846cc80a6360adb6aeaa4fcd8c4c8dcac, commits from ancestor: 64) ---
+b3c9d1b metal: fuse snake activation (mul, sin, sqr, mul, add) (#25459)
 f955e39 ggml: add f16 out_prod support for CPU and out_prod op for Vulkan (#23997)
 33a75f4 DeepseekV4: reduce graph splits (#25702)
 d3fba0c sycl : fix get_rows Q2_K, Q4_K, Q5_K (#25656)

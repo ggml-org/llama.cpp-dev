@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-15 09:56:56 UTC
+Auto-generated on 2026-07-15 11:26:32 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -139,6 +139,8 @@ graph BT
     C_33a75f4["<a href='https://github.com/ggml-org/llama.cpp/pull/25702'>#25702</a><br/><span style='font-size:smaller;color:gray'>DeepseekV4: reduce graph splits (#25702)</span>"]
     C_33a75f4 --> C_f955e39
     C_f955e39["<a href='https://github.com/ggml-org/llama.cpp/pull/23997'>#23997</a><br/><span style='font-size:smaller;color:gray'>ggml: add f16 out_prod support for CPU and out_prod op for Vulkan (#23997)</span>"]
+    C_f955e39 --> C_b3c9d1b
+    C_b3c9d1b["<a href='https://github.com/ggml-org/llama.cpp/pull/25459'>#25459</a><br/><span style='font-size:smaller;color:gray'>metal: fuse snake activation (mul, sin, sqr, mul, add) (#25459)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
