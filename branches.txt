@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: aff6eb6e7503538fec1532dec2f584bc7a4a4e4d, commits from ancestor: 72) ---
+--- master (tip: 32beb244f5c2ca91c583be15d4671643b54ba238, commits from ancestor: 74) ---
+32beb24 ui: Agentic Content UX improvements (#25450)
+3b53219 cuda : CUDA GGML_OP_LIGHTNING_INDEXER implementation (generic vector kernel + wmma kernel) (#25545)
 aff6eb6 tokenize : drop --stdin mutual-exclusion check (#25672)
 c3d47e6 opencl: fix two issues on flash attention for Adreno a7x (#25697)
 f6f12e4 CUDA: tighter MMQ src1 buffer size for native fp4 (#25613)

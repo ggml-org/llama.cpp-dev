@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-15 17:33:29 UTC
+Auto-generated on 2026-07-15 18:40:49 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -157,6 +157,10 @@ graph BT
     C_c3d47e6["<a href='https://github.com/ggml-org/llama.cpp/pull/25697'>#25697</a><br/><span style='font-size:smaller;color:gray'>opencl: fix two issues on flash attention for Adreno a7x (#25697)</span>"]
     C_c3d47e6 --> C_aff6eb6
     C_aff6eb6["<a href='https://github.com/ggml-org/llama.cpp/pull/25672'>#25672</a><br/><span style='font-size:smaller;color:gray'>tokenize : drop --stdin mutual-exclusion check (#25672)</span>"]
+    C_aff6eb6 --> C_3b53219
+    C_3b53219["<a href='https://github.com/ggml-org/llama.cpp/pull/25545'>#25545</a><br/><span style='font-size:smaller;color:gray'>cuda : CUDA GGML_OP_LIGHTNING_INDEXER implementation (generic vector kernel + wmma kernel) (#25545)</span>"]
+    C_3b53219 --> C_32beb24
+    C_32beb24["<a href='https://github.com/ggml-org/llama.cpp/pull/25450'>#25450</a><br/><span style='font-size:smaller;color:gray'>ui: Agentic Content UX improvements (#25450)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
