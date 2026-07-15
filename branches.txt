@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: a5822222909b785f23ddc74ce3c8f85bd0e38562, commits from ancestor: 68) ---
+--- master (tip: 956973c76466b6c791d7bdbe6eed3aa3235b2dc1, commits from ancestor: 69) ---
+956973c Fix crash with draft-simple (#25720)
 a582222 server: fix read_file append_loc space breaking edit_file match (#25705)
 a05df0a ui: fix thinking menu never appearing in single-model mode (#25637)
 a3e5b96 cuda : relax tensor contiguity requirements for quantized concat (#25678)
