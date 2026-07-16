@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-16 06:34:57 UTC
+Auto-generated on 2026-07-16 08:57:41 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -171,6 +171,8 @@ graph BT
     C_56d6e9d["<a href='https://github.com/ggml-org/llama.cpp/pull/25716'>#25716</a><br/><span style='font-size:smaller;color:gray'>quant : allow using manual tensor types with --pure (#25716)</span>"]
     C_56d6e9d --> C_a320cbf
     C_a320cbf["<a href='https://github.com/ggml-org/llama.cpp/pull/25728'>#25728</a><br/><span style='font-size:smaller;color:gray'>ci : add official website link to release notes (#25728)</span>"]
+    C_a320cbf --> C_5839ba3
+    C_5839ba3["<a href='https://github.com/ggml-org/llama.cpp/pull/25441'>#25441</a><br/><span style='font-size:smaller;color:gray'>CUDA: dedup MoE gate/up activation quantization (#25441)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

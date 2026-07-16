@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: a320cbfcb7056b7b81fb854d97fe01d0ea77c4b5, commits from ancestor: 79) ---
+--- master (tip: 5839ba352471b2a7b45e7ba401619a6896f10f8b, commits from ancestor: 80) ---
+5839ba3 CUDA: dedup MoE gate/up activation quantization (#25441)
 a320cbf ci : add official website link to release notes (#25728)
 56d6e9d quant : allow using manual tensor types with --pure (#25716)
 3dafb58 opencl: disable FA and MoE weights repack to work around compiler issues for Adreno 850 GPU (#25745)
