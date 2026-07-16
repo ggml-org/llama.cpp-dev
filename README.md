@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-16 08:57:41 UTC
+Auto-generated on 2026-07-16 10:58:20 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -173,6 +173,14 @@ graph BT
     C_a320cbf["<a href='https://github.com/ggml-org/llama.cpp/pull/25728'>#25728</a><br/><span style='font-size:smaller;color:gray'>ci : add official website link to release notes (#25728)</span>"]
     C_a320cbf --> C_5839ba3
     C_5839ba3["<a href='https://github.com/ggml-org/llama.cpp/pull/25441'>#25441</a><br/><span style='font-size:smaller;color:gray'>CUDA: dedup MoE gate/up activation quantization (#25441)</span>"]
+    C_5839ba3 --> C_c7d8722
+    C_c7d8722["<a href='https://github.com/ggml-org/llama.cpp/pull/24233'>#24233</a><br/><span style='font-size:smaller;color:gray'>ggml-cuda : restore prop.integrated on HIP builds (#24233)</span>"]
+    C_c7d8722 --> C_8ee54c8
+    C_8ee54c8["<a href='https://github.com/ggml-org/llama.cpp/pull/25756'>#25756</a><br/><span style='font-size:smaller;color:gray'>server: Ignore empty / non-existing `Origin` headers (#25756)</span>"]
+    C_8ee54c8 --> C_3f08ef2
+    C_3f08ef2["<a href='https://github.com/ggml-org/llama.cpp/pull/25749'>#25749</a><br/><span style='font-size:smaller;color:gray'>Enable CUDA graphs on volta+turing (#25749)</span>"]
+    C_3f08ef2 --> C_79bba02
+    C_79bba02["<a href='https://github.com/ggml-org/llama.cpp/pull/25228'>#25228</a><br/><span style='font-size:smaller;color:gray'>CUDA: Support CUDA Virtual Devices (#25228)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

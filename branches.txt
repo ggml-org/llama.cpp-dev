@@ -3,7 +3,11 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 5839ba352471b2a7b45e7ba401619a6896f10f8b, commits from ancestor: 80) ---
+--- master (tip: 79bba02a6741de194912d370015866414faa83ad, commits from ancestor: 84) ---
+79bba02 CUDA: Support CUDA Virtual Devices (#25228)
+3f08ef2 Enable CUDA graphs on volta+turing (#25749)
+8ee54c8 server: Ignore empty / non-existing `Origin` headers (#25756)
+c7d8722 ggml-cuda : restore prop.integrated on HIP builds (#24233)
 5839ba3 CUDA: dedup MoE gate/up activation quantization (#25441)
 a320cbf ci : add official website link to release notes (#25728)
 56d6e9d quant : allow using manual tensor types with --pure (#25716)
