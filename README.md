@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-16 14:27:44 UTC
+Auto-generated on 2026-07-16 17:06:28 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -195,6 +195,12 @@ graph BT
     C_3278e92["<a href='https://github.com/ggml-org/llama.cpp/pull/25769'>#25769</a><br/><span style='font-size:smaller;color:gray'>conversion: accept BitNetForCausalLM architecture name (#25769)</span>"]
     C_3278e92 --> C_b15ca93
     C_b15ca93["<a href='https://github.com/ggml-org/llama.cpp/pull/25229'>#25229</a><br/><span style='font-size:smaller;color:gray'>vulkan: when using transfer queue for async copies, sync on event_wait to avoid race (#25229)</span>"]
+    C_b15ca93 --> C_f15bd60
+    C_f15bd60["<a href='https://github.com/ggml-org/llama.cpp/pull/25478'>#25478</a><br/><span style='font-size:smaller;color:gray'>kleidiai: Add SME vs SME2 distinction in kernel dispatch (#25478)</span>"]
+    C_f15bd60 --> C_b2dd28a
+    C_b2dd28a["<a href='https://github.com/ggml-org/llama.cpp/pull/25762'>#25762</a><br/><span style='font-size:smaller;color:gray'>hexagon: L2 cache handling rework (dirty bit tracking with lazy flushing) and more MUL_MAT updates (#25762)</span>"]
+    C_b2dd28a --> C_0dc74e3
+    C_0dc74e3["<a href='https://github.com/ggml-org/llama.cpp/pull/25585'>#25585</a><br/><span style='font-size:smaller;color:gray'>DeepseekV4: Add fused hyper-connection ops (#25585)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

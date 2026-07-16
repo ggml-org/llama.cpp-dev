@@ -3,7 +3,10 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: b15ca938ad00aa6b3ee6c2edda7363fd02826b18, commits from ancestor: 91) ---
+--- master (tip: 0dc74e332edee2616e4d8d9ab3b68dfc340fc14a, commits from ancestor: 94) ---
+0dc74e3 DeepseekV4: Add fused hyper-connection ops (#25585)
+b2dd28a hexagon: L2 cache handling rework (dirty bit tracking with lazy flushing) and more MUL_MAT updates (#25762)
+f15bd60 kleidiai: Add SME vs SME2 distinction in kernel dispatch (#25478)
 b15ca93 vulkan: when using transfer queue for async copies, sync on event_wait to avoid race (#25229)
 3278e92 conversion: accept BitNetForCausalLM architecture name (#25769)
 2e1fd76 TP: fix Phi3, Bert, Plamo2/3, ChatGLM (#25536)
