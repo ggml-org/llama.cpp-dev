@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-16 17:06:28 UTC
+Auto-generated on 2026-07-16 20:30:27 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -201,6 +201,10 @@ graph BT
     C_b2dd28a["<a href='https://github.com/ggml-org/llama.cpp/pull/25762'>#25762</a><br/><span style='font-size:smaller;color:gray'>hexagon: L2 cache handling rework (dirty bit tracking with lazy flushing) and more MUL_MAT updates (#25762)</span>"]
     C_b2dd28a --> C_0dc74e3
     C_0dc74e3["<a href='https://github.com/ggml-org/llama.cpp/pull/25585'>#25585</a><br/><span style='font-size:smaller;color:gray'>DeepseekV4: Add fused hyper-connection ops (#25585)</span>"]
+    C_0dc74e3 --> C_ac2557c
+    C_ac2557c["<a href='https://github.com/ggml-org/llama.cpp/pull/25786'>#25786</a><br/><span style='font-size:smaller;color:gray'>docs: added a note about using OpenCl with Adreno 810 (#25786)</span>"]
+    C_ac2557c --> C_e8f19cc
+    C_e8f19cc["<a href='https://github.com/ggml-org/llama.cpp/pull/25780'>#25780</a><br/><span style='font-size:smaller;color:gray'>opencl: loads quants as uint for q4_K and q5_K flat mv (optimization for Adreno A7x GPUs) (#25780)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
