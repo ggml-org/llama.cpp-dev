@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-16 04:18:39 UTC
+Auto-generated on 2026-07-16 06:34:57 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -167,6 +167,10 @@ graph BT
     C_602f828["<a href='https://github.com/ggml-org/llama.cpp/pull/25628'>#25628</a><br/><span style='font-size:smaller;color:gray'>cuda: extract Q1_0 elements via __byte_perm (#25628)</span>"]
     C_602f828 --> C_3dafb58
     C_3dafb58["<a href='https://github.com/ggml-org/llama.cpp/pull/25745'>#25745</a><br/><span style='font-size:smaller;color:gray'>opencl: disable FA and MoE weights repack to work around compiler issues for Adreno 850 GPU (#25745)</span>"]
+    C_3dafb58 --> C_56d6e9d
+    C_56d6e9d["<a href='https://github.com/ggml-org/llama.cpp/pull/25716'>#25716</a><br/><span style='font-size:smaller;color:gray'>quant : allow using manual tensor types with --pure (#25716)</span>"]
+    C_56d6e9d --> C_a320cbf
+    C_a320cbf["<a href='https://github.com/ggml-org/llama.cpp/pull/25728'>#25728</a><br/><span style='font-size:smaller;color:gray'>ci : add official website link to release notes (#25728)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

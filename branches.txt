@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 3dafb585f8344b7ca58fd2b64826c1a4dd318bca, commits from ancestor: 77) ---
+--- master (tip: a320cbfcb7056b7b81fb854d97fe01d0ea77c4b5, commits from ancestor: 79) ---
+a320cbf ci : add official website link to release notes (#25728)
+56d6e9d quant : allow using manual tensor types with --pure (#25716)
 3dafb58 opencl: disable FA and MoE weights repack to work around compiler issues for Adreno 850 GPU (#25745)
 602f828 cuda: extract Q1_0 elements via __byte_perm (#25628)
 505b1ed opencl: exclude some moe kernels on Adreno a7x (#25698)
