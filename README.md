@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-16 12:20:34 UTC
+Auto-generated on 2026-07-16 14:27:44 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -183,6 +183,18 @@ graph BT
     C_79bba02["<a href='https://github.com/ggml-org/llama.cpp/pull/25228'>#25228</a><br/><span style='font-size:smaller;color:gray'>CUDA: Support CUDA Virtual Devices (#25228)</span>"]
     C_79bba02 --> C_a55a8c5
     C_a55a8c5["<a href='https://github.com/ggml-org/llama.cpp/pull/25733'>#25733</a><br/><span style='font-size:smaller;color:gray'>convert : fix dflash target tokenizer mismatch during conversion (#25733)</span>"]
+    C_a55a8c5 --> C_a8dc0e3
+    C_a8dc0e3["<a href='https://github.com/ggml-org/llama.cpp/pull/25076'>#25076</a><br/><span style='font-size:smaller;color:gray'>server : allow text-only slot save/restore with mtmd (#25076)</span>"]
+    C_a8dc0e3 --> C_32e789f
+    C_32e789f["<a href='https://github.com/ggml-org/llama.cpp/pull/25758'>#25758</a><br/><span style='font-size:smaller;color:gray'>tests: actually exercise `test-recurrent-state-rollback` (#25758)</span>"]
+    C_32e789f --> C_86b719b
+    C_86b719b["<a href='https://github.com/ggml-org/llama.cpp/pull/25624'>#25624</a><br/><span style='font-size:smaller;color:gray'>vendor: update BoringSSL to 0.20260713.0 (#25624)</span>"]
+    C_86b719b --> C_2e1fd76
+    C_2e1fd76["<a href='https://github.com/ggml-org/llama.cpp/pull/25536'>#25536</a><br/><span style='font-size:smaller;color:gray'>TP: fix Phi3, Bert, Plamo2/3, ChatGLM (#25536)</span>"]
+    C_2e1fd76 --> C_3278e92
+    C_3278e92["<a href='https://github.com/ggml-org/llama.cpp/pull/25769'>#25769</a><br/><span style='font-size:smaller;color:gray'>conversion: accept BitNetForCausalLM architecture name (#25769)</span>"]
+    C_3278e92 --> C_b15ca93
+    C_b15ca93["<a href='https://github.com/ggml-org/llama.cpp/pull/25229'>#25229</a><br/><span style='font-size:smaller;color:gray'>vulkan: when using transfer queue for async copies, sync on event_wait to avoid race (#25229)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

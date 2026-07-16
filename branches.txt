@@ -3,7 +3,13 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: a55a8c5266c86ca60b9e5251231f24140e2b34b0, commits from ancestor: 85) ---
+--- master (tip: b15ca938ad00aa6b3ee6c2edda7363fd02826b18, commits from ancestor: 91) ---
+b15ca93 vulkan: when using transfer queue for async copies, sync on event_wait to avoid race (#25229)
+3278e92 conversion: accept BitNetForCausalLM architecture name (#25769)
+2e1fd76 TP: fix Phi3, Bert, Plamo2/3, ChatGLM (#25536)
+86b719b vendor: update BoringSSL to 0.20260713.0 (#25624)
+32e789f tests: actually exercise `test-recurrent-state-rollback` (#25758)
+a8dc0e3 server : allow text-only slot save/restore with mtmd (#25076)
 a55a8c5 convert : fix dflash target tokenizer mismatch during conversion (#25733)
 79bba02 CUDA: Support CUDA Virtual Devices (#25228)
 3f08ef2 Enable CUDA graphs on volta+turing (#25749)
