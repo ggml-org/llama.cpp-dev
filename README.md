@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-16 10:58:20 UTC
+Auto-generated on 2026-07-16 12:20:34 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -181,6 +181,8 @@ graph BT
     C_3f08ef2["<a href='https://github.com/ggml-org/llama.cpp/pull/25749'>#25749</a><br/><span style='font-size:smaller;color:gray'>Enable CUDA graphs on volta+turing (#25749)</span>"]
     C_3f08ef2 --> C_79bba02
     C_79bba02["<a href='https://github.com/ggml-org/llama.cpp/pull/25228'>#25228</a><br/><span style='font-size:smaller;color:gray'>CUDA: Support CUDA Virtual Devices (#25228)</span>"]
+    C_79bba02 --> C_a55a8c5
+    C_a55a8c5["<a href='https://github.com/ggml-org/llama.cpp/pull/25733'>#25733</a><br/><span style='font-size:smaller;color:gray'>convert : fix dflash target tokenizer mismatch during conversion (#25733)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
