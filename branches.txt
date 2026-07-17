@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: e8f19cc0ad70a243c8012bf17b4be601abfc8ea2, commits from ancestor: 96) ---
+--- master (tip: 0bd0ec60998d0f71ec45471b633bf2403ac81956, commits from ancestor: 98) ---
+0bd0ec6 sycl: fix row calculation when K_QUANTS_PER_ITERATION is 1 (#25690)
+b85833e opencl: add ABS op (#25115)
 e8f19cc opencl: loads quants as uint for q4_K and q5_K flat mv (optimization for Adreno A7x GPUs) (#25780)
 ac2557c docs: added a note about using OpenCl with Adreno 810 (#25786)
 0dc74e3 DeepseekV4: Add fused hyper-connection ops (#25585)

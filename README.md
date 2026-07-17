@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-16 20:30:27 UTC
+Auto-generated on 2026-07-17 06:28:56 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -205,6 +205,10 @@ graph BT
     C_ac2557c["<a href='https://github.com/ggml-org/llama.cpp/pull/25786'>#25786</a><br/><span style='font-size:smaller;color:gray'>docs: added a note about using OpenCl with Adreno 810 (#25786)</span>"]
     C_ac2557c --> C_e8f19cc
     C_e8f19cc["<a href='https://github.com/ggml-org/llama.cpp/pull/25780'>#25780</a><br/><span style='font-size:smaller;color:gray'>opencl: loads quants as uint for q4_K and q5_K flat mv (optimization for Adreno A7x GPUs) (#25780)</span>"]
+    C_e8f19cc --> C_b85833e
+    C_b85833e["<a href='https://github.com/ggml-org/llama.cpp/pull/25115'>#25115</a><br/><span style='font-size:smaller;color:gray'>opencl: add ABS op (#25115)</span>"]
+    C_b85833e --> C_0bd0ec6
+    C_0bd0ec6["<a href='https://github.com/ggml-org/llama.cpp/pull/25690'>#25690</a><br/><span style='font-size:smaller;color:gray'>sycl: fix row calculation when K_QUANTS_PER_ITERATION is 1 (#25690)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
