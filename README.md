@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-17 06:28:56 UTC
+Auto-generated on 2026-07-17 08:35:08 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -209,6 +209,8 @@ graph BT
     C_b85833e["<a href='https://github.com/ggml-org/llama.cpp/pull/25115'>#25115</a><br/><span style='font-size:smaller;color:gray'>opencl: add ABS op (#25115)</span>"]
     C_b85833e --> C_0bd0ec6
     C_0bd0ec6["<a href='https://github.com/ggml-org/llama.cpp/pull/25690'>#25690</a><br/><span style='font-size:smaller;color:gray'>sycl: fix row calculation when K_QUANTS_PER_ITERATION is 1 (#25690)</span>"]
+    C_0bd0ec6 --> C_788e07d
+    C_788e07d["<a href='https://github.com/ggml-org/llama.cpp/pull/25430'>#25430</a><br/><span style='font-size:smaller;color:gray'>vulkan: Support Q2_0 (#25430)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
