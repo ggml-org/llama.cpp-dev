@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-17 08:35:08 UTC
+Auto-generated on 2026-07-17 10:22:34 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -211,6 +211,10 @@ graph BT
     C_0bd0ec6["<a href='https://github.com/ggml-org/llama.cpp/pull/25690'>#25690</a><br/><span style='font-size:smaller;color:gray'>sycl: fix row calculation when K_QUANTS_PER_ITERATION is 1 (#25690)</span>"]
     C_0bd0ec6 --> C_788e07d
     C_788e07d["<a href='https://github.com/ggml-org/llama.cpp/pull/25430'>#25430</a><br/><span style='font-size:smaller;color:gray'>vulkan: Support Q2_0 (#25430)</span>"]
+    C_788e07d --> C_11fd0a6
+    C_11fd0a6["<a href='https://github.com/ggml-org/llama.cpp/pull/25710'>#25710</a><br/><span style='font-size:smaller;color:gray'>ggml-blas: default hadamard mul_mat to cpu routine (#25710)</span>"]
+    C_11fd0a6 --> C_635cdd5
+    C_635cdd5["<a href='https://github.com/ggml-org/llama.cpp/pull/25811'>#25811</a><br/><span style='font-size:smaller;color:gray'>common : auto-download dflash- and eagle3- HF sidecars (#25811)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
