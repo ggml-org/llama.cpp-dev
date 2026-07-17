@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-17 10:22:34 UTC
+Auto-generated on 2026-07-17 14:19:44 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -215,6 +215,12 @@ graph BT
     C_11fd0a6["<a href='https://github.com/ggml-org/llama.cpp/pull/25710'>#25710</a><br/><span style='font-size:smaller;color:gray'>ggml-blas: default hadamard mul_mat to cpu routine (#25710)</span>"]
     C_11fd0a6 --> C_635cdd5
     C_635cdd5["<a href='https://github.com/ggml-org/llama.cpp/pull/25811'>#25811</a><br/><span style='font-size:smaller;color:gray'>common : auto-download dflash- and eagle3- HF sidecars (#25811)</span>"]
+    C_635cdd5 --> C_5d5306b
+    C_5d5306b["<a href='https://github.com/ggml-org/llama.cpp/pull/25822'>#25822</a><br/><span style='font-size:smaller;color:gray'>tests : initialize all tensors in test_dsv4_hc to avoid NaNs in sentinel tensors (#25822)</span>"]
+    C_5d5306b --> C_3727404
+    C_3727404["<a href='https://github.com/ggml-org/llama.cpp/commit/3727404'>3727404</a><br/><span style='font-size:smaller;color:gray'>ggml : bump version to 0.17.0 (ggml/1568)</span>"]
+    C_3727404 --> C_7d56da7
+    C_7d56da7["<a href='https://github.com/ggml-org/llama.cpp/commit/7d56da7'>7d56da7</a><br/><span style='font-size:smaller;color:gray'>sync : ggml</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
