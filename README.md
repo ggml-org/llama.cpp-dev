@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-17 15:47:45 UTC
+Auto-generated on 2026-07-17 19:49:07 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -223,6 +223,8 @@ graph BT
     C_7d56da7["<a href='https://github.com/ggml-org/llama.cpp/commit/7d56da7'>7d56da7</a><br/><span style='font-size:smaller;color:gray'>sync : ggml</span>"]
     C_7d56da7 --> C_86d86ed
     C_86d86ed["<a href='https://github.com/ggml-org/llama.cpp/pull/25805'>#25805</a><br/><span style='font-size:smaller;color:gray'>opencl: transpose q4_K noshuffle scales for coalesced reads (#25805)</span>"]
+    C_86d86ed --> C_6bdd77f
+    C_6bdd77f["<a href='https://github.com/ggml-org/llama.cpp/pull/25810'>#25810</a><br/><span style='font-size:smaller;color:gray'>opencl:  read/write MoE dp4a activation tiles to local memory as 128-bit (vectorized LD/ST perf opt) for Adreno GPUs (#25810)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

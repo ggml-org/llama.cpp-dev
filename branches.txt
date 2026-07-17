@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 86d86ed4396b4130922f7b9af26e3d9fc11a591b, commits from ancestor: 105) ---
+--- master (tip: 6bdd77f13cf11b264b4231d320afc404f48d576e, commits from ancestor: 106) ---
+6bdd77f opencl:  read/write MoE dp4a activation tiles to local memory as 128-bit (vectorized LD/ST perf opt) for Adreno GPUs (#25810)
 86d86ed opencl: transpose q4_K noshuffle scales for coalesced reads (#25805)
 7d56da7 sync : ggml
 3727404 ggml : bump version to 0.17.0 (ggml/1568)
