@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 7d56da7e546f54fb1fa54ef2bc9ad9a872860ab0, commits from ancestor: 104) ---
+--- master (tip: 86d86ed4396b4130922f7b9af26e3d9fc11a591b, commits from ancestor: 105) ---
+86d86ed opencl: transpose q4_K noshuffle scales for coalesced reads (#25805)
 7d56da7 sync : ggml
 3727404 ggml : bump version to 0.17.0 (ggml/1568)
 5d5306b tests : initialize all tensors in test_dsv4_hc to avoid NaNs in sentinel tensors (#25822)
