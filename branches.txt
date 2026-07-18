@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 86a9c79f866799eb0e7e89c03578ccfbcc5d808e, commits from ancestor: 107) ---
+--- master (tip: 4937ca83f4f3da63004943fe05d8aa4f0217d238, commits from ancestor: 108) ---
+4937ca8 llama-quant : exclude i32 ffn_gate_tid2eid routing table from quantization (#25787)
 86a9c79 opencl: load and use `kernel_gemm_moe_q6_k_f32_ns` from bin kernel lib (#25797)
 6bdd77f opencl:  read/write MoE dp4a activation tiles to local memory as 128-bit (vectorized LD/ST perf opt) for Adreno GPUs (#25810)
 86d86ed opencl: transpose q4_K noshuffle scales for coalesced reads (#25805)

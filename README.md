@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-17 23:12:15 UTC
+Auto-generated on 2026-07-18 12:11:44 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -227,6 +227,8 @@ graph BT
     C_6bdd77f["<a href='https://github.com/ggml-org/llama.cpp/pull/25810'>#25810</a><br/><span style='font-size:smaller;color:gray'>opencl:  read/write MoE dp4a activation tiles to local memory as 128-bit (vectorized LD/ST perf opt) for Adreno GPUs (#25810)</span>"]
     C_6bdd77f --> C_86a9c79
     C_86a9c79["<a href='https://github.com/ggml-org/llama.cpp/pull/25797'>#25797</a><br/><span style='font-size:smaller;color:gray'>opencl: load and use `kernel_gemm_moe_q6_k_f32_ns` from bin kernel lib (#25797)</span>"]
+    C_86a9c79 --> C_4937ca8
+    C_4937ca8["<a href='https://github.com/ggml-org/llama.cpp/pull/25787'>#25787</a><br/><span style='font-size:smaller;color:gray'>llama-quant : exclude i32 ffn_gate_tid2eid routing table from quantization (#25787)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
