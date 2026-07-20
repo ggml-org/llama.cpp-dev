@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-20 07:22:28 UTC
+Auto-generated on 2026-07-20 14:38:16 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -233,6 +233,12 @@ graph BT
     C_571d0d5["<a href='https://github.com/ggml-org/llama.cpp/pull/25823'>#25823</a><br/><span style='font-size:smaller;color:gray'>model: rotate injected K/V cache for DFlash (#25823)</span>"]
     C_571d0d5 --> C_178a6c4
     C_178a6c4["<a href='https://github.com/ggml-org/llama.cpp/pull/25910'>#25910</a><br/><span style='font-size:smaller;color:gray'>opencl: Support broadcast for Adreno MUL_MAT and honor `view_offs` for Adreno Q8_0 MUL_MAT for llama-server multi-stream (#25910)</span>"]
+    C_178a6c4 --> C_1521a9a
+    C_1521a9a["<a href='https://github.com/ggml-org/llama.cpp/pull/25865'>#25865</a><br/><span style='font-size:smaller;color:gray'>ui: enable the agentic flow when only the JS sandbox is active (#25865)</span>"]
+    C_1521a9a --> C_43b5e63
+    C_43b5e63["<a href='https://github.com/ggml-org/llama.cpp/pull/25783'>#25783</a><br/><span style='font-size:smaller;color:gray'>UI: fix Settings/Display tool call content toggle (#25783)</span>"]
+    C_43b5e63 --> C_4ee6a9a
+    C_4ee6a9a["<a href='https://github.com/ggml-org/llama.cpp/pull/25869'>#25869</a><br/><span style='font-size:smaller;color:gray'>ui: fix collapsed user bubble with markdown rendering (#25869)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
