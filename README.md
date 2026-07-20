@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-20 14:38:16 UTC
+Auto-generated on 2026-07-20 16:12:30 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -239,6 +239,8 @@ graph BT
     C_43b5e63["<a href='https://github.com/ggml-org/llama.cpp/pull/25783'>#25783</a><br/><span style='font-size:smaller;color:gray'>UI: fix Settings/Display tool call content toggle (#25783)</span>"]
     C_43b5e63 --> C_4ee6a9a
     C_4ee6a9a["<a href='https://github.com/ggml-org/llama.cpp/pull/25869'>#25869</a><br/><span style='font-size:smaller;color:gray'>ui: fix collapsed user bubble with markdown rendering (#25869)</span>"]
+    C_4ee6a9a --> C_91d2fc3
+    C_91d2fc3["<a href='https://github.com/ggml-org/llama.cpp/pull/25325'>#25325</a><br/><span style='font-size:smaller;color:gray'>llama_dsv4: write only used rows in state (#25325)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

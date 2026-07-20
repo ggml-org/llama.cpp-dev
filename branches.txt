@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 4ee6a9af71faceee99fed5eb98538b71772d86c6, commits from ancestor: 113) ---
+--- master (tip: 91d2fc387529940230555abd297a8b5e99737d3f, commits from ancestor: 114) ---
+91d2fc3 llama_dsv4: write only used rows in state (#25325)
 4ee6a9a ui: fix collapsed user bubble with markdown rendering (#25869)
 43b5e63 UI: fix Settings/Display tool call content toggle (#25783)
 1521a9a ui: enable the agentic flow when only the JS sandbox is active (#25865)
