@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 571d0d540df04f25298d0e159e520d9fc62ed121, commits from ancestor: 109) ---
+--- master (tip: 178a6c44937154dc4c4eff0d166f4a044c4fceba, commits from ancestor: 110) ---
+178a6c4 opencl: Support broadcast for Adreno MUL_MAT and honor `view_offs` for Adreno Q8_0 MUL_MAT for llama-server multi-stream (#25910)
 571d0d5 model: rotate injected K/V cache for DFlash (#25823)
 4937ca8 llama-quant : exclude i32 ffn_gate_tid2eid routing table from quantization (#25787)
 86a9c79 opencl: load and use `kernel_gemm_moe_q6_k_f32_ns` from bin kernel lib (#25797)

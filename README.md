@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-18 13:47:08 UTC
+Auto-generated on 2026-07-20 07:22:28 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -231,6 +231,8 @@ graph BT
     C_4937ca8["<a href='https://github.com/ggml-org/llama.cpp/pull/25787'>#25787</a><br/><span style='font-size:smaller;color:gray'>llama-quant : exclude i32 ffn_gate_tid2eid routing table from quantization (#25787)</span>"]
     C_4937ca8 --> C_571d0d5
     C_571d0d5["<a href='https://github.com/ggml-org/llama.cpp/pull/25823'>#25823</a><br/><span style='font-size:smaller;color:gray'>model: rotate injected K/V cache for DFlash (#25823)</span>"]
+    C_571d0d5 --> C_178a6c4
+    C_178a6c4["<a href='https://github.com/ggml-org/llama.cpp/pull/25910'>#25910</a><br/><span style='font-size:smaller;color:gray'>opencl: Support broadcast for Adreno MUL_MAT and honor `view_offs` for Adreno Q8_0 MUL_MAT for llama-server multi-stream (#25910)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
