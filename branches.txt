@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 2beefef68825aed8de05f0d89981bf5d05266a3c, commits from ancestor: 115) ---
+--- master (tip: 76f46ad29d61fd8c1401e8221842934bf62a6064, commits from ancestor: 116) ---
+76f46ad hexagon: add CLAMP op (#25934)
 2beefef ui: Sidebar Conversations Bulk Action + Improved Settings logic/UI (#25815)
 91d2fc3 llama_dsv4: write only used rows in state (#25325)
 4ee6a9a ui: fix collapsed user bubble with markdown rendering (#25869)
