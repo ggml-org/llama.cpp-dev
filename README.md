@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-21 22:15:42 UTC
+Auto-generated on 2026-07-21 23:13:46 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -265,6 +265,8 @@ graph BT
     C_71102a7["<a href='https://github.com/ggml-org/llama.cpp/pull/25968'>#25968</a><br/><span style='font-size:smaller;color:gray'>hexagon: check tensor type when reusing descriptors (#25968)</span>"]
     C_71102a7 --> C_b4aa7dd
     C_b4aa7dd["<a href='https://github.com/ggml-org/llama.cpp/pull/25781'>#25781</a><br/><span style='font-size:smaller;color:gray'>mtmd : use align_corners for qwen3vl vision position embedding interpolation (#25781)</span>"]
+    C_b4aa7dd --> C_66e4bf7
+    C_66e4bf7["<a href='https://github.com/ggml-org/llama.cpp/pull/25514'>#25514</a><br/><span style='font-size:smaller;color:gray'>convert: fix handle HunyuanVL XD-RoPE config (#25514)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

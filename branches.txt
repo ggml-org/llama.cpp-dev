@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: b4aa7dd477acf065a3b9c6a8cf324c904da1a834, commits from ancestor: 126) ---
+--- master (tip: 66e4bf7e592a98dfefcb15202fc5926967dc734e, commits from ancestor: 127) ---
+66e4bf7 convert: fix handle HunyuanVL XD-RoPE config (#25514)
 b4aa7dd mtmd : use align_corners for qwen3vl vision position embedding interpolation (#25781)
 71102a7 hexagon: check tensor type when reusing descriptors (#25968)
 846e991 cuda: add sqrt_softplus in topk-moe for dsv4 (#25896)
