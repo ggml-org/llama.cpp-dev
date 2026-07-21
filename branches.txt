@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 76f46ad29d61fd8c1401e8221842934bf62a6064, commits from ancestor: 116) ---
+--- master (tip: 305ba519ab61cdff8044922cba2347826a04453f, commits from ancestor: 117) ---
+305ba51 CUDA: vectorize same-type get_rows with int4 copy (#25929)
 76f46ad hexagon: add CLAMP op (#25934)
 2beefef ui: Sidebar Conversations Bulk Action + Improved Settings logic/UI (#25815)
 91d2fc3 llama_dsv4: write only used rows in state (#25325)

@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-20 23:14:26 UTC
+Auto-generated on 2026-07-21 14:24:45 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -245,6 +245,8 @@ graph BT
     C_2beefef["<a href='https://github.com/ggml-org/llama.cpp/pull/25815'>#25815</a><br/><span style='font-size:smaller;color:gray'>ui: Sidebar Conversations Bulk Action + Improved Settings logic/UI (#25815)</span>"]
     C_2beefef --> C_76f46ad
     C_76f46ad["<a href='https://github.com/ggml-org/llama.cpp/pull/25934'>#25934</a><br/><span style='font-size:smaller;color:gray'>hexagon: add CLAMP op (#25934)</span>"]
+    C_76f46ad --> C_305ba51
+    C_305ba51["<a href='https://github.com/ggml-org/llama.cpp/pull/25929'>#25929</a><br/><span style='font-size:smaller;color:gray'>CUDA: vectorize same-type get_rows with int4 copy (#25929)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
