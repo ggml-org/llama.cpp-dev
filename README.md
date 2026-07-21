@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-21 14:24:45 UTC
+Auto-generated on 2026-07-21 15:58:45 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -247,6 +247,14 @@ graph BT
     C_76f46ad["<a href='https://github.com/ggml-org/llama.cpp/pull/25934'>#25934</a><br/><span style='font-size:smaller;color:gray'>hexagon: add CLAMP op (#25934)</span>"]
     C_76f46ad --> C_305ba51
     C_305ba51["<a href='https://github.com/ggml-org/llama.cpp/pull/25929'>#25929</a><br/><span style='font-size:smaller;color:gray'>CUDA: vectorize same-type get_rows with int4 copy (#25929)</span>"]
+    C_305ba51 --> C_5735e10
+    C_5735e10["<a href='https://github.com/ggml-org/llama.cpp/pull/25795'>#25795</a><br/><span style='font-size:smaller;color:gray'>ggml-openvino: Add GGML_BACKEND_DL_IMPL invocation for OpenVINO backend (#25795)</span>"]
+    C_5735e10 --> C_f048010
+    C_f048010["<a href='https://github.com/ggml-org/llama.cpp/pull/23570'>#23570</a><br/><span style='font-size:smaller;color:gray'>vulkan: Refactor vk_queue to use per-instance mutexes and unique handles (#23570)</span>"]
+    C_f048010 --> C_40b740a
+    C_40b740a["<a href='https://github.com/ggml-org/llama.cpp/pull/25868'>#25868</a><br/><span style='font-size:smaller;color:gray'>server : properly handle null llama_context (#25868)</span>"]
+    C_40b740a --> C_fd41bf6
+    C_fd41bf6["<a href='https://github.com/ggml-org/llama.cpp/pull/25760'>#25760</a><br/><span style='font-size:smaller;color:gray'>server: return 400 instead of 500 on validation error with X-Conversation-Id (#25760)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

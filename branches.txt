@@ -3,7 +3,11 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 305ba519ab61cdff8044922cba2347826a04453f, commits from ancestor: 117) ---
+--- master (tip: fd41bf65a2e0013b1ecafa832f8ce6f18b1753e8, commits from ancestor: 121) ---
+fd41bf6 server: return 400 instead of 500 on validation error with X-Conversation-Id (#25760)
+40b740a server : properly handle null llama_context (#25868)
+f048010 vulkan: Refactor vk_queue to use per-instance mutexes and unique handles (#23570)
+5735e10 ggml-openvino: Add GGML_BACKEND_DL_IMPL invocation for OpenVINO backend (#25795)
 305ba51 CUDA: vectorize same-type get_rows with int4 copy (#25929)
 76f46ad hexagon: add CLAMP op (#25934)
 2beefef ui: Sidebar Conversations Bulk Action + Improved Settings logic/UI (#25815)
