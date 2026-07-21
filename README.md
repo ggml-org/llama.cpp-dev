@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-21 15:58:45 UTC
+Auto-generated on 2026-07-21 17:21:32 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -255,6 +255,12 @@ graph BT
     C_40b740a["<a href='https://github.com/ggml-org/llama.cpp/pull/25868'>#25868</a><br/><span style='font-size:smaller;color:gray'>server : properly handle null llama_context (#25868)</span>"]
     C_40b740a --> C_fd41bf6
     C_fd41bf6["<a href='https://github.com/ggml-org/llama.cpp/pull/25760'>#25760</a><br/><span style='font-size:smaller;color:gray'>server: return 400 instead of 500 on validation error with X-Conversation-Id (#25760)</span>"]
+    C_fd41bf6 --> C_60f6a17
+    C_60f6a17["<a href='https://github.com/ggml-org/llama.cpp/pull/25955'>#25955</a><br/><span style='font-size:smaller;color:gray'>common: resolve draft repo to its requested sidecar (#25955)</span>"]
+    C_60f6a17 --> C_fb0e6b6
+    C_fb0e6b6["<a href='https://github.com/ggml-org/llama.cpp/pull/25701'>#25701</a><br/><span style='font-size:smaller;color:gray'>kleidiai : warn once when a weight type has no KleidiAI kernel (#25701)</span>"]
+    C_fb0e6b6 --> C_846e991
+    C_846e991["<a href='https://github.com/ggml-org/llama.cpp/pull/25896'>#25896</a><br/><span style='font-size:smaller;color:gray'>cuda: add sqrt_softplus in topk-moe for dsv4 (#25896)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
