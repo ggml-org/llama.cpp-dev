@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-21 17:21:32 UTC
+Auto-generated on 2026-07-21 22:15:42 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -261,6 +261,10 @@ graph BT
     C_fb0e6b6["<a href='https://github.com/ggml-org/llama.cpp/pull/25701'>#25701</a><br/><span style='font-size:smaller;color:gray'>kleidiai : warn once when a weight type has no KleidiAI kernel (#25701)</span>"]
     C_fb0e6b6 --> C_846e991
     C_846e991["<a href='https://github.com/ggml-org/llama.cpp/pull/25896'>#25896</a><br/><span style='font-size:smaller;color:gray'>cuda: add sqrt_softplus in topk-moe for dsv4 (#25896)</span>"]
+    C_846e991 --> C_71102a7
+    C_71102a7["<a href='https://github.com/ggml-org/llama.cpp/pull/25968'>#25968</a><br/><span style='font-size:smaller;color:gray'>hexagon: check tensor type when reusing descriptors (#25968)</span>"]
+    C_71102a7 --> C_b4aa7dd
+    C_b4aa7dd["<a href='https://github.com/ggml-org/llama.cpp/pull/25781'>#25781</a><br/><span style='font-size:smaller;color:gray'>mtmd : use align_corners for qwen3vl vision position embedding interpolation (#25781)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
