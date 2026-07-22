@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-22 15:58:33 UTC
+Auto-generated on 2026-07-22 17:18:51 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -287,6 +287,10 @@ graph BT
     C_e8e6c7a["<a href='https://github.com/ggml-org/llama.cpp/pull/25999'>#25999</a><br/><span style='font-size:smaller;color:gray'>minor: fix reasoning preserve var for DS4 [no ci] (#25999)</span>"]
     C_e8e6c7a --> C_61328e6
     C_61328e6["<a href='https://github.com/ggml-org/llama.cpp/pull/25948'>#25948</a><br/><span style='font-size:smaller;color:gray'>feat(ui): add symbolic math support to JS sandbox via nerdamer (#25948)</span>"]
+    C_61328e6 --> C_e0833bf
+    C_e0833bf["<a href='https://github.com/ggml-org/llama.cpp/pull/25723'>#25723</a><br/><span style='font-size:smaller;color:gray'>mtmd: use RAII for setting and resetting non-causal attention (#25723)</span>"]
+    C_e0833bf --> C_0278d83
+    C_0278d83["<a href='https://github.com/ggml-org/llama.cpp/pull/25974'>#25974</a><br/><span style='font-size:smaller;color:gray'>hexagon: activation ops update (#25974)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

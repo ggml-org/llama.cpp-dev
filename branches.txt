@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 61328e6a9150b5d83f70416c93d2dfa607b442d0, commits from ancestor: 137) ---
+--- master (tip: 0278d8362d78c5de291bc03b76016f7f74b2ab77, commits from ancestor: 139) ---
+0278d83 hexagon: activation ops update (#25974)
+e0833bf mtmd: use RAII for setting and resetting non-causal attention (#25723)
 61328e6 feat(ui): add symbolic math support to JS sandbox via nerdamer (#25948)
 e8e6c7a minor: fix reasoning preserve var for DS4 [no ci] (#25999)
 6d5a910 common: infer the speculative type from the draft repo sidecars (#25989)
