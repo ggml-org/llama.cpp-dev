@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-22 10:52:12 UTC
+Auto-generated on 2026-07-22 12:17:37 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -279,6 +279,10 @@ graph BT
     C_b4d6c7d["<a href='https://github.com/ggml-org/llama.cpp/pull/25987'>#25987</a><br/><span style='font-size:smaller;color:gray'>ci : fix SYCL package shared library lookup (#25987)</span>"]
     C_b4d6c7d --> C_3ce7da2
     C_3ce7da2["<a href='https://github.com/ggml-org/llama.cpp/pull/25983'>#25983</a><br/><span style='font-size:smaller;color:gray'>ggml: enable PowerPC backend variants on AIX (#25983)</span>"]
+    C_3ce7da2 --> C_f534da2
+    C_f534da2["<a href='https://github.com/ggml-org/llama.cpp/pull/25414'>#25414</a><br/><span style='font-size:smaller;color:gray'>Fix DeepSeek4 crafted template (#25414)</span>"]
+    C_f534da2 --> C_6d5a910
+    C_6d5a910["<a href='https://github.com/ggml-org/llama.cpp/pull/25989'>#25989</a><br/><span style='font-size:smaller;color:gray'>common: infer the speculative type from the draft repo sidecars (#25989)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

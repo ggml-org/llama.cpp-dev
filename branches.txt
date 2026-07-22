@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 3ce7da2c852c538c4c5f9806da27029cf8c9cc4a, commits from ancestor: 133) ---
+--- master (tip: 6d5a910c503df242457b2e83f4918d422c0a68ab, commits from ancestor: 135) ---
+6d5a910 common: infer the speculative type from the draft repo sidecars (#25989)
+f534da2 Fix DeepSeek4 crafted template (#25414)
 3ce7da2 ggml: enable PowerPC backend variants on AIX (#25983)
 b4d6c7d ci : fix SYCL package shared library lookup (#25987)
 7347430 webgpu : add CONV_2D_DW (depthwise conv2d) kernel (#25847)
