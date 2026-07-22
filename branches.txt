@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: cf512566dc89d7a2bdefd43f6d4b85a1c18e93a7, commits from ancestor: 141) ---
+--- master (tip: 4310aa4f871c104698f6a6614a362bdec87c247a, commits from ancestor: 142) ---
+4310aa4 contrib: allow all AI-generated code in general (#26012)
 cf51256 ui: Add a "Default" option for the reasoning selector (#25846)
 1a064ab CUDA: Improve NVFP4 W4A4 activation quantization (#25730)
 0278d83 hexagon: activation ops update (#25974)

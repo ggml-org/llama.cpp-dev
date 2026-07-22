@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-22 21:59:53 UTC
+Auto-generated on 2026-07-22 23:08:51 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -295,6 +295,8 @@ graph BT
     C_1a064ab["<a href='https://github.com/ggml-org/llama.cpp/pull/25730'>#25730</a><br/><span style='font-size:smaller;color:gray'>CUDA: Improve NVFP4 W4A4 activation quantization (#25730)</span>"]
     C_1a064ab --> C_cf51256
     C_cf51256["<a href='https://github.com/ggml-org/llama.cpp/pull/25846'>#25846</a><br/><span style='font-size:smaller;color:gray'>ui: Add a 'Default' option for the reasoning selector (#25846)</span>"]
+    C_cf51256 --> C_4310aa4
+    C_4310aa4["<a href='https://github.com/ggml-org/llama.cpp/pull/26012'>#26012</a><br/><span style='font-size:smaller;color:gray'>contrib: allow all AI-generated code in general (#26012)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
