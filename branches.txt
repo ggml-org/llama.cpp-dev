@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 66e4bf7e592a98dfefcb15202fc5926967dc734e, commits from ancestor: 127) ---
+--- master (tip: 67b9b0e7f6ce45d929a4411907d3c48ec719e81c, commits from ancestor: 129) ---
+67b9b0e llama-arch: fix DeepSeek4 APE tensor op (#25945)
+1f66c3c Add support for Laguna XS.2 & M.1 (#25165)
 66e4bf7 convert: fix handle HunyuanVL XD-RoPE config (#25514)
 b4aa7dd mtmd : use align_corners for qwen3vl vision position embedding interpolation (#25781)
 71102a7 hexagon: check tensor type when reusing descriptors (#25968)
