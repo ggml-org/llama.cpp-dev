@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 7347430f4466d4f55cfb841974ee64b80fc18d93, commits from ancestor: 131) ---
+--- master (tip: 3ce7da2c852c538c4c5f9806da27029cf8c9cc4a, commits from ancestor: 133) ---
+3ce7da2 ggml: enable PowerPC backend variants on AIX (#25983)
+b4d6c7d ci : fix SYCL package shared library lookup (#25987)
 7347430 webgpu : add CONV_2D_DW (depthwise conv2d) kernel (#25847)
 c5a4a0b cuda: GET_ROWS quants (#25962)
 67b9b0e llama-arch: fix DeepSeek4 APE tensor op (#25945)

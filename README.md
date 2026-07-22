@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-22 08:44:21 UTC
+Auto-generated on 2026-07-22 10:52:12 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -275,6 +275,10 @@ graph BT
     C_c5a4a0b["<a href='https://github.com/ggml-org/llama.cpp/pull/25962'>#25962</a><br/><span style='font-size:smaller;color:gray'>cuda: GET_ROWS quants (#25962)</span>"]
     C_c5a4a0b --> C_7347430
     C_7347430["<a href='https://github.com/ggml-org/llama.cpp/pull/25847'>#25847</a><br/><span style='font-size:smaller;color:gray'>webgpu : add CONV_2D_DW (depthwise conv2d) kernel (#25847)</span>"]
+    C_7347430 --> C_b4d6c7d
+    C_b4d6c7d["<a href='https://github.com/ggml-org/llama.cpp/pull/25987'>#25987</a><br/><span style='font-size:smaller;color:gray'>ci : fix SYCL package shared library lookup (#25987)</span>"]
+    C_b4d6c7d --> C_3ce7da2
+    C_3ce7da2["<a href='https://github.com/ggml-org/llama.cpp/pull/25983'>#25983</a><br/><span style='font-size:smaller;color:gray'>ggml: enable PowerPC backend variants on AIX (#25983)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
