@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-22 18:36:22 UTC
+Auto-generated on 2026-07-22 21:59:53 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -293,6 +293,8 @@ graph BT
     C_0278d83["<a href='https://github.com/ggml-org/llama.cpp/pull/25974'>#25974</a><br/><span style='font-size:smaller;color:gray'>hexagon: activation ops update (#25974)</span>"]
     C_0278d83 --> C_1a064ab
     C_1a064ab["<a href='https://github.com/ggml-org/llama.cpp/pull/25730'>#25730</a><br/><span style='font-size:smaller;color:gray'>CUDA: Improve NVFP4 W4A4 activation quantization (#25730)</span>"]
+    C_1a064ab --> C_cf51256
+    C_cf51256["<a href='https://github.com/ggml-org/llama.cpp/pull/25846'>#25846</a><br/><span style='font-size:smaller;color:gray'>ui: Add a 'Default' option for the reasoning selector (#25846)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
