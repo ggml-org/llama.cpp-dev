@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-22 03:38:51 UTC
+Auto-generated on 2026-07-22 08:44:21 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -271,6 +271,10 @@ graph BT
     C_1f66c3c["<a href='https://github.com/ggml-org/llama.cpp/pull/25165'>#25165</a><br/><span style='font-size:smaller;color:gray'>Add support for Laguna XS.2 & M.1 (#25165)</span>"]
     C_1f66c3c --> C_67b9b0e
     C_67b9b0e["<a href='https://github.com/ggml-org/llama.cpp/pull/25945'>#25945</a><br/><span style='font-size:smaller;color:gray'>llama-arch: fix DeepSeek4 APE tensor op (#25945)</span>"]
+    C_67b9b0e --> C_c5a4a0b
+    C_c5a4a0b["<a href='https://github.com/ggml-org/llama.cpp/pull/25962'>#25962</a><br/><span style='font-size:smaller;color:gray'>cuda: GET_ROWS quants (#25962)</span>"]
+    C_c5a4a0b --> C_7347430
+    C_7347430["<a href='https://github.com/ggml-org/llama.cpp/pull/25847'>#25847</a><br/><span style='font-size:smaller;color:gray'>webgpu : add CONV_2D_DW (depthwise conv2d) kernel (#25847)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
