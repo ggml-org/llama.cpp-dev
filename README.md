@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-22 14:27:32 UTC
+Auto-generated on 2026-07-22 15:58:33 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -285,6 +285,8 @@ graph BT
     C_6d5a910["<a href='https://github.com/ggml-org/llama.cpp/pull/25989'>#25989</a><br/><span style='font-size:smaller;color:gray'>common: infer the speculative type from the draft repo sidecars (#25989)</span>"]
     C_6d5a910 --> C_e8e6c7a
     C_e8e6c7a["<a href='https://github.com/ggml-org/llama.cpp/pull/25999'>#25999</a><br/><span style='font-size:smaller;color:gray'>minor: fix reasoning preserve var for DS4 [no ci] (#25999)</span>"]
+    C_e8e6c7a --> C_61328e6
+    C_61328e6["<a href='https://github.com/ggml-org/llama.cpp/pull/25948'>#25948</a><br/><span style='font-size:smaller;color:gray'>feat(ui): add symbolic math support to JS sandbox via nerdamer (#25948)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

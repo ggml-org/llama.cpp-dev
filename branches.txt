@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: e8e6c7af2456fd50bb62f7a2bbd642e6fb14ae77, commits from ancestor: 136) ---
+--- master (tip: 61328e6a9150b5d83f70416c93d2dfa607b442d0, commits from ancestor: 137) ---
+61328e6 feat(ui): add symbolic math support to JS sandbox via nerdamer (#25948)
 e8e6c7a minor: fix reasoning preserve var for DS4 [no ci] (#25999)
 6d5a910 common: infer the speculative type from the draft repo sidecars (#25989)
 f534da2 Fix DeepSeek4 crafted template (#25414)
