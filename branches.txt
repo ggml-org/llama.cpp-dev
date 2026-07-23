@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 1425386fd996511e1f3295e7366c38289a92a271, commits from ancestor: 147) ---
+--- master (tip: c0bc8591e8815c63cb01dd3f051a8b0df02501c9, commits from ancestor: 148) ---
+c0bc859 hexagon: fix Windows crash when op_poll is enabled (#26029)
 1425386 CUDA: fix external compilation of q1_0 MMQ (#25778)
 e6dd0e2 args: refactor mlock/mmap/directio into load-mode (#20834)
 da296d6 contrib: fix leftovers from the AI usage policy update (#26030)
