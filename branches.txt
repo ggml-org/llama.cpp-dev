@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 4310aa4f871c104698f6a6614a362bdec87c247a, commits from ancestor: 142) ---
+--- master (tip: d941f6e1c9467415dfe4e45fbd7e66c53a3544e8, commits from ancestor: 143) ---
+d941f6e conversion: fix non-MoE NomicBert GGUF conversion error (#25996)
 4310aa4 contrib: allow all AI-generated code in general (#26012)
 cf51256 ui: Add a "Default" option for the reasoning selector (#25846)
 1a064ab CUDA: Improve NVFP4 W4A4 activation quantization (#25730)
