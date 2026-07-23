@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-23 03:43:09 UTC
+Auto-generated on 2026-07-23 06:18:45 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -299,6 +299,8 @@ graph BT
     C_4310aa4["<a href='https://github.com/ggml-org/llama.cpp/pull/26012'>#26012</a><br/><span style='font-size:smaller;color:gray'>contrib: allow all AI-generated code in general (#26012)</span>"]
     C_4310aa4 --> C_d941f6e
     C_d941f6e["<a href='https://github.com/ggml-org/llama.cpp/pull/25996'>#25996</a><br/><span style='font-size:smaller;color:gray'>conversion: fix non-MoE NomicBert GGUF conversion error (#25996)</span>"]
+    C_d941f6e --> C_c588c4f
+    C_c588c4f["<a href='https://github.com/ggml-org/llama.cpp/pull/25981'>#25981</a><br/><span style='font-size:smaller;color:gray'>metal : add f16 type support to leaky relu (#25981)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
