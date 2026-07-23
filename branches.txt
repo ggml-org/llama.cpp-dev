@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: c588c4f47683e73ad2d69f50480bec6cc85fd0f7, commits from ancestor: 144) ---
+--- master (tip: da296d6e726654949bce10d7cae9a2195d292bfc, commits from ancestor: 145) ---
+da296d6 contrib: fix leftovers from the AI usage policy update (#26030)
 c588c4f metal : add f16 type support to leaky relu (#25981)
 d941f6e conversion: fix non-MoE NomicBert GGUF conversion error (#25996)
 4310aa4 contrib: allow all AI-generated code in general (#26012)
