@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-23 10:53:30 UTC
+Auto-generated on 2026-07-23 14:35:34 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -303,6 +303,10 @@ graph BT
     C_c588c4f["<a href='https://github.com/ggml-org/llama.cpp/pull/25981'>#25981</a><br/><span style='font-size:smaller;color:gray'>metal : add f16 type support to leaky relu (#25981)</span>"]
     C_c588c4f --> C_da296d6
     C_da296d6["<a href='https://github.com/ggml-org/llama.cpp/pull/26030'>#26030</a><br/><span style='font-size:smaller;color:gray'>contrib: fix leftovers from the AI usage policy update (#26030)</span>"]
+    C_da296d6 --> C_e6dd0e2
+    C_e6dd0e2["<a href='https://github.com/ggml-org/llama.cpp/pull/20834'>#20834</a><br/><span style='font-size:smaller;color:gray'>args: refactor mlock/mmap/directio into load-mode (#20834)</span>"]
+    C_e6dd0e2 --> C_1425386
+    C_1425386["<a href='https://github.com/ggml-org/llama.cpp/pull/25778'>#25778</a><br/><span style='font-size:smaller;color:gray'>CUDA: fix external compilation of q1_0 MMQ (#25778)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
