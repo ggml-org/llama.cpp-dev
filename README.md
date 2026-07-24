@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-24 15:43:36 UTC
+Auto-generated on 2026-07-24 17:10:38 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -323,6 +323,10 @@ graph BT
     C_56a8386["<a href='https://github.com/ggml-org/llama.cpp/pull/25771'>#25771</a><br/><span style='font-size:smaller;color:gray'>opencl: do not treat NULL-mask flash attention as causal (#25771)</span>"]
     C_56a8386 --> C_ed7adbf
     C_ed7adbf["<a href='https://github.com/ggml-org/llama.cpp/pull/26050'>#26050</a><br/><span style='font-size:smaller;color:gray'>opencl: cache compiled cl_program binaries on disk (#26050)</span>"]
+    C_ed7adbf --> C_fa72aec
+    C_fa72aec["<a href='https://github.com/ggml-org/llama.cpp/pull/26046'>#26046</a><br/><span style='font-size:smaller;color:gray'>HIP: remove rocWMMA FlashAttention (#26046)</span>"]
+    C_fa72aec --> C_298219f
+    C_298219f["<a href='https://github.com/ggml-org/llama.cpp/pull/26051'>#26051</a><br/><span style='font-size:smaller;color:gray'>llama: various bug fixes (#26051)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

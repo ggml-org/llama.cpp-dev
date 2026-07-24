@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: ed7adbfefd5e3af5f1c7c04ac67145783def85c5, commits from ancestor: 155) ---
+--- master (tip: 298219f985b09d93df515ca708736665468ca827, commits from ancestor: 157) ---
+298219f llama: various bug fixes (#26051)
+fa72aec HIP: remove rocWMMA FlashAttention (#26046)
 ed7adbf opencl: cache compiled cl_program binaries on disk (#26050)
 56a8386 opencl: do not treat NULL-mask flash attention as causal (#25771)
 77095ee skill: create `add-new-model` and `code-review` (#26042)
