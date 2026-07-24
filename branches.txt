@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 95a923a64c7d493ed1cb347d3b55d039fa3b8097, commits from ancestor: 159) ---
+--- master (tip: 96013c51121fcabbe00b70095f104962abe1ec14, commits from ancestor: 161) ---
+96013c5 ui: remove render effects (#26083)
+88bfee1 model: add GLM 5.2 Indexer support (#25407)
 95a923a ui: fix MCP server display name conflicts in tools lists (#26011)
 27209a5 server: support "reasoning_effort": "none" in OAI API (#26045)
 298219f llama: various bug fixes (#26051)

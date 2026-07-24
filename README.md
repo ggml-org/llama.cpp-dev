@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-24 18:44:13 UTC
+Auto-generated on 2026-07-24 20:05:40 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -331,6 +331,10 @@ graph BT
     C_27209a5["<a href='https://github.com/ggml-org/llama.cpp/pull/26045'>#26045</a><br/><span style='font-size:smaller;color:gray'>server: support 'reasoning_effort': 'none' in OAI API (#26045)</span>"]
     C_27209a5 --> C_95a923a
     C_95a923a["<a href='https://github.com/ggml-org/llama.cpp/pull/26011'>#26011</a><br/><span style='font-size:smaller;color:gray'>ui: fix MCP server display name conflicts in tools lists (#26011)</span>"]
+    C_95a923a --> C_88bfee1
+    C_88bfee1["<a href='https://github.com/ggml-org/llama.cpp/pull/25407'>#25407</a><br/><span style='font-size:smaller;color:gray'>model: add GLM 5.2 Indexer support (#25407)</span>"]
+    C_88bfee1 --> C_96013c5
+    C_96013c5["<a href='https://github.com/ggml-org/llama.cpp/pull/26083'>#26083</a><br/><span style='font-size:smaller;color:gray'>ui: remove render effects (#26083)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
