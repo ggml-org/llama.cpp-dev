@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-24 06:12:42 UTC
+Auto-generated on 2026-07-24 12:07:08 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -313,6 +313,8 @@ graph BT
     C_0a50d99["<a href='https://github.com/ggml-org/llama.cpp/pull/26049'>#26049</a><br/><span style='font-size:smaller;color:gray'>hexagon: further improved pipeline of the core bits (L2, DMA, MM, FA) (#26049)</span>"]
     C_0a50d99 --> C_0cea362
     C_0cea362["<a href='https://github.com/ggml-org/llama.cpp/pull/26061'>#26061</a><br/><span style='font-size:smaller;color:gray'>vendor: update subprocess.h (#26061)</span>"]
+    C_0cea362 --> C_8f5ab83
+    C_8f5ab83["<a href='https://github.com/ggml-org/llama.cpp/pull/26018'>#26018</a><br/><span style='font-size:smaller;color:gray'>cohere2 moe template parser: enforce JSON schema for text responses if a response schema is provided (#26018)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
