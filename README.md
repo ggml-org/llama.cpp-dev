@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-24 14:07:05 UTC
+Auto-generated on 2026-07-24 15:43:36 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -317,6 +317,12 @@ graph BT
     C_8f5ab83["<a href='https://github.com/ggml-org/llama.cpp/pull/26018'>#26018</a><br/><span style='font-size:smaller;color:gray'>cohere2 moe template parser: enforce JSON schema for text responses if a response schema is provided (#26018)</span>"]
     C_8f5ab83 --> C_54ce507
     C_54ce507["<a href='https://github.com/ggml-org/llama.cpp/pull/26002'>#26002</a><br/><span style='font-size:smaller;color:gray'>UI: Fix settings precedence, Factory < Admin (--ui-config-file) < Users (Settings panel) (#26002)</span>"]
+    C_54ce507 --> C_77095ee
+    C_77095ee["<a href='https://github.com/ggml-org/llama.cpp/pull/26042'>#26042</a><br/><span style='font-size:smaller;color:gray'>skill: create `add-new-model` and `code-review` (#26042)</span>"]
+    C_77095ee --> C_56a8386
+    C_56a8386["<a href='https://github.com/ggml-org/llama.cpp/pull/25771'>#25771</a><br/><span style='font-size:smaller;color:gray'>opencl: do not treat NULL-mask flash attention as causal (#25771)</span>"]
+    C_56a8386 --> C_ed7adbf
+    C_ed7adbf["<a href='https://github.com/ggml-org/llama.cpp/pull/26050'>#26050</a><br/><span style='font-size:smaller;color:gray'>opencl: cache compiled cl_program binaries on disk (#26050)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

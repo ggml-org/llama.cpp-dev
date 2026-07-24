@@ -3,7 +3,10 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 54ce507b6fded72c1819d9ba6b092d35a7690c0e, commits from ancestor: 152) ---
+--- master (tip: ed7adbfefd5e3af5f1c7c04ac67145783def85c5, commits from ancestor: 155) ---
+ed7adbf opencl: cache compiled cl_program binaries on disk (#26050)
+56a8386 opencl: do not treat NULL-mask flash attention as causal (#25771)
+77095ee skill: create `add-new-model` and `code-review` (#26042)
 54ce507 UI: Fix settings precedence, Factory < Admin (--ui-config-file) < Users (Settings panel) (#26002)
 8f5ab83 cohere2 moe template parser: enforce JSON schema for text responses if a response schema is provided (#26018)
 0cea362 vendor: update subprocess.h (#26061)
