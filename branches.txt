@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: d67c0b4107112e4790774c3a8169e2e3eb24643b, commits from ancestor: 163) ---
+--- master (tip: 910196f6b3dfc6aca88fa732e2b02f270ff9b56b, commits from ancestor: 164) ---
+910196f common : add support for multiple end sequences in the reasoning budget sampler (#25544)
 d67c0b4 tests: synchronize save-load-state generation (#26056)
 555881e ui: reduce per-token render cost when streaming  (#26053)
 96013c5 ui: remove render effects (#26083)

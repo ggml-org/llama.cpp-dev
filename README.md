@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-25 08:31:59 UTC
+Auto-generated on 2026-07-25 10:10:54 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -339,6 +339,8 @@ graph BT
     C_555881e["<a href='https://github.com/ggml-org/llama.cpp/pull/26053'>#26053</a><br/><span style='font-size:smaller;color:gray'>ui: reduce per-token render cost when streaming  (#26053)</span>"]
     C_555881e --> C_d67c0b4
     C_d67c0b4["<a href='https://github.com/ggml-org/llama.cpp/pull/26056'>#26056</a><br/><span style='font-size:smaller;color:gray'>tests: synchronize save-load-state generation (#26056)</span>"]
+    C_d67c0b4 --> C_910196f
+    C_910196f["<a href='https://github.com/ggml-org/llama.cpp/pull/25544'>#25544</a><br/><span style='font-size:smaller;color:gray'>common : add support for multiple end sequences in the reasoning budget sampler (#25544)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
