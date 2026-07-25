@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 910196f6b3dfc6aca88fa732e2b02f270ff9b56b, commits from ancestor: 164) ---
+--- master (tip: fb92d8f1873c96ec63f9c59721d58a55bf46d441, commits from ancestor: 165) ---
+fb92d8f Update ggml/src/gguf.cpp : Defined virtual keyword for destructor of gguf_writer_base (#25867)
 910196f common : add support for multiple end sequences in the reasoning budget sampler (#25544)
 d67c0b4 tests: synchronize save-load-state generation (#26056)
 555881e ui: reduce per-token render cost when streaming  (#26053)
