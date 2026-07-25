@@ -3,7 +3,10 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: c812c543f8ab480661bd10b9546515b608b4747f, commits from ancestor: 169) ---
+--- master (tip: 8bb909374d04d40621340aee5ba2245860027fdc, commits from ancestor: 172) ---
+8bb9093 common : use-after-free when loading LoRA adapter fails (#25611)
+20455a4 server: support MCP stdio (#26062)
+355303e hexagon: partial im2col support (#26007)
 c812c54 common : skip empty implicit default preset (#25643)
 abc3487 server: add format arg to datetime tool (#26117)
 2cfc767 server : add missing task parameters(adaptive_target, adaptive_decay) in generation_settings (#25830)
