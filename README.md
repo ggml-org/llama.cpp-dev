@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-25 17:15:44 UTC
+Auto-generated on 2026-07-25 19:32:06 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -345,6 +345,12 @@ graph BT
     C_fb92d8f["<a href='https://github.com/ggml-org/llama.cpp/pull/25867'>#25867</a><br/><span style='font-size:smaller;color:gray'>Update ggml/src/gguf.cpp : Defined virtual keyword for destructor of gguf_writer_base (#25867)</span>"]
     C_fb92d8f --> C_720d7fa
     C_720d7fa["<a href='https://github.com/ggml-org/llama.cpp/pull/26067'>#26067</a><br/><span style='font-size:smaller;color:gray'>vendor : update cpp-httplib to 0.51.0 (#26067)</span>"]
+    C_720d7fa --> C_2cfc767
+    C_2cfc767["<a href='https://github.com/ggml-org/llama.cpp/pull/25830'>#25830</a><br/><span style='font-size:smaller;color:gray'>server : add missing task parameters(adaptive_target, adaptive_decay) in generation_settings (#25830)</span>"]
+    C_2cfc767 --> C_abc3487
+    C_abc3487["<a href='https://github.com/ggml-org/llama.cpp/pull/26117'>#26117</a><br/><span style='font-size:smaller;color:gray'>server: add format arg to datetime tool (#26117)</span>"]
+    C_abc3487 --> C_c812c54
+    C_c812c54["<a href='https://github.com/ggml-org/llama.cpp/pull/25643'>#25643</a><br/><span style='font-size:smaller;color:gray'>common : skip empty implicit default preset (#25643)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
