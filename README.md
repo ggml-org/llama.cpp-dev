@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-25 12:34:59 UTC
+Auto-generated on 2026-07-25 17:15:44 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -343,6 +343,8 @@ graph BT
     C_910196f["<a href='https://github.com/ggml-org/llama.cpp/pull/25544'>#25544</a><br/><span style='font-size:smaller;color:gray'>common : add support for multiple end sequences in the reasoning budget sampler (#25544)</span>"]
     C_910196f --> C_fb92d8f
     C_fb92d8f["<a href='https://github.com/ggml-org/llama.cpp/pull/25867'>#25867</a><br/><span style='font-size:smaller;color:gray'>Update ggml/src/gguf.cpp : Defined virtual keyword for destructor of gguf_writer_base (#25867)</span>"]
+    C_fb92d8f --> C_720d7fa
+    C_720d7fa["<a href='https://github.com/ggml-org/llama.cpp/pull/26067'>#26067</a><br/><span style='font-size:smaller;color:gray'>vendor : update cpp-httplib to 0.51.0 (#26067)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
