@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-26 18:40:32 UTC
+Auto-generated on 2026-07-26 19:51:13 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -365,6 +365,10 @@ graph BT
     C_42fc243["<a href='https://github.com/ggml-org/llama.cpp/pull/26085'>#26085</a><br/><span style='font-size:smaller;color:gray'>opencl: fix fused RMS norm mul view offset (#26085)</span>"]
     C_42fc243 --> C_b1d4c65
     C_b1d4c65["<a href='https://github.com/ggml-org/llama.cpp/pull/24908'>#24908</a><br/><span style='font-size:smaller;color:gray'>model: Add MiniMax-M3 (MSA: MiniMax Sparse Attention) support (#24908)</span>"]
+    C_b1d4c65 --> C_af28502
+    C_af28502["<a href='https://github.com/ggml-org/llama.cpp/pull/26126'>#26126</a><br/><span style='font-size:smaller;color:gray'>mtmd: add GLM-5.2-Vision (#26126)</span>"]
+    C_af28502 --> C_d2a8182
+    C_d2a8182["<a href='https://github.com/ggml-org/llama.cpp/pull/26102'>#26102</a><br/><span style='font-size:smaller;color:gray'>common: add `subproc.h` wrapper, disabled on android/ios (#26102)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
