@@ -3,7 +3,10 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 55b7d6c4c7e518005bc320cf0139264411deac7f, commits from ancestor: 179) ---
+--- master (tip: 0d47ea7427463093e69128bf2c2f9cd06b3ee5b3, commits from ancestor: 182) ---
+0d47ea7 mtmd: fix android build (#26150)
+d4d057b ui: fix system message edit box not expanding to fit content (#26006)
+7657a6c Keep Minimax's indexer tensors at F32 for speed and accuracy (#26144)
 55b7d6c ui: detect the conversation import format from file contents (#26121)
 d2a8182 common: add `subproc.h` wrapper, disabled on android/ios (#26102)
 af28502 mtmd: add GLM-5.2-Vision (#26126)
