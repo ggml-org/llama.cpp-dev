@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 8bb909374d04d40621340aee5ba2245860027fdc, commits from ancestor: 172) ---
+--- master (tip: 7cdd557f76800b5a84ddee2bff6f20178a3e31fe, commits from ancestor: 173) ---
+7cdd557 ggml-webgpu: Fix WASM compilation with OpenMP (#25943)
 8bb9093 common : use-after-free when loading LoRA adapter fails (#25611)
 20455a4 server: support MCP stdio (#26062)
 355303e hexagon: partial im2col support (#26007)

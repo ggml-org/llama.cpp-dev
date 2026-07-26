@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-25 23:25:25 UTC
+Auto-generated on 2026-07-26 01:04:09 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -357,6 +357,8 @@ graph BT
     C_20455a4["<a href='https://github.com/ggml-org/llama.cpp/pull/26062'>#26062</a><br/><span style='font-size:smaller;color:gray'>server: support MCP stdio (#26062)</span>"]
     C_20455a4 --> C_8bb9093
     C_8bb9093["<a href='https://github.com/ggml-org/llama.cpp/pull/25611'>#25611</a><br/><span style='font-size:smaller;color:gray'>common : use-after-free when loading LoRA adapter fails (#25611)</span>"]
+    C_8bb9093 --> C_7cdd557
+    C_7cdd557["<a href='https://github.com/ggml-org/llama.cpp/pull/25943'>#25943</a><br/><span style='font-size:smaller;color:gray'>ggml-webgpu: Fix WASM compilation with OpenMP (#25943)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
