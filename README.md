@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-26 07:14:13 UTC
+Auto-generated on 2026-07-26 15:46:45 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -361,6 +361,8 @@ graph BT
     C_7cdd557["<a href='https://github.com/ggml-org/llama.cpp/pull/25943'>#25943</a><br/><span style='font-size:smaller;color:gray'>ggml-webgpu: Fix WASM compilation with OpenMP (#25943)</span>"]
     C_7cdd557 --> C_ff067f7
     C_ff067f7["<a href='https://github.com/ggml-org/llama.cpp/pull/26099'>#26099</a><br/><span style='font-size:smaller;color:gray'>ui: fix context gauge card regressions and land at the conversation end (#26099)</span>"]
+    C_ff067f7 --> C_42fc243
+    C_42fc243["<a href='https://github.com/ggml-org/llama.cpp/pull/26085'>#26085</a><br/><span style='font-size:smaller;color:gray'>opencl: fix fused RMS norm mul view offset (#26085)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

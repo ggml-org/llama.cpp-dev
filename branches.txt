@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: ff067f76dd8e9e05f0528056f1274adf01a54d70, commits from ancestor: 174) ---
+--- master (tip: 42fc243060709331ff9b158a9ed2cbe37219ae83, commits from ancestor: 175) ---
+42fc243 opencl: fix fused RMS norm mul view offset (#26085)
 ff067f7 ui: fix context gauge card regressions and land at the conversation end (#26099)
 7cdd557 ggml-webgpu: Fix WASM compilation with OpenMP (#25943)
 8bb9093 common : use-after-free when loading LoRA adapter fails (#25611)
