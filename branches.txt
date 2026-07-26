@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 42fc243060709331ff9b158a9ed2cbe37219ae83, commits from ancestor: 175) ---
+--- master (tip: b1d4c6552489d27eb732c2804f189d9cc6ba99bd, commits from ancestor: 176) ---
+b1d4c65 model: Add MiniMax-M3 (MSA: MiniMax Sparse Attention) support (#24908)
 42fc243 opencl: fix fused RMS norm mul view offset (#26085)
 ff067f7 ui: fix context gauge card regressions and land at the conversation end (#26099)
 7cdd557 ggml-webgpu: Fix WASM compilation with OpenMP (#25943)

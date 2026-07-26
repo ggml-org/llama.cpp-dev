@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-26 15:46:45 UTC
+Auto-generated on 2026-07-26 18:40:32 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -363,6 +363,8 @@ graph BT
     C_ff067f7["<a href='https://github.com/ggml-org/llama.cpp/pull/26099'>#26099</a><br/><span style='font-size:smaller;color:gray'>ui: fix context gauge card regressions and land at the conversation end (#26099)</span>"]
     C_ff067f7 --> C_42fc243
     C_42fc243["<a href='https://github.com/ggml-org/llama.cpp/pull/26085'>#26085</a><br/><span style='font-size:smaller;color:gray'>opencl: fix fused RMS norm mul view offset (#26085)</span>"]
+    C_42fc243 --> C_b1d4c65
+    C_b1d4c65["<a href='https://github.com/ggml-org/llama.cpp/pull/24908'>#24908</a><br/><span style='font-size:smaller;color:gray'>model: Add MiniMax-M3 (MSA: MiniMax Sparse Attention) support (#24908)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
