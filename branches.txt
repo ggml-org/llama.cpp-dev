@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: d2a818231effb12b7b20b80b3b8c7756a9a33a04, commits from ancestor: 178) ---
+--- master (tip: 55b7d6c4c7e518005bc320cf0139264411deac7f, commits from ancestor: 179) ---
+55b7d6c ui: detect the conversation import format from file contents (#26121)
 d2a8182 common: add `subproc.h` wrapper, disabled on android/ios (#26102)
 af28502 mtmd: add GLM-5.2-Vision (#26126)
 b1d4c65 model: Add MiniMax-M3 (MSA: MiniMax Sparse Attention) support (#24908)
