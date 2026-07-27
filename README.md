@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-27 11:43:54 UTC
+Auto-generated on 2026-07-27 13:58:30 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -393,6 +393,12 @@ graph BT
     C_ddfc228["<a href='https://github.com/ggml-org/llama.cpp/pull/26165'>#26165</a><br/><span style='font-size:smaller;color:gray'>common: fix explicit -md precedence over draft sidecar resolution (#26165)</span>"]
     C_ddfc228 --> C_7ef790f
     C_7ef790f["<a href='https://github.com/ggml-org/llama.cpp/pull/26166'>#26166</a><br/><span style='font-size:smaller;color:gray'>tests : remove unnecessary sync in test-save-load-state (#26166)</span>"]
+    C_7ef790f --> C_dee2a84
+    C_dee2a84["<a href='https://github.com/ggml-org/llama.cpp/pull/25832'>#25832</a><br/><span style='font-size:smaller;color:gray'>ggml : adjust logic for offloading ops to weight's backend (#25832)</span>"]
+    C_dee2a84 --> C_8e8681e
+    C_8e8681e["<a href='https://github.com/ggml-org/llama.cpp/pull/25903'>#25903</a><br/><span style='font-size:smaller;color:gray'>sycl(build): parallelize ocloc invocations (#25903)</span>"]
+    C_8e8681e --> C_0324696
+    C_0324696["<a href='https://github.com/ggml-org/llama.cpp/pull/26177'>#26177</a><br/><span style='font-size:smaller;color:gray'>fit : count nextn (MTP) blocks in n_gpu_layers so front layers stay on GPU (#26177)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
