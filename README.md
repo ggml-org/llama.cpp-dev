@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-27 16:20:02 UTC
+Auto-generated on 2026-07-27 21:52:54 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -403,6 +403,8 @@ graph BT
     C_b77d646["<a href='https://github.com/ggml-org/llama.cpp/pull/25994'>#25994</a><br/><span style='font-size:smaller;color:gray'>model: Add support for Nanbeige4.2 (#25994)</span>"]
     C_b77d646 --> C_0e4a036
     C_0e4a036["<a href='https://github.com/ggml-org/llama.cpp/pull/26170'>#26170</a><br/><span style='font-size:smaller;color:gray'>common : add common_print_available_devices() (#26170)</span>"]
+    C_0e4a036 --> C_1cbfd19
+    C_1cbfd19["<a href='https://github.com/ggml-org/llama.cpp/pull/26190'>#26190</a><br/><span style='font-size:smaller;color:gray'>mtmd: support MiMo-V2.5 audio input (RVQ-based model) (#26190)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

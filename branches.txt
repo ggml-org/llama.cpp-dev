@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 0e4a0362239713ea95a6864a17a8de4b0ad90d62, commits from ancestor: 195) ---
+--- master (tip: 1cbfd1988311775425d36c0ce066590f7d3049cf, commits from ancestor: 196) ---
+1cbfd19 mtmd: support MiMo-V2.5 audio input (RVQ-based model) (#26190)
 0e4a036 common : add common_print_available_devices() (#26170)
 b77d646 model: Add support for Nanbeige4.2 (#25994)
 0324696 fit : count nextn (MTP) blocks in n_gpu_layers so front layers stay on GPU (#26177)
