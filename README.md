@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-27 21:52:54 UTC
+Auto-generated on 2026-07-27 23:46:56 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -405,6 +405,8 @@ graph BT
     C_0e4a036["<a href='https://github.com/ggml-org/llama.cpp/pull/26170'>#26170</a><br/><span style='font-size:smaller;color:gray'>common : add common_print_available_devices() (#26170)</span>"]
     C_0e4a036 --> C_1cbfd19
     C_1cbfd19["<a href='https://github.com/ggml-org/llama.cpp/pull/26190'>#26190</a><br/><span style='font-size:smaller;color:gray'>mtmd: support MiMo-V2.5 audio input (RVQ-based model) (#26190)</span>"]
+    C_1cbfd19 --> C_91f8c9c
+    C_91f8c9c["<a href='https://github.com/ggml-org/llama.cpp/pull/25495'>#25495</a><br/><span style='font-size:smaller;color:gray'>Disable -ffast-math on HIP (#25495)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
