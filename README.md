@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-27 13:58:30 UTC
+Auto-generated on 2026-07-27 16:20:02 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -399,6 +399,10 @@ graph BT
     C_8e8681e["<a href='https://github.com/ggml-org/llama.cpp/pull/25903'>#25903</a><br/><span style='font-size:smaller;color:gray'>sycl(build): parallelize ocloc invocations (#25903)</span>"]
     C_8e8681e --> C_0324696
     C_0324696["<a href='https://github.com/ggml-org/llama.cpp/pull/26177'>#26177</a><br/><span style='font-size:smaller;color:gray'>fit : count nextn (MTP) blocks in n_gpu_layers so front layers stay on GPU (#26177)</span>"]
+    C_0324696 --> C_b77d646
+    C_b77d646["<a href='https://github.com/ggml-org/llama.cpp/pull/25994'>#25994</a><br/><span style='font-size:smaller;color:gray'>model: Add support for Nanbeige4.2 (#25994)</span>"]
+    C_b77d646 --> C_0e4a036
+    C_0e4a036["<a href='https://github.com/ggml-org/llama.cpp/pull/26170'>#26170</a><br/><span style='font-size:smaller;color:gray'>common : add common_print_available_devices() (#26170)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

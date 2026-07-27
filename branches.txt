@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 0324696b8e5fe340dc94b64714e4c9aab03084a2, commits from ancestor: 193) ---
+--- master (tip: 0e4a0362239713ea95a6864a17a8de4b0ad90d62, commits from ancestor: 195) ---
+0e4a036 common : add common_print_available_devices() (#26170)
+b77d646 model: Add support for Nanbeige4.2 (#25994)
 0324696 fit : count nextn (MTP) blocks in n_gpu_layers so front layers stay on GPU (#26177)
 8e8681e sycl(build): parallelize ocloc invocations (#25903)
 dee2a84 ggml : adjust logic for offloading ops to weight's backend (#25832)
