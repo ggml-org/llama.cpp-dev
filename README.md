@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-26 22:37:33 UTC
+Auto-generated on 2026-07-27 01:14:07 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -377,6 +377,10 @@ graph BT
     C_d4d057b["<a href='https://github.com/ggml-org/llama.cpp/pull/26006'>#26006</a><br/><span style='font-size:smaller;color:gray'>ui: fix system message edit box not expanding to fit content (#26006)</span>"]
     C_d4d057b --> C_0d47ea7
     C_0d47ea7["<a href='https://github.com/ggml-org/llama.cpp/pull/26150'>#26150</a><br/><span style='font-size:smaller;color:gray'>mtmd: fix android build (#26150)</span>"]
+    C_0d47ea7 --> C_3d1c3a8
+    C_3d1c3a8["<a href='https://github.com/ggml-org/llama.cpp/pull/25113'>#25113</a><br/><span style='font-size:smaller;color:gray'>mtmd: Add Vision Support for Minimax-M3 (#25113)</span>"]
+    C_3d1c3a8 --> C_88b47a7
+    C_88b47a7["<a href='https://github.com/ggml-org/llama.cpp/pull/26131'>#26131</a><br/><span style='font-size:smaller;color:gray'>ui: Fix symbolic math tool JS sandbox prompt (#26131)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

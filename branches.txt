@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 0d47ea7427463093e69128bf2c2f9cd06b3ee5b3, commits from ancestor: 182) ---
+--- master (tip: 88b47a755c72fed4b22fba0fd262e2d7b7d01583, commits from ancestor: 184) ---
+88b47a7 ui: Fix symbolic math tool JS sandbox prompt (#26131)
+3d1c3a8 mtmd: Add Vision Support for Minimax-M3 (#25113)
 0d47ea7 mtmd: fix android build (#26150)
 d4d057b ui: fix system message edit box not expanding to fit content (#26006)
 7657a6c Keep Minimax's indexer tensors at F32 for speed and accuracy (#26144)
