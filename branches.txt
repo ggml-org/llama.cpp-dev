@@ -3,7 +3,12 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: d73c1d6b22a2d3ecc74c2c9cde354015ee72e862, commits from ancestor: 185) ---
+--- master (tip: 7ef790f90a4772eadd6966815f6d3ae7d93c7e03, commits from ancestor: 190) ---
+7ef790f tests : remove unnecessary sync in test-save-load-state (#26166)
+ddfc228 common: fix explicit -md precedence over draft sidecar resolution (#26165)
+419b881 docs: add exception about weight folding (#26168)
+b910200 ggml-cpu: Enable BF16 tiled gemm optimization on PowerPC (#26068)
+ad256de args: add `-lm mlock` where it mlocks but doesnt mmap (#26135)
 d73c1d6 server + ui: fix stream routes for model names containing a slash (#26137)
 88b47a7 ui: Fix symbolic math tool JS sandbox prompt (#26131)
 3d1c3a8 mtmd: Add Vision Support for Minimax-M3 (#25113)

@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-27 08:18:11 UTC
+Auto-generated on 2026-07-27 11:43:54 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -383,6 +383,16 @@ graph BT
     C_88b47a7["<a href='https://github.com/ggml-org/llama.cpp/pull/26131'>#26131</a><br/><span style='font-size:smaller;color:gray'>ui: Fix symbolic math tool JS sandbox prompt (#26131)</span>"]
     C_88b47a7 --> C_d73c1d6
     C_d73c1d6["<a href='https://github.com/ggml-org/llama.cpp/pull/26137'>#26137</a><br/><span style='font-size:smaller;color:gray'>server + ui: fix stream routes for model names containing a slash (#26137)</span>"]
+    C_d73c1d6 --> C_ad256de
+    C_ad256de["<a href='https://github.com/ggml-org/llama.cpp/pull/26135'>#26135</a><br/><span style='font-size:smaller;color:gray'>args: add `-lm mlock` where it mlocks but doesnt mmap (#26135)</span>"]
+    C_ad256de --> C_b910200
+    C_b910200["<a href='https://github.com/ggml-org/llama.cpp/pull/26068'>#26068</a><br/><span style='font-size:smaller;color:gray'>ggml-cpu: Enable BF16 tiled gemm optimization on PowerPC (#26068)</span>"]
+    C_b910200 --> C_419b881
+    C_419b881["<a href='https://github.com/ggml-org/llama.cpp/pull/26168'>#26168</a><br/><span style='font-size:smaller;color:gray'>docs: add exception about weight folding (#26168)</span>"]
+    C_419b881 --> C_ddfc228
+    C_ddfc228["<a href='https://github.com/ggml-org/llama.cpp/pull/26165'>#26165</a><br/><span style='font-size:smaller;color:gray'>common: fix explicit -md precedence over draft sidecar resolution (#26165)</span>"]
+    C_ddfc228 --> C_7ef790f
+    C_7ef790f["<a href='https://github.com/ggml-org/llama.cpp/pull/26166'>#26166</a><br/><span style='font-size:smaller;color:gray'>tests : remove unnecessary sync in test-save-load-state (#26166)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
