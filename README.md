@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-27 23:46:56 UTC
+Auto-generated on 2026-07-28 07:06:16 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -407,6 +407,10 @@ graph BT
     C_1cbfd19["<a href='https://github.com/ggml-org/llama.cpp/pull/26190'>#26190</a><br/><span style='font-size:smaller;color:gray'>mtmd: support MiMo-V2.5 audio input (RVQ-based model) (#26190)</span>"]
     C_1cbfd19 --> C_91f8c9c
     C_91f8c9c["<a href='https://github.com/ggml-org/llama.cpp/pull/25495'>#25495</a><br/><span style='font-size:smaller;color:gray'>Disable -ffast-math on HIP (#25495)</span>"]
+    C_91f8c9c --> C_c6292cf
+    C_c6292cf["<a href='https://github.com/ggml-org/llama.cpp/pull/26178'>#26178</a><br/><span style='font-size:smaller;color:gray'>contrib : add guideline about the 'merge ready' label (#26178)</span>"]
+    C_c6292cf --> C_f870678
+    C_f870678["<a href='https://github.com/ggml-org/llama.cpp/pull/25794'>#25794</a><br/><span style='font-size:smaller;color:gray'>spec: add eagle3-v3 support for gpt-oss model (#25794)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
