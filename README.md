@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-28 07:06:16 UTC
+Auto-generated on 2026-07-28 09:42:32 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -411,6 +411,14 @@ graph BT
     C_c6292cf["<a href='https://github.com/ggml-org/llama.cpp/pull/26178'>#26178</a><br/><span style='font-size:smaller;color:gray'>contrib : add guideline about the 'merge ready' label (#26178)</span>"]
     C_c6292cf --> C_f870678
     C_f870678["<a href='https://github.com/ggml-org/llama.cpp/pull/25794'>#25794</a><br/><span style='font-size:smaller;color:gray'>spec: add eagle3-v3 support for gpt-oss model (#25794)</span>"]
+    C_f870678 --> C_f95de97
+    C_f95de97["<a href='https://github.com/ggml-org/llama.cpp/pull/25924'>#25924</a><br/><span style='font-size:smaller;color:gray'>ggml-metal: FWHT kernel for metal backend (#25924)</span>"]
+    C_f95de97 --> C_9a3bf2b
+    C_9a3bf2b["<a href='https://github.com/ggml-org/llama.cpp/pull/26218'>#26218</a><br/><span style='font-size:smaller;color:gray'>server : add extra trace log for prompt similarity (#26218)</span>"]
+    C_9a3bf2b --> C_d6b61ac
+    C_d6b61ac["<a href='https://github.com/ggml-org/llama.cpp/pull/25880'>#25880</a><br/><span style='font-size:smaller;color:gray'>sycl: fix use-after-return of the SDPA scale in the oneDNN flash-attention path (#25880)</span>"]
+    C_d6b61ac --> C_6ba5ef2
+    C_6ba5ef2["<a href='https://github.com/ggml-org/llama.cpp/pull/26210'>#26210</a><br/><span style='font-size:smaller;color:gray'>common/chat: add specialized minimax m3 parser (#26210)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

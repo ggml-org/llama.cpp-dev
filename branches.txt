@@ -3,7 +3,11 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: f87067841bac583bc089a225382248d857791ca8, commits from ancestor: 199) ---
+--- master (tip: 6ba5ef247034cd57201360aed246d98f5a404d92, commits from ancestor: 203) ---
+6ba5ef2 common/chat: add specialized minimax m3 parser (#26210)
+d6b61ac sycl: fix use-after-return of the SDPA scale in the oneDNN flash-attention path (#25880)
+9a3bf2b server : add extra trace log for prompt similarity (#26218)
+f95de97 ggml-metal: FWHT kernel for metal backend (#25924)
 f870678 spec: add eagle3-v3 support for gpt-oss model (#25794)
 c6292cf contrib : add guideline about the "merge ready" label (#26178)
 91f8c9c Disable -ffast-math on HIP (#25495)
