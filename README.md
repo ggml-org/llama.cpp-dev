@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-28 09:42:32 UTC
+Auto-generated on 2026-07-28 11:44:29 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -419,6 +419,8 @@ graph BT
     C_d6b61ac["<a href='https://github.com/ggml-org/llama.cpp/pull/25880'>#25880</a><br/><span style='font-size:smaller;color:gray'>sycl: fix use-after-return of the SDPA scale in the oneDNN flash-attention path (#25880)</span>"]
     C_d6b61ac --> C_6ba5ef2
     C_6ba5ef2["<a href='https://github.com/ggml-org/llama.cpp/pull/26210'>#26210</a><br/><span style='font-size:smaller;color:gray'>common/chat: add specialized minimax m3 parser (#26210)</span>"]
+    C_6ba5ef2 --> C_8407527
+    C_8407527["<a href='https://github.com/ggml-org/llama.cpp/pull/25173'>#25173</a><br/><span style='font-size:smaller;color:gray'>spec: add DSpark speculative decoding (#25173)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555

@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 6ba5ef247034cd57201360aed246d98f5a404d92, commits from ancestor: 203) ---
+--- master (tip: 84075273c82f7681d43436b692073cbd4ab15fe9, commits from ancestor: 204) ---
+8407527 spec: add DSpark speculative decoding (#25173)
 6ba5ef2 common/chat: add specialized minimax m3 parser (#26210)
 d6b61ac sycl: fix use-after-return of the SDPA scale in the oneDNN flash-attention path (#25880)
 9a3bf2b server : add extra trace log for prompt similarity (#26218)
