@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 7e1e28cae36d41fe7bbe9dae7c9625de6565c063
 Branches analyzed: 2
 
---- master (tip: bc71c24c9da1e7ba6f5993da0e61476155720b06, commits from ancestor: 2) ---
+--- master (tip: e9fa0781f1c25fc4fe8c86be1edc6970661ad6f0, commits from ancestor: 3) ---
+e9fa078 model: Add Laguna-S-2.1 LLM_TYPE (#26233)
 bc71c24 ggml-webgpu: Fix some binding alias issues to support all archs, fix recurrent-state-rollback test (#25931)
 8190848 opencl: skip the Adreno KQ/KQV image kernels for multi-stream batches (#26189)
 
