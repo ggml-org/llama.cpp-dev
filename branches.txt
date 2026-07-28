@@ -3,7 +3,12 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 0badc06ab53a8eb96e01242b92ec1365c4465a2a
 Branches analyzed: 2
 
---- master (tip: 81616410050cb5d8b733b39863807f4852591d8a, commits from ancestor: 206) ---
+--- master (tip: 7e1e28cae36d41fe7bbe9dae7c9625de6565c063, commits from ancestor: 211) ---
+7e1e28c mtmd : add Nemotron 3 Nano Omni support (parakeet) (#22520)
+6e2bc65 ui: rendering performance follow-up (#26097)
+ad77bd3 docs: Adapt conda-forge package name (#26229)
+ee3d1b5 server: abstract llama_memory calls to common_memory (#26221)
+da5b448 ggml : set output of view src (#25729)
 8161641 vulkan: add iq4_nl support back to FA (#24585)
 b62b350 ggml-cuda: add chunked SSD matmul for Mamba-2 prefill acceleration (#22675)
 8407527 spec: add DSpark speculative decoding (#25173)

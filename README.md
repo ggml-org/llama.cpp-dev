@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-28 13:19:28 UTC
+Auto-generated on 2026-07-28 15:38:31 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -425,6 +425,16 @@ graph BT
     C_b62b350["<a href='https://github.com/ggml-org/llama.cpp/pull/22675'>#22675</a><br/><span style='font-size:smaller;color:gray'>ggml-cuda: add chunked SSD matmul for Mamba-2 prefill acceleration (#22675)</span>"]
     C_b62b350 --> C_8161641
     C_8161641["<a href='https://github.com/ggml-org/llama.cpp/pull/24585'>#24585</a><br/><span style='font-size:smaller;color:gray'>vulkan: add iq4_nl support back to FA (#24585)</span>"]
+    C_8161641 --> C_da5b448
+    C_da5b448["<a href='https://github.com/ggml-org/llama.cpp/pull/25729'>#25729</a><br/><span style='font-size:smaller;color:gray'>ggml : set output of view src (#25729)</span>"]
+    C_da5b448 --> C_ee3d1b5
+    C_ee3d1b5["<a href='https://github.com/ggml-org/llama.cpp/pull/26221'>#26221</a><br/><span style='font-size:smaller;color:gray'>server: abstract llama_memory calls to common_memory (#26221)</span>"]
+    C_ee3d1b5 --> C_ad77bd3
+    C_ad77bd3["<a href='https://github.com/ggml-org/llama.cpp/pull/26229'>#26229</a><br/><span style='font-size:smaller;color:gray'>docs: Adapt conda-forge package name (#26229)</span>"]
+    C_ad77bd3 --> C_6e2bc65
+    C_6e2bc65["<a href='https://github.com/ggml-org/llama.cpp/pull/26097'>#26097</a><br/><span style='font-size:smaller;color:gray'>ui: rendering performance follow-up (#26097)</span>"]
+    C_6e2bc65 --> C_7e1e28c
+    C_7e1e28c["<a href='https://github.com/ggml-org/llama.cpp/pull/22520'>#22520</a><br/><span style='font-size:smaller;color:gray'>mtmd : add Nemotron 3 Nano Omni support (parakeet) (#22520)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
