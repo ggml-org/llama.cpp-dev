@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-28 11:44:29 UTC
+Auto-generated on 2026-07-28 13:19:28 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -421,6 +421,10 @@ graph BT
     C_6ba5ef2["<a href='https://github.com/ggml-org/llama.cpp/pull/26210'>#26210</a><br/><span style='font-size:smaller;color:gray'>common/chat: add specialized minimax m3 parser (#26210)</span>"]
     C_6ba5ef2 --> C_8407527
     C_8407527["<a href='https://github.com/ggml-org/llama.cpp/pull/25173'>#25173</a><br/><span style='font-size:smaller;color:gray'>spec: add DSpark speculative decoding (#25173)</span>"]
+    C_8407527 --> C_b62b350
+    C_b62b350["<a href='https://github.com/ggml-org/llama.cpp/pull/22675'>#22675</a><br/><span style='font-size:smaller;color:gray'>ggml-cuda: add chunked SSD matmul for Mamba-2 prefill acceleration (#22675)</span>"]
+    C_b62b350 --> C_8161641
+    C_8161641["<a href='https://github.com/ggml-org/llama.cpp/pull/24585'>#24585</a><br/><span style='font-size:smaller;color:gray'>vulkan: add iq4_nl support back to FA (#24585)</span>"]
     COMMON -->|dev-metal| C_3835214
     C_3835214["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_3835214 --> C_de75555
