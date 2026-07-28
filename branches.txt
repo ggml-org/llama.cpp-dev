@@ -3,7 +3,9 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 7e1e28cae36d41fe7bbe9dae7c9625de6565c063
 Branches analyzed: 2
 
---- master (tip: 7e1e28cae36d41fe7bbe9dae7c9625de6565c063, commits from ancestor: 0) ---
+--- master (tip: bc71c24c9da1e7ba6f5993da0e61476155720b06, commits from ancestor: 2) ---
+bc71c24 ggml-webgpu: Fix some binding alias issues to support all archs, fix recurrent-state-rollback test (#25931)
+8190848 opencl: skip the Adreno KQ/KQV image kernels for multi-stream batches (#26189)
 
 --- dev-metal (tip: 7185fef97d39594b139515bf11e300451e57e2a0, commits from ancestor: 7) ---
 7185fef ggml-metal: FWHT kernel for metal backend (#25924)
