@@ -1,4 +1,4 @@
-name: Main
+name: Features
 
 on:
   schedule:
@@ -14,8 +14,8 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Run main
-        run: ./main.sh
+      - name: Run features
+        run: ./features.sh
 
       - name: Check for changes
         id: changes
