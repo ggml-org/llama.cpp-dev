@@ -13,6 +13,7 @@ LIMIT_PER_DIR=99999
 # Files to skip (basename match)
 IGNORE_FILES=(
     "build-info.cpp"
+    "ui.cpp"
 )
 
 # --- Clone repo ---
