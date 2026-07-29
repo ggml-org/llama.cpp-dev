@@ -180,6 +180,14 @@ REPO="https://github.com/ggml-org/llama.cpp"
         echo "- **Note:** Limited to $LIMIT_PER_DIR files per directory."
     fi
     echo ""
+    echo "## Build Times Over Commits"
+    echo ""
+    if [ -f "$PLOT_FILE" ]; then
+        echo "![]($PLOT_FILE)"
+    else
+        echo "Plot not available (gnuplot not installed)."
+    fi
+    echo ""
     echo "## Cumulative Times by Directory"
     echo ""
     echo "| Directory | Time |"
@@ -201,14 +209,6 @@ REPO="https://github.com/ggml-org/llama.cpp"
         done
         echo ""
     done
-
-    echo "## Build Times Over Commits"
-    echo ""
-    if [ -f "$PLOT_FILE" ]; then
-        echo "![]($PLOT_FILE)"
-    else
-        echo "Plot not available (gnuplot not installed)."
-    fi
 } > "$README_FILE"
 
 # --- Record data for historical tracking ---
