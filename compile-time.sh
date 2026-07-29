@@ -8,7 +8,7 @@ DATA_FILE="build-times.csv"
 PLOT_FILE="build-times.png"
 
 # Limit per directory for faster iteration (set high to measure all)
-LIMIT_PER_DIR=5
+LIMIT_PER_DIR=99999
 
 # Files to skip (basename match)
 IGNORE_FILES=(
