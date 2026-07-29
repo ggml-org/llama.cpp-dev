@@ -4,6 +4,8 @@ set -euo pipefail
 REPO_URL="https://github.com/ggml-org/llama.cpp"
 BUILD_DIR="build"
 README_FILE="README-compile-time.md"
+DATA_FILE="build-times.csv"
+PLOT_FILE="build-times.png"
 
 # Limit per directory for faster iteration (set high to measure all)
 LIMIT_PER_DIR=5
@@ -194,5 +196,49 @@ REPO="https://github.com/ggml-org/llama.cpp"
         echo "| $(ms_to_sec $ms) | [$relpath]($REPO/blob/$COMMIT/$relpath) |"
     done
 } > "$README_FILE"
+
+# --- Record data for historical tracking ---
+echo ""
+echo "Recording data to $DATA_FILE ..."
+
+# Create data file with header if it doesn't exist
+if [ ! -f "$DATA_FILE" ]; then
+    echo "commit,timestamp,ggml_ms,src_ms,common_ms,tools_ms" > "$DATA_FILE"
+fi
+
+# Append new data
+TIMESTAMP=$(date +%s)
+echo "$COMMIT,$TIMESTAMP,$ggml_time,$src_time,$common_time,$tools_time" >> "$DATA_FILE"
+
+# --- Generate plot ---
+echo "Generating $PLOT_FILE ..."
+
+if command -v gnuplot >/dev/null 2>&1; then
+    # Create gnuplot script
+    GNUPLOT_SCRIPT=$(mktemp)
+    trap "rm -f $RESULTS_FILE $GNUPLOT_SCRIPT" EXIT
+
+    cat > "$GNUPLOT_SCRIPT" << GNUEOF
+set terminal png size 800,400 enhanced
+set output "$PLOT_FILE"
+set title "Build Times by Directory"
+set ylabel "Time (s)"
+set xlabel "Commit"
+set grid
+set key outside right
+set xtics rotate by -45
+set style data linespoints
+set datafile separator ","
+plot \\
+    '$DATA_FILE' skip 1 using 0:(\$3/1000.0):xtic(stringcolumn(1)) title 'ggml' with linespoints, \\
+    '' using 0:(\$4/1000.0) title 'src' with linespoints, \\
+    '' using 0:(\$5/1000.0) title 'common' with linespoints, \\
+    '' using 0:(\$6/1000.0) title 'tools' with linespoints
+GNUEOF
+
+    gnuplot "$GNUPLOT_SCRIPT" 2>/dev/null && echo "Plot generated: $PLOT_FILE"
+else
+    echo "Warning: gnuplot not found. Skipping plot generation."
+fi
 
 echo "Done. Output written to $README_FILE"
