@@ -30,7 +30,7 @@ rm -rf "$BUILD_DIR"
 cmake -B "$BUILD_DIR" -S llama.cpp \
     -DGGML_CCACHE=OFF \
     -DGGML_METAL=OFF \
-    -DLLAMA_BUILD_TESTS=OFF \
+    -DLLAMA_BUILD_TESTS=ON \
     -DLLAMA_BUILD_EXAMPLES=OFF \
     -DLLAMA_BUILD_UI=OFF \
     -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
@@ -54,6 +54,7 @@ ggml_time=0
 src_time=0
 common_time=0
 tools_time=0
+tests_time=0
 other_time=0
 
 # Counters per directory
@@ -61,6 +62,7 @@ ggml_count=0
 src_count=0
 common_count=0
 tools_count=0
+tests_count=0
 
 total_measured=0
 
@@ -99,6 +101,9 @@ for (( i=0; i<count; i++ )); do
     elif [[ "$file" == *"/tools/"* ]]; then
         dir="tools"
         [ "$tools_count" -ge "$LIMIT_PER_DIR" ] && continue
+    elif [[ "$file" == *"/tests/"* ]]; then
+        dir="tests"
+        [ "$tests_count" -ge "$LIMIT_PER_DIR" ] && continue
     else
         dir="other"
         continue
@@ -126,6 +131,7 @@ for (( i=0; i<count; i++ )); do
         src)    src_time=$(( src_time + ms ));      src_count=$(( src_count + 1 )) ;;
         common) common_time=$(( common_time + ms )); common_count=$(( common_count + 1 )) ;;
         tools)  tools_time=$(( tools_time + ms ));  tools_count=$(( tools_count + 1 )) ;;
+        tests)  tests_time=$(( tests_time + ms ));  tests_count=$(( tests_count + 1 )) ;;
         *)      other_time=$(( other_time + ms )) ;;
     esac
 
@@ -158,6 +164,7 @@ printf "%-10s %s/\n" "$(ms_to_sec $ggml_time)" "ggml"
 printf "%-10s %s/\n" "$(ms_to_sec $src_time)" "src"
 printf "%-10s %s/\n" "$(ms_to_sec $common_time)" "common"
 printf "%-10s %s/\n" "$(ms_to_sec $tools_time)" "tools"
+printf "%-10s %s/\n" "$(ms_to_sec $tests_time)" "tests"
 
 # Generate README
 echo ""
@@ -174,7 +181,7 @@ REPO="https://github.com/ggml-org/llama.cpp"
     echo "## Configuration"
     echo ""
     echo "- **Commit:** [$COMMIT]($REPO/commit/$COMMIT) ($(cd llama.cpp && git log -1 --format='%s'))"
-    echo "- **CMake flags:** \`-DGGML_CCACHE=OFF -DGGML_METAL=OFF -DLLAMA_BUILD_TESTS=OFF -DLLAMA_BUILD_EXAMPLES=OFF -DLLAMA_BUILD_UI=OFF\`"
+    echo "- **CMake flags:** \`-DGGML_CCACHE=OFF -DGGML_METAL=OFF -DLLAMA_BUILD_TESTS=ON -DLLAMA_BUILD_EXAMPLES=OFF -DLLAMA_BUILD_UI=OFF\`"
     echo "- **Files measured:** $total_measured"
     if [ "$LIMIT_PER_DIR" -lt "$count" ]; then
         echo "- **Note:** Limited to $LIMIT_PER_DIR files per directory."
@@ -199,7 +206,7 @@ REPO="https://github.com/ggml-org/llama.cpp"
     echo ""
     echo "## Compile Times by Directory"
     echo ""
-    for dir in ggml src common tools; do
+    for dir in ggml src common tools tests; do
         echo "### $dir/"
         echo ""
         echo "| Time | File |"
@@ -217,12 +224,12 @@ echo "Recording data to $DATA_FILE ..."
 
 # Create data file with header if it doesn't exist
 if [ ! -f "$DATA_FILE" ]; then
-    echo "commit,timestamp,ggml_ms,src_ms,common_ms,tools_ms" > "$DATA_FILE"
+    echo "commit,timestamp,ggml_ms,src_ms,common_ms,tools_ms,tests_ms" > "$DATA_FILE"
 fi
 
 # Append new data
 TIMESTAMP=$(date +%s)
-echo "$COMMIT,$TIMESTAMP,$ggml_time,$src_time,$common_time,$tools_time" >> "$DATA_FILE"
+echo "$COMMIT,$TIMESTAMP,$ggml_time,$src_time,$common_time,$tools_time,$tests_time" >> "$DATA_FILE"
 
 # --- Generate plot ---
 echo "Generating $PLOT_FILE ..."
@@ -247,7 +254,8 @@ plot \\
     '$DATA_FILE' skip 1 using 0:(\$3/1000.0):xtic(stringcolumn(1)) title 'ggml' with linespoints, \\
     '$DATA_FILE' skip 1 using 0:(\$4/1000.0) title 'src' with linespoints, \\
     '$DATA_FILE' skip 1 using 0:(\$5/1000.0) title 'common' with linespoints, \\
-    '$DATA_FILE' skip 1 using 0:(\$6/1000.0) title 'tools' with linespoints
+    '$DATA_FILE' skip 1 using 0:(\$6/1000.0) title 'tools' with linespoints, \
+    '$DATA_FILE' skip 1 using 0:(\$7/1000.0) title 'tests' with linespoints
 GNUEOF
 
     gnuplot "$GNUPLOT_SCRIPT" 2>/dev/null && echo "Plot generated: $PLOT_FILE"
