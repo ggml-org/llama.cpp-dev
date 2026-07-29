@@ -1,5 +1,9 @@
 name: Compile Times
 
+concurrency:
+  group: dev-updates
+  cancel-in-progress: false
+
 on:
   schedule:
     - cron: '0 0 * * *'
