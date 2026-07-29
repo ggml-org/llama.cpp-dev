@@ -3,7 +3,10 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 7e1e28cae36d41fe7bbe9dae7c9625de6565c063
 Branches analyzed: 2
 
---- master (tip: 7be2c65dc9adee9bae784478be0f656e3b683431, commits from ancestor: 4) ---
+--- master (tip: e1af89a6815737a5db132eee23a94a8ee58553e0, commits from ancestor: 7) ---
+e1af89a conversion: fix Qwen2.5-Omni mmproj conversion regression (#26262)
+f5b9bd3 RPC: add tensor_memset (#25912)
+60bccc3 add rdna3.5, and 3 to mmq configs so they can be tuned independently. (#26199)
 7be2c65 model: add NextN/MTP speculative decoding support for GLM_DSA (GLM-5.2) (#25980)
 e9fa078 model: Add Laguna-S-2.1 LLM_TYPE (#26233)
 bc71c24 ggml-webgpu: Fix some binding alias issues to support all archs, fix recurrent-state-rollback test (#25931)
