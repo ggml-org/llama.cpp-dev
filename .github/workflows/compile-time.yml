@@ -1,9 +1,5 @@
 name: Compile Times
 
-concurrency:
-  group: dev-updates
-  cancel-in-progress: false
-
 on:
   schedule:
     - cron: '0 0 * * *'
@@ -30,4 +26,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README-compile-times.md compile-times.png compile-times.csv
           git commit -m "auto: update compile times" || exit 0
+          git pull --rebase origin "$(git branch --show-current)"
           git push
