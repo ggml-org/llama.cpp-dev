@@ -3,7 +3,7 @@ set -euo pipefail
 
 REPO_URL="https://github.com/ggml-org/llama.cpp"
 BUILD_DIR="build"
-README_FILE="README-compile-time.md"
+README_FILE="README-compile-times.md"
 DATA_FILE="compile-times.csv"
 PLOT_FILE="compile-times.png"
 
