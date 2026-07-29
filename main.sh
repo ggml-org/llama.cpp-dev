@@ -4,7 +4,7 @@ set -euo pipefail
 REPO_URL="https://github.com/ggml-org/llama.cpp"
 BARE_DIR=".llama.cpp-bare"
 OUTPUT_FILE="branches.txt"
-README_FILE="README.md"
+README_FILE="README-features.md"
 
 # --- Setup bare clone ---
 if [ ! -d "$BARE_DIR" ]; then
