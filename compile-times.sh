@@ -14,6 +14,7 @@ LIMIT_PER_DIR=99999
 IGNORE_FILES=(
     "build-info.cpp"
     "ui.cpp"
+    "get-model.cpp"
 )
 
 # --- Clone repo ---
