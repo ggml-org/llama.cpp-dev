@@ -16,7 +16,8 @@ e9fa078 model: Add Laguna-S-2.1 LLM_TYPE (#26233)
 bc71c24 ggml-webgpu: Fix some binding alias issues to support all archs, fix recurrent-state-rollback test (#25931)
 8190848 opencl: skip the Adreno KQ/KQV image kernels for multi-stream batches (#26189)
 
---- dev-metal (tip: 7185fef97d39594b139515bf11e300451e57e2a0, commits from ancestor: 7) ---
+--- dev-metal (tip: 96ece714c47c11d4324539a8dcabe171cc401b0f, commits from ancestor: 8) ---
+96ece71 metal : per-device tuned (Q, NE) for flash-attn vec (#25750)
 7185fef ggml-metal: FWHT kernel for metal backend (#25924)
 a9a5d1d metal: fuse snake activation (mul, sin, sqr, mul, add) (#25459)
 70f70ed metal : add Q2_0 support (#25419)
