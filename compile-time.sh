@@ -64,6 +64,12 @@ for (( i=0; i<count; i++ )); do
     command=$(jq -r ".[$i].command" "$COMPILE_DB")
     file=$(jq -r ".[$i].file" "$COMPILE_DB")
     fname=$(basename "$file")
+    # Relative path from llama.cpp/ for GitHub links
+    relpath=${file#*llama.cpp/}
+    # Skip generated files (not in source tree)
+    if [[ "$file" == *"/build/"* ]]; then
+        relpath=""
+    fi
 
     # Determine directory category
     if [[ "$file" == *"/ggml/"* ]]; then
@@ -93,7 +99,7 @@ for (( i=0; i<count; i++ )); do
     end=$(date +%s%N)
     ms=$(( (end - start) / 1000000 ))
 
-    echo "$ms|$dir|$fname" >> "$RESULTS_FILE"
+    echo "$ms|$dir|$fname|$relpath" >> "$RESULTS_FILE"
     total_measured=$(( total_measured + 1 ))
 
     # Accumulate directory time and increment counter
@@ -131,6 +137,9 @@ printf "%-10s %s/\n" "$tools_time" "tools"
 echo ""
 echo "Generating $README_FILE ..."
 
+COMMIT=$(cd llama.cpp && git log -1 --format='%h')
+REPO="https://github.com/ggml-org/llama.cpp"
+
 {
     echo "# llama.cpp Compile Times"
     echo ""
@@ -138,7 +147,7 @@ echo "Generating $README_FILE ..."
     echo ""
     echo "## Configuration"
     echo ""
-    echo "- **Commit:** $(cd llama.cpp && git log -1 --format='%h (%s)')"
+    echo "- **Commit:** [$COMMIT]($REPO/commit/$COMMIT) ($(cd llama.cpp && git log -1 --format='%s'))"
     echo "- **CMake flags:** \`-DGGML_CCACHE=OFF -DGGML_METAL=OFF -DLLAMA_BUILD_TESTS=OFF -DLLAMA_BUILD_EXAMPLES=OFF -DLLAMA_BUILD_UI=OFF\`"
     echo "- **Files measured:** $total_measured"
     if [ "$LIMIT_PER_DIR" -lt "$count" ]; then
@@ -149,17 +158,21 @@ echo "Generating $README_FILE ..."
     echo ""
     echo "| Directory | Time (ms) |"
     echo "|-----------|-----------|"
-    echo "| ggml/     | $ggml_time     |"
-    echo "| src/      | $src_time      |"
-    echo "| common/   | $common_time    |"
-    echo "| tools/    | $tools_time    |"
+    echo "| [ggml/]($REPO/tree/$COMMIT/ggml)     | $ggml_time     |"
+    echo "| [src/]($REPO/tree/$COMMIT/src)      | $src_time      |"
+    echo "| [common/]($REPO/tree/$COMMIT/common)   | $common_time    |"
+    echo "| [tools/]($REPO/tree/$COMMIT/tools)    | $tools_time    |"
     echo ""
     echo "## Compile Times (sorted)"
     echo ""
     echo "| Time (ms) | File |"
     echo "|-----------|------|"
-    sort -t'|' -k1 -rn "$RESULTS_FILE" | while IFS='|' read -r ms dir fname; do
-        echo "| $ms       | $fname |"
+    sort -t'|' -k1 -rn "$RESULTS_FILE" | while IFS='|' read -r ms dir fname relpath; do
+        if [ -n "$relpath" ]; then
+            echo "| $ms       | [$fname]($REPO/blob/$COMMIT/$relpath) |"
+        else
+            echo "| $ms       | $fname (generated) |"
+        fi
     done
 } > "$README_FILE"
 
