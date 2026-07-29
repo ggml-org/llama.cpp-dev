@@ -1,4 +1,4 @@
-name: Compile Time
+name: Compile Times
 
 on:
   schedule:
@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Run compile-time
+      - name: Run compile-times
         run: ./compile-time.sh
 
       - name: Check for changes
@@ -31,6 +31,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README-compile-time.md build-times.png build-times.csv
+          git add README-compile-time.md compile-times.png compile-times.csv
           git commit -m "auto: update compile times"
           git push

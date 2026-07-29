@@ -8,9 +8,9 @@ Auto-generated on 2026-07-29 11:49:51 UTC
 - **CMake flags:** `-DGGML_CCACHE=OFF -DGGML_METAL=OFF -DLLAMA_BUILD_TESTS=OFF -DLLAMA_BUILD_EXAMPLES=OFF -DLLAMA_BUILD_UI=OFF`
 - **Files measured:** 314
 
-## Build Times Over Commits
+## Compile Times Over Commits
 
-![](build-times.png)
+![](compile-times.png)
 
 ## Cumulative Times by Directory
 

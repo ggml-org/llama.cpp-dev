@@ -4,8 +4,8 @@ set -euo pipefail
 REPO_URL="https://github.com/ggml-org/llama.cpp"
 BUILD_DIR="build"
 README_FILE="README-compile-time.md"
-DATA_FILE="build-times.csv"
-PLOT_FILE="build-times.png"
+DATA_FILE="compile-times.csv"
+PLOT_FILE="compile-times.png"
 
 # Limit per directory for faster iteration (set high to measure all)
 LIMIT_PER_DIR=99999
@@ -180,7 +180,7 @@ REPO="https://github.com/ggml-org/llama.cpp"
         echo "- **Note:** Limited to $LIMIT_PER_DIR files per directory."
     fi
     echo ""
-    echo "## Build Times Over Commits"
+    echo "## Compile Times Over Commits"
     echo ""
     if [ -f "$PLOT_FILE" ]; then
         echo "![]($PLOT_FILE)"
@@ -235,7 +235,7 @@ if command -v gnuplot >/dev/null 2>&1; then
     cat > "$GNUPLOT_SCRIPT" << GNUEOF
 set terminal png size 800,400 enhanced
 set output "$PLOT_FILE"
-set title "Build Times by Directory"
+set title "Compile Times by Directory"
 set ylabel "Time (s)"
 set xlabel "Commit"
 set grid
