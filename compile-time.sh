@@ -126,7 +126,7 @@ for (( i=0; i<count; i++ )); do
         *)      other_time=$(( other_time + ms )) ;;
     esac
 
-    printf "[%d] %-40s %d.%ds\n" "$total_measured" "$fname" "$sec_whole" "$sec_frac"
+    printf "[%d] %-50s %d.%ds\n" "$total_measured" "$relpath" "$sec_whole" "$sec_frac"
 done
 
 # Helper: convert ms to "X.Ys" format
@@ -143,7 +143,7 @@ echo "=== Compile times (sorted) ==="
 printf "%-10s %s\n" "TIME" "FILE"
 printf "%-10s %s\n" "----" "----"
 sort -t'|' -k1 -rn "$RESULTS_FILE" | while IFS='|' read -r ms dir fname relpath; do
-    printf "%-10s %s\n" "$(ms_to_sec $ms)" "$fname"
+    printf "%-10s %s\n" "$(ms_to_sec $ms)" "$relpath"
 done
 
 # Print cumulative times per directory
@@ -191,7 +191,7 @@ REPO="https://github.com/ggml-org/llama.cpp"
     echo "| Time | File |"
     echo "|------|------|"
     sort -t'|' -k1 -rn "$RESULTS_FILE" | while IFS='|' read -r ms dir fname relpath; do
-        echo "| $(ms_to_sec $ms) | [$fname]($REPO/blob/$COMMIT/$relpath) |"
+        echo "| $(ms_to_sec $ms) | [$relpath]($REPO/blob/$COMMIT/$relpath) |"
     done
 } > "$README_FILE"
 
