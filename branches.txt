@@ -3,7 +3,8 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 7e1e28cae36d41fe7bbe9dae7c9625de6565c063
 Branches analyzed: 2
 
---- master (tip: e9fa0781f1c25fc4fe8c86be1edc6970661ad6f0, commits from ancestor: 3) ---
+--- master (tip: 7be2c65dc9adee9bae784478be0f656e3b683431, commits from ancestor: 4) ---
+7be2c65 model: add NextN/MTP speculative decoding support for GLM_DSA (GLM-5.2) (#25980)
 e9fa078 model: Add Laguna-S-2.1 LLM_TYPE (#26233)
 bc71c24 ggml-webgpu: Fix some binding alias issues to support all archs, fix recurrent-state-rollback test (#25931)
 8190848 opencl: skip the Adreno KQ/KQV image kernels for multi-stream batches (#26189)
