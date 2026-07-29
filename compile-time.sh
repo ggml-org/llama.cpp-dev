@@ -8,6 +8,11 @@ README_FILE="README-compile-time.md"
 # Limit per directory for faster iteration (set high to measure all)
 LIMIT_PER_DIR=5
 
+# Files to skip (basename match)
+IGNORE_FILES=(
+    "build-info.cpp"
+)
+
 # --- Clone repo ---
 if [ ! -d "llama.cpp" ]; then
     echo "Cloning llama.cpp ..."
@@ -64,12 +69,19 @@ for (( i=0; i<count; i++ )); do
     command=$(jq -r ".[$i].command" "$COMPILE_DB")
     file=$(jq -r ".[$i].file" "$COMPILE_DB")
     fname=$(basename "$file")
+
+    # Check if file should be ignored
+    skip=false
+    for ignored in "${IGNORE_FILES[@]}"; do
+        if [ "$fname" = "$ignored" ]; then
+            skip=true
+            break
+        fi
+    done
+    [ "$skip" = true ] && continue
+
     # Relative path from llama.cpp/ for GitHub links
     relpath=${file#*llama.cpp/}
-    # Skip generated files (not in source tree)
-    if [[ "$file" == *"/build/"* ]]; then
-        relpath=""
-    fi
 
     # Determine directory category
     if [[ "$file" == *"/ggml/"* ]]; then
@@ -168,11 +180,7 @@ REPO="https://github.com/ggml-org/llama.cpp"
     echo "| Time (ms) | File |"
     echo "|-----------|------|"
     sort -t'|' -k1 -rn "$RESULTS_FILE" | while IFS='|' read -r ms dir fname relpath; do
-        if [ -n "$relpath" ]; then
-            echo "| $ms       | [$fname]($REPO/blob/$COMMIT/$relpath) |"
-        else
-            echo "| $ms       | $fname (generated) |"
-        fi
+        echo "| $ms       | [$fname]($REPO/blob/$COMMIT/$relpath) |"
     done
 } > "$README_FILE"
 
