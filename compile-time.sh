@@ -110,6 +110,9 @@ for (( i=0; i<count; i++ )); do
     (cd "$BUILD_DIR" && eval "$command") >/dev/null 2>&1 || true
     end=$(date +%s%N)
     ms=$(( (end - start) / 1000000 ))
+    # Convert to seconds with one decimal
+    sec_whole=$(( ms / 1000 ))
+    sec_frac=$(( (ms % 1000) / 100 ))
 
     echo "$ms|$dir|$fname|$relpath" >> "$RESULTS_FILE"
     total_measured=$(( total_measured + 1 ))
@@ -123,27 +126,35 @@ for (( i=0; i<count; i++ )); do
         *)      other_time=$(( other_time + ms )) ;;
     esac
 
-    printf "[%d] %-40s %d ms\n" "$total_measured" "$fname" "$ms"
+    printf "[%d] %-40s %d.%ds\n" "$total_measured" "$fname" "$sec_whole" "$sec_frac"
 done
+
+# Helper: convert ms to "X.Ys" format
+ms_to_sec() {
+    local ms=$1
+    local whole=$(( ms / 1000 ))
+    local frac=$(( (ms % 1000) / 100 ))
+    printf "%d.%ds" "$whole" "$frac"
+}
 
 # Print per-file results sorted by time (descending)
 echo ""
 echo "=== Compile times (sorted) ==="
-printf "%-10s %s\n" "TIME (ms)" "FILE"
-printf "%-10s %s\n" "----------" "----"
-sort -t'|' -k1 -rn "$RESULTS_FILE" | while IFS='|' read -r ms dir fname; do
-    printf "%-10s %s\n" "$ms" "$fname"
+printf "%-10s %s\n" "TIME" "FILE"
+printf "%-10s %s\n" "----" "----"
+sort -t'|' -k1 -rn "$RESULTS_FILE" | while IFS='|' read -r ms dir fname relpath; do
+    printf "%-10s %s\n" "$(ms_to_sec $ms)" "$fname"
 done
 
 # Print cumulative times per directory
 echo ""
 echo "=== Cumulative times by directory ==="
-printf "%-10s %s\n" "TIME (ms)" "DIRECTORY"
-printf "%-10s %s\n" "----------" "-----------"
-printf "%-10s %s/\n" "$ggml_time" "ggml"
-printf "%-10s %s/\n" "$src_time" "src"
-printf "%-10s %s/\n" "$common_time" "common"
-printf "%-10s %s/\n" "$tools_time" "tools"
+printf "%-10s %s\n" "TIME" "DIRECTORY"
+printf "%-10s %s\n" "----" "-----------"
+printf "%-10s %s/\n" "$(ms_to_sec $ggml_time)" "ggml"
+printf "%-10s %s/\n" "$(ms_to_sec $src_time)" "src"
+printf "%-10s %s/\n" "$(ms_to_sec $common_time)" "common"
+printf "%-10s %s/\n" "$(ms_to_sec $tools_time)" "tools"
 
 # Generate README
 echo ""
@@ -168,19 +179,19 @@ REPO="https://github.com/ggml-org/llama.cpp"
     echo ""
     echo "## Cumulative Times by Directory"
     echo ""
-    echo "| Directory | Time (ms) |"
-    echo "|-----------|-----------|"
-    echo "| [ggml/]($REPO/tree/$COMMIT/ggml)     | $ggml_time     |"
-    echo "| [src/]($REPO/tree/$COMMIT/src)      | $src_time      |"
-    echo "| [common/]($REPO/tree/$COMMIT/common)   | $common_time    |"
-    echo "| [tools/]($REPO/tree/$COMMIT/tools)    | $tools_time    |"
+    echo "| Directory | Time |"
+    echo "|-----------|------|"
+    echo "| [ggml/]($REPO/tree/$COMMIT/ggml)     | $(ms_to_sec $ggml_time)     |"
+    echo "| [src/]($REPO/tree/$COMMIT/src)      | $(ms_to_sec $src_time)      |"
+    echo "| [common/]($REPO/tree/$COMMIT/common)   | $(ms_to_sec $common_time)    |"
+    echo "| [tools/]($REPO/tree/$COMMIT/tools)    | $(ms_to_sec $tools_time)    |"
     echo ""
     echo "## Compile Times (sorted)"
     echo ""
-    echo "| Time (ms) | File |"
-    echo "|-----------|------|"
+    echo "| Time | File |"
+    echo "|------|------|"
     sort -t'|' -k1 -rn "$RESULTS_FILE" | while IFS='|' read -r ms dir fname relpath; do
-        echo "| $ms       | [$fname]($REPO/blob/$COMMIT/$relpath) |"
+        echo "| $(ms_to_sec $ms) | [$fname]($REPO/blob/$COMMIT/$relpath) |"
     done
 } > "$README_FILE"
 
