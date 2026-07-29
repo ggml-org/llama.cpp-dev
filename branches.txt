@@ -3,7 +3,11 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 7e1e28cae36d41fe7bbe9dae7c9625de6565c063
 Branches analyzed: 2
 
---- master (tip: e1af89a6815737a5db132eee23a94a8ee58553e0, commits from ancestor: 7) ---
+--- master (tip: caa596ab3f0f8768ee326d6e3d5d39782194676c, commits from ancestor: 11) ---
+caa596a ggml-cuda : disable MMQ on devices with less than 48 KiB shared memory (#26141)
+11b068d sycl: contiguous fast path + 32-bit index math for unary elementwise ops (#25946)
+e2f59ed vendor: update BoringSSL to 0.20260728.0 (#26241)
+992c325 server : add trace logging for slot similarity checking (#26271)
 e1af89a conversion: fix Qwen2.5-Omni mmproj conversion regression (#26262)
 f5b9bd3 RPC: add tensor_memset (#25912)
 60bccc3 add rdna3.5, and 3 to mmq configs so they can be tuned independently. (#26199)
