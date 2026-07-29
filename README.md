@@ -1,6 +1,7 @@
 # llama.cpp-dev
 
 [![Features](https://github.com/ggml-org/llama.cpp-dev/actions/workflows/main.yml/badge.svg)](https://github.com/ggml-org/llama.cpp-dev/actions/workflows/main.yml)
+[![Compile Times](https://github.com/ggml-org/llama.cpp-dev/actions/workflows/compile-time.yml/badge.svg)](https://github.com/ggml-org/llama.cpp-dev/actions/workflows/compile-time.yml)
 
 Scripts for monitoring llama.cpp development.
 
