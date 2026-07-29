@@ -188,6 +188,14 @@ REPO="https://github.com/ggml-org/llama.cpp"
     echo "| [common/]($REPO/tree/$COMMIT/common)   | $(ms_to_sec $common_time)    |"
     echo "| [tools/]($REPO/tree/$COMMIT/tools)    | $(ms_to_sec $tools_time)    |"
     echo ""
+    echo "## Build Times Over Commits"
+    echo ""
+    if [ -f "$PLOT_FILE" ]; then
+        echo "![]($PLOT_FILE)"
+    else
+        echo "Plot not available (gnuplot not installed)."
+    fi
+    echo ""
     echo "## Compile Times (sorted)"
     echo ""
     echo "| Time | File |"
