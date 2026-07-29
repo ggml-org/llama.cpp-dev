@@ -33,5 +33,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add branches.txt README.md
           git commit -m "auto: update"
-          git pull --rebase origin "$(git branch --show-current)"
+          git stash --include-untracked && git pull --rebase origin "$(git branch --show-current)"
           git push
