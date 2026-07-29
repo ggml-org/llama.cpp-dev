@@ -231,9 +231,9 @@ set style data linespoints
 set datafile separator ","
 plot \\
     '$DATA_FILE' skip 1 using 0:(\$3/1000.0):xtic(stringcolumn(1)) title 'ggml' with linespoints, \\
-    '' using 0:(\$4/1000.0) title 'src' with linespoints, \\
-    '' using 0:(\$5/1000.0) title 'common' with linespoints, \\
-    '' using 0:(\$6/1000.0) title 'tools' with linespoints
+    '$DATA_FILE' skip 1 using 0:(\$4/1000.0) title 'src' with linespoints, \\
+    '$DATA_FILE' skip 1 using 0:(\$5/1000.0) title 'common' with linespoints, \\
+    '$DATA_FILE' skip 1 using 0:(\$6/1000.0) title 'tools' with linespoints
 GNUEOF
 
     gnuplot "$GNUPLOT_SCRIPT" 2>/dev/null && echo "Plot generated: $PLOT_FILE"
