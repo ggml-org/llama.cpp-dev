@@ -189,6 +189,19 @@ REPO="https://github.com/ggml-org/llama.cpp"
     echo "| [common/]($REPO/tree/$COMMIT/common)   | $(ms_to_sec $common_time)    |"
     echo "| [tools/]($REPO/tree/$COMMIT/tools)    | $(ms_to_sec $tools_time)    |"
     echo ""
+    echo "## Compile Times by Directory"
+    echo ""
+    for dir in ggml src common tools; do
+        echo "### $dir/"
+        echo ""
+        echo "| Time | File |"
+        echo "|------|------|"
+        grep "|$dir|" "$RESULTS_FILE" | sort -t'|' -k1 -rn | while IFS='|' read -r ms d fname relpath; do
+            echo "| $(ms_to_sec $ms) | [$relpath]($REPO/blob/$COMMIT/$relpath) |"
+        done
+        echo ""
+    done
+
     echo "## Build Times Over Commits"
     echo ""
     if [ -f "$PLOT_FILE" ]; then
@@ -196,14 +209,6 @@ REPO="https://github.com/ggml-org/llama.cpp"
     else
         echo "Plot not available (gnuplot not installed)."
     fi
-    echo ""
-    echo "## Compile Times (sorted)"
-    echo ""
-    echo "| Time | File |"
-    echo "|------|------|"
-    sort -t'|' -k1 -rn "$RESULTS_FILE" | while IFS='|' read -r ms dir fname relpath; do
-        echo "| $(ms_to_sec $ms) | [$relpath]($REPO/blob/$COMMIT/$relpath) |"
-    done
 } > "$README_FILE"
 
 # --- Record data for historical tracking ---
