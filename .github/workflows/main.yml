@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   update:
-    runs-on: [self-hosted, dev-plot]
+    runs-on: ubuntu-slim
     steps:
       - uses: actions/checkout@v6
 
