@@ -3,8 +3,9 @@ set -euo pipefail
 
 REPO_URL="https://github.com/ggml-org/llama.cpp"
 BUILD_DIR="build"
+README_FILE="README-compile-time.md"
 
-# Limit per directory for faster iteration
+# Limit per directory for faster iteration (set high to measure all)
 LIMIT_PER_DIR=5
 
 # --- Clone repo ---
@@ -126,5 +127,40 @@ printf "%-10s %s/\n" "$src_time" "src"
 printf "%-10s %s/\n" "$common_time" "common"
 printf "%-10s %s/\n" "$tools_time" "tools"
 
+# Generate README
 echo ""
-echo "Done."
+echo "Generating $README_FILE ..."
+
+{
+    echo "# llama.cpp Compile Times"
+    echo ""
+    echo "Auto-generated on $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+    echo ""
+    echo "## Configuration"
+    echo ""
+    echo "- **Commit:** $(cd llama.cpp && git log -1 --format='%h (%s)')"
+    echo "- **CMake flags:** \`-DGGML_CCACHE=OFF -DGGML_METAL=OFF -DLLAMA_BUILD_TESTS=OFF -DLLAMA_BUILD_EXAMPLES=OFF -DLLAMA_BUILD_UI=OFF\`"
+    echo "- **Files measured:** $total_measured"
+    if [ "$LIMIT_PER_DIR" -lt "$count" ]; then
+        echo "- **Note:** Limited to $LIMIT_PER_DIR files per directory."
+    fi
+    echo ""
+    echo "## Cumulative Times by Directory"
+    echo ""
+    echo "| Directory | Time (ms) |"
+    echo "|-----------|-----------|"
+    echo "| ggml/     | $ggml_time     |"
+    echo "| src/      | $src_time      |"
+    echo "| common/   | $common_time    |"
+    echo "| tools/    | $tools_time    |"
+    echo ""
+    echo "## Compile Times (sorted)"
+    echo ""
+    echo "| Time (ms) | File |"
+    echo "|-----------|------|"
+    sort -t'|' -k1 -rn "$RESULTS_FILE" | while IFS='|' read -r ms dir fname; do
+        echo "| $ms       | $fname |"
+    done
+} > "$README_FILE"
+
+echo "Done. Output written to $README_FILE"
