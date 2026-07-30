@@ -3,7 +3,20 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 7e1e28cae36d41fe7bbe9dae7c9625de6565c063
 Branches analyzed: 2
 
---- master (tip: 3018a11e79e489b657dbb77c95694889ccff92df, commits from ancestor: 13) ---
+--- master (tip: 432d7ffe2c3b4e539f3d0d4ae0a4893090a018d6, commits from ancestor: 26) ---
+432d7ff llama-context : sync pending async copies before clearing embd_seq (#25676)
+47f686f tests : avoid building get-model.cpp many times (#26317)
+e1a1abb ggml-cuda: Allow transpose-free gemmv computation (#26171)
+6b36c23 readme : refresh (#26280)
+9ebfc3a sync : ggml
+6a4c335 ggml : bump version to 0.18.0 (ggml/1576)
+9b2a088 CUDA: add Q2_0 support (#25707)
+b2f2216 Remove custom cpu op from the M3 graph, express with stock ops (#26297)
+d0bfb19 metal: fix memory unwire if model is freed without any GPU operations (#26082)
+21a5f5b ui: IndexedDB and Conversations data fixes (#26278)
+32703b4 ggml : Fix issue with kleidiai ci and stringop overflow warning (#26277)
+a6a77bc [UT] enhance UT to show all real unsupported backends (#25234)
+64d528b mimo2: address MTP review feedback (#26228)
 3018a11 fix: increase greeting spacing on md screens (#26287)
 afeebe1 llama: move suppress_tokens handling to common/sampling (#26276)
 caa596a ggml-cuda : disable MMQ on devices with less than 48 KiB shared memory (#26141)
