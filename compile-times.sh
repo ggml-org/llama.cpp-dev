@@ -8,7 +8,7 @@ DATA_FILE="compile-times.csv"
 PLOT_FILE="compile-times.png"
 
 # Limit per directory for faster iteration (set high to measure all)
-LIMIT_PER_DIR=99999
+LIMIT_PER_DIR=${LIMIT_PER_DIR:-99999}
 
 # Files to skip (basename match)
 IGNORE_FILES=(
@@ -86,29 +86,22 @@ for (( i=0; i<count; i++ )); do
     done
     [ "$skip" = true ] && continue
 
-    # Relative path from llama.cpp/ for GitHub links
-    relpath=${file#*llama.cpp/}
+    # Relative path from llama.cpp/ for GitHub links (use ## for longest match)
+    relpath=${file##*llama.cpp/}
 
-    # Determine directory category
-    if [[ "$file" == *"/ggml/"* ]]; then
-        dir="ggml"
-        [ "$ggml_count" -ge "$LIMIT_PER_DIR" ] && continue
-    elif [[ "$file" == *"/src/"* ]]; then
-        dir="src"
-        [ "$src_count" -ge "$LIMIT_PER_DIR" ] && continue
-    elif [[ "$file" == *"/common/"* ]]; then
-        dir="common"
-        [ "$common_count" -ge "$LIMIT_PER_DIR" ] && continue
-    elif [[ "$file" == *"/tools/"* ]]; then
-        dir="tools"
-        [ "$tools_count" -ge "$LIMIT_PER_DIR" ] && continue
-    elif [[ "$file" == *"/tests/"* ]]; then
-        dir="tests"
-        [ "$tests_count" -ge "$LIMIT_PER_DIR" ] && continue
-    else
-        dir="other"
-        continue
-    fi
+    # Determine directory category (match first component of relpath)
+    case "$relpath" in
+        ggml/*)   dir="ggml" ;;
+        src/*)    dir="src" ;;
+        common/*) dir="common" ;;
+        tools/*)  dir="tools" ;;
+        tests/*)  dir="tests" ;;
+        *)        continue ;;
+    esac
+
+    # Check per-directory limit
+    count_var="${dir}_count"
+    [ "${!count_var}" -ge "$LIMIT_PER_DIR" ] && continue
 
     # Extract output file path (-o <path>) and remove it to force real compilation
     output=$(echo "$command" | sed -n 's/.*-o \([^ ]*\).*/\1/p')
@@ -127,14 +120,10 @@ for (( i=0; i<count; i++ )); do
     total_measured=$(( total_measured + 1 ))
 
     # Accumulate directory time and increment counter
-    case "$dir" in
-        ggml)   ggml_time=$(( ggml_time + ms ));   ggml_count=$(( ggml_count + 1 )) ;;
-        src)    src_time=$(( src_time + ms ));      src_count=$(( src_count + 1 )) ;;
-        common) common_time=$(( common_time + ms )); common_count=$(( common_count + 1 )) ;;
-        tools)  tools_time=$(( tools_time + ms ));  tools_count=$(( tools_count + 1 )) ;;
-        tests)  tests_time=$(( tests_time + ms ));  tests_count=$(( tests_count + 1 )) ;;
-        *)      other_time=$(( other_time + ms )) ;;
-    esac
+    time_var="${dir}_time"
+    count_var="${dir}_count"
+    eval "$time_var=\$(( $time_var + ms ))"
+    eval "$count_var=\$(( $count_var + 1 ))"
 
     printf "[%d] %-50s %d.%ds\n" "$total_measured" "$relpath" "$sec_whole" "$sec_frac"
 done
