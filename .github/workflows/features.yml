@@ -31,7 +31,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add branches.txt README.md
+          git add branches.txt README-features.md
           git commit -m "auto: update"
           git stash --include-untracked && git pull --rebase origin "$(git branch --show-current)"
           git push
