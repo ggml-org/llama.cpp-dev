@@ -10,12 +10,9 @@ permissions:
 
 jobs:
   update:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, gnuplot]
     steps:
       - uses: actions/checkout@v6
-
-      - name: Setup dependencies
-        run: ./setup.sh
 
       - name: Run compile-times
         run: ./compile-times.sh
