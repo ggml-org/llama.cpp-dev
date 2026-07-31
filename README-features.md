@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-30 17:26:19 UTC
+Auto-generated on 2026-07-31 03:27:16 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -67,6 +67,12 @@ graph BT
     C_432d7ff["<a href='https://github.com/ggml-org/llama.cpp/pull/25676'>#25676</a><br/><span style='font-size:smaller;color:gray'>llama-context : sync pending async copies before clearing embd_seq (#25676)</span>"]
     C_432d7ff --> C_958d9c0
     C_958d9c0["<a href='https://github.com/ggml-org/llama.cpp/pull/25617'>#25617</a><br/><span style='font-size:smaller;color:gray'>Test support for alternative conv layout (#25617)</span>"]
+    C_958d9c0 --> C_ea63b4d
+    C_ea63b4d["<a href='https://github.com/ggml-org/llama.cpp/pull/25684'>#25684</a><br/><span style='font-size:smaller;color:gray'>vulkan: Support quantized concat (#25684)</span>"]
+    C_ea63b4d --> C_b4ca032
+    C_b4ca032["<a href='https://github.com/ggml-org/llama.cpp/pull/26313'>#26313</a><br/><span style='font-size:smaller;color:gray'>server: support inp embd to generate next token (#26313)</span>"]
+    C_b4ca032 --> C_5f55650
+    C_5f55650["<a href='https://github.com/ggml-org/llama.cpp/pull/26341'>#26341</a><br/><span style='font-size:smaller;color:gray'>mtmd: add lanczos resize method [no release] (#26341)</span>"]
     COMMON -->|dev-metal| C_8ed30a7
     C_8ed30a7["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_8ed30a7 --> C_2894406

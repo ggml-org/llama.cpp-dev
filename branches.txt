@@ -3,7 +3,10 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 7e1e28cae36d41fe7bbe9dae7c9625de6565c063
 Branches analyzed: 2
 
---- master (tip: 958d9c0b61d0025ca8e2fff32d66a1576173fde9, commits from ancestor: 27) ---
+--- master (tip: 5f55650a78f92aff4d48d671423e888fac0469ff, commits from ancestor: 30) ---
+5f55650 mtmd: add lanczos resize method [no release] (#26341)
+b4ca032 server: support inp embd to generate next token (#26313)
+ea63b4d vulkan: Support quantized concat (#25684)
 958d9c0 Test support for alternative conv layout (#25617)
 432d7ff llama-context : sync pending async copies before clearing embd_seq (#25676)
 47f686f tests : avoid building get-model.cpp many times (#26317)
