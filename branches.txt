@@ -3,7 +3,23 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 7e1e28cae36d41fe7bbe9dae7c9625de6565c063
 Branches analyzed: 2
 
---- master (tip: 5f55650a78f92aff4d48d671423e888fac0469ff, commits from ancestor: 30) ---
+--- master (tip: 876a4321163249c43ca4e986818fab5ab081f282, commits from ancestor: 46) ---
+876a432 vulkan: add POOL_1D op (#25431)
+eb41d50 vulkan: Introduce driver version check for Windows Intel GPU to mitigate crashing (#25192)
+db7d8b2 mtmd: add n_embd_head (#26342)
+a09d8ab Support rotated kv cache quant (#26180)
+82dbc4f llama : load MTP tensors only if they are really used (#26296)
+6f3c0a7 vulkan: update vulkan sdk to 1.4.357.0 (#26303)
+0005475 server: correct accepted tokens when need draft token replay (#26320)
+15e755f cuda: extract Q2_0 elements via __byte_perm (#25603)
+9d9a6d2 SYCL: add oneMKL GEMM flash attention for XMX-accelerated prompt proc… (#25025)
+d5d3e05 [SYCL] support the missed types in cpy (#26005)
+69e62fc llama : enforce the same K and V cache types for DeepSeek V4; enable FA if V cache is quantized (#25871)
+1e22599 ggml-zendnn : group matmul direct API for mul_mat_id (#25918)
+1c5b89f sycl : support dev2dev memcpy by DEV2DEV_MEMCPY_FORWARD (#26234)
+a2be61d [SYCL] Support q2 mul_mat (#26231)
+1553725 sycl: fuse RMS_NORM + MUL (#26015)
+8f4646a ggml-webgpu: improve flash_attn_vec for quantized KV at long contexts (#25956)
 5f55650 mtmd: add lanczos resize method [no release] (#26341)
 b4ca032 server: support inp embd to generate next token (#26313)
 ea63b4d vulkan: Support quantized concat (#25684)

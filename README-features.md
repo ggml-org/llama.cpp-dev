@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-07-31 03:27:16 UTC
+Auto-generated on 2026-08-01 04:25:37 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -73,6 +73,38 @@ graph BT
     C_b4ca032["<a href='https://github.com/ggml-org/llama.cpp/pull/26313'>#26313</a><br/><span style='font-size:smaller;color:gray'>server: support inp embd to generate next token (#26313)</span>"]
     C_b4ca032 --> C_5f55650
     C_5f55650["<a href='https://github.com/ggml-org/llama.cpp/pull/26341'>#26341</a><br/><span style='font-size:smaller;color:gray'>mtmd: add lanczos resize method [no release] (#26341)</span>"]
+    C_5f55650 --> C_8f4646a
+    C_8f4646a["<a href='https://github.com/ggml-org/llama.cpp/pull/25956'>#25956</a><br/><span style='font-size:smaller;color:gray'>ggml-webgpu: improve flash_attn_vec for quantized KV at long contexts (#25956)</span>"]
+    C_8f4646a --> C_1553725
+    C_1553725["<a href='https://github.com/ggml-org/llama.cpp/pull/26015'>#26015</a><br/><span style='font-size:smaller;color:gray'>sycl: fuse RMS_NORM + MUL (#26015)</span>"]
+    C_1553725 --> C_a2be61d
+    C_a2be61d["<a href='https://github.com/ggml-org/llama.cpp/pull/26231'>#26231</a><br/><span style='font-size:smaller;color:gray'>[SYCL] Support q2 mul_mat (#26231)</span>"]
+    C_a2be61d --> C_1c5b89f
+    C_1c5b89f["<a href='https://github.com/ggml-org/llama.cpp/pull/26234'>#26234</a><br/><span style='font-size:smaller;color:gray'>sycl : support dev2dev memcpy by DEV2DEV_MEMCPY_FORWARD (#26234)</span>"]
+    C_1c5b89f --> C_1e22599
+    C_1e22599["<a href='https://github.com/ggml-org/llama.cpp/pull/25918'>#25918</a><br/><span style='font-size:smaller;color:gray'>ggml-zendnn : group matmul direct API for mul_mat_id (#25918)</span>"]
+    C_1e22599 --> C_69e62fc
+    C_69e62fc["<a href='https://github.com/ggml-org/llama.cpp/pull/25871'>#25871</a><br/><span style='font-size:smaller;color:gray'>llama : enforce the same K and V cache types for DeepSeek V4; enable FA if V cache is quantized (#25871)</span>"]
+    C_69e62fc --> C_d5d3e05
+    C_d5d3e05["<a href='https://github.com/ggml-org/llama.cpp/pull/26005'>#26005</a><br/><span style='font-size:smaller;color:gray'>[SYCL] support the missed types in cpy (#26005)</span>"]
+    C_d5d3e05 --> C_9d9a6d2
+    C_9d9a6d2["<a href='https://github.com/ggml-org/llama.cpp/pull/25025'>#25025</a><br/><span style='font-size:smaller;color:gray'>SYCL: add oneMKL GEMM flash attention for XMX-accelerated prompt proc… (#25025)</span>"]
+    C_9d9a6d2 --> C_15e755f
+    C_15e755f["<a href='https://github.com/ggml-org/llama.cpp/pull/25603'>#25603</a><br/><span style='font-size:smaller;color:gray'>cuda: extract Q2_0 elements via __byte_perm (#25603)</span>"]
+    C_15e755f --> C_0005475
+    C_0005475["<a href='https://github.com/ggml-org/llama.cpp/pull/26320'>#26320</a><br/><span style='font-size:smaller;color:gray'>server: correct accepted tokens when need draft token replay (#26320)</span>"]
+    C_0005475 --> C_6f3c0a7
+    C_6f3c0a7["<a href='https://github.com/ggml-org/llama.cpp/pull/26303'>#26303</a><br/><span style='font-size:smaller;color:gray'>vulkan: update vulkan sdk to 1.4.357.0 (#26303)</span>"]
+    C_6f3c0a7 --> C_82dbc4f
+    C_82dbc4f["<a href='https://github.com/ggml-org/llama.cpp/pull/26296'>#26296</a><br/><span style='font-size:smaller;color:gray'>llama : load MTP tensors only if they are really used (#26296)</span>"]
+    C_82dbc4f --> C_a09d8ab
+    C_a09d8ab["<a href='https://github.com/ggml-org/llama.cpp/pull/26180'>#26180</a><br/><span style='font-size:smaller;color:gray'>Support rotated kv cache quant (#26180)</span>"]
+    C_a09d8ab --> C_db7d8b2
+    C_db7d8b2["<a href='https://github.com/ggml-org/llama.cpp/pull/26342'>#26342</a><br/><span style='font-size:smaller;color:gray'>mtmd: add n_embd_head (#26342)</span>"]
+    C_db7d8b2 --> C_eb41d50
+    C_eb41d50["<a href='https://github.com/ggml-org/llama.cpp/pull/25192'>#25192</a><br/><span style='font-size:smaller;color:gray'>vulkan: Introduce driver version check for Windows Intel GPU to mitigate crashing (#25192)</span>"]
+    C_eb41d50 --> C_876a432
+    C_876a432["<a href='https://github.com/ggml-org/llama.cpp/pull/25431'>#25431</a><br/><span style='font-size:smaller;color:gray'>vulkan: add POOL_1D op (#25431)</span>"]
     COMMON -->|dev-metal| C_8ed30a7
     C_8ed30a7["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_8ed30a7 --> C_2894406
