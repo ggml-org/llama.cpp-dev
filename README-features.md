@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-08-01 04:25:37 UTC
+Auto-generated on 2026-08-02 03:25:29 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -105,6 +105,20 @@ graph BT
     C_eb41d50["<a href='https://github.com/ggml-org/llama.cpp/pull/25192'>#25192</a><br/><span style='font-size:smaller;color:gray'>vulkan: Introduce driver version check for Windows Intel GPU to mitigate crashing (#25192)</span>"]
     C_eb41d50 --> C_876a432
     C_876a432["<a href='https://github.com/ggml-org/llama.cpp/pull/25431'>#25431</a><br/><span style='font-size:smaller;color:gray'>vulkan: add POOL_1D op (#25431)</span>"]
+    C_876a432 --> C_ddd4ec1
+    C_ddd4ec1["<a href='https://github.com/ggml-org/llama.cpp/pull/26269'>#26269</a><br/><span style='font-size:smaller;color:gray'>chat : enable tool call in thinking for DS4 (#26269)</span>"]
+    C_ddd4ec1 --> C_de69995
+    C_de69995["<a href='https://github.com/ggml-org/llama.cpp/pull/25993'>#25993</a><br/><span style='font-size:smaller;color:gray'>mtmd: add minicpmv46 downsample (#25993)</span>"]
+    C_de69995 --> C_c629da5
+    C_c629da5["<a href='https://github.com/ggml-org/llama.cpp/pull/26362'>#26362</a><br/><span style='font-size:smaller;color:gray'>cli : persist reasoning_content in chat history (#26362)</span>"]
+    C_c629da5 --> C_89482bd
+    C_89482bd["<a href='https://github.com/ggml-org/llama.cpp/pull/26405'>#26405</a><br/><span style='font-size:smaller;color:gray'>agents: clarify comment style and jinja knowledge (#26405)</span>"]
+    C_89482bd --> C_815a2a5
+    C_815a2a5["<a href='https://github.com/ggml-org/llama.cpp/pull/26353'>#26353</a><br/><span style='font-size:smaller;color:gray'>vendor : update BoringSSL to 0.20260730.0 (#26353)</span>"]
+    C_815a2a5 --> C_a7a6d0d
+    C_a7a6d0d["<a href='https://github.com/ggml-org/llama.cpp/pull/26124'>#26124</a><br/><span style='font-size:smaller;color:gray'>vulkan: extend topk_moe fusion to support sqrt(softplus) (#26124)</span>"]
+    C_a7a6d0d --> C_11924d4
+    C_11924d4["<a href='https://github.com/ggml-org/llama.cpp/pull/26415'>#26415</a><br/><span style='font-size:smaller;color:gray'>test: fix some CI errors (#26415)</span>"]
     COMMON -->|dev-metal| C_8ed30a7
     C_8ed30a7["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_8ed30a7 --> C_2894406
