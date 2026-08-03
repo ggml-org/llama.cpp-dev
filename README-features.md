@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-08-02 03:25:29 UTC
+Auto-generated on 2026-08-03 03:27:47 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -119,6 +119,30 @@ graph BT
     C_a7a6d0d["<a href='https://github.com/ggml-org/llama.cpp/pull/26124'>#26124</a><br/><span style='font-size:smaller;color:gray'>vulkan: extend topk_moe fusion to support sqrt(softplus) (#26124)</span>"]
     C_a7a6d0d --> C_11924d4
     C_11924d4["<a href='https://github.com/ggml-org/llama.cpp/pull/26415'>#26415</a><br/><span style='font-size:smaller;color:gray'>test: fix some CI errors (#26415)</span>"]
+    C_11924d4 --> C_7a2db1a
+    C_7a2db1a["<a href='https://github.com/ggml-org/llama.cpp/pull/26307'>#26307</a><br/><span style='font-size:smaller;color:gray'>ggml-webgpu: add support for f16 repeat (#26307)</span>"]
+    C_7a2db1a --> C_75587a0
+    C_75587a0["<a href='https://github.com/ggml-org/llama.cpp/pull/26412'>#26412</a><br/><span style='font-size:smaller;color:gray'>model : load MiMo V2 MTP tensors only if used (#26412)</span>"]
+    C_75587a0 --> C_272700b
+    C_272700b["<a href='https://github.com/ggml-org/llama.cpp/pull/26105'>#26105</a><br/><span style='font-size:smaller;color:gray'>sycl: fix classification of iGPUs (#26105)</span>"]
+    C_272700b --> C_f5919bf
+    C_f5919bf["<a href='https://github.com/ggml-org/llama.cpp/pull/26252'>#26252</a><br/><span style='font-size:smaller;color:gray'>chat : add qwen3 specialized parser (#26252)</span>"]
+    C_f5919bf --> C_596a579
+    C_596a579["<a href='https://github.com/ggml-org/llama.cpp/pull/25784'>#25784</a><br/><span style='font-size:smaller;color:gray'>DeepseekV4 MTP + DSpark (#25784)</span>"]
+    C_596a579 --> C_c745be2
+    C_c745be2["<a href='https://github.com/ggml-org/llama.cpp/pull/26162'>#26162</a><br/><span style='font-size:smaller;color:gray'>opencl: bugfix increment ref_count in  ggml_backend_opencl_init() (#26162)</span>"]
+    C_c745be2 --> C_3581ba0
+    C_3581ba0["<a href='https://github.com/ggml-org/llama.cpp/pull/26452'>#26452</a><br/><span style='font-size:smaller;color:gray'>convert: add option to create separate dspark GGUF (#26452)</span>"]
+    C_3581ba0 --> C_bb4e0e1
+    C_bb4e0e1["<a href='https://github.com/ggml-org/llama.cpp/pull/26458'>#26458</a><br/><span style='font-size:smaller;color:gray'>common: support the DSpark sidecar resolution (#26458)</span>"]
+    C_bb4e0e1 --> C_fffbcbd
+    C_fffbcbd["<a href='https://github.com/ggml-org/llama.cpp/pull/26459'>#26459</a><br/><span style='font-size:smaller;color:gray'>metal: implement DeepSeek V4 hyper-connections (#26459)</span>"]
+    C_fffbcbd --> C_0ab9d6f
+    C_0ab9d6f["<a href='https://github.com/ggml-org/llama.cpp/pull/26383'>#26383</a><br/><span style='font-size:smaller;color:gray'>opencl: limit local workgroup size for GLU operation (#26383)</span>"]
+    C_0ab9d6f --> C_9d21b57
+    C_9d21b57["<a href='https://github.com/ggml-org/llama.cpp/pull/26465'>#26465</a><br/><span style='font-size:smaller;color:gray'>metal : add F16 support for bin ops (#26465)</span>"]
+    C_9d21b57 --> C_221f0f6
+    C_221f0f6["<a href='https://github.com/ggml-org/llama.cpp/pull/25982'>#25982</a><br/><span style='font-size:smaller;color:gray'>metal : add SILU_BACK (#25982)</span>"]
     COMMON -->|dev-metal| C_8ed30a7
     C_8ed30a7["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_8ed30a7 --> C_2894406

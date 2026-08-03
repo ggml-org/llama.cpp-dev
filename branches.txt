@@ -3,7 +3,19 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 7e1e28cae36d41fe7bbe9dae7c9625de6565c063
 Branches analyzed: 2
 
---- master (tip: 11924d4c17abc27383376a1ac6a24fa3e36c1c0c, commits from ancestor: 53) ---
+--- master (tip: 221f0f6356efe2260023208365705ec5d5a7c8f5, commits from ancestor: 65) ---
+221f0f6 metal : add SILU_BACK (#25982)
+9d21b57 metal : add F16 support for bin ops (#26465)
+0ab9d6f opencl: limit local workgroup size for GLU operation (#26383)
+fffbcbd metal: implement DeepSeek V4 hyper-connections (#26459)
+bb4e0e1 common: support the DSpark sidecar resolution (#26458)
+3581ba0 convert: add option to create separate dspark GGUF (#26452)
+c745be2 opencl: bugfix increment ref_count in  ggml_backend_opencl_init() (#26162)
+596a579 DeepseekV4 MTP + DSpark (#25784)
+f5919bf chat : add qwen3 specialized parser (#26252)
+272700b sycl: fix classification of iGPUs (#26105)
+75587a0 model : load MiMo V2 MTP tensors only if used (#26412)
+7a2db1a ggml-webgpu: add support for f16 repeat (#26307)
 11924d4 test: fix some CI errors (#26415)
 a7a6d0d vulkan: extend topk_moe fusion to support sqrt(softplus) (#26124)
 815a2a5 vendor : update BoringSSL to 0.20260730.0 (#26353)
