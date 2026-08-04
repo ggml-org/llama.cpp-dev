@@ -3,7 +3,28 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 7e1e28cae36d41fe7bbe9dae7c9625de6565c063
 Branches analyzed: 2
 
---- master (tip: 221f0f6356efe2260023208365705ec5d5a7c8f5, commits from ancestor: 65) ---
+--- master (tip: 6c8dcaa7ae41fa9f4aa2b3b68ee82cb8b2a03632, commits from ancestor: 86) ---
+6c8dcaa sycl: parallelize the non-contiguous concat kernel (#25852)
+66fa168 Extended SYCL oneDNN SDPA to non-FP16 KV caches (Q4_0–Q8_0 and FP32) (#25874)
+0ef6e55 chat : add new template for DeepSeek V4 Flash 0731 (#26398)
+94bc47f vendor : update cpp-httplib to 0.52.0 (#26485)
+fe2adf0 vendor : update BoringSSL to 0.20260803.0 (#26523)
+57c0921 model : support MTP in GLM-4.7-Flash (#24868)
+ee0445c tests: add model resolution test on synthetic repo listings (#26172)
+99111b1 server: add get_info tool (#26522)
+e8e06f7 vocab : validate default special token ids (#26506)
+dbadb68 ggml: use dynamic allocation for split graph inputs (#22789)
+39eab74 opencl: route large q6_K lm_head to the flat GEMV (#26427)
+c50b34a graph : fix unused input tensors in minimax m3 graph (#26519)
+67d5978 model: M3: Move MSA into a new memory implementation (#26338)
+563dec8 llama : allocate indexer cache only in "full" indexer layers (#26474)
+96278e3 CUDA: Add backend sampler for penalties sampler (#25262)
+9bd4c09 CUDA: Fix data-races when reusing SMEM in block_reduce (#26385)
+0b14b87 server: add notice for upcoming default port change 8080 --> 9931 (#26508)
+f2b52a8 server: (tools) add x-tool-cwd header (#26420)
+4ed2b13 model: MTP support for Qwen3-Next (#25589)
+2b63e06 llama : MTP support for DeepSeek V3.2 (#26457)
+1464c62 metal: implement DSv4 Lightning Indexer (#25893)
 221f0f6 metal : add SILU_BACK (#25982)
 9d21b57 metal : add F16 support for bin ops (#26465)
 0ab9d6f opencl: limit local workgroup size for GLU operation (#26383)

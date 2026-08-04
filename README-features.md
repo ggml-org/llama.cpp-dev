@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-08-03 03:27:47 UTC
+Auto-generated on 2026-08-04 02:56:18 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -143,6 +143,48 @@ graph BT
     C_9d21b57["<a href='https://github.com/ggml-org/llama.cpp/pull/26465'>#26465</a><br/><span style='font-size:smaller;color:gray'>metal : add F16 support for bin ops (#26465)</span>"]
     C_9d21b57 --> C_221f0f6
     C_221f0f6["<a href='https://github.com/ggml-org/llama.cpp/pull/25982'>#25982</a><br/><span style='font-size:smaller;color:gray'>metal : add SILU_BACK (#25982)</span>"]
+    C_221f0f6 --> C_1464c62
+    C_1464c62["<a href='https://github.com/ggml-org/llama.cpp/pull/25893'>#25893</a><br/><span style='font-size:smaller;color:gray'>metal: implement DSv4 Lightning Indexer (#25893)</span>"]
+    C_1464c62 --> C_2b63e06
+    C_2b63e06["<a href='https://github.com/ggml-org/llama.cpp/pull/26457'>#26457</a><br/><span style='font-size:smaller;color:gray'>llama : MTP support for DeepSeek V3.2 (#26457)</span>"]
+    C_2b63e06 --> C_4ed2b13
+    C_4ed2b13["<a href='https://github.com/ggml-org/llama.cpp/pull/25589'>#25589</a><br/><span style='font-size:smaller;color:gray'>model: MTP support for Qwen3-Next (#25589)</span>"]
+    C_4ed2b13 --> C_f2b52a8
+    C_f2b52a8["<a href='https://github.com/ggml-org/llama.cpp/pull/26420'>#26420</a><br/><span style='font-size:smaller;color:gray'>server: (tools) add x-tool-cwd header (#26420)</span>"]
+    C_f2b52a8 --> C_0b14b87
+    C_0b14b87["<a href='https://github.com/ggml-org/llama.cpp/pull/26508'>#26508</a><br/><span style='font-size:smaller;color:gray'>server: add notice for upcoming default port change 8080 --> 9931 (#26508)</span>"]
+    C_0b14b87 --> C_9bd4c09
+    C_9bd4c09["<a href='https://github.com/ggml-org/llama.cpp/pull/26385'>#26385</a><br/><span style='font-size:smaller;color:gray'>CUDA: Fix data-races when reusing SMEM in block_reduce (#26385)</span>"]
+    C_9bd4c09 --> C_96278e3
+    C_96278e3["<a href='https://github.com/ggml-org/llama.cpp/pull/25262'>#25262</a><br/><span style='font-size:smaller;color:gray'>CUDA: Add backend sampler for penalties sampler (#25262)</span>"]
+    C_96278e3 --> C_563dec8
+    C_563dec8["<a href='https://github.com/ggml-org/llama.cpp/pull/26474'>#26474</a><br/><span style='font-size:smaller;color:gray'>llama : allocate indexer cache only in 'full' indexer layers (#26474)</span>"]
+    C_563dec8 --> C_67d5978
+    C_67d5978["<a href='https://github.com/ggml-org/llama.cpp/pull/26338'>#26338</a><br/><span style='font-size:smaller;color:gray'>model: M3: Move MSA into a new memory implementation (#26338)</span>"]
+    C_67d5978 --> C_c50b34a
+    C_c50b34a["<a href='https://github.com/ggml-org/llama.cpp/pull/26519'>#26519</a><br/><span style='font-size:smaller;color:gray'>graph : fix unused input tensors in minimax m3 graph (#26519)</span>"]
+    C_c50b34a --> C_39eab74
+    C_39eab74["<a href='https://github.com/ggml-org/llama.cpp/pull/26427'>#26427</a><br/><span style='font-size:smaller;color:gray'>opencl: route large q6_K lm_head to the flat GEMV (#26427)</span>"]
+    C_39eab74 --> C_dbadb68
+    C_dbadb68["<a href='https://github.com/ggml-org/llama.cpp/pull/22789'>#22789</a><br/><span style='font-size:smaller;color:gray'>ggml: use dynamic allocation for split graph inputs (#22789)</span>"]
+    C_dbadb68 --> C_e8e06f7
+    C_e8e06f7["<a href='https://github.com/ggml-org/llama.cpp/pull/26506'>#26506</a><br/><span style='font-size:smaller;color:gray'>vocab : validate default special token ids (#26506)</span>"]
+    C_e8e06f7 --> C_99111b1
+    C_99111b1["<a href='https://github.com/ggml-org/llama.cpp/pull/26522'>#26522</a><br/><span style='font-size:smaller;color:gray'>server: add get_info tool (#26522)</span>"]
+    C_99111b1 --> C_ee0445c
+    C_ee0445c["<a href='https://github.com/ggml-org/llama.cpp/pull/26172'>#26172</a><br/><span style='font-size:smaller;color:gray'>tests: add model resolution test on synthetic repo listings (#26172)</span>"]
+    C_ee0445c --> C_57c0921
+    C_57c0921["<a href='https://github.com/ggml-org/llama.cpp/pull/24868'>#24868</a><br/><span style='font-size:smaller;color:gray'>model : support MTP in GLM-4.7-Flash (#24868)</span>"]
+    C_57c0921 --> C_fe2adf0
+    C_fe2adf0["<a href='https://github.com/ggml-org/llama.cpp/pull/26523'>#26523</a><br/><span style='font-size:smaller;color:gray'>vendor : update BoringSSL to 0.20260803.0 (#26523)</span>"]
+    C_fe2adf0 --> C_94bc47f
+    C_94bc47f["<a href='https://github.com/ggml-org/llama.cpp/pull/26485'>#26485</a><br/><span style='font-size:smaller;color:gray'>vendor : update cpp-httplib to 0.52.0 (#26485)</span>"]
+    C_94bc47f --> C_0ef6e55
+    C_0ef6e55["<a href='https://github.com/ggml-org/llama.cpp/pull/26398'>#26398</a><br/><span style='font-size:smaller;color:gray'>chat : add new template for DeepSeek V4 Flash 0731 (#26398)</span>"]
+    C_0ef6e55 --> C_66fa168
+    C_66fa168["<a href='https://github.com/ggml-org/llama.cpp/pull/25874'>#25874</a><br/><span style='font-size:smaller;color:gray'>Extended SYCL oneDNN SDPA to non-FP16 KV caches (Q4_0–Q8_0 and FP32) (#25874)</span>"]
+    C_66fa168 --> C_6c8dcaa
+    C_6c8dcaa["<a href='https://github.com/ggml-org/llama.cpp/pull/25852'>#25852</a><br/><span style='font-size:smaller;color:gray'>sycl: parallelize the non-contiguous concat kernel (#25852)</span>"]
     COMMON -->|dev-metal| C_8ed30a7
     C_8ed30a7["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_8ed30a7 --> C_2894406
