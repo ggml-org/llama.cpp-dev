@@ -3,7 +3,27 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 7e1e28cae36d41fe7bbe9dae7c9625de6565c063
 Branches analyzed: 2
 
---- master (tip: 6c8dcaa7ae41fa9f4aa2b3b68ee82cb8b2a03632, commits from ancestor: 86) ---
+--- master (tip: 6ea215d171fd31df943bf1ac8227129f2b963160, commits from ancestor: 106) ---
+6ea215d Prefer npm ci over install for security (#26601)
+4308a4f server: decode Windows OEM output to UTF-8 in built-in tools (#26597)
+474c92e mtmd: correcting duplicate empty audio chunks for short inputs (#26536)
+a6aa6f5 sampler : remove "full-context windows" from history-based samplers (#26524)
+76c956c gguf-split: Add option to delete split parts during merge (#26538)
+2f56fc3 ui: CWD for agent (#26518)
+0713275 mtmd: support Qwen3-TTS (note: breaking change to llama-tts binary) (#26254)
+1c3c967 models : fix dflash wo_a reshape on load (#26577)
+6b5224c ci: fix pre-built binaries no longer working on macOS 15 and below (#26375)
+7bd8282 speculative : refactor enabled configs common_speculative_init (#26510)
+5788b51 gguf-py: validate n_dims and guard against uint64 overflow in reader (#25401)
+2e17f69 sync : ggml
+15831f5 ggml : bump version to 0.18.1 (ggml/1578)
+b5746d2 convert : add missing return after setting tekken vocab (#25947)
+f26efa0 vulkan backend ops: implemented GATED_LINEAR_ATTN (#25601)
+cf06ad7 vocab : validate plamo2 byte tokens (#26511)
+b06fbc9 convert : import bytes_to_unicode from convert_slow_tokenizer (#26217)
+1269cb1 model : allow reshape of tensors during load (#26531)
+935cad6 llama : move n_vocab from llama_sampler_data to penalty_sampler (#26520)
+22dc605 ci: fix vulkan llvmpipe runs (#26533)
 6c8dcaa sycl: parallelize the non-contiguous concat kernel (#25852)
 66fa168 Extended SYCL oneDNN SDPA to non-FP16 KV caches (Q4_0–Q8_0 and FP32) (#25874)
 0ef6e55 chat : add new template for DeepSeek V4 Flash 0731 (#26398)

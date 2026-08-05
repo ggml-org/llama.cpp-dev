@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-08-04 02:56:18 UTC
+Auto-generated on 2026-08-05 02:52:00 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -185,6 +185,46 @@ graph BT
     C_66fa168["<a href='https://github.com/ggml-org/llama.cpp/pull/25874'>#25874</a><br/><span style='font-size:smaller;color:gray'>Extended SYCL oneDNN SDPA to non-FP16 KV caches (Q4_0–Q8_0 and FP32) (#25874)</span>"]
     C_66fa168 --> C_6c8dcaa
     C_6c8dcaa["<a href='https://github.com/ggml-org/llama.cpp/pull/25852'>#25852</a><br/><span style='font-size:smaller;color:gray'>sycl: parallelize the non-contiguous concat kernel (#25852)</span>"]
+    C_6c8dcaa --> C_22dc605
+    C_22dc605["<a href='https://github.com/ggml-org/llama.cpp/pull/26533'>#26533</a><br/><span style='font-size:smaller;color:gray'>ci: fix vulkan llvmpipe runs (#26533)</span>"]
+    C_22dc605 --> C_935cad6
+    C_935cad6["<a href='https://github.com/ggml-org/llama.cpp/pull/26520'>#26520</a><br/><span style='font-size:smaller;color:gray'>llama : move n_vocab from llama_sampler_data to penalty_sampler (#26520)</span>"]
+    C_935cad6 --> C_1269cb1
+    C_1269cb1["<a href='https://github.com/ggml-org/llama.cpp/pull/26531'>#26531</a><br/><span style='font-size:smaller;color:gray'>model : allow reshape of tensors during load (#26531)</span>"]
+    C_1269cb1 --> C_b06fbc9
+    C_b06fbc9["<a href='https://github.com/ggml-org/llama.cpp/pull/26217'>#26217</a><br/><span style='font-size:smaller;color:gray'>convert : import bytes_to_unicode from convert_slow_tokenizer (#26217)</span>"]
+    C_b06fbc9 --> C_cf06ad7
+    C_cf06ad7["<a href='https://github.com/ggml-org/llama.cpp/pull/26511'>#26511</a><br/><span style='font-size:smaller;color:gray'>vocab : validate plamo2 byte tokens (#26511)</span>"]
+    C_cf06ad7 --> C_f26efa0
+    C_f26efa0["<a href='https://github.com/ggml-org/llama.cpp/pull/25601'>#25601</a><br/><span style='font-size:smaller;color:gray'>vulkan backend ops: implemented GATED_LINEAR_ATTN (#25601)</span>"]
+    C_f26efa0 --> C_b5746d2
+    C_b5746d2["<a href='https://github.com/ggml-org/llama.cpp/pull/25947'>#25947</a><br/><span style='font-size:smaller;color:gray'>convert : add missing return after setting tekken vocab (#25947)</span>"]
+    C_b5746d2 --> C_15831f5
+    C_15831f5["<a href='https://github.com/ggml-org/llama.cpp/commit/15831f5'>15831f5</a><br/><span style='font-size:smaller;color:gray'>ggml : bump version to 0.18.1 (ggml/1578)</span>"]
+    C_15831f5 --> C_2e17f69
+    C_2e17f69["<a href='https://github.com/ggml-org/llama.cpp/commit/2e17f69'>2e17f69</a><br/><span style='font-size:smaller;color:gray'>sync : ggml</span>"]
+    C_2e17f69 --> C_5788b51
+    C_5788b51["<a href='https://github.com/ggml-org/llama.cpp/pull/25401'>#25401</a><br/><span style='font-size:smaller;color:gray'>gguf-py: validate n_dims and guard against uint64 overflow in reader (#25401)</span>"]
+    C_5788b51 --> C_7bd8282
+    C_7bd8282["<a href='https://github.com/ggml-org/llama.cpp/pull/26510'>#26510</a><br/><span style='font-size:smaller;color:gray'>speculative : refactor enabled configs common_speculative_init (#26510)</span>"]
+    C_7bd8282 --> C_6b5224c
+    C_6b5224c["<a href='https://github.com/ggml-org/llama.cpp/pull/26375'>#26375</a><br/><span style='font-size:smaller;color:gray'>ci: fix pre-built binaries no longer working on macOS 15 and below (#26375)</span>"]
+    C_6b5224c --> C_1c3c967
+    C_1c3c967["<a href='https://github.com/ggml-org/llama.cpp/pull/26577'>#26577</a><br/><span style='font-size:smaller;color:gray'>models : fix dflash wo_a reshape on load (#26577)</span>"]
+    C_1c3c967 --> C_0713275
+    C_0713275["<a href='https://github.com/ggml-org/llama.cpp/pull/26254'>#26254</a><br/><span style='font-size:smaller;color:gray'>mtmd: support Qwen3-TTS (note: breaking change to llama-tts binary) (#26254)</span>"]
+    C_0713275 --> C_2f56fc3
+    C_2f56fc3["<a href='https://github.com/ggml-org/llama.cpp/pull/26518'>#26518</a><br/><span style='font-size:smaller;color:gray'>ui: CWD for agent (#26518)</span>"]
+    C_2f56fc3 --> C_76c956c
+    C_76c956c["<a href='https://github.com/ggml-org/llama.cpp/pull/26538'>#26538</a><br/><span style='font-size:smaller;color:gray'>gguf-split: Add option to delete split parts during merge (#26538)</span>"]
+    C_76c956c --> C_a6aa6f5
+    C_a6aa6f5["<a href='https://github.com/ggml-org/llama.cpp/pull/26524'>#26524</a><br/><span style='font-size:smaller;color:gray'>sampler : remove 'full-context windows' from history-based samplers (#26524)</span>"]
+    C_a6aa6f5 --> C_474c92e
+    C_474c92e["<a href='https://github.com/ggml-org/llama.cpp/pull/26536'>#26536</a><br/><span style='font-size:smaller;color:gray'>mtmd: correcting duplicate empty audio chunks for short inputs (#26536)</span>"]
+    C_474c92e --> C_4308a4f
+    C_4308a4f["<a href='https://github.com/ggml-org/llama.cpp/pull/26597'>#26597</a><br/><span style='font-size:smaller;color:gray'>server: decode Windows OEM output to UTF-8 in built-in tools (#26597)</span>"]
+    C_4308a4f --> C_6ea215d
+    C_6ea215d["<a href='https://github.com/ggml-org/llama.cpp/pull/26601'>#26601</a><br/><span style='font-size:smaller;color:gray'>Prefer npm ci over install for security (#26601)</span>"]
     COMMON -->|dev-metal| C_8ed30a7
     C_8ed30a7["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_8ed30a7 --> C_2894406
