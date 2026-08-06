@@ -3,7 +3,21 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 7e1e28cae36d41fe7bbe9dae7c9625de6565c063
 Branches analyzed: 2
 
---- master (tip: 6ea215d171fd31df943bf1ac8227129f2b963160, commits from ancestor: 106) ---
+--- master (tip: c8e03ce8122b7af76f836d53efde6df1ce5ec437, commits from ancestor: 120) ---
+c8e03ce mtmd/ggml: add ggml_build_forward_order (#26649)
+f9e832c server: harden the file_glob_search directory walk (#26626)
+360e134 tests: re-enable MiniMax M3 in `test-llama-archs` (#26633)
+b06aa77 mtmd: Unlimited-OCR fix max_tiles, setting in converter (#25614)
+cd0fa60 grammar : degrade max repetition >= 2000 to unbounded (#26613)
+717dad5 mtmd: support multi-row batching for deepseek-ocr (#26154)
+9a688e5 fit: Fix memory allocation for MTP layers (#26605)
+9303cdd security : clarify about AI-generated reports (#26579)
+a035a88 server: Adding spec-decode counters to /metrics endpoint (#26389)
+020760a convert: Add endianness conversion for Q1 and TQ2 quantizations (#26618)
+61881b1 vendor : apply patches for subprocess.h (#26606)
+3e3a7a4 ui: show generation statistics by default in chat settings (#26624)
+d52ec04 build : remove GGML_METAL_USE_BF16 from all build scripts (#26604)
+e031d95 ui: Update vulnerable packages + cleanup Storybook config (#26607)
 6ea215d Prefer npm ci over install for security (#26601)
 4308a4f server: decode Windows OEM output to UTF-8 in built-in tools (#26597)
 474c92e mtmd: correcting duplicate empty audio chunks for short inputs (#26536)

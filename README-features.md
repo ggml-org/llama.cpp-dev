@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-08-05 02:52:00 UTC
+Auto-generated on 2026-08-06 02:55:59 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -225,6 +225,34 @@ graph BT
     C_4308a4f["<a href='https://github.com/ggml-org/llama.cpp/pull/26597'>#26597</a><br/><span style='font-size:smaller;color:gray'>server: decode Windows OEM output to UTF-8 in built-in tools (#26597)</span>"]
     C_4308a4f --> C_6ea215d
     C_6ea215d["<a href='https://github.com/ggml-org/llama.cpp/pull/26601'>#26601</a><br/><span style='font-size:smaller;color:gray'>Prefer npm ci over install for security (#26601)</span>"]
+    C_6ea215d --> C_e031d95
+    C_e031d95["<a href='https://github.com/ggml-org/llama.cpp/pull/26607'>#26607</a><br/><span style='font-size:smaller;color:gray'>ui: Update vulnerable packages + cleanup Storybook config (#26607)</span>"]
+    C_e031d95 --> C_d52ec04
+    C_d52ec04["<a href='https://github.com/ggml-org/llama.cpp/pull/26604'>#26604</a><br/><span style='font-size:smaller;color:gray'>build : remove GGML_METAL_USE_BF16 from all build scripts (#26604)</span>"]
+    C_d52ec04 --> C_3e3a7a4
+    C_3e3a7a4["<a href='https://github.com/ggml-org/llama.cpp/pull/26624'>#26624</a><br/><span style='font-size:smaller;color:gray'>ui: show generation statistics by default in chat settings (#26624)</span>"]
+    C_3e3a7a4 --> C_61881b1
+    C_61881b1["<a href='https://github.com/ggml-org/llama.cpp/pull/26606'>#26606</a><br/><span style='font-size:smaller;color:gray'>vendor : apply patches for subprocess.h (#26606)</span>"]
+    C_61881b1 --> C_020760a
+    C_020760a["<a href='https://github.com/ggml-org/llama.cpp/pull/26618'>#26618</a><br/><span style='font-size:smaller;color:gray'>convert: Add endianness conversion for Q1 and TQ2 quantizations (#26618)</span>"]
+    C_020760a --> C_a035a88
+    C_a035a88["<a href='https://github.com/ggml-org/llama.cpp/pull/26389'>#26389</a><br/><span style='font-size:smaller;color:gray'>server: Adding spec-decode counters to /metrics endpoint (#26389)</span>"]
+    C_a035a88 --> C_9303cdd
+    C_9303cdd["<a href='https://github.com/ggml-org/llama.cpp/pull/26579'>#26579</a><br/><span style='font-size:smaller;color:gray'>security : clarify about AI-generated reports (#26579)</span>"]
+    C_9303cdd --> C_9a688e5
+    C_9a688e5["<a href='https://github.com/ggml-org/llama.cpp/pull/26605'>#26605</a><br/><span style='font-size:smaller;color:gray'>fit: Fix memory allocation for MTP layers (#26605)</span>"]
+    C_9a688e5 --> C_717dad5
+    C_717dad5["<a href='https://github.com/ggml-org/llama.cpp/pull/26154'>#26154</a><br/><span style='font-size:smaller;color:gray'>mtmd: support multi-row batching for deepseek-ocr (#26154)</span>"]
+    C_717dad5 --> C_cd0fa60
+    C_cd0fa60["<a href='https://github.com/ggml-org/llama.cpp/pull/26613'>#26613</a><br/><span style='font-size:smaller;color:gray'>grammar : degrade max repetition >= 2000 to unbounded (#26613)</span>"]
+    C_cd0fa60 --> C_b06aa77
+    C_b06aa77["<a href='https://github.com/ggml-org/llama.cpp/pull/25614'>#25614</a><br/><span style='font-size:smaller;color:gray'>mtmd: Unlimited-OCR fix max_tiles, setting in converter (#25614)</span>"]
+    C_b06aa77 --> C_360e134
+    C_360e134["<a href='https://github.com/ggml-org/llama.cpp/pull/26633'>#26633</a><br/><span style='font-size:smaller;color:gray'>tests: re-enable MiniMax M3 in `test-llama-archs` (#26633)</span>"]
+    C_360e134 --> C_f9e832c
+    C_f9e832c["<a href='https://github.com/ggml-org/llama.cpp/pull/26626'>#26626</a><br/><span style='font-size:smaller;color:gray'>server: harden the file_glob_search directory walk (#26626)</span>"]
+    C_f9e832c --> C_c8e03ce
+    C_c8e03ce["<a href='https://github.com/ggml-org/llama.cpp/pull/26649'>#26649</a><br/><span style='font-size:smaller;color:gray'>mtmd/ggml: add ggml_build_forward_order (#26649)</span>"]
     COMMON -->|dev-metal| C_8ed30a7
     C_8ed30a7["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_8ed30a7 --> C_2894406
