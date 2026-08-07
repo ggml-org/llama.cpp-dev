@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-08-06 02:55:59 UTC
+Auto-generated on 2026-08-07 02:52:01 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -253,6 +253,22 @@ graph BT
     C_f9e832c["<a href='https://github.com/ggml-org/llama.cpp/pull/26626'>#26626</a><br/><span style='font-size:smaller;color:gray'>server: harden the file_glob_search directory walk (#26626)</span>"]
     C_f9e832c --> C_c8e03ce
     C_c8e03ce["<a href='https://github.com/ggml-org/llama.cpp/pull/26649'>#26649</a><br/><span style='font-size:smaller;color:gray'>mtmd/ggml: add ggml_build_forward_order (#26649)</span>"]
+    C_c8e03ce --> C_803b7fc
+    C_803b7fc["<a href='https://github.com/ggml-org/llama.cpp/pull/26371'>#26371</a><br/><span style='font-size:smaller;color:gray'>vulkan: fix submission batching size, add debug tools for diagnosing causes of DeviceLost drivers errors (#26371)</span>"]
+    C_803b7fc --> C_9de0fcf
+    C_9de0fcf["<a href='https://github.com/ggml-org/llama.cpp/pull/26665'>#26665</a><br/><span style='font-size:smaller;color:gray'>model-conversion : add --model-name to conversion scripts (#26665)</span>"]
+    C_9de0fcf --> C_a1f96d4
+    C_a1f96d4["<a href='https://github.com/ggml-org/llama.cpp/pull/26544'>#26544</a><br/><span style='font-size:smaller;color:gray'>ci : onboard AMD ROCm CI with gfx1151 fixes (#26544)</span>"]
+    C_a1f96d4 --> C_e700bfb
+    C_e700bfb["<a href='https://github.com/ggml-org/llama.cpp/pull/26660'>#26660</a><br/><span style='font-size:smaller;color:gray'>convert : accept 'ExaoneMoeForCausalLM' arch spelling (#26660)</span>"]
+    C_e700bfb --> C_3db4ff8
+    C_3db4ff8["<a href='https://github.com/ggml-org/llama.cpp/pull/26672'>#26672</a><br/><span style='font-size:smaller;color:gray'>model-loader : fix quantized reshaped tensor strides (#26672)</span>"]
+    C_3db4ff8 --> C_eb5667a
+    C_eb5667a["<a href='https://github.com/ggml-org/llama.cpp/pull/26673'>#26673</a><br/><span style='font-size:smaller;color:gray'>convert : fix DeepseekV4 rope parameters with transformers 5.x (#26673)</span>"]
+    C_eb5667a --> C_6a32c29
+    C_6a32c29["<a href='https://github.com/ggml-org/llama.cpp/pull/26656'>#26656</a><br/><span style='font-size:smaller;color:gray'>server: fix empty response for /cors-proxy (#26656)</span>"]
+    C_6a32c29 --> C_15586e2
+    C_15586e2["<a href='https://github.com/ggml-org/llama.cpp/pull/26645'>#26645</a><br/><span style='font-size:smaller;color:gray'>mtmd: add chunk save/load function (#26645)</span>"]
     COMMON -->|dev-metal| C_8ed30a7
     C_8ed30a7["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_8ed30a7 --> C_2894406

@@ -3,7 +3,15 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 7e1e28cae36d41fe7bbe9dae7c9625de6565c063
 Branches analyzed: 2
 
---- master (tip: c8e03ce8122b7af76f836d53efde6df1ce5ec437, commits from ancestor: 120) ---
+--- master (tip: 15586e2d7165570fb3aa7c26e0d442e289ef69de, commits from ancestor: 128) ---
+15586e2 mtmd: add chunk save/load function (#26645)
+6a32c29 server: fix empty response for /cors-proxy (#26656)
+eb5667a convert : fix DeepseekV4 rope parameters with transformers 5.x (#26673)
+3db4ff8 model-loader : fix quantized reshaped tensor strides (#26672)
+e700bfb convert : accept "ExaoneMoeForCausalLM" arch spelling (#26660)
+a1f96d4 ci : onboard AMD ROCm CI with gfx1151 fixes (#26544)
+9de0fcf model-conversion : add --model-name to conversion scripts (#26665)
+803b7fc vulkan: fix submission batching size, add debug tools for diagnosing causes of DeviceLost drivers errors (#26371)
 c8e03ce mtmd/ggml: add ggml_build_forward_order (#26649)
 f9e832c server: harden the file_glob_search directory walk (#26626)
 360e134 tests: re-enable MiniMax M3 in `test-llama-archs` (#26633)
