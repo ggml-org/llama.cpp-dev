@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-08-07 02:52:01 UTC
+Auto-generated on 2026-08-08 01:57:17 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -269,6 +269,62 @@ graph BT
     C_6a32c29["<a href='https://github.com/ggml-org/llama.cpp/pull/26656'>#26656</a><br/><span style='font-size:smaller;color:gray'>server: fix empty response for /cors-proxy (#26656)</span>"]
     C_6a32c29 --> C_15586e2
     C_15586e2["<a href='https://github.com/ggml-org/llama.cpp/pull/26645'>#26645</a><br/><span style='font-size:smaller;color:gray'>mtmd: add chunk save/load function (#26645)</span>"]
+    C_15586e2 --> C_e40bf88
+    C_e40bf88["<a href='https://github.com/ggml-org/llama.cpp/pull/26646'>#26646</a><br/><span style='font-size:smaller;color:gray'>metal : avoid `threadgroup` matrix array instantiation in kernel_lightning_indexer (#26646)</span>"]
+    C_e40bf88 --> C_d8d9887
+    C_d8d9887["<a href='https://github.com/ggml-org/llama.cpp/pull/26368'>#26368</a><br/><span style='font-size:smaller;color:gray'>ci: abort if build requirements are missing (#26368)</span>"]
+    C_d8d9887 --> C_5b87ed3
+    C_5b87ed3["<a href='https://github.com/ggml-org/llama.cpp/pull/26688'>#26688</a><br/><span style='font-size:smaller;color:gray'>cuda: fix warnings for unused variable/function (#26688)</span>"]
+    C_5b87ed3 --> C_c074cb3
+    C_c074cb3["<a href='https://github.com/ggml-org/llama.cpp/pull/26515'>#26515</a><br/><span style='font-size:smaller;color:gray'>sycl : enhance OP set_rows to support all missed data types (#26515)</span>"]
+    C_c074cb3 --> C_eef5f3e
+    C_eef5f3e["<a href='https://github.com/ggml-org/llama.cpp/pull/26441'>#26441</a><br/><span style='font-size:smaller;color:gray'>sycl : fix error Error OP FLASH_ATTN_EXT on arc770 (#26441)</span>"]
+    C_eef5f3e --> C_c1f4109
+    C_c1f4109["<a href='https://github.com/ggml-org/llama.cpp/pull/26442'>#26442</a><br/><span style='font-size:smaller;color:gray'>sycl : update guide Q&A and script for device setting (#26442)</span>"]
+    C_c1f4109 --> C_31558db
+    C_31558db["<a href='https://github.com/ggml-org/llama.cpp/pull/26568'>#26568</a><br/><span style='font-size:smaller;color:gray'>sycl : Support DSv4 OPs: LIGHTNING_INDEXER,DSV4_HC_COMB,DSV4_HC_POST,DSV4_HC_PRE (#26568)</span>"]
+    C_31558db --> C_6b5c2ef
+    C_6b5c2ef["<a href='https://github.com/ggml-org/llama.cpp/pull/26354'>#26354</a><br/><span style='font-size:smaller;color:gray'>sycl: *glu flat path (#26354)</span>"]
+    C_6b5c2ef --> C_fc3f10b
+    C_fc3f10b["<a href='https://github.com/ggml-org/llama.cpp/pull/25608'>#25608</a><br/><span style='font-size:smaller;color:gray'>sycl: fix UE4M3 parsing (#25608)</span>"]
+    C_fc3f10b --> C_42e9881
+    C_42e9881["<a href='https://github.com/ggml-org/llama.cpp/pull/26555'>#26555</a><br/><span style='font-size:smaller;color:gray'>Mitigate crashing issue on Windows MSYS2 UCRT64 environment (GCC 16.1.0) (#26555)</span>"]
+    C_42e9881 --> C_82bb485
+    C_82bb485["<a href='https://github.com/ggml-org/llama.cpp/pull/26709'>#26709</a><br/><span style='font-size:smaller;color:gray'>ui: read model modalities from the router model list (#26709)</span>"]
+    C_82bb485 --> C_cb26014
+    C_cb26014["<a href='https://github.com/ggml-org/llama.cpp/pull/25554'>#25554</a><br/><span style='font-size:smaller;color:gray'>ggml : add aarch64 HWCAP fallbacks and fix fp16 variant detection (#25554)</span>"]
+    C_cb26014 --> C_217df17
+    C_217df17["<a href='https://github.com/ggml-org/llama.cpp/pull/26706'>#26706</a><br/><span style='font-size:smaller;color:gray'>mtmd: stop feeding the text stream again during Qwen3-TTS generation (#26706)</span>"]
+    C_217df17 --> C_e1470ee
+    C_e1470ee["<a href='https://github.com/ggml-org/llama.cpp/pull/26567'>#26567</a><br/><span style='font-size:smaller;color:gray'>server: (router) do not evict busy models (#26567)</span>"]
+    C_e1470ee --> C_dff15d4
+    C_dff15d4["<a href='https://github.com/ggml-org/llama.cpp/pull/26572'>#26572</a><br/><span style='font-size:smaller;color:gray'>server: (router) add LRU scheduler (#26572)</span>"]
+    C_dff15d4 --> C_34e9ee5
+    C_34e9ee5["<a href='https://github.com/ggml-org/llama.cpp/pull/26711'>#26711</a><br/><span style='font-size:smaller;color:gray'>ui: set npm `min-release-age` to protect against supply-chain attacks (#26711)</span>"]
+    C_34e9ee5 --> C_f4f7758
+    C_f4f7758["<a href='https://github.com/ggml-org/llama.cpp/pull/26707'>#26707</a><br/><span style='font-size:smaller;color:gray'>webui: load the model selected via ?model= when ?load=true (#26707)</span>"]
+    C_f4f7758 --> C_9ba73fd
+    C_9ba73fd["<a href='https://github.com/ggml-org/llama.cpp/pull/26720'>#26720</a><br/><span style='font-size:smaller;color:gray'>server : clarify comment in eval_llama_cmpl_schema [no ci] [no release] (#26720)</span>"]
+    C_9ba73fd --> C_933f46f
+    C_933f46f["<a href='https://github.com/ggml-org/llama.cpp/commit/933f46f'>933f46f</a><br/><span style='font-size:smaller;color:gray'>ggml : bump version to 0.19.0 (ggml/1581)</span>"]
+    C_933f46f --> C_4cf5cab
+    C_4cf5cab["<a href='https://github.com/ggml-org/llama.cpp/commit/4cf5cab'>4cf5cab</a><br/><span style='font-size:smaller;color:gray'>sync : ggml</span>"]
+    C_4cf5cab --> C_4cb22cd
+    C_4cb22cd["<a href='https://github.com/ggml-org/llama.cpp/pull/26638'>#26638</a><br/><span style='font-size:smaller;color:gray'>mtmd: fix longest_edge ignoring min/max pixels (#26638)</span>"]
+    C_4cb22cd --> C_2363478
+    C_2363478["<a href='https://github.com/ggml-org/llama.cpp/pull/26715'>#26715</a><br/><span style='font-size:smaller;color:gray'>ui: Filesystem `@mentions` for Chat Form (#26715)</span>"]
+    C_2363478 --> C_a194a75
+    C_a194a75["<a href='https://github.com/ggml-org/llama.cpp/pull/26708'>#26708</a><br/><span style='font-size:smaller;color:gray'>metal : fix NORM/RMS_NORM for row lengths that leave a partial simdgroup (#26708)</span>"]
+    C_a194a75 --> C_f8e3026
+    C_f8e3026["<a href='https://github.com/ggml-org/llama.cpp/pull/26612'>#26612</a><br/><span style='font-size:smaller;color:gray'>sycl: coalesce the ssm_conv window loads (#26612)</span>"]
+    C_f8e3026 --> C_6de1b63
+    C_6de1b63["<a href='https://github.com/ggml-org/llama.cpp/pull/26716'>#26716</a><br/><span style='font-size:smaller;color:gray'>allozaur/feat/chat slash commands (#26716)</span>"]
+    C_6de1b63 --> C_1621a3d
+    C_1621a3d["<a href='https://github.com/ggml-org/llama.cpp/pull/26734'>#26734</a><br/><span style='font-size:smaller;color:gray'>tests : speed-up server test suite 3x (#26734)</span>"]
+    C_1621a3d --> C_fc6545d
+    C_fc6545d["<a href='https://github.com/ggml-org/llama.cpp/pull/26717'>#26717</a><br/><span style='font-size:smaller;color:gray'>allozaur/feat/chat form contenteditable (#26717)</span>"]
+    C_fc6545d --> C_3653e6d
+    C_3653e6d["<a href='https://github.com/ggml-org/llama.cpp/pull/26733'>#26733</a><br/><span style='font-size:smaller;color:gray'>tts: account for the vocoder pass in the timings line (#26733)</span>"]
     COMMON -->|dev-metal| C_8ed30a7
     C_8ed30a7["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_8ed30a7 --> C_2894406

@@ -3,7 +3,35 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 7e1e28cae36d41fe7bbe9dae7c9625de6565c063
 Branches analyzed: 2
 
---- master (tip: 15586e2d7165570fb3aa7c26e0d442e289ef69de, commits from ancestor: 128) ---
+--- master (tip: 3653e6d6d547ec763317d9ecd0ace334a7e21359, commits from ancestor: 156) ---
+3653e6d tts: account for the vocoder pass in the timings line (#26733)
+fc6545d allozaur/feat/chat form contenteditable (#26717)
+1621a3d tests : speed-up server test suite 3x (#26734)
+6de1b63 allozaur/feat/chat slash commands (#26716)
+f8e3026 sycl: coalesce the ssm_conv window loads (#26612)
+a194a75 metal : fix NORM/RMS_NORM for row lengths that leave a partial simdgroup (#26708)
+2363478 ui: Filesystem `@mentions` for Chat Form (#26715)
+4cb22cd mtmd: fix longest_edge ignoring min/max pixels (#26638)
+4cf5cab sync : ggml
+933f46f ggml : bump version to 0.19.0 (ggml/1581)
+9ba73fd server : clarify comment in eval_llama_cmpl_schema [no ci] [no release] (#26720)
+f4f7758 webui: load the model selected via ?model= when ?load=true (#26707)
+34e9ee5 ui: set npm `min-release-age` to protect against supply-chain attacks (#26711)
+dff15d4 server: (router) add LRU scheduler (#26572)
+e1470ee server: (router) do not evict busy models (#26567)
+217df17 mtmd: stop feeding the text stream again during Qwen3-TTS generation (#26706)
+cb26014 ggml : add aarch64 HWCAP fallbacks and fix fp16 variant detection (#25554)
+82bb485 ui: read model modalities from the router model list (#26709)
+42e9881 Mitigate crashing issue on Windows MSYS2 UCRT64 environment (GCC 16.1.0) (#26555)
+fc3f10b sycl: fix UE4M3 parsing (#25608)
+6b5c2ef sycl: *glu flat path (#26354)
+31558db sycl : Support DSv4 OPs: LIGHTNING_INDEXER,DSV4_HC_COMB,DSV4_HC_POST,DSV4_HC_PRE (#26568)
+c1f4109 sycl : update guide Q&A and script for device setting (#26442)
+eef5f3e sycl : fix error Error OP FLASH_ATTN_EXT on arc770 (#26441)
+c074cb3 sycl : enhance OP set_rows to support all missed data types (#26515)
+5b87ed3 cuda: fix warnings for unused variable/function (#26688)
+d8d9887 ci: abort if build requirements are missing (#26368)
+e40bf88 metal : avoid `threadgroup` matrix array instantiation in kernel_lightning_indexer (#26646)
 15586e2 mtmd: add chunk save/load function (#26645)
 6a32c29 server: fix empty response for /cors-proxy (#26656)
 eb5667a convert : fix DeepseekV4 rope parameters with transformers 5.x (#26673)
