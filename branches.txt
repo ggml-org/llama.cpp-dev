@@ -3,7 +3,12 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 7e1e28cae36d41fe7bbe9dae7c9625de6565c063
 Branches analyzed: 2
 
---- master (tip: 3653e6d6d547ec763317d9ecd0ace334a7e21359, commits from ancestor: 156) ---
+--- master (tip: 7ba604f1cb61cd14898138e9abc0b4ff2601f180, commits from ancestor: 161) ---
+7ba604f server: report the isolate working directory from get_info (#26773)
+687e778 CUDA: fuse rms_norm + mul + rope (+ view + set_rows) (#26767)
+18f7ad7 server, ui: only offer a working directory when a tool reads it (#26762)
+dd2c7c4 server: add initial tool isolation support (via docker) (#26507)
+69bf643 CUDA: fix thread/block count in quantized cpy kernel launches (#26731)
 3653e6d tts: account for the vocoder pass in the timings line (#26733)
 fc6545d allozaur/feat/chat form contenteditable (#26717)
 1621a3d tests : speed-up server test suite 3x (#26734)

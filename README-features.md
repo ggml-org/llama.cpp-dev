@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-08-08 01:57:17 UTC
+Auto-generated on 2026-08-09 02:04:15 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -325,6 +325,16 @@ graph BT
     C_fc6545d["<a href='https://github.com/ggml-org/llama.cpp/pull/26717'>#26717</a><br/><span style='font-size:smaller;color:gray'>allozaur/feat/chat form contenteditable (#26717)</span>"]
     C_fc6545d --> C_3653e6d
     C_3653e6d["<a href='https://github.com/ggml-org/llama.cpp/pull/26733'>#26733</a><br/><span style='font-size:smaller;color:gray'>tts: account for the vocoder pass in the timings line (#26733)</span>"]
+    C_3653e6d --> C_69bf643
+    C_69bf643["<a href='https://github.com/ggml-org/llama.cpp/pull/26731'>#26731</a><br/><span style='font-size:smaller;color:gray'>CUDA: fix thread/block count in quantized cpy kernel launches (#26731)</span>"]
+    C_69bf643 --> C_dd2c7c4
+    C_dd2c7c4["<a href='https://github.com/ggml-org/llama.cpp/pull/26507'>#26507</a><br/><span style='font-size:smaller;color:gray'>server: add initial tool isolation support (via docker) (#26507)</span>"]
+    C_dd2c7c4 --> C_18f7ad7
+    C_18f7ad7["<a href='https://github.com/ggml-org/llama.cpp/pull/26762'>#26762</a><br/><span style='font-size:smaller;color:gray'>server, ui: only offer a working directory when a tool reads it (#26762)</span>"]
+    C_18f7ad7 --> C_687e778
+    C_687e778["<a href='https://github.com/ggml-org/llama.cpp/pull/26767'>#26767</a><br/><span style='font-size:smaller;color:gray'>CUDA: fuse rms_norm + mul + rope (+ view + set_rows) (#26767)</span>"]
+    C_687e778 --> C_7ba604f
+    C_7ba604f["<a href='https://github.com/ggml-org/llama.cpp/pull/26773'>#26773</a><br/><span style='font-size:smaller;color:gray'>server: report the isolate working directory from get_info (#26773)</span>"]
     COMMON -->|dev-metal| C_8ed30a7
     C_8ed30a7["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_8ed30a7 --> C_2894406
