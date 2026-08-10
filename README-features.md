@@ -1,6 +1,6 @@
 # llama.cpp - feature development info
 
-Auto-generated on 2026-08-09 02:04:15 UTC
+Auto-generated on 2026-08-10 02:08:21 UTC
 
 **Repo:** https://github.com/ggml-org/llama.cpp
 
@@ -335,6 +335,14 @@ graph BT
     C_687e778["<a href='https://github.com/ggml-org/llama.cpp/pull/26767'>#26767</a><br/><span style='font-size:smaller;color:gray'>CUDA: fuse rms_norm + mul + rope (+ view + set_rows) (#26767)</span>"]
     C_687e778 --> C_7ba604f
     C_7ba604f["<a href='https://github.com/ggml-org/llama.cpp/pull/26773'>#26773</a><br/><span style='font-size:smaller;color:gray'>server: report the isolate working directory from get_info (#26773)</span>"]
+    C_7ba604f --> C_61141f1
+    C_61141f1["<a href='https://github.com/ggml-org/llama.cpp/pull/26760'>#26760</a><br/><span style='font-size:smaller;color:gray'>ci: rm `GGML_HIP_ROCWMMA_FATTN` (#26760)</span>"]
+    C_61141f1 --> C_0865990
+    C_0865990["<a href='https://github.com/ggml-org/llama.cpp/pull/26792'>#26792</a><br/><span style='font-size:smaller;color:gray'>ggml-cpu : fix missing Q5_0 dispatch in SpaceMiT backend (#26792)</span>"]
+    C_0865990 --> C_9369185
+    C_9369185["<a href='https://github.com/ggml-org/llama.cpp/pull/26801'>#26801</a><br/><span style='font-size:smaller;color:gray'>ci: add pr-draft-label (#26801)</span>"]
+    C_9369185 --> C_74ce157
+    C_74ce157["<a href='https://github.com/ggml-org/llama.cpp/pull/26811'>#26811</a><br/><span style='font-size:smaller;color:gray'>ui: degrade the working directory picker when file search is off (#26811)</span>"]
     COMMON -->|dev-metal| C_8ed30a7
     C_8ed30a7["<a href='https://github.com/ggml-org/llama.cpp/pull/24021'>#24021</a><br/><span style='font-size:smaller;color:gray'>metal : per-op source split + parallel compile (#24021)</span>"]
     C_8ed30a7 --> C_2894406

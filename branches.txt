@@ -3,7 +3,11 @@ Repo: https://github.com/ggml-org/llama.cpp
 Common ancestor: 7e1e28cae36d41fe7bbe9dae7c9625de6565c063
 Branches analyzed: 2
 
---- master (tip: 7ba604f1cb61cd14898138e9abc0b4ff2601f180, commits from ancestor: 161) ---
+--- master (tip: 74ce15741b420b8d6f12e720398458b576c51c2c, commits from ancestor: 165) ---
+74ce157 ui: degrade the working directory picker when file search is off (#26811)
+9369185 ci: add pr-draft-label (#26801)
+0865990 ggml-cpu : fix missing Q5_0 dispatch in SpaceMiT backend (#26792)
+61141f1 ci: rm `GGML_HIP_ROCWMMA_FATTN` (#26760)
 7ba604f server: report the isolate working directory from get_info (#26773)
 687e778 CUDA: fuse rms_norm + mul + rope (+ view + set_rows) (#26767)
 18f7ad7 server, ui: only offer a working directory when a tool reads it (#26762)
