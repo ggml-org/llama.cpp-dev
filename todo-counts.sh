@@ -22,7 +22,6 @@ EXCLUDE_GLOBS=(
     "*.yaml"
     "*.json"
     "*.lock"
-    "Dockerfile*"
 )
 
 # Excluded directories (vendored/generated code)
@@ -52,8 +51,9 @@ echo "Counting comment markers at commit $COMMIT ($SUBJECT)"
 
 # --- Collect matches: one line per occurrence, "path:match" ---
 MATCHES_FILE=$(mktemp)
+LIST_FILE=$(mktemp)
 AGG_FILE=$(mktemp)
-trap 'rm -f "$MATCHES_FILE" "$AGG_FILE"' EXIT
+trap 'rm -f "$MATCHES_FILE" "$LIST_FILE" "$AGG_FILE"' EXIT
 
 grep_args=()
 for g in "${EXCLUDE_GLOBS[@]}"; do grep_args+=(--exclude="$g"); done
@@ -64,6 +64,9 @@ PATTERN='(//|#|/\*|\*|;)[[:space:]]*(TODO|FIXME|XXX|HACK)([[:space:]]|:|$)'
 
 grep -rIoE "$PATTERN" "${grep_args[@]}" "$REPO_DIR" > "$MATCHES_FILE" || true
 echo "Found $(wc -l < "$MATCHES_FILE" | tr -d ' ') marker occurrences."
+
+# Full-line listing for the README appendix ("path:line:content")
+grep -rInE "$PATTERN" "${grep_args[@]}" "$REPO_DIR" > "$LIST_FILE" || true
 
 # --- Aggregate: per dir/marker matrix + per-file counts ---
 # Output lines:
@@ -156,7 +159,7 @@ echo "Generating $PLOT_FILE ..."
 
 if command -v gnuplot >/dev/null 2>&1; then
     GNUPLOT_SCRIPT=$(mktemp)
-    trap 'rm -f "$MATCHES_FILE" "$AGG_FILE" "$GNUPLOT_SCRIPT"' EXIT
+    trap 'rm -f "$MATCHES_FILE" "$LIST_FILE" "$AGG_FILE" "$GNUPLOT_SCRIPT"' EXIT
 
     cat > "$GNUPLOT_SCRIPT" << GNUEOF
 set terminal png size 800,400 enhanced
@@ -197,7 +200,7 @@ echo "Generating $README_FILE ..."
     echo ""
     echo "- **Commit:** [$COMMIT]($REPO/commit/$COMMIT) ($SUBJECT)"
     echo "- **Markers counted:** ${MARKERS[*]}"
-    echo "- **Excluded:** vendored code (\`vendor/\`, \`vendors/\`, \`3rdparty/\`), docs (\`*.md\`, \`*.rst\`), CI config (\`*.yml\`, \`*.yaml\`), assets (\`*.json\`, \`*.lock\`, \`Dockerfile*\`), text files except \`CMakeLists.txt\`"
+    echo "- **Excluded:** vendored code (\`vendor/\`, \`vendors/\`, \`3rdparty/\`), docs (\`*.md\`, \`*.rst\`), CI config (\`*.yml\`, \`*.yaml\`), assets (\`*.json\`, \`*.lock\`), text files except \`CMakeLists.txt\`"
     echo "- **Total:** $GRAND_TOTAL in $FILES_WITH_MATCHES files"
     echo ""
     echo "## TODO Counts Over Commits"
@@ -244,6 +247,15 @@ echo "Generating $README_FILE ..."
         done
         echo ""
     done
+    echo "## All TODO Instances"
+    echo ""
+    echo '```'
+    sed 's|^llama\.cpp/||' "$LIST_FILE" | awk -F: '
+    { f = $1; n = split(f, p, "/"); b = p[n]
+      if (b ~ /\.txt$/ && b != "CMakeLists.txt") next
+      print }' | sort -t: -k1,1 -k2,2n
+    echo '```'
+    echo ""
 } > "$README_FILE"
 
 echo "Done. Output written to $README_FILE"
