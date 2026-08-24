@@ -1,6 +1,6 @@
 # llama.cpp TODO Comments
 
-Auto-generated on 2026-08-24 01:39:03 UTC
+Auto-generated on 2026-08-24 05:11:29 UTC
 
 ## Configuration
 
@@ -15,7 +15,7 @@ Auto-generated on 2026-08-24 01:39:03 UTC
 
 ## Totals by Directory
 
-| Directory | TODO FIXME XXX HACK | Total |
+| Directory | TODO | FIXME | XXX | HACK | Total |
 |-----------| ---| ---| ---| ---| ------|
 | [ggml/](https://github.com/ggml-org/llama.cpp/tree/c060ca9/ggml) | 304 | 42 | 6 | 1 | 353 |
 | [src/](https://github.com/ggml-org/llama.cpp/tree/c060ca9/src) | 181 | 18 | 0 | 0 | 199 |
