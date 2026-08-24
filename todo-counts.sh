@@ -213,7 +213,9 @@ echo "Generating $README_FILE ..."
     echo ""
     echo "## Totals by Directory"
     echo ""
-    echo "| Directory | ${MARKERS[*]} | Total |"
+    header="| Directory |"
+    for m in "${MARKERS[@]}"; do header="$header $m |"; done
+    echo "$header Total |"
     sep="|-----------|"
     for m in "${MARKERS[@]}"; do sep="$sep ---|"; done
     echo "$sep ------|"
