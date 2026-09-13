@@ -34,6 +34,7 @@ cmake -B "$BUILD_DIR" -S llama.cpp \
     -DLLAMA_BUILD_TESTS=ON \
     -DLLAMA_BUILD_EXAMPLES=OFF \
     -DLLAMA_BUILD_UI=OFF \
+    -DCMAKE_DISABLE_PRECOMPILE_HEADERS=ON \
     -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 
 # --- Measure per-file compile times ---
@@ -171,7 +172,7 @@ REPO="https://github.com/ggml-org/llama.cpp"
     echo "## Configuration"
     echo ""
     echo "- **Commit:** [$COMMIT]($REPO/commit/$COMMIT) ($(cd llama.cpp && git log -1 --format='%s'))"
-    echo "- **CMake flags:** \`-DGGML_CCACHE=OFF -DGGML_METAL=OFF -DLLAMA_BUILD_TESTS=ON -DLLAMA_BUILD_EXAMPLES=OFF -DLLAMA_BUILD_UI=OFF\`"
+    echo "- **CMake flags:** \`-DGGML_CCACHE=OFF -DGGML_METAL=OFF -DLLAMA_BUILD_TESTS=ON -DLLAMA_BUILD_EXAMPLES=OFF -DLLAMA_BUILD_UI=OFF -DCMAKE_DISABLE_PRECOMPILE_HEADERS=ON\`"
     echo "- **Files measured:** $total_measured"
     if [ "$LIMIT_PER_DIR" -lt "$count" ]; then
         echo "- **Note:** Limited to $LIMIT_PER_DIR files per directory."
