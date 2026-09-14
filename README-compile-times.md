@@ -1,6 +1,6 @@
 # llama.cpp Compile Times
 
-Auto-generated on 2026-09-14 07:15:12 UTC
+Auto-generated on 2026-09-14 08:20:26 UTC
 
 ## Configuration
 
@@ -16,11 +16,11 @@ Auto-generated on 2026-09-14 07:15:12 UTC
 
 | Directory | Time |
 |-----------|------|
-| [ggml/](https://github.com/ggml-org/llama.cpp/tree/661643e/ggml)     | 16.2s     |
+| [ggml/](https://github.com/ggml-org/llama.cpp/tree/661643e/ggml)     | 16.3s     |
 | [src/](https://github.com/ggml-org/llama.cpp/tree/661643e/src)      | 21.8s      |
 | [common/](https://github.com/ggml-org/llama.cpp/tree/661643e/common)   | 43.0s    |
-| [tools/](https://github.com/ggml-org/llama.cpp/tree/661643e/tools)    | 56.0s    |
-| [tests/](https://github.com/ggml-org/llama.cpp/tree/661643e/tests)   | 52.1s    |
+| [tools/](https://github.com/ggml-org/llama.cpp/tree/661643e/tools)    | 56.1s    |
+| [tests/](https://github.com/ggml-org/llama.cpp/tree/661643e/tests)   | 52.3s    |
 
 ## Compile Times by Directory
 
@@ -41,20 +41,20 @@ Auto-generated on 2026-09-14 07:15:12 UTC
 | 0.5s | [ggml/src/ggml-cpu/arch/arm/repack.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/ggml/src/ggml-cpu/arch/arm/repack.cpp) |
 | 0.4s | [ggml/src/ggml-backend.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/ggml/src/ggml-backend.cpp) |
 | 0.4s | [ggml/src/ggml-cpu/ggml-cpu.c](https://github.com/ggml-org/llama.cpp/blob/661643e/ggml/src/ggml-cpu/ggml-cpu.c) |
-| 0.4s | [ggml/src/ggml-cpu/quants.c](https://github.com/ggml-org/llama.cpp/blob/661643e/ggml/src/ggml-cpu/quants.c) |
 | 0.4s | [ggml/src/ggml.c](https://github.com/ggml-org/llama.cpp/blob/661643e/ggml/src/ggml.c) |
+| 0.4s | [ggml/src/ggml-cpu/quants.c](https://github.com/ggml-org/llama.cpp/blob/661643e/ggml/src/ggml-cpu/quants.c) |
 | 0.4s | [ggml/src/ggml-backend-reg.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/ggml/src/ggml-backend-reg.cpp) |
 | 0.4s | [ggml/src/ggml-opt.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/ggml/src/ggml-opt.cpp) |
 | 0.3s | [ggml/src/ggml-cpu/iqp.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/ggml/src/ggml-cpu/iqp.cpp) |
 | 0.2s | [ggml/src/ggml-cpu/ggml-cpu.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/ggml/src/ggml-cpu/ggml-cpu.cpp) |
-| 0.2s | [ggml/src/ggml-cpu/amx/mmq.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/ggml/src/ggml-cpu/amx/mmq.cpp) |
+| 0.2s | [ggml/src/ggml.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/ggml/src/ggml.cpp) |
 | 0.2s | [ggml/src/ggml-cpu/amx/amx.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/ggml/src/ggml-cpu/amx/amx.cpp) |
+| 0.2s | [ggml/src/ggml-cpu/amx/mmq.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/ggml/src/ggml-cpu/amx/mmq.cpp) |
 | 0.2s | [ggml/src/ggml-cpu/arch/arm/quants.c](https://github.com/ggml-org/llama.cpp/blob/661643e/ggml/src/ggml-cpu/arch/arm/quants.c) |
 | 0.2s | [ggml/src/ggml-backend-dl.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/ggml/src/ggml-backend-dl.cpp) |
 | 0.2s | [ggml/src/ggml-cpu/traits.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/ggml/src/ggml-cpu/traits.cpp) |
-| 0.2s | [ggml/src/ggml.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/ggml/src/ggml.cpp) |
-| 0.1s | [ggml/src/ggml-alloc.c](https://github.com/ggml-org/llama.cpp/blob/661643e/ggml/src/ggml-alloc.c) |
 | 0.1s | [ggml/src/ggml-threading.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/ggml/src/ggml-threading.cpp) |
+| 0.1s | [ggml/src/ggml-alloc.c](https://github.com/ggml-org/llama.cpp/blob/661643e/ggml/src/ggml-alloc.c) |
 | 0.0s | [ggml/src/ggml-cpu/hbm.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/ggml/src/ggml-cpu/hbm.cpp) |
 
 ### src/
@@ -72,27 +72,27 @@ Auto-generated on 2026-09-14 07:15:12 UTC
 | 1.1s | [src/llama-kv-cache-dsv4.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-kv-cache-dsv4.cpp) |
 | 0.9s | [src/llama-context.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-context.cpp) |
 | 0.8s | [src/llama-graph.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-graph.cpp) |
-| 0.5s | [src/llama-memory-hybrid-idx.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-memory-hybrid-idx.cpp) |
 | 0.5s | [src/llama-batch.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-batch.cpp) |
+| 0.5s | [src/llama-memory-hybrid-idx.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-memory-hybrid-idx.cpp) |
 | 0.5s | [src/llama-memory-recurrent.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-memory-recurrent.cpp) |
 | 0.5s | [src/llama-adapter.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-adapter.cpp) |
 | 0.4s | [src/llama-chat.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-chat.cpp) |
 | 0.4s | [src/llama.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama.cpp) |
-| 0.3s | [src/llama-model-saver.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-model-saver.cpp) |
-| 0.3s | [src/llama-memory-hybrid-iswa.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-memory-hybrid-iswa.cpp) |
+| 0.4s | [src/llama-model-saver.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-model-saver.cpp) |
 | 0.3s | [src/llama-kv-cache-msa.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-kv-cache-msa.cpp) |
-| 0.3s | [src/llama-kv-cache-dsa-iswa.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-kv-cache-dsa-iswa.cpp) |
 | 0.3s | [src/llama-memory-hybrid.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-memory-hybrid.cpp) |
+| 0.3s | [src/llama-memory-hybrid-iswa.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-memory-hybrid-iswa.cpp) |
+| 0.3s | [src/llama-kv-cache-dsa-iswa.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-kv-cache-dsa-iswa.cpp) |
 | 0.3s | [src/llama-kv-cache-iswa.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-kv-cache-iswa.cpp) |
 | 0.3s | [src/llama-kv-cache-dsa.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-kv-cache-dsa.cpp) |
-| 0.3s | [src/llama-arch.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-arch.cpp) |
 | 0.3s | [src/unicode-data.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/unicode-data.cpp) |
+| 0.3s | [src/llama-arch.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-arch.cpp) |
 | 0.2s | [src/llama-mmap.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-mmap.cpp) |
 | 0.2s | [src/llama-impl.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-impl.cpp) |
 | 0.2s | [src/llama-memory.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-memory.cpp) |
 | 0.1s | [src/llama-io.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-io.cpp) |
-| 0.1s | [src/llama-hparams.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-hparams.cpp) |
 | 0.1s | [src/llama-cparams.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-cparams.cpp) |
+| 0.1s | [src/llama-hparams.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/src/llama-hparams.cpp) |
 
 ### common/
 
@@ -127,25 +127,25 @@ Auto-generated on 2026-09-14 07:15:12 UTC
 | 0.7s | [common/jinja/parser.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/jinja/parser.cpp) |
 | 0.7s | [common/parsers/ministral3.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/parsers/ministral3.cpp) |
 | 0.6s | [common/debug.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/debug.cpp) |
+| 0.6s | [common/parsers/lfm2.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/parsers/lfm2.cpp) |
 | 0.6s | [common/sampling.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/sampling.cpp) |
 | 0.6s | [common/parsers/functionary-v3-2.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/parsers/functionary-v3-2.cpp) |
-| 0.6s | [common/parsers/lfm2.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/parsers/lfm2.cpp) |
 | 0.6s | [common/parsers/gigachat-v3.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/parsers/gigachat-v3.cpp) |
 | 0.5s | [common/fit.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/fit.cpp) |
 | 0.5s | [common/chat-auto-parser-helpers.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/chat-auto-parser-helpers.cpp) |
 | 0.5s | [common/json-schema.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/json-schema.cpp) |
 | 0.4s | [common/parsers/parsers.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/parsers/parsers.cpp) |
-| 0.4s | [common/console.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/console.cpp) |
 | 0.4s | [common/jinja/lexer.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/jinja/lexer.cpp) |
+| 0.4s | [common/console.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/console.cpp) |
 | 0.4s | [common/ngram-cache.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/ngram-cache.cpp) |
 | 0.3s | [common/reasoning-budget.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/reasoning-budget.cpp) |
-| 0.3s | [common/jinja/string.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/jinja/string.cpp) |
 | 0.3s | [common/imatrix-loader.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/imatrix-loader.cpp) |
-| 0.3s | [common/ngram-map.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/ngram-map.cpp) |
+| 0.3s | [common/jinja/string.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/jinja/string.cpp) |
 | 0.3s | [common/trie.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/trie.cpp) |
 | 0.3s | [common/log.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/log.cpp) |
+| 0.3s | [common/ngram-map.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/ngram-map.cpp) |
 | 0.2s | [common/llguidance.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/llguidance.cpp) |
-| 0.2s | [common/subproc.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/subproc.cpp) |
+| 0.1s | [common/subproc.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/subproc.cpp) |
 | 0.1s | [common/ngram-mod.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/ngram-mod.cpp) |
 | 0.1s | [common/unicode.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/common/unicode.cpp) |
 
@@ -154,7 +154,7 @@ Auto-generated on 2026-09-14 07:15:12 UTC
 | Time | File |
 |------|------|
 | 2.9s | [tools/mtmd/mtmd-helper.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/mtmd-helper.cpp) |
-| 2.8s | [tools/server/server-models.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/server/server-models.cpp) |
+| 2.9s | [tools/server/server-models.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/server/server-models.cpp) |
 | 2.8s | [tools/server/server-context.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/server/server-context.cpp) |
 | 2.1s | [tools/server/server-tools.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/server/server-tools.cpp) |
 | 2.0s | [tools/llama-bench/llama-bench.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/llama-bench/llama-bench.cpp) |
@@ -162,8 +162,8 @@ Auto-generated on 2026-09-14 07:15:12 UTC
 | 1.7s | [tools/server/server-task.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/server/server-task.cpp) |
 | 1.4s | [tools/imatrix/imatrix.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/imatrix/imatrix.cpp) |
 | 1.4s | [tools/server/server.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/server/server.cpp) |
-| 1.3s | [tools/server/server-common.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/server/server-common.cpp) |
-| 1.2s | [tools/server/server-schema.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/server/server-schema.cpp) |
+| 1.4s | [tools/server/server-common.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/server/server-common.cpp) |
+| 1.3s | [tools/server/server-schema.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/server/server-schema.cpp) |
 | 1.2s | [tools/cli/cli-context.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/cli/cli-context.cpp) |
 | 1.1s | [tools/server/server-queue.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/server/server-queue.cpp) |
 | 1.0s | [tools/perplexity/perplexity.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/perplexity/perplexity.cpp) |
@@ -188,60 +188,60 @@ Auto-generated on 2026-09-14 07:15:12 UTC
 | 0.4s | [tools/results/results.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/results/results.cpp) |
 | 0.4s | [tools/batched-bench/batched-bench.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/batched-bench/batched-bench.cpp) |
 | 0.3s | [tools/tts/tts.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/tts/tts.cpp) |
-| 0.3s | [tools/fit-params/fit-params.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/fit-params/fit-params.cpp) |
 | 0.3s | [tools/mtmd/models/mimo-audio.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/mimo-audio.cpp) |
-| 0.3s | [tools/mtmd/models/granite4-vision.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/granite4-vision.cpp) |
-| 0.3s | [tools/gguf-split/gguf-split.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/gguf-split/gguf-split.cpp) |
 | 0.3s | [tools/tokenize/tokenize.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/tokenize/tokenize.cpp) |
 | 0.3s | [tools/mtmd/models/llava.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/llava.cpp) |
+| 0.3s | [tools/gguf-split/gguf-split.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/gguf-split/gguf-split.cpp) |
+| 0.3s | [tools/mtmd/models/granite4-vision.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/granite4-vision.cpp) |
 | 0.3s | [tools/mtmd/models/mobilenetv5.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/mobilenetv5.cpp) |
-| 0.3s | [tools/mtmd/models/deepseekocr.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/deepseekocr.cpp) |
-| 0.3s | [tools/mtmd/models/qwen3tts-spkenc.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/qwen3tts-spkenc.cpp) |
 | 0.3s | [tools/mtmd/models/gemma4v.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/gemma4v.cpp) |
+| 0.3s | [tools/mtmd/models/deepseek4v.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/deepseek4v.cpp) |
+| 0.3s | [tools/mtmd/models/granite-speech.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/granite-speech.cpp) |
+| 0.3s | [tools/mtmd/models/gemma4a.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/gemma4a.cpp) |
+| 0.3s | [tools/fit-params/fit-params.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/fit-params/fit-params.cpp) |
+| 0.3s | [tools/mtmd/models/deepseekocr.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/deepseekocr.cpp) |
+| 0.3s | [tools/mtmd/models/pixtral.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/pixtral.cpp) |
 | 0.3s | [tools/mtmd/models/llama4.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/llama4.cpp) |
 | 0.3s | [tools/mtmd/models/pockettts-seanet.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/pockettts-seanet.cpp) |
-| 0.3s | [tools/mtmd/models/kimik25.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/kimik25.cpp) |
-| 0.3s | [tools/mtmd/models/gemma4a.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/gemma4a.cpp) |
-| 0.3s | [tools/mtmd/models/muse-glimmer.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/muse-glimmer.cpp) |
 | 0.3s | [tools/mtmd/models/glm4v.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/glm4v.cpp) |
-| 0.3s | [tools/mtmd/models/dots3note.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/dots3note.cpp) |
-| 0.3s | [tools/mtmd/models/pixtral.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/pixtral.cpp) |
-| 0.3s | [tools/mtmd/models/paddleocr.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/paddleocr.cpp) |
-| 0.3s | [tools/mtmd/models/youtuvl.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/youtuvl.cpp) |
-| 0.3s | [tools/mtmd/models/granite-speech.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/granite-speech.cpp) |
-| 0.3s | [tools/mtmd/models/dotsocr.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/dotsocr.cpp) |
-| 0.3s | [tools/mtmd/models/kimivl.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/kimivl.cpp) |
-| 0.3s | [tools/mtmd/models/mimovl.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/mimovl.cpp) |
-| 0.3s | [tools/mtmd/models/deepseek4v.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/deepseek4v.cpp) |
-| 0.3s | [tools/mtmd/models/qwen3vl.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/qwen3vl.cpp) |
+| 0.3s | [tools/mtmd/models/qwen3tts-spkenc.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/qwen3tts-spkenc.cpp) |
 | 0.3s | [tools/mtmd/models/deepseekocr2.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/deepseekocr2.cpp) |
-| 0.3s | [tools/mtmd/models/pockettts-spkenc.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/pockettts-spkenc.cpp) |
-| 0.3s | [tools/mtmd/models/parakeet.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/parakeet.cpp) |
+| 0.3s | [tools/mtmd/models/kimik25.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/kimik25.cpp) |
+| 0.3s | [tools/mtmd/models/dotsocr.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/dotsocr.cpp) |
+| 0.3s | [tools/mtmd/models/muse-glimmer.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/muse-glimmer.cpp) |
+| 0.3s | [tools/mtmd/models/kimivl.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/kimivl.cpp) |
 | 0.3s | [tools/mtmd/models/minimax-m3.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/minimax-m3.cpp) |
+| 0.3s | [tools/mtmd/models/youtuvl.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/youtuvl.cpp) |
+| 0.3s | [tools/mtmd/models/paddleocr.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/paddleocr.cpp) |
+| 0.3s | [tools/mtmd/models/mimovl.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/mimovl.cpp) |
 | 0.3s | [tools/mtmd/models/whisper-enc.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/whisper-enc.cpp) |
 | 0.3s | [tools/mtmd/models/step3vl.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/step3vl.cpp) |
+| 0.3s | [tools/mtmd/models/pockettts-spkenc.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/pockettts-spkenc.cpp) |
+| 0.3s | [tools/mtmd/models/parakeet.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/parakeet.cpp) |
 | 0.3s | [tools/mtmd/models/minicpmv.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/minicpmv.cpp) |
-| 0.3s | [tools/mtmd/models/cogvlm.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/cogvlm.cpp) |
-| 0.3s | [tools/mtmd/models/yasa2.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/yasa2.cpp) |
-| 0.3s | [tools/mtmd/models/conformer.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/conformer.cpp) |
-| 0.3s | [tools/mtmd/models/exaone4_5.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/exaone4_5.cpp) |
-| 0.3s | [tools/mtmd/models/qwen3a.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/qwen3a.cpp) |
-| 0.3s | [tools/mtmd/models/qwen2vl.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/qwen2vl.cpp) |
-| 0.3s | [tools/mtmd/models/internvl.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/internvl.cpp) |
-| 0.3s | [tools/mtmd/models/gemma4uv.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/gemma4uv.cpp) |
 | 0.3s | [tools/mtmd/models/siglip.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/siglip.cpp) |
-| 0.3s | [tools/mtmd/models/nemotron-v2-vl.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/nemotron-v2-vl.cpp) |
+| 0.3s | [tools/mtmd/models/yasa2.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/yasa2.cpp) |
+| 0.3s | [tools/mtmd/models/qwen3a.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/qwen3a.cpp) |
 | 0.3s | [tools/mtmd/models/hunyuanvl.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/hunyuanvl.cpp) |
+| 0.3s | [tools/mtmd/models/dots3note.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/dots3note.cpp) |
+| 0.3s | [tools/mtmd/models/qwen2vl.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/qwen2vl.cpp) |
+| 0.3s | [tools/mtmd/models/exaone4_5.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/exaone4_5.cpp) |
+| 0.3s | [tools/mtmd/models/conformer.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/conformer.cpp) |
+| 0.3s | [tools/mtmd/models/cogvlm.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/cogvlm.cpp) |
+| 0.3s | [tools/mtmd/models/internvl.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/internvl.cpp) |
+| 0.3s | [tools/mtmd/models/qwen3vl.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/qwen3vl.cpp) |
+| 0.3s | [tools/mtmd/models/nemotron-v2-vl.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/nemotron-v2-vl.cpp) |
+| 0.3s | [tools/mtmd/models/gemma4uv.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/gemma4uv.cpp) |
 | 0.3s | [tools/mtmd/models/gemma4ua.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/models/gemma4ua.cpp) |
 | 0.1s | [tools/mtmd/deprecation-warning.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/deprecation-warning.cpp) |
 | 0.1s | [tools/mtmd/deprecation-warning.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/deprecation-warning.cpp) |
 | 0.1s | [tools/mtmd/deprecation-warning.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/deprecation-warning.cpp) |
 | 0.1s | [tools/mtmd/deprecation-warning.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/mtmd/deprecation-warning.cpp) |
-| 0.0s | [tools/fit-params/main.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/fit-params/main.cpp) |
 | 0.0s | [tools/server/main.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/server/main.cpp) |
 | 0.0s | [tools/quantize/main.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/quantize/main.cpp) |
 | 0.0s | [tools/perplexity/main.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/perplexity/main.cpp) |
 | 0.0s | [tools/llama-bench/main.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/llama-bench/main.cpp) |
+| 0.0s | [tools/fit-params/main.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/fit-params/main.cpp) |
 | 0.0s | [tools/completion/main.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/completion/main.cpp) |
 | 0.0s | [tools/cli/main.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/cli/main.cpp) |
 | 0.0s | [tools/batched-bench/main.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tools/batched-bench/main.cpp) |
@@ -250,13 +250,13 @@ Auto-generated on 2026-09-14 07:15:12 UTC
 
 | Time | File |
 |------|------|
-| 7.1s | [tests/test-chat.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-chat.cpp) |
+| 7.2s | [tests/test-chat.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-chat.cpp) |
 | 4.3s | [tests/test-backend-ops.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-backend-ops.cpp) |
 | 2.7s | [tests/test-jinja.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-jinja.cpp) |
 | 2.6s | [tests/test-chat-auto-parser.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-chat-auto-parser.cpp) |
 | 2.5s | [tests/test-chat-peg-parser.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-chat-peg-parser.cpp) |
-| 1.9s | [tests/peg-parser/test-gbnf-generation.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/peg-parser/test-gbnf-generation.cpp) |
 | 1.9s | [tests/peg-parser/test-basic.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/peg-parser/test-basic.cpp) |
+| 1.9s | [tests/peg-parser/test-gbnf-generation.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/peg-parser/test-gbnf-generation.cpp) |
 | 1.6s | [tests/peg-parser/test-unicode.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/peg-parser/test-unicode.cpp) |
 | 1.4s | [tests/peg-parser/test-python-dict-parser.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/peg-parser/test-python-dict-parser.cpp) |
 | 1.4s | [tests/test-json-schema.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-json-schema.cpp) |
@@ -269,18 +269,18 @@ Auto-generated on 2026-09-14 07:15:12 UTC
 | 0.9s | [tests/test-mtmd-impl.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-mtmd-impl.cpp) |
 | 0.8s | [tests/test-peg-parser.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-peg-parser.cpp) |
 | 0.8s | [tests/test-chat-analysis.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-chat-analysis.cpp) |
-| 0.8s | [tests/test-json-schema-to-grammar.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-json-schema-to-grammar.cpp) |
-| 0.8s | [tests/test-quantize-stats.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-quantize-stats.cpp) |
+| 0.7s | [tests/test-quantize-stats.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-quantize-stats.cpp) |
+| 0.7s | [tests/test-json-schema-to-grammar.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-json-schema-to-grammar.cpp) |
 | 0.7s | [tests/peg-parser/test-json-serialization.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/peg-parser/test-json-serialization.cpp) |
 | 0.7s | [tests/test-save-load-state.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-save-load-state.cpp) |
 | 0.7s | [tests/test-grammar-integration.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-grammar-integration.cpp) |
 | 0.6s | [tests/test-fusion.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-fusion.cpp) |
 | 0.5s | [tests/test-arg-parser.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-arg-parser.cpp) |
 | 0.5s | [tests/test-llama-archs.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-llama-archs.cpp) |
-| 0.5s | [tests/test-export-graph-ops.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-export-graph-ops.cpp) |
 | 0.5s | [tests/test-recurrent-state-rollback.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-recurrent-state-rollback.cpp) |
-| 0.5s | [tests/test-gguf.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-gguf.cpp) |
+| 0.5s | [tests/test-export-graph-ops.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-export-graph-ops.cpp) |
 | 0.5s | [tests/test-quant-type-selection.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-quant-type-selection.cpp) |
+| 0.5s | [tests/test-gguf.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-gguf.cpp) |
 | 0.4s | [tests/test-thread-safety.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-thread-safety.cpp) |
 | 0.4s | [tests/test-opt.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-opt.cpp) |
 | 0.4s | [tests/test-llama-grammar.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-llama-grammar.cpp) |
@@ -291,11 +291,11 @@ Auto-generated on 2026-09-14 07:15:12 UTC
 | 0.3s | [tests/test-grammar-parser.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-grammar-parser.cpp) |
 | 0.3s | [tests/test-sampling.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-sampling.cpp) |
 | 0.3s | [tests/test-quantize-perf.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-quantize-perf.cpp) |
+| 0.3s | [tests/test-tokenizer-1-spm.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-tokenizer-1-spm.cpp) |
 | 0.3s | [tests/test-tokenizer-1-bpe.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-tokenizer-1-bpe.cpp) |
-| 0.2s | [tests/test-tokenizer-1-spm.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-tokenizer-1-spm.cpp) |
 | 0.2s | [tests/test-gbnf-validator.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-gbnf-validator.cpp) |
-| 0.2s | [tests/test-autorelease.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-autorelease.cpp) |
 | 0.2s | [tests/test-rset-release.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-rset-release.cpp) |
+| 0.2s | [tests/test-autorelease.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-autorelease.cpp) |
 | 0.2s | [tests/test-model-load-cancel.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-model-load-cancel.cpp) |
 | 0.2s | [tests/test-barrier.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-barrier.cpp) |
 | 0.2s | [tests/test-quantize-fns.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-quantize-fns.cpp) |
@@ -303,8 +303,8 @@ Auto-generated on 2026-09-14 07:15:12 UTC
 | 0.1s | [tests/test-rope.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-rope.cpp) |
 | 0.1s | [tests/test-gguf-model-data.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-gguf-model-data.cpp) |
 | 0.1s | [tests/test-unicode.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-unicode.cpp) |
-| 0.1s | [tests/peg-parser/simple-tokenize.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/peg-parser/simple-tokenize.cpp) |
 | 0.1s | [tests/test-col2im-1d.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-col2im-1d.cpp) |
+| 0.1s | [tests/peg-parser/simple-tokenize.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/peg-parser/simple-tokenize.cpp) |
 | 0.1s | [tests/peg-parser/simple-tokenize.cpp](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/peg-parser/simple-tokenize.cpp) |
 | 0.0s | [tests/test-mtmd-c-api.c](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-mtmd-c-api.c) |
 | 0.0s | [tests/test-c.c](https://github.com/ggml-org/llama.cpp/blob/661643e/tests/test-c.c) |
