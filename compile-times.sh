@@ -91,12 +91,15 @@ for (( i=0; i<count; i++ )); do
     relpath=${file##*llama.cpp/}
 
     # Determine directory category (match first component of relpath)
+    # Generated unity-build files live under build/ but belong to the same
+    # directory as their target (e.g. build/src/CMakeFiles/llama.dir/Unity/...).
     case "$relpath" in
         ggml/*)   dir="ggml" ;;
         src/*)    dir="src" ;;
         common/*) dir="common" ;;
         tools/*)  dir="tools" ;;
         tests/*)  dir="tests" ;;
+        build/src/CMakeFiles/*/Unity/*) dir="src" ;;
         *)        continue ;;
     esac
 
@@ -204,7 +207,13 @@ REPO="https://github.com/ggml-org/llama.cpp"
         echo "| Time | File |"
         echo "|------|------|"
         grep "|$dir|" "$RESULTS_FILE" | sort -t'|' -k1 -rn | while IFS='|' read -r ms d fname relpath; do
-            echo "| $(ms_to_sec $ms) | [$relpath]($REPO/blob/$COMMIT/$relpath) |"
+            if [[ "$relpath" == build/* ]]; then
+                # Generated unity files are not part of the source tree, so they
+                # cannot be linked to a blob on GitHub.
+                echo "| $(ms_to_sec $ms) | $relpath |"
+            else
+                echo "| $(ms_to_sec $ms) | [$relpath]($REPO/blob/$COMMIT/$relpath) |"
+            fi
         done
         echo ""
     done
