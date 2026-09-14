@@ -166,21 +166,24 @@ set terminal png size 800,400 enhanced
 set output "$PLOT_FILE"
 set title "TODO/FIXME Comment Counts by Directory"
 set ylabel "Count"
-set xlabel "Commit"
+set xlabel "Date"
 set grid
 set key outside right
+set xdata time
+set timefmt "%s"
+set format x "%m-%d"
 set xtics rotate by -45
 set style data linespoints
 set datafile separator ","
 plot \\
-    '$DATA_FILE' skip 1 using 0:(\$3):xtic(stringcolumn(1)) title 'total' with linespoints, \\
-    '$DATA_FILE' skip 1 using 0:(\$4) title 'ggml' with linespoints, \\
-    '$DATA_FILE' skip 1 using 0:(\$5) title 'src' with linespoints, \\
-    '$DATA_FILE' skip 1 using 0:(\$6) title 'common' with linespoints, \\
-    '$DATA_FILE' skip 1 using 0:(\$7) title 'tools' with linespoints, \\
-    '$DATA_FILE' skip 1 using 0:(\$8) title 'tests' with linespoints, \\
-    '$DATA_FILE' skip 1 using 0:(\$9) title 'examples' with linespoints, \\
-    '$DATA_FILE' skip 1 using 0:(\$10) title 'other' with linespoints
+    '$DATA_FILE' skip 1 using 2:(\$3) title 'total' with linespoints, \\
+    '$DATA_FILE' skip 1 using 2:(\$4) title 'ggml' with linespoints, \\
+    '$DATA_FILE' skip 1 using 2:(\$5) title 'src' with linespoints, \\
+    '$DATA_FILE' skip 1 using 2:(\$6) title 'common' with linespoints, \\
+    '$DATA_FILE' skip 1 using 2:(\$7) title 'tools' with linespoints, \\
+    '$DATA_FILE' skip 1 using 2:(\$8) title 'tests' with linespoints, \\
+    '$DATA_FILE' skip 1 using 2:(\$9) title 'examples' with linespoints, \\
+    '$DATA_FILE' skip 1 using 2:(\$10) title 'other' with linespoints
 GNUEOF
 
     gnuplot "$GNUPLOT_SCRIPT" 2>/dev/null && echo "Plot generated: $PLOT_FILE"

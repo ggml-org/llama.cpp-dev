@@ -250,18 +250,21 @@ set terminal png size 800,400 enhanced
 set output "$PLOT_FILE"
 set title "Compile Times by Directory"
 set ylabel "Time (s)"
-set xlabel "Commit"
+set xlabel "Date"
 set grid
 set key outside right
+set xdata time
+set timefmt "%s"
+set format x "%m-%d"
 set xtics rotate by -45
 set style data linespoints
 set datafile separator ","
 plot \\
-    '$DATA_FILE' skip 1 using 0:(\$3/1000.0):xtic(stringcolumn(1)) title 'ggml' with linespoints, \\
-    '$DATA_FILE' skip 1 using 0:(\$4/1000.0) title 'src' with linespoints, \\
-    '$DATA_FILE' skip 1 using 0:(\$5/1000.0) title 'common' with linespoints, \\
-    '$DATA_FILE' skip 1 using 0:(\$6/1000.0) title 'tools' with linespoints, \
-    '$DATA_FILE' skip 1 using 0:(\$7/1000.0) title 'tests' with linespoints
+    '$DATA_FILE' skip 1 using 2:(\$3/1000.0) title 'ggml' with linespoints, \\
+    '$DATA_FILE' skip 1 using 2:(\$4/1000.0) title 'src' with linespoints, \\
+    '$DATA_FILE' skip 1 using 2:(\$5/1000.0) title 'common' with linespoints, \\
+    '$DATA_FILE' skip 1 using 2:(\$6/1000.0) title 'tools' with linespoints, \
+    '$DATA_FILE' skip 1 using 2:(\$7/1000.0) title 'tests' with linespoints
 GNUEOF
 
     gnuplot "$GNUPLOT_SCRIPT" 2>/dev/null && echo "Plot generated: $PLOT_FILE"
