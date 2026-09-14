@@ -88,7 +88,12 @@ for (( i=0; i<count; i++ )); do
     [ "$skip" = true ] && continue
 
     # Relative path from llama.cpp/ for GitHub links (use ## for longest match)
+    # Generated unity-build files live under $BUILD_DIR (outside llama.cpp/),
+    # so derive a path relative to the build directory for them.
     relpath=${file##*llama.cpp/}
+    if [[ "$relpath" == "$file" ]]; then
+        relpath="build/${file##*$BUILD_DIR/}"
+    fi
 
     # Determine directory category (match first component of relpath)
     # Generated unity-build files live under build/ but belong to the same
