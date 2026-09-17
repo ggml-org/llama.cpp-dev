@@ -1,13 +1,13 @@
 # llama.cpp TODO Comments
 
-Auto-generated on 2026-09-16 04:09:13 UTC
+Auto-generated on 2026-09-17 05:02:07 UTC
 
 ## Configuration
 
-- **Commit:** [930e2fa](https://github.com/ggml-org/llama.cpp/commit/930e2fa) (hexagon: add back missing contiguous fast-path and hvx_copy_uu for each run (#28886))
+- **Commit:** [35822af](https://github.com/ggml-org/llama.cpp/commit/35822af) (vulkan: support qwen4exp hc ops (#28988))
 - **Markers counted:** TODO FIXME XXX HACK
 - **Excluded:** vendored code (`vendor/`, `vendors/`, `3rdparty/`), docs (`*.md`, `*.rst`), CI config (`*.yml`, `*.yaml`), assets (`*.json`, `*.lock`), text files except `CMakeLists.txt`
-- **Total:** 892 in 294 files
+- **Total:** 896 in 294 files
 
 ## TODO Counts Over Commits
 
@@ -17,14 +17,14 @@ Auto-generated on 2026-09-16 04:09:13 UTC
 
 | Directory | TODO | FIXME | XXX | HACK | Total |
 |-----------| ---| ---| ---| ---| ------|
-| [ggml/](https://github.com/ggml-org/llama.cpp/tree/930e2fa/ggml) | 304 | 39 | 5 | 1 | 349 |
-| [src/](https://github.com/ggml-org/llama.cpp/tree/930e2fa/src) | 186 | 18 | 0 | 0 | 204 |
-| [common/](https://github.com/ggml-org/llama.cpp/tree/930e2fa/common) | 64 | 7 | 0 | 0 | 71 |
-| [tools/](https://github.com/ggml-org/llama.cpp/tree/930e2fa/tools) | 136 | 2 | 0 | 1 | 139 |
-| [tests/](https://github.com/ggml-org/llama.cpp/tree/930e2fa/tests) | 23 | 14 | 0 | 0 | 37 |
-| [examples/](https://github.com/ggml-org/llama.cpp/tree/930e2fa/examples) | 12 | 1 | 0 | 0 | 13 |
+| [ggml/](https://github.com/ggml-org/llama.cpp/tree/35822af/ggml) | 304 | 39 | 5 | 1 | 349 |
+| [src/](https://github.com/ggml-org/llama.cpp/tree/35822af/src) | 190 | 18 | 0 | 0 | 208 |
+| [common/](https://github.com/ggml-org/llama.cpp/tree/35822af/common) | 64 | 7 | 0 | 0 | 71 |
+| [tools/](https://github.com/ggml-org/llama.cpp/tree/35822af/tools) | 136 | 2 | 0 | 1 | 139 |
+| [tests/](https://github.com/ggml-org/llama.cpp/tree/35822af/tests) | 23 | 14 | 0 | 0 | 37 |
+| [examples/](https://github.com/ggml-org/llama.cpp/tree/35822af/examples) | 12 | 1 | 0 | 0 | 13 |
 | other | 75 | 4 | 0 | 0 | 79 |
-| **Total** | 800 | 85 | 5 | 2 | 892 |
+| **Total** | 804 | 85 | 5 | 2 | 896 |
 
 ## TODOs by Directory
 
@@ -32,330 +32,330 @@ Auto-generated on 2026-09-16 04:09:13 UTC
 
 | Count | File |
 |-------|------|
-| 28 | [ggml/src/ggml-cpu/ops.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/ops.cpp) |
-| 19 | [ggml/src/ggml-cpu/repack.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/repack.cpp) |
-| 17 | [ggml/include/ggml.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/include/ggml.h) |
-| 17 | [ggml/src/ggml-cpu/ggml-cpu.c](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/ggml-cpu.c) |
-| 15 | [ggml/src/ggml-cann/ggml-cann.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cann/ggml-cann.cpp) |
-| 14 | [ggml/src/ggml-backend-meta.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-backend-meta.cpp) |
-| 14 | [ggml/src/ggml.c](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml.c) |
-| 12 | [ggml/src/ggml-opencl/ggml-opencl.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-opencl/ggml-opencl.cpp) |
-| 11 | [ggml/src/ggml-cuda/ggml-cuda.cu](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cuda/ggml-cuda.cu) |
-| 11 | [ggml/src/ggml-sycl/ggml-sycl.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-sycl/ggml-sycl.cpp) |
-| 9 | [ggml/src/ggml-backend.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-backend.cpp) |
-| 9 | [ggml/src/ggml-webgpu/ggml-webgpu.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-webgpu/ggml-webgpu.cpp) |
-| 8 | [ggml/src/ggml-metal/ggml-metal-ops.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-metal/ggml-metal-ops.cpp) |
-| 5 | [ggml/src/ggml-cann/aclnn_ops.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cann/aclnn_ops.cpp) |
-| 5 | [ggml/src/ggml-cpu/simd-mappings.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/simd-mappings.h) |
-| 4 | [ggml/src/ggml-et/ggml-et.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-et/ggml-et.cpp) |
-| 4 | [ggml/src/ggml-metal/ggml-metal-device.m](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-metal/ggml-metal-device.m) |
-| 4 | [ggml/src/ggml-vulkan/ggml-vulkan.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-vulkan/ggml-vulkan.cpp) |
-| 3 | [ggml/src/ggml-cpu/spacemit/ime.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/spacemit/ime.cpp) |
-| 3 | [ggml/src/ggml-cpu/vec.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/vec.h) |
-| 3 | [ggml/src/ggml-cuda/fattn-common.cuh](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cuda/fattn-common.cuh) |
-| 3 | [ggml/src/ggml-cuda/fattn-tile.cuh](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cuda/fattn-tile.cuh) |
-| 3 | [ggml/src/ggml-cuda/lightning-indexer.cu](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cuda/lightning-indexer.cu) |
-| 3 | [ggml/src/ggml-cuda/mmq.cuh](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cuda/mmq.cuh) |
-| 3 | [ggml/src/ggml-hexagon/ggml-hexagon.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-hexagon/ggml-hexagon.cpp) |
-| 3 | [ggml/src/ggml-hexagon/htp/htp-ctx.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-hexagon/htp/htp-ctx.h) |
-| 3 | [ggml/src/ggml-metal/kernels/fa.metal](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-metal/kernels/fa.metal) |
-| 3 | [ggml/src/ggml-rpc/ggml-rpc.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-rpc/ggml-rpc.cpp) |
-| 3 | [ggml/src/ggml-zdnn/utils.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-zdnn/utils.cpp) |
-| 2 | [ggml/CMakeLists.txt](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/CMakeLists.txt) |
-| 2 | [ggml/src/CMakeLists.txt](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/CMakeLists.txt) |
-| 2 | [ggml/src/ggml-cpu/amx/mmq.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/amx/mmq.cpp) |
-| 2 | [ggml/src/ggml-cpu/arch/wasm/quants.c](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/arch/wasm/quants.c) |
-| 2 | [ggml/src/ggml-cpu/arch/x86/repack.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/arch/x86/repack.cpp) |
-| 2 | [ggml/src/ggml-cpu/binary-ops.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/binary-ops.cpp) |
-| 2 | [ggml/src/ggml-cpu/ggml-cpu-impl.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/ggml-cpu-impl.h) |
-| 2 | [ggml/src/ggml-cpu/simd-gemm.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/simd-gemm.h) |
-| 2 | [ggml/src/ggml-cpu/spacemit/ime2_kernels.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/spacemit/ime2_kernels.cpp) |
-| 2 | [ggml/src/ggml-cuda/argsort.cu](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cuda/argsort.cu) |
-| 2 | [ggml/src/ggml-cuda/fattn-mma-f16.cuh](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cuda/fattn-mma-f16.cuh) |
-| 2 | [ggml/src/ggml-cuda/mmf.cuh](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cuda/mmf.cuh) |
-| 2 | [ggml/src/ggml-cuda/mmq.cu](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cuda/mmq.cu) |
-| 2 | [ggml/src/ggml-cuda/softmax.cu](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cuda/softmax.cu) |
-| 2 | [ggml/src/ggml-cuda/top-k.cu](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cuda/top-k.cu) |
-| 2 | [ggml/src/ggml-hexagon/htp/main.c](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-hexagon/htp/main.c) |
-| 2 | [ggml/src/ggml-impl.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-impl.h) |
-| 2 | [ggml/src/ggml-metal/ggml-metal-impl.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-metal/ggml-metal-impl.h) |
-| 2 | [ggml/src/ggml-metal/kernels/wkv.metal](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-metal/kernels/wkv.metal) |
-| 2 | [ggml/src/ggml-musa/CMakeLists.txt](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-musa/CMakeLists.txt) |
-| 2 | [ggml/src/ggml-openvino/utils.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-openvino/utils.cpp) |
-| 2 | [ggml/src/ggml-sycl/common.hpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-sycl/common.hpp) |
-| 2 | [ggml/src/ggml-sycl/getrows.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-sycl/getrows.cpp) |
-| 2 | [ggml/src/ggml-vulkan/vulkan-shaders/topk_nary_search.comp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-vulkan/vulkan-shaders/topk_nary_search.comp) |
-| 2 | [ggml/src/ggml-webgpu/wgsl-shaders/flash_attn.wgsl](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-webgpu/wgsl-shaders/flash_attn.wgsl) |
-| 2 | [ggml/src/ggml-zdnn/ggml-zdnn.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-zdnn/ggml-zdnn.cpp) |
-| 1 | [ggml/include/ggml-backend.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/include/ggml-backend.h) |
-| 1 | [ggml/include/ggml-metal.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/include/ggml-metal.h) |
-| 1 | [ggml/include/ggml-opt.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/include/ggml-opt.h) |
-| 1 | [ggml/src/ggml-alloc.c](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-alloc.c) |
-| 1 | [ggml/src/ggml-backend-reg.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-backend-reg.cpp) |
-| 1 | [ggml/src/ggml-blas/ggml-blas.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-blas/ggml-blas.cpp) |
-| 1 | [ggml/src/ggml-cann/common.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cann/common.h) |
-| 1 | [ggml/src/ggml-common.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-common.h) |
-| 1 | [ggml/src/ggml-cpu/CMakeLists.txt](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/CMakeLists.txt) |
-| 1 | [ggml/src/ggml-cpu/amx/common.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/amx/common.h) |
-| 1 | [ggml/src/ggml-cpu/arch/loongarch/quants.c](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/arch/loongarch/quants.c) |
-| 1 | [ggml/src/ggml-cpu/arch/x86/cpu-feats.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/arch/x86/cpu-feats.cpp) |
-| 1 | [ggml/src/ggml-cpu/arch/x86/quants.c](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/arch/x86/quants.c) |
-| 1 | [ggml/src/ggml-cpu/common.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/common.h) |
-| 1 | [ggml/src/ggml-cpu/ggml-cpu.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/ggml-cpu.cpp) |
-| 1 | [ggml/src/ggml-cpu/llamafile/sgemm.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/llamafile/sgemm.cpp) |
-| 1 | [ggml/src/ggml-cpu/ops.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/ops.h) |
-| 1 | [ggml/src/ggml-cpu/quants.c](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/quants.c) |
-| 1 | [ggml/src/ggml-cpu/unary-ops.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/unary-ops.cpp) |
-| 1 | [ggml/src/ggml-cpu/vec.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cpu/vec.cpp) |
-| 1 | [ggml/src/ggml-cuda/CMakeLists.txt](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cuda/CMakeLists.txt) |
-| 1 | [ggml/src/ggml-cuda/convert.cuh](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cuda/convert.cuh) |
-| 1 | [ggml/src/ggml-cuda/cumsum.cu](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cuda/cumsum.cu) |
-| 1 | [ggml/src/ggml-cuda/gated_delta_net.cu](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cuda/gated_delta_net.cu) |
-| 1 | [ggml/src/ggml-cuda/mmf.cu](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cuda/mmf.cu) |
-| 1 | [ggml/src/ggml-cuda/mmvf.cu](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cuda/mmvf.cu) |
-| 1 | [ggml/src/ggml-cuda/ssm-scan.cu](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cuda/ssm-scan.cu) |
-| 1 | [ggml/src/ggml-cuda/vecdotq.cuh](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-cuda/vecdotq.cuh) |
-| 1 | [ggml/src/ggml-et/et-kernels/CMakeLists.txt](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-et/et-kernels/CMakeLists.txt) |
-| 1 | [ggml/src/ggml-et/et-kernels/src/get_rows_f32.c](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-et/et-kernels/src/get_rows_f32.c) |
-| 1 | [ggml/src/ggml-et/et-kernels/src/rms_norm_f32.c](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-et/et-kernels/src/rms_norm_f32.c) |
-| 1 | [ggml/src/ggml-et/et-kernels/src/solve_tri_f32.c](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-et/et-kernels/src/solve_tri_f32.c) |
-| 1 | [ggml/src/ggml-et/et-kernels/src/ssm_conv_f32.c](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-et/et-kernels/src/ssm_conv_f32.c) |
-| 1 | [ggml/src/ggml-hexagon/htp/dma-queue.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-hexagon/htp/dma-queue.h) |
-| 1 | [ggml/src/ggml-hip/CMakeLists.txt](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-hip/CMakeLists.txt) |
-| 1 | [ggml/src/ggml-metal/ggml-metal-context.m](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-metal/ggml-metal-context.m) |
-| 1 | [ggml/src/ggml-metal/ggml-metal-fusion.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-metal/ggml-metal-fusion.cpp) |
-| 1 | [ggml/src/ggml-metal/kernels/conv.metal](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-metal/kernels/conv.metal) |
-| 1 | [ggml/src/ggml-metal/kernels/misc.metal](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-metal/kernels/misc.metal) |
-| 1 | [ggml/src/ggml-metal/kernels/reduce.metal](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-metal/kernels/reduce.metal) |
-| 1 | [ggml/src/ggml-metal/kernels/unary.metal](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-metal/kernels/unary.metal) |
-| 1 | [ggml/src/ggml-musa/mudnn.cu](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-musa/mudnn.cu) |
-| 1 | [ggml/src/ggml-opencl/kernels/mul_mv_q4_0_f32_1d_16x_flat.cl](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-opencl/kernels/mul_mv_q4_0_f32_1d_16x_flat.cl) |
-| 1 | [ggml/src/ggml-opencl/kernels/mul_mv_q4_0_f32_1d_8x_flat.cl](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-opencl/kernels/mul_mv_q4_0_f32_1d_8x_flat.cl) |
-| 1 | [ggml/src/ggml-opencl/kernels/mul_mv_q4_0_f32_8x_flat.cl](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-opencl/kernels/mul_mv_q4_0_f32_8x_flat.cl) |
-| 1 | [ggml/src/ggml-openvino/ggml-openvino-extra.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-openvino/ggml-openvino-extra.cpp) |
-| 1 | [ggml/src/ggml-openvino/ggml-quants.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-openvino/ggml-quants.cpp) |
-| 1 | [ggml/src/ggml-openvino/openvino/op/glu_geglu.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-openvino/openvino/op/glu_geglu.cpp) |
-| 1 | [ggml/src/ggml-sycl/convert.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-sycl/convert.cpp) |
-| 1 | [ggml/src/ggml-sycl/fattn-common.hpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-sycl/fattn-common.hpp) |
-| 1 | [ggml/src/ggml-sycl/gated_delta_net.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-sycl/gated_delta_net.cpp) |
-| 1 | [ggml/src/ggml-sycl/softmax.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-sycl/softmax.cpp) |
-| 1 | [ggml/src/ggml-vulkan/vulkan-shaders/add.comp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-vulkan/vulkan-shaders/add.comp) |
-| 1 | [ggml/src/ggml-vulkan/vulkan-shaders/flash_attn_mask_opt.comp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-vulkan/vulkan-shaders/flash_attn_mask_opt.comp) |
-| 1 | [ggml/src/ggml-vulkan/vulkan-shaders/multi_add.comp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-vulkan/vulkan-shaders/multi_add.comp) |
-| 1 | [ggml/src/ggml-webgpu/wgsl-shaders/mul_mat_subgroup_matrix.wgsl](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-webgpu/wgsl-shaders/mul_mat_subgroup_matrix.wgsl) |
-| 1 | [ggml/src/ggml-webgpu/wgsl-shaders/rope.wgsl](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-webgpu/wgsl-shaders/rope.wgsl) |
-| 1 | [ggml/src/ggml-zdnn/mmf.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ggml/src/ggml-zdnn/mmf.cpp) |
+| 28 | [ggml/src/ggml-cpu/ops.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/ops.cpp) |
+| 19 | [ggml/src/ggml-cpu/repack.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/repack.cpp) |
+| 17 | [ggml/include/ggml.h](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/include/ggml.h) |
+| 17 | [ggml/src/ggml-cpu/ggml-cpu.c](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/ggml-cpu.c) |
+| 15 | [ggml/src/ggml-cann/ggml-cann.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cann/ggml-cann.cpp) |
+| 14 | [ggml/src/ggml-backend-meta.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-backend-meta.cpp) |
+| 14 | [ggml/src/ggml.c](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml.c) |
+| 12 | [ggml/src/ggml-opencl/ggml-opencl.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-opencl/ggml-opencl.cpp) |
+| 11 | [ggml/src/ggml-cuda/ggml-cuda.cu](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cuda/ggml-cuda.cu) |
+| 11 | [ggml/src/ggml-sycl/ggml-sycl.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-sycl/ggml-sycl.cpp) |
+| 9 | [ggml/src/ggml-backend.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-backend.cpp) |
+| 9 | [ggml/src/ggml-webgpu/ggml-webgpu.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-webgpu/ggml-webgpu.cpp) |
+| 8 | [ggml/src/ggml-metal/ggml-metal-ops.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-metal/ggml-metal-ops.cpp) |
+| 5 | [ggml/src/ggml-cann/aclnn_ops.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cann/aclnn_ops.cpp) |
+| 5 | [ggml/src/ggml-cpu/simd-mappings.h](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/simd-mappings.h) |
+| 4 | [ggml/src/ggml-et/ggml-et.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-et/ggml-et.cpp) |
+| 4 | [ggml/src/ggml-metal/ggml-metal-device.m](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-metal/ggml-metal-device.m) |
+| 4 | [ggml/src/ggml-vulkan/ggml-vulkan.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-vulkan/ggml-vulkan.cpp) |
+| 3 | [ggml/src/ggml-cpu/spacemit/ime.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/spacemit/ime.cpp) |
+| 3 | [ggml/src/ggml-cpu/vec.h](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/vec.h) |
+| 3 | [ggml/src/ggml-cuda/fattn-common.cuh](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cuda/fattn-common.cuh) |
+| 3 | [ggml/src/ggml-cuda/fattn-tile.cuh](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cuda/fattn-tile.cuh) |
+| 3 | [ggml/src/ggml-cuda/lightning-indexer.cu](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cuda/lightning-indexer.cu) |
+| 3 | [ggml/src/ggml-cuda/mmq.cuh](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cuda/mmq.cuh) |
+| 3 | [ggml/src/ggml-hexagon/ggml-hexagon.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-hexagon/ggml-hexagon.cpp) |
+| 3 | [ggml/src/ggml-hexagon/htp/htp-ctx.h](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-hexagon/htp/htp-ctx.h) |
+| 3 | [ggml/src/ggml-metal/kernels/fa.metal](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-metal/kernels/fa.metal) |
+| 3 | [ggml/src/ggml-rpc/ggml-rpc.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-rpc/ggml-rpc.cpp) |
+| 3 | [ggml/src/ggml-zdnn/utils.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-zdnn/utils.cpp) |
+| 2 | [ggml/CMakeLists.txt](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/CMakeLists.txt) |
+| 2 | [ggml/src/CMakeLists.txt](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/CMakeLists.txt) |
+| 2 | [ggml/src/ggml-cpu/amx/mmq.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/amx/mmq.cpp) |
+| 2 | [ggml/src/ggml-cpu/arch/wasm/quants.c](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/arch/wasm/quants.c) |
+| 2 | [ggml/src/ggml-cpu/arch/x86/repack.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/arch/x86/repack.cpp) |
+| 2 | [ggml/src/ggml-cpu/binary-ops.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/binary-ops.cpp) |
+| 2 | [ggml/src/ggml-cpu/ggml-cpu-impl.h](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/ggml-cpu-impl.h) |
+| 2 | [ggml/src/ggml-cpu/simd-gemm.h](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/simd-gemm.h) |
+| 2 | [ggml/src/ggml-cpu/spacemit/ime2_kernels.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/spacemit/ime2_kernels.cpp) |
+| 2 | [ggml/src/ggml-cuda/argsort.cu](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cuda/argsort.cu) |
+| 2 | [ggml/src/ggml-cuda/fattn-mma-f16.cuh](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cuda/fattn-mma-f16.cuh) |
+| 2 | [ggml/src/ggml-cuda/mmf.cuh](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cuda/mmf.cuh) |
+| 2 | [ggml/src/ggml-cuda/mmq.cu](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cuda/mmq.cu) |
+| 2 | [ggml/src/ggml-cuda/softmax.cu](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cuda/softmax.cu) |
+| 2 | [ggml/src/ggml-cuda/top-k.cu](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cuda/top-k.cu) |
+| 2 | [ggml/src/ggml-hexagon/htp/main.c](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-hexagon/htp/main.c) |
+| 2 | [ggml/src/ggml-impl.h](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-impl.h) |
+| 2 | [ggml/src/ggml-metal/ggml-metal-impl.h](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-metal/ggml-metal-impl.h) |
+| 2 | [ggml/src/ggml-metal/kernels/wkv.metal](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-metal/kernels/wkv.metal) |
+| 2 | [ggml/src/ggml-musa/CMakeLists.txt](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-musa/CMakeLists.txt) |
+| 2 | [ggml/src/ggml-openvino/utils.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-openvino/utils.cpp) |
+| 2 | [ggml/src/ggml-sycl/common.hpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-sycl/common.hpp) |
+| 2 | [ggml/src/ggml-sycl/getrows.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-sycl/getrows.cpp) |
+| 2 | [ggml/src/ggml-vulkan/vulkan-shaders/topk_nary_search.comp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-vulkan/vulkan-shaders/topk_nary_search.comp) |
+| 2 | [ggml/src/ggml-webgpu/wgsl-shaders/flash_attn.wgsl](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-webgpu/wgsl-shaders/flash_attn.wgsl) |
+| 2 | [ggml/src/ggml-zdnn/ggml-zdnn.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-zdnn/ggml-zdnn.cpp) |
+| 1 | [ggml/include/ggml-backend.h](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/include/ggml-backend.h) |
+| 1 | [ggml/include/ggml-metal.h](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/include/ggml-metal.h) |
+| 1 | [ggml/include/ggml-opt.h](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/include/ggml-opt.h) |
+| 1 | [ggml/src/ggml-alloc.c](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-alloc.c) |
+| 1 | [ggml/src/ggml-backend-reg.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-backend-reg.cpp) |
+| 1 | [ggml/src/ggml-blas/ggml-blas.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-blas/ggml-blas.cpp) |
+| 1 | [ggml/src/ggml-cann/common.h](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cann/common.h) |
+| 1 | [ggml/src/ggml-common.h](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-common.h) |
+| 1 | [ggml/src/ggml-cpu/CMakeLists.txt](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/CMakeLists.txt) |
+| 1 | [ggml/src/ggml-cpu/amx/common.h](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/amx/common.h) |
+| 1 | [ggml/src/ggml-cpu/arch/loongarch/quants.c](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/arch/loongarch/quants.c) |
+| 1 | [ggml/src/ggml-cpu/arch/x86/cpu-feats.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/arch/x86/cpu-feats.cpp) |
+| 1 | [ggml/src/ggml-cpu/arch/x86/quants.c](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/arch/x86/quants.c) |
+| 1 | [ggml/src/ggml-cpu/common.h](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/common.h) |
+| 1 | [ggml/src/ggml-cpu/ggml-cpu.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/ggml-cpu.cpp) |
+| 1 | [ggml/src/ggml-cpu/llamafile/sgemm.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/llamafile/sgemm.cpp) |
+| 1 | [ggml/src/ggml-cpu/ops.h](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/ops.h) |
+| 1 | [ggml/src/ggml-cpu/quants.c](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/quants.c) |
+| 1 | [ggml/src/ggml-cpu/unary-ops.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/unary-ops.cpp) |
+| 1 | [ggml/src/ggml-cpu/vec.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cpu/vec.cpp) |
+| 1 | [ggml/src/ggml-cuda/CMakeLists.txt](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cuda/CMakeLists.txt) |
+| 1 | [ggml/src/ggml-cuda/convert.cuh](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cuda/convert.cuh) |
+| 1 | [ggml/src/ggml-cuda/cumsum.cu](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cuda/cumsum.cu) |
+| 1 | [ggml/src/ggml-cuda/gated_delta_net.cu](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cuda/gated_delta_net.cu) |
+| 1 | [ggml/src/ggml-cuda/mmf.cu](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cuda/mmf.cu) |
+| 1 | [ggml/src/ggml-cuda/mmvf.cu](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cuda/mmvf.cu) |
+| 1 | [ggml/src/ggml-cuda/ssm-scan.cu](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cuda/ssm-scan.cu) |
+| 1 | [ggml/src/ggml-cuda/vecdotq.cuh](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-cuda/vecdotq.cuh) |
+| 1 | [ggml/src/ggml-et/et-kernels/CMakeLists.txt](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-et/et-kernels/CMakeLists.txt) |
+| 1 | [ggml/src/ggml-et/et-kernels/src/get_rows_f32.c](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-et/et-kernels/src/get_rows_f32.c) |
+| 1 | [ggml/src/ggml-et/et-kernels/src/rms_norm_f32.c](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-et/et-kernels/src/rms_norm_f32.c) |
+| 1 | [ggml/src/ggml-et/et-kernels/src/solve_tri_f32.c](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-et/et-kernels/src/solve_tri_f32.c) |
+| 1 | [ggml/src/ggml-et/et-kernels/src/ssm_conv_f32.c](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-et/et-kernels/src/ssm_conv_f32.c) |
+| 1 | [ggml/src/ggml-hexagon/htp/dma-queue.h](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-hexagon/htp/dma-queue.h) |
+| 1 | [ggml/src/ggml-hip/CMakeLists.txt](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-hip/CMakeLists.txt) |
+| 1 | [ggml/src/ggml-metal/ggml-metal-context.m](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-metal/ggml-metal-context.m) |
+| 1 | [ggml/src/ggml-metal/ggml-metal-fusion.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-metal/ggml-metal-fusion.cpp) |
+| 1 | [ggml/src/ggml-metal/kernels/conv.metal](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-metal/kernels/conv.metal) |
+| 1 | [ggml/src/ggml-metal/kernels/misc.metal](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-metal/kernels/misc.metal) |
+| 1 | [ggml/src/ggml-metal/kernels/reduce.metal](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-metal/kernels/reduce.metal) |
+| 1 | [ggml/src/ggml-metal/kernels/unary.metal](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-metal/kernels/unary.metal) |
+| 1 | [ggml/src/ggml-musa/mudnn.cu](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-musa/mudnn.cu) |
+| 1 | [ggml/src/ggml-opencl/kernels/mul_mv_q4_0_f32_1d_16x_flat.cl](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-opencl/kernels/mul_mv_q4_0_f32_1d_16x_flat.cl) |
+| 1 | [ggml/src/ggml-opencl/kernels/mul_mv_q4_0_f32_1d_8x_flat.cl](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-opencl/kernels/mul_mv_q4_0_f32_1d_8x_flat.cl) |
+| 1 | [ggml/src/ggml-opencl/kernels/mul_mv_q4_0_f32_8x_flat.cl](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-opencl/kernels/mul_mv_q4_0_f32_8x_flat.cl) |
+| 1 | [ggml/src/ggml-openvino/ggml-openvino-extra.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-openvino/ggml-openvino-extra.cpp) |
+| 1 | [ggml/src/ggml-openvino/ggml-quants.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-openvino/ggml-quants.cpp) |
+| 1 | [ggml/src/ggml-openvino/openvino/op/glu_geglu.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-openvino/openvino/op/glu_geglu.cpp) |
+| 1 | [ggml/src/ggml-sycl/convert.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-sycl/convert.cpp) |
+| 1 | [ggml/src/ggml-sycl/fattn-common.hpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-sycl/fattn-common.hpp) |
+| 1 | [ggml/src/ggml-sycl/gated_delta_net.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-sycl/gated_delta_net.cpp) |
+| 1 | [ggml/src/ggml-sycl/softmax.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-sycl/softmax.cpp) |
+| 1 | [ggml/src/ggml-vulkan/vulkan-shaders/add.comp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-vulkan/vulkan-shaders/add.comp) |
+| 1 | [ggml/src/ggml-vulkan/vulkan-shaders/flash_attn_mask_opt.comp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-vulkan/vulkan-shaders/flash_attn_mask_opt.comp) |
+| 1 | [ggml/src/ggml-vulkan/vulkan-shaders/multi_add.comp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-vulkan/vulkan-shaders/multi_add.comp) |
+| 1 | [ggml/src/ggml-webgpu/wgsl-shaders/mul_mat_subgroup_matrix.wgsl](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-webgpu/wgsl-shaders/mul_mat_subgroup_matrix.wgsl) |
+| 1 | [ggml/src/ggml-webgpu/wgsl-shaders/rope.wgsl](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-webgpu/wgsl-shaders/rope.wgsl) |
+| 1 | [ggml/src/ggml-zdnn/mmf.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/ggml/src/ggml-zdnn/mmf.cpp) |
 
 ### src
 
 | Count | File |
 |-------|------|
-| 30 | [src/llama-context.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-context.cpp) |
-| 21 | [src/llama-kv-cache.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-kv-cache.cpp) |
-| 20 | [src/llama-graph.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-graph.cpp) |
-| 8 | [src/llama-vocab.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-vocab.cpp) |
-| 7 | [src/llama-graph.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-graph.h) |
-| 6 | [src/llama-memory-recurrent.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-memory-recurrent.cpp) |
-| 6 | [src/llama-model-saver.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-model-saver.cpp) |
-| 6 | [src/models/qwen3next.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/qwen3next.cpp) |
-| 4 | [src/llama-batch.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-batch.h) |
-| 4 | [src/llama-hparams.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-hparams.h) |
-| 4 | [src/llama-model.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-model.cpp) |
-| 4 | [src/models/gemma4.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/gemma4.cpp) |
-| 3 | [src/llama-context.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-context.h) |
-| 3 | [src/llama-grammar.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-grammar.h) |
-| 3 | [src/llama-memory-recurrent.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-memory-recurrent.h) |
-| 3 | [src/llama-model-loader.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-model-loader.cpp) |
-| 3 | [src/llama-quant.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-quant.cpp) |
-| 3 | [src/models/delta-net-base.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/delta-net-base.cpp) |
-| 3 | [src/models/gemma3n.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/gemma3n.cpp) |
-| 3 | [src/models/mamba-base.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/mamba-base.cpp) |
-| 2 | [src/llama-adapter.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-adapter.cpp) |
-| 2 | [src/llama-kv-cache-dsv4.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-kv-cache-dsv4.cpp) |
-| 2 | [src/llama-kv-cache-dsv4.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-kv-cache-dsv4.h) |
-| 2 | [src/llama-kv-cache.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-kv-cache.h) |
-| 2 | [src/llama-memory-hybrid-idx.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-memory-hybrid-idx.cpp) |
-| 2 | [src/llama-sampler.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-sampler.cpp) |
-| 2 | [src/models/cohere2moe.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/cohere2moe.cpp) |
-| 2 | [src/models/dflash.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/dflash.cpp) |
-| 2 | [src/models/minicpm3.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/minicpm3.cpp) |
-| 2 | [src/models/models.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/models.h) |
-| 2 | [src/models/qwen35.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/qwen35.cpp) |
-| 2 | [src/models/qwen35moe.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/qwen35moe.cpp) |
-| 1 | [src/llama-adapter.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-adapter.h) |
-| 1 | [src/llama-arch.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-arch.cpp) |
-| 1 | [src/llama-cparams.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-cparams.h) |
-| 1 | [src/llama-ext.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-ext.h) |
-| 1 | [src/llama-hparams.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-hparams.cpp) |
-| 1 | [src/llama-impl.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-impl.h) |
-| 1 | [src/llama-kv-cache-iswa.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-kv-cache-iswa.cpp) |
-| 1 | [src/llama-kv-cells.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-kv-cells.h) |
-| 1 | [src/llama-memory-hybrid-iswa.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-memory-hybrid-iswa.cpp) |
-| 1 | [src/llama-memory-hybrid.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-memory-hybrid.cpp) |
-| 1 | [src/llama-mmap.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-mmap.cpp) |
-| 1 | [src/llama-model-saver.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-model-saver.h) |
-| 1 | [src/llama-model.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-model.h) |
-| 1 | [src/llama-vocab.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/llama-vocab.h) |
-| 1 | [src/models/baichuan.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/baichuan.cpp) |
-| 1 | [src/models/bitnet.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/bitnet.cpp) |
-| 1 | [src/models/bloom.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/bloom.cpp) |
-| 1 | [src/models/chameleon.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/chameleon.cpp) |
-| 1 | [src/models/deepseek2.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/deepseek2.cpp) |
-| 1 | [src/models/deepseek32.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/deepseek32.cpp) |
-| 1 | [src/models/falcon-h1.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/falcon-h1.cpp) |
-| 1 | [src/models/gemma3.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/gemma3.cpp) |
-| 1 | [src/models/glm-dsa.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/glm-dsa.cpp) |
-| 1 | [src/models/granite-switch.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/granite-switch.cpp) |
-| 1 | [src/models/grovemoe.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/grovemoe.cpp) |
-| 1 | [src/models/jais.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/jais.cpp) |
-| 1 | [src/models/jamba.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/jamba.cpp) |
-| 1 | [src/models/minimax-01.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/minimax-01.cpp) |
-| 1 | [src/models/minimax-m3.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/minimax-m3.cpp) |
-| 1 | [src/models/mistral3.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/mistral3.cpp) |
-| 1 | [src/models/mpt.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/mpt.cpp) |
-| 1 | [src/models/phi3.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/phi3.cpp) |
-| 1 | [src/models/qwen4exp.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/qwen4exp.cpp) |
-| 1 | [src/models/refact.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/models/refact.cpp) |
-| 1 | [src/unicode.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/unicode.cpp) |
-| 1 | [src/unicode.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/src/unicode.h) |
+| 30 | [src/llama-context.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-context.cpp) |
+| 21 | [src/llama-kv-cache.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-kv-cache.cpp) |
+| 20 | [src/llama-graph.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-graph.cpp) |
+| 8 | [src/llama-model.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-model.cpp) |
+| 8 | [src/llama-vocab.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-vocab.cpp) |
+| 7 | [src/llama-graph.h](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-graph.h) |
+| 6 | [src/llama-memory-recurrent.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-memory-recurrent.cpp) |
+| 6 | [src/llama-model-saver.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-model-saver.cpp) |
+| 6 | [src/models/qwen3next.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/qwen3next.cpp) |
+| 4 | [src/llama-batch.h](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-batch.h) |
+| 4 | [src/llama-hparams.h](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-hparams.h) |
+| 4 | [src/models/gemma4.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/gemma4.cpp) |
+| 3 | [src/llama-context.h](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-context.h) |
+| 3 | [src/llama-grammar.h](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-grammar.h) |
+| 3 | [src/llama-memory-recurrent.h](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-memory-recurrent.h) |
+| 3 | [src/llama-model-loader.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-model-loader.cpp) |
+| 3 | [src/llama-quant.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-quant.cpp) |
+| 3 | [src/models/delta-net-base.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/delta-net-base.cpp) |
+| 3 | [src/models/gemma3n.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/gemma3n.cpp) |
+| 3 | [src/models/mamba-base.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/mamba-base.cpp) |
+| 2 | [src/llama-adapter.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-adapter.cpp) |
+| 2 | [src/llama-kv-cache-dsv4.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-kv-cache-dsv4.cpp) |
+| 2 | [src/llama-kv-cache-dsv4.h](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-kv-cache-dsv4.h) |
+| 2 | [src/llama-kv-cache.h](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-kv-cache.h) |
+| 2 | [src/llama-memory-hybrid-idx.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-memory-hybrid-idx.cpp) |
+| 2 | [src/llama-sampler.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-sampler.cpp) |
+| 2 | [src/models/cohere2moe.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/cohere2moe.cpp) |
+| 2 | [src/models/dflash.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/dflash.cpp) |
+| 2 | [src/models/minicpm3.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/minicpm3.cpp) |
+| 2 | [src/models/models.h](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/models.h) |
+| 2 | [src/models/qwen35.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/qwen35.cpp) |
+| 2 | [src/models/qwen35moe.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/qwen35moe.cpp) |
+| 1 | [src/llama-adapter.h](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-adapter.h) |
+| 1 | [src/llama-arch.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-arch.cpp) |
+| 1 | [src/llama-cparams.h](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-cparams.h) |
+| 1 | [src/llama-ext.h](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-ext.h) |
+| 1 | [src/llama-hparams.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-hparams.cpp) |
+| 1 | [src/llama-impl.h](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-impl.h) |
+| 1 | [src/llama-kv-cache-iswa.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-kv-cache-iswa.cpp) |
+| 1 | [src/llama-kv-cells.h](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-kv-cells.h) |
+| 1 | [src/llama-memory-hybrid-iswa.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-memory-hybrid-iswa.cpp) |
+| 1 | [src/llama-memory-hybrid.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-memory-hybrid.cpp) |
+| 1 | [src/llama-mmap.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-mmap.cpp) |
+| 1 | [src/llama-model-saver.h](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-model-saver.h) |
+| 1 | [src/llama-model.h](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-model.h) |
+| 1 | [src/llama-vocab.h](https://github.com/ggml-org/llama.cpp/blob/35822af/src/llama-vocab.h) |
+| 1 | [src/models/baichuan.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/baichuan.cpp) |
+| 1 | [src/models/bitnet.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/bitnet.cpp) |
+| 1 | [src/models/bloom.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/bloom.cpp) |
+| 1 | [src/models/chameleon.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/chameleon.cpp) |
+| 1 | [src/models/deepseek2.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/deepseek2.cpp) |
+| 1 | [src/models/deepseek32.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/deepseek32.cpp) |
+| 1 | [src/models/falcon-h1.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/falcon-h1.cpp) |
+| 1 | [src/models/gemma3.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/gemma3.cpp) |
+| 1 | [src/models/glm-dsa.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/glm-dsa.cpp) |
+| 1 | [src/models/granite-switch.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/granite-switch.cpp) |
+| 1 | [src/models/grovemoe.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/grovemoe.cpp) |
+| 1 | [src/models/jais.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/jais.cpp) |
+| 1 | [src/models/jamba.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/jamba.cpp) |
+| 1 | [src/models/minimax-01.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/minimax-01.cpp) |
+| 1 | [src/models/minimax-m3.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/minimax-m3.cpp) |
+| 1 | [src/models/mistral3.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/mistral3.cpp) |
+| 1 | [src/models/mpt.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/mpt.cpp) |
+| 1 | [src/models/phi3.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/phi3.cpp) |
+| 1 | [src/models/qwen4exp.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/qwen4exp.cpp) |
+| 1 | [src/models/refact.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/models/refact.cpp) |
+| 1 | [src/unicode.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/src/unicode.cpp) |
+| 1 | [src/unicode.h](https://github.com/ggml-org/llama.cpp/blob/35822af/src/unicode.h) |
 
 ### common
 
 | Count | File |
 |-------|------|
-| 17 | [common/speculative.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/speculative.cpp) |
-| 10 | [common/jinja/value.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/jinja/value.cpp) |
-| 6 | [common/chat.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/chat.cpp) |
-| 6 | [common/common.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/common.cpp) |
-| 5 | [common/arg.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/arg.cpp) |
-| 3 | [common/chat.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/chat.h) |
-| 2 | [common/chat-diff-analyzer.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/chat-diff-analyzer.cpp) |
-| 2 | [common/common.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/common.h) |
-| 2 | [common/console.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/console.cpp) |
-| 2 | [common/jinja/runtime.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/jinja/runtime.cpp) |
-| 2 | [common/preset.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/preset.cpp) |
-| 2 | [common/sampling.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/sampling.cpp) |
-| 1 | [common/CMakeLists.txt](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/CMakeLists.txt) |
-| 1 | [common/chat-auto-parser-helpers.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/chat-auto-parser-helpers.cpp) |
-| 1 | [common/download.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/download.cpp) |
-| 1 | [common/jinja/lexer.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/jinja/lexer.cpp) |
-| 1 | [common/jinja/parser.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/jinja/parser.cpp) |
-| 1 | [common/jinja/runtime.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/jinja/runtime.h) |
-| 1 | [common/jinja/value.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/jinja/value.h) |
-| 1 | [common/llguidance.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/llguidance.cpp) |
-| 1 | [common/parsers/gemma4.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/parsers/gemma4.cpp) |
-| 1 | [common/preset.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/preset.h) |
-| 1 | [common/sampling.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/sampling.h) |
-| 1 | [common/speculative.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/common/speculative.h) |
+| 17 | [common/speculative.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/common/speculative.cpp) |
+| 10 | [common/jinja/value.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/common/jinja/value.cpp) |
+| 6 | [common/chat.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/common/chat.cpp) |
+| 6 | [common/common.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/common/common.cpp) |
+| 5 | [common/arg.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/common/arg.cpp) |
+| 3 | [common/chat.h](https://github.com/ggml-org/llama.cpp/blob/35822af/common/chat.h) |
+| 2 | [common/chat-diff-analyzer.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/common/chat-diff-analyzer.cpp) |
+| 2 | [common/common.h](https://github.com/ggml-org/llama.cpp/blob/35822af/common/common.h) |
+| 2 | [common/console.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/common/console.cpp) |
+| 2 | [common/jinja/runtime.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/common/jinja/runtime.cpp) |
+| 2 | [common/preset.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/common/preset.cpp) |
+| 2 | [common/sampling.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/common/sampling.cpp) |
+| 1 | [common/CMakeLists.txt](https://github.com/ggml-org/llama.cpp/blob/35822af/common/CMakeLists.txt) |
+| 1 | [common/chat-auto-parser-helpers.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/common/chat-auto-parser-helpers.cpp) |
+| 1 | [common/download.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/common/download.cpp) |
+| 1 | [common/jinja/lexer.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/common/jinja/lexer.cpp) |
+| 1 | [common/jinja/parser.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/common/jinja/parser.cpp) |
+| 1 | [common/jinja/runtime.h](https://github.com/ggml-org/llama.cpp/blob/35822af/common/jinja/runtime.h) |
+| 1 | [common/jinja/value.h](https://github.com/ggml-org/llama.cpp/blob/35822af/common/jinja/value.h) |
+| 1 | [common/llguidance.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/common/llguidance.cpp) |
+| 1 | [common/parsers/gemma4.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/common/parsers/gemma4.cpp) |
+| 1 | [common/preset.h](https://github.com/ggml-org/llama.cpp/blob/35822af/common/preset.h) |
+| 1 | [common/sampling.h](https://github.com/ggml-org/llama.cpp/blob/35822af/common/sampling.h) |
+| 1 | [common/speculative.h](https://github.com/ggml-org/llama.cpp/blob/35822af/common/speculative.h) |
 
 ### tools
 
 | Count | File |
 |-------|------|
-| 30 | [tools/server/server-context.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/server/server-context.cpp) |
-| 12 | [tools/mtmd/mtmd.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/mtmd/mtmd.cpp) |
-| 10 | [tools/mtmd/clip.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/mtmd/clip.cpp) |
-| 7 | [tools/perplexity/perplexity.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/perplexity/perplexity.cpp) |
-| 6 | [tools/server/server-common.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/server/server-common.cpp) |
-| 5 | [tools/cvector-generator/cvector-generator.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/cvector-generator/cvector-generator.cpp) |
-| 5 | [tools/server/server-models.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/server/server-models.cpp) |
-| 5 | [tools/server/server-task.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/server/server-task.h) |
-| 5 | [tools/server/tests/unit/test_completion.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/server/tests/unit/test_completion.py) |
-| 4 | [tools/mtmd/clip-graph.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/mtmd/clip-graph.h) |
-| 4 | [tools/server/server-common.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/server/server-common.h) |
-| 4 | [tools/server/server-schema.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/server/server-schema.cpp) |
-| 3 | [tools/cvector-generator/pca.hpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/cvector-generator/pca.hpp) |
-| 3 | [tools/mtmd/clip.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/mtmd/clip.h) |
-| 3 | [tools/mtmd/mtmd.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/mtmd/mtmd.h) |
-| 3 | [tools/server/tests/unit/test_lora.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/server/tests/unit/test_lora.py) |
-| 2 | [tools/export-lora/export-lora.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/export-lora/export-lora.cpp) |
-| 2 | [tools/mtmd/models/conformer.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/mtmd/models/conformer.cpp) |
-| 2 | [tools/mtmd/mtmd-audio.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/mtmd/mtmd-audio.cpp) |
-| 2 | [tools/server/server-task.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/server/server-task.cpp) |
-| 1 | [tools/cli/cli-ui.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/cli/cli-ui.h) |
-| 1 | [tools/completion/completion.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/completion/completion.cpp) |
-| 1 | [tools/gguf-split/gguf-split.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/gguf-split/gguf-split.cpp) |
-| 1 | [tools/imatrix/imatrix.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/imatrix/imatrix.cpp) |
-| 1 | [tools/llama-bench/llama-bench.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/llama-bench/llama-bench.cpp) |
-| 1 | [tools/mtmd/CMakeLists.txt](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/mtmd/CMakeLists.txt) |
-| 1 | [tools/mtmd/clip-impl.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/mtmd/clip-impl.h) |
-| 1 | [tools/mtmd/clip-model.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/mtmd/clip-model.h) |
-| 1 | [tools/mtmd/mtmd-cli.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/mtmd/mtmd-cli.cpp) |
-| 1 | [tools/mtmd/mtmd-helper.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/mtmd/mtmd-helper.cpp) |
-| 1 | [tools/mtmd/mtmd-helper.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/mtmd/mtmd-helper.h) |
-| 1 | [tools/mtmd/mtmd-image.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/mtmd/mtmd-image.cpp) |
-| 1 | [tools/quantize/quantize.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/quantize/quantize.cpp) |
-| 1 | [tools/results/results.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/results/results.cpp) |
-| 1 | [tools/server/server-chat.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/server/server-chat.cpp) |
-| 1 | [tools/server/server-http.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/server/server-http.cpp) |
-| 1 | [tools/server/server-models.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/server/server-models.h) |
-| 1 | [tools/server/server.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/server/server.cpp) |
-| 1 | [tools/server/tests/unit/test_chat_completion.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/server/tests/unit/test_chat_completion.py) |
-| 1 | [tools/server/tests/unit/test_tool_call.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/server/tests/unit/test_tool_call.py) |
-| 1 | [tools/server/tests/unit/test_vision_api.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/server/tests/unit/test_vision_api.py) |
-| 1 | [tools/tokenize/tokenize.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tools/tokenize/tokenize.cpp) |
+| 30 | [tools/server/server-context.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/server/server-context.cpp) |
+| 12 | [tools/mtmd/mtmd.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/mtmd/mtmd.cpp) |
+| 10 | [tools/mtmd/clip.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/mtmd/clip.cpp) |
+| 7 | [tools/perplexity/perplexity.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/perplexity/perplexity.cpp) |
+| 6 | [tools/server/server-common.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/server/server-common.cpp) |
+| 5 | [tools/cvector-generator/cvector-generator.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/cvector-generator/cvector-generator.cpp) |
+| 5 | [tools/server/server-models.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/server/server-models.cpp) |
+| 5 | [tools/server/server-task.h](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/server/server-task.h) |
+| 5 | [tools/server/tests/unit/test_completion.py](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/server/tests/unit/test_completion.py) |
+| 4 | [tools/mtmd/clip-graph.h](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/mtmd/clip-graph.h) |
+| 4 | [tools/server/server-common.h](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/server/server-common.h) |
+| 4 | [tools/server/server-schema.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/server/server-schema.cpp) |
+| 3 | [tools/cvector-generator/pca.hpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/cvector-generator/pca.hpp) |
+| 3 | [tools/mtmd/clip.h](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/mtmd/clip.h) |
+| 3 | [tools/mtmd/mtmd.h](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/mtmd/mtmd.h) |
+| 3 | [tools/server/tests/unit/test_lora.py](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/server/tests/unit/test_lora.py) |
+| 2 | [tools/export-lora/export-lora.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/export-lora/export-lora.cpp) |
+| 2 | [tools/mtmd/models/conformer.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/mtmd/models/conformer.cpp) |
+| 2 | [tools/mtmd/mtmd-audio.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/mtmd/mtmd-audio.cpp) |
+| 2 | [tools/server/server-task.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/server/server-task.cpp) |
+| 1 | [tools/cli/cli-ui.h](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/cli/cli-ui.h) |
+| 1 | [tools/completion/completion.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/completion/completion.cpp) |
+| 1 | [tools/gguf-split/gguf-split.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/gguf-split/gguf-split.cpp) |
+| 1 | [tools/imatrix/imatrix.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/imatrix/imatrix.cpp) |
+| 1 | [tools/llama-bench/llama-bench.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/llama-bench/llama-bench.cpp) |
+| 1 | [tools/mtmd/CMakeLists.txt](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/mtmd/CMakeLists.txt) |
+| 1 | [tools/mtmd/clip-impl.h](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/mtmd/clip-impl.h) |
+| 1 | [tools/mtmd/clip-model.h](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/mtmd/clip-model.h) |
+| 1 | [tools/mtmd/mtmd-cli.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/mtmd/mtmd-cli.cpp) |
+| 1 | [tools/mtmd/mtmd-helper.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/mtmd/mtmd-helper.cpp) |
+| 1 | [tools/mtmd/mtmd-helper.h](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/mtmd/mtmd-helper.h) |
+| 1 | [tools/mtmd/mtmd-image.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/mtmd/mtmd-image.cpp) |
+| 1 | [tools/quantize/quantize.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/quantize/quantize.cpp) |
+| 1 | [tools/results/results.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/results/results.cpp) |
+| 1 | [tools/server/server-chat.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/server/server-chat.cpp) |
+| 1 | [tools/server/server-http.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/server/server-http.cpp) |
+| 1 | [tools/server/server-models.h](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/server/server-models.h) |
+| 1 | [tools/server/server.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/server/server.cpp) |
+| 1 | [tools/server/tests/unit/test_chat_completion.py](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/server/tests/unit/test_chat_completion.py) |
+| 1 | [tools/server/tests/unit/test_tool_call.py](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/server/tests/unit/test_tool_call.py) |
+| 1 | [tools/server/tests/unit/test_vision_api.py](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/server/tests/unit/test_vision_api.py) |
+| 1 | [tools/tokenize/tokenize.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tools/tokenize/tokenize.cpp) |
 
 ### tests
 
 | Count | File |
 |-------|------|
-| 14 | [tests/test-llama-archs.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tests/test-llama-archs.cpp) |
-| 8 | [tests/test-backend-ops.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tests/test-backend-ops.cpp) |
-| 4 | [tests/CMakeLists.txt](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tests/CMakeLists.txt) |
-| 2 | [tests/test-backend-sampler.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tests/test-backend-sampler.cpp) |
-| 2 | [tests/test-chat.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tests/test-chat.cpp) |
-| 2 | [tests/test-grammar-integration.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tests/test-grammar-integration.cpp) |
-| 1 | [tests/test-grammar-llguidance.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tests/test-grammar-llguidance.cpp) |
-| 1 | [tests/test-grammar-parser.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tests/test-grammar-parser.cpp) |
-| 1 | [tests/test-opt.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tests/test-opt.cpp) |
-| 1 | [tests/test-quant-type-selection.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tests/test-quant-type-selection.cpp) |
-| 1 | [tests/test-quantize-fns.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/tests/test-quantize-fns.cpp) |
+| 14 | [tests/test-llama-archs.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tests/test-llama-archs.cpp) |
+| 8 | [tests/test-backend-ops.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tests/test-backend-ops.cpp) |
+| 4 | [tests/CMakeLists.txt](https://github.com/ggml-org/llama.cpp/blob/35822af/tests/CMakeLists.txt) |
+| 2 | [tests/test-backend-sampler.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tests/test-backend-sampler.cpp) |
+| 2 | [tests/test-chat.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tests/test-chat.cpp) |
+| 2 | [tests/test-grammar-integration.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tests/test-grammar-integration.cpp) |
+| 1 | [tests/test-grammar-llguidance.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tests/test-grammar-llguidance.cpp) |
+| 1 | [tests/test-grammar-parser.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tests/test-grammar-parser.cpp) |
+| 1 | [tests/test-opt.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tests/test-opt.cpp) |
+| 1 | [tests/test-quant-type-selection.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tests/test-quant-type-selection.cpp) |
+| 1 | [tests/test-quantize-fns.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/tests/test-quantize-fns.cpp) |
 
 ### examples
 
 | Count | File |
 |-------|------|
-| 6 | [examples/convert_legacy_llama.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/examples/convert_legacy_llama.py) |
-| 2 | [examples/speculative/speculative.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/examples/speculative/speculative.cpp) |
-| 1 | [examples/batched.swift/Sources/main.swift](https://github.com/ggml-org/llama.cpp/blob/930e2fa/examples/batched.swift/Sources/main.swift) |
-| 1 | [examples/llama.swiftui/llama.cpp.swift/LibLlama.swift](https://github.com/ggml-org/llama.cpp/blob/930e2fa/examples/llama.swiftui/llama.cpp.swift/LibLlama.swift) |
-| 1 | [examples/parallel/parallel.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/examples/parallel/parallel.cpp) |
-| 1 | [examples/pydantic_models_to_grammar.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/examples/pydantic_models_to_grammar.py) |
-| 1 | [examples/retrieval/retrieval.cpp](https://github.com/ggml-org/llama.cpp/blob/930e2fa/examples/retrieval/retrieval.cpp) |
+| 6 | [examples/convert_legacy_llama.py](https://github.com/ggml-org/llama.cpp/blob/35822af/examples/convert_legacy_llama.py) |
+| 2 | [examples/speculative/speculative.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/examples/speculative/speculative.cpp) |
+| 1 | [examples/batched.swift/Sources/main.swift](https://github.com/ggml-org/llama.cpp/blob/35822af/examples/batched.swift/Sources/main.swift) |
+| 1 | [examples/llama.swiftui/llama.cpp.swift/LibLlama.swift](https://github.com/ggml-org/llama.cpp/blob/35822af/examples/llama.swiftui/llama.cpp.swift/LibLlama.swift) |
+| 1 | [examples/parallel/parallel.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/examples/parallel/parallel.cpp) |
+| 1 | [examples/pydantic_models_to_grammar.py](https://github.com/ggml-org/llama.cpp/blob/35822af/examples/pydantic_models_to_grammar.py) |
+| 1 | [examples/retrieval/retrieval.cpp](https://github.com/ggml-org/llama.cpp/blob/35822af/examples/retrieval/retrieval.cpp) |
 
 ### other
 
 | Count | File |
 |-------|------|
-| 11 | [include/llama.h](https://github.com/ggml-org/llama.cpp/blob/930e2fa/include/llama.h) |
-| 9 | [ci/run.sh](https://github.com/ggml-org/llama.cpp/blob/930e2fa/ci/run.sh) |
-| 9 | [conversion/base.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/conversion/base.py) |
-| 4 | [convert_lora_to_gguf.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/convert_lora_to_gguf.py) |
-| 4 | [gguf-py/gguf/constants.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/gguf-py/gguf/constants.py) |
-| 4 | [gguf-py/gguf/lazy.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/gguf-py/gguf/lazy.py) |
-| 3 | [convert_hf_to_gguf_update.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/convert_hf_to_gguf_update.py) |
-| 3 | [gguf-py/gguf/gguf_reader.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/gguf-py/gguf/gguf_reader.py) |
-| 3 | [gguf-py/gguf/metadata.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/gguf-py/gguf/metadata.py) |
-| 3 | [gguf-py/tests/test_metadata.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/gguf-py/tests/test_metadata.py) |
-| 2 | [.github/workflows/bench.yml.disabled](https://github.com/ggml-org/llama.cpp/blob/930e2fa/.github/workflows/bench.yml.disabled) |
-| 2 | [CMakeLists.txt](https://github.com/ggml-org/llama.cpp/blob/930e2fa/CMakeLists.txt) |
-| 2 | [conversion/gemma.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/conversion/gemma.py) |
-| 2 | [conversion/granite.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/conversion/granite.py) |
-| 2 | [flake.nix](https://github.com/ggml-org/llama.cpp/blob/930e2fa/flake.nix) |
-| 2 | [gguf-py/gguf/tensor_mapping.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/gguf-py/gguf/tensor_mapping.py) |
-| 2 | [gguf-py/gguf/vocab.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/gguf-py/gguf/vocab.py) |
-| 1 | [.devops/llama-cli-cann.Dockerfile](https://github.com/ggml-org/llama.cpp/blob/930e2fa/.devops/llama-cli-cann.Dockerfile) |
-| 1 | [conversion/bitnet.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/conversion/bitnet.py) |
-| 1 | [conversion/chameleon.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/conversion/chameleon.py) |
-| 1 | [conversion/deepseek.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/conversion/deepseek.py) |
-| 1 | [conversion/gpt_oss.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/conversion/gpt_oss.py) |
-| 1 | [conversion/internlm.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/conversion/internlm.py) |
-| 1 | [conversion/mistral.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/conversion/mistral.py) |
-| 1 | [conversion/qwen.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/conversion/qwen.py) |
-| 1 | [conversion/refact.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/conversion/refact.py) |
-| 1 | [gguf-py/gguf/utility.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/gguf-py/gguf/utility.py) |
-| 1 | [gguf-py/tests/test_quants.py](https://github.com/ggml-org/llama.cpp/blob/930e2fa/gguf-py/tests/test_quants.py) |
-| 1 | [scripts/check-requirements.sh](https://github.com/ggml-org/llama.cpp/blob/930e2fa/scripts/check-requirements.sh) |
+| 11 | [include/llama.h](https://github.com/ggml-org/llama.cpp/blob/35822af/include/llama.h) |
+| 9 | [ci/run.sh](https://github.com/ggml-org/llama.cpp/blob/35822af/ci/run.sh) |
+| 9 | [conversion/base.py](https://github.com/ggml-org/llama.cpp/blob/35822af/conversion/base.py) |
+| 4 | [convert_lora_to_gguf.py](https://github.com/ggml-org/llama.cpp/blob/35822af/convert_lora_to_gguf.py) |
+| 4 | [gguf-py/gguf/constants.py](https://github.com/ggml-org/llama.cpp/blob/35822af/gguf-py/gguf/constants.py) |
+| 4 | [gguf-py/gguf/lazy.py](https://github.com/ggml-org/llama.cpp/blob/35822af/gguf-py/gguf/lazy.py) |
+| 3 | [convert_hf_to_gguf_update.py](https://github.com/ggml-org/llama.cpp/blob/35822af/convert_hf_to_gguf_update.py) |
+| 3 | [gguf-py/gguf/gguf_reader.py](https://github.com/ggml-org/llama.cpp/blob/35822af/gguf-py/gguf/gguf_reader.py) |
+| 3 | [gguf-py/gguf/metadata.py](https://github.com/ggml-org/llama.cpp/blob/35822af/gguf-py/gguf/metadata.py) |
+| 3 | [gguf-py/tests/test_metadata.py](https://github.com/ggml-org/llama.cpp/blob/35822af/gguf-py/tests/test_metadata.py) |
+| 2 | [.github/workflows/bench.yml.disabled](https://github.com/ggml-org/llama.cpp/blob/35822af/.github/workflows/bench.yml.disabled) |
+| 2 | [CMakeLists.txt](https://github.com/ggml-org/llama.cpp/blob/35822af/CMakeLists.txt) |
+| 2 | [conversion/gemma.py](https://github.com/ggml-org/llama.cpp/blob/35822af/conversion/gemma.py) |
+| 2 | [conversion/granite.py](https://github.com/ggml-org/llama.cpp/blob/35822af/conversion/granite.py) |
+| 2 | [flake.nix](https://github.com/ggml-org/llama.cpp/blob/35822af/flake.nix) |
+| 2 | [gguf-py/gguf/tensor_mapping.py](https://github.com/ggml-org/llama.cpp/blob/35822af/gguf-py/gguf/tensor_mapping.py) |
+| 2 | [gguf-py/gguf/vocab.py](https://github.com/ggml-org/llama.cpp/blob/35822af/gguf-py/gguf/vocab.py) |
+| 1 | [.devops/llama-cli-cann.Dockerfile](https://github.com/ggml-org/llama.cpp/blob/35822af/.devops/llama-cli-cann.Dockerfile) |
+| 1 | [conversion/bitnet.py](https://github.com/ggml-org/llama.cpp/blob/35822af/conversion/bitnet.py) |
+| 1 | [conversion/chameleon.py](https://github.com/ggml-org/llama.cpp/blob/35822af/conversion/chameleon.py) |
+| 1 | [conversion/deepseek.py](https://github.com/ggml-org/llama.cpp/blob/35822af/conversion/deepseek.py) |
+| 1 | [conversion/gpt_oss.py](https://github.com/ggml-org/llama.cpp/blob/35822af/conversion/gpt_oss.py) |
+| 1 | [conversion/internlm.py](https://github.com/ggml-org/llama.cpp/blob/35822af/conversion/internlm.py) |
+| 1 | [conversion/mistral.py](https://github.com/ggml-org/llama.cpp/blob/35822af/conversion/mistral.py) |
+| 1 | [conversion/qwen.py](https://github.com/ggml-org/llama.cpp/blob/35822af/conversion/qwen.py) |
+| 1 | [conversion/refact.py](https://github.com/ggml-org/llama.cpp/blob/35822af/conversion/refact.py) |
+| 1 | [gguf-py/gguf/utility.py](https://github.com/ggml-org/llama.cpp/blob/35822af/gguf-py/gguf/utility.py) |
+| 1 | [gguf-py/tests/test_quants.py](https://github.com/ggml-org/llama.cpp/blob/35822af/gguf-py/tests/test_quants.py) |
+| 1 | [scripts/check-requirements.sh](https://github.com/ggml-org/llama.cpp/blob/35822af/scripts/check-requirements.sh) |
 
 ## All TODO Instances
 
@@ -449,11 +449,11 @@ conversion/base.py:1010:                # TODO: why do we squeeze here?
 conversion/base.py:1072:                        # TODO: use Q4_K and Q6_K
 conversion/base.py:1389:        # TODO: Handle "sliding_attention" similarly when models start implementing it
 conversion/base.py:1503:        # TODO: should these be marked as UNUSED instead? (maybe not)
-conversion/base.py:2536:        # TODO @ngxson : this is a hack to support both vision and audio encoders
-conversion/base.py:2680:    # TODO: uncomment uint64, uint32, and uint16, ref: https://github.com/pytorch/pytorch/issues/58734
-conversion/base.py:2701:    # TODO: uncomment U64, U32, and U16, ref: https://github.com/pytorch/pytorch/issues/58734
-conversion/base.py:2795:    # TODO @ngxson : this won't work correctly if the model has both audio & vision encoders
-conversion/base.py:2808:    # TODO: refactor this later to avoid adding exception here
+conversion/base.py:2539:        # TODO @ngxson : this is a hack to support both vision and audio encoders
+conversion/base.py:2683:    # TODO: uncomment uint64, uint32, and uint16, ref: https://github.com/pytorch/pytorch/issues/58734
+conversion/base.py:2704:    # TODO: uncomment U64, U32, and U16, ref: https://github.com/pytorch/pytorch/issues/58734
+conversion/base.py:2798:    # TODO @ngxson : this won't work correctly if the model has both audio & vision encoders
+conversion/base.py:2811:    # TODO: refactor this later to avoid adding exception here
 conversion/bitnet.py:29:        # TODO: multiply by the scale directly instead of inverting it twice
 conversion/chameleon.py:32:        # TODO: image support for Chameleon
 conversion/deepseek.py:239:    # TODO @ngxson : remove this when we support MTP for deepseek models
@@ -508,8 +508,8 @@ ggml/include/ggml.h:2117:    // TODO: this is very likely wrong for some cases! 
 ggml/include/ggml.h:2515:    // TODO: needs to be adapted to ggml_flash_attn_ext
 ggml/include/ggml.h:2629:    *  TODO: currently only lower, right, non-unitriangular variant is implemented
 ggml/include/ggml.h:2639:    // TODO: add ggml_gated_delta_net_set_bcast() to be able to configure Q, K broadcast type: tiled vs interleaved [TAG_GGML_GDN_BCAST]
-ggml/include/ggml.h:2906:    // TODO these functions were sandwiched in the old optimization interface, is there a better place for them?
-ggml/include/ggml.h:2979:    // TODO: currently, only a few functions are in the base ggml API, while the rest are in the CPU backend
+ggml/include/ggml.h:2916:    // TODO these functions were sandwiched in the old optimization interface, is there a better place for them?
+ggml/include/ggml.h:2989:    // TODO: currently, only a few functions are in the base ggml API, while the rest are in the CPU backend
 ggml/src/CMakeLists.txt:78:        # TODO: should not be set globally
 ggml/src/CMakeLists.txt:103:# TODO: probably these flags need to be tweaked on some architectures
 ggml/src/ggml-alloc.c:735:        // TODO: better way to add external dependencies
@@ -620,9 +620,9 @@ ggml/src/ggml-cpu/ops.cpp:9859:                            // TODO: maybe unroll
 ggml/src/ggml-cpu/ops.cpp:9947:                        // TODO: what happens when (d_state % svcntw()) != 0?
 ggml/src/ggml-cpu/ops.cpp:10030:    // TODO: optimize / multi-thread
 ggml/src/ggml-cpu/ops.cpp:10097:    // TODO: optimize / multi-thread
-ggml/src/ggml-cpu/ops.cpp:11428:            // scalar Route to scalar implementation       //TODO: Write SVE code and RVV code
-ggml/src/ggml-cpu/ops.cpp:11683:    // TODO: handle transposed/permuted matrices
-ggml/src/ggml-cpu/ops.cpp:11781:    // TODO: handle transposed/permuted matrices
+ggml/src/ggml-cpu/ops.cpp:11456:            // scalar Route to scalar implementation       //TODO: Write SVE code and RVV code
+ggml/src/ggml-cpu/ops.cpp:11711:    // TODO: handle transposed/permuted matrices
+ggml/src/ggml-cpu/ops.cpp:11809:    // TODO: handle transposed/permuted matrices
 ggml/src/ggml-cpu/ops.h:8:// TODO: rework CACHE_LINE_SIZE so std::hardware_destructive_interference_size
 ggml/src/ggml-cpu/quants.c:261:// TODO: add WASM SIMD
 ggml/src/ggml-cpu/repack.cpp:3575:    // TODO: this branch seems wrong
@@ -713,9 +713,9 @@ ggml/src/ggml-et/ggml-et.cpp:224:            // XXX: Manual JSON construction. N
 ggml/src/ggml-et/ggml-et.cpp:268:    // XXX: Martin - do we need this?
 ggml/src/ggml-et/ggml-et.cpp:955:                // FIXME: Right now this overwrites the mul_mat_f32 kernel - whatever. Fix later. Demo code
 ggml/src/ggml-et/ggml-et.cpp:1064:                // FIXME: support ggml_rope_set_offset
-ggml/src/ggml-hexagon/ggml-hexagon.cpp:4767:    // TODO: add support for non-contigiuos tensors
-ggml/src/ggml-hexagon/ggml-hexagon.cpp:4820:        return false;  // FIXME: add support for sinks
-ggml/src/ggml-hexagon/ggml-hexagon.cpp:5851:    // FIXME: ggml-meta needs to call init_tensor on auxiliary tensors
+ggml/src/ggml-hexagon/ggml-hexagon.cpp:5184:    // TODO: add support for non-contigiuos tensors
+ggml/src/ggml-hexagon/ggml-hexagon.cpp:5237:        return false;  // FIXME: add support for sinks
+ggml/src/ggml-hexagon/ggml-hexagon.cpp:6270:    // FIXME: ggml-meta needs to call init_tensor on auxiliary tensors
 ggml/src/ggml-hexagon/htp/dma-queue.h:120:// TODO: technically we don't need these and could use Q6_dmstart/wait/etc instead
 ggml/src/ggml-hexagon/htp/htp-ctx.h:57:// TODO: fold this into the main context
 ggml/src/ggml-hexagon/htp/htp-ctx.h:61:    enum htp_op_code    op; // FIXME: rename to opcode
@@ -729,10 +729,10 @@ ggml/src/ggml-metal/ggml-metal-context.m:106:        // TODO: would it be better
 ggml/src/ggml-metal/ggml-metal-device.m:1140:                // TODO: try to update the tensor API kernels to at least match the simdgroup performance
 ggml/src/ggml-metal/ggml-metal-device.m:1700:            // TODO: add circular padding support for metal, see https://github.com/ggml-org/llama.cpp/pull/16985
 ggml/src/ggml-metal/ggml-metal-device.m:1756:            return has_simdgroup_mm; // TODO: over-restricted for vec-kernels
-ggml/src/ggml-metal/ggml-metal-device.m:2352:                             // TODO: can check for errors here
+ggml/src/ggml-metal/ggml-metal-device.m:2354:                             // TODO: can check for errors here
 ggml/src/ggml-metal/ggml-metal-fusion.cpp:436:            // TODO: multi-output fusions: store pattern-relative offsets in the table and translate them here
 ggml/src/ggml-metal/ggml-metal-impl.h:6:// TODO: become function constants
-ggml/src/ggml-metal/ggml-metal-impl.h:22:// TODO: for optimal performance, become function of the device and work size
+ggml/src/ggml-metal/ggml-metal-impl.h:24:// TODO: for optimal performance, become function of the device and work size
 ggml/src/ggml-metal/ggml-metal-ops.cpp:56:        // TODO: this can be removed when the allocator starts filtering them earlier
 ggml/src/ggml-metal/ggml-metal-ops.cpp:706:        // TODO: make a simpler cpy_bytes kernel
 ggml/src/ggml-metal/ggml-metal-ops.cpp:2060:        // TODO: make a simpler cpy_bytes kernel
@@ -740,7 +740,7 @@ ggml/src/ggml-metal/ggml-metal-ops.cpp:2113:    // TODO: relax this constraint i
 ggml/src/ggml-metal/ggml-metal-ops.cpp:2188:    // TODO: relax this constraint in the future
 ggml/src/ggml-metal/ggml-metal-ops.cpp:2423:           op->src[0]->type == GGML_TYPE_F32  || // TODO: helper function
 ggml/src/ggml-metal/ggml-metal-ops.cpp:2448:        // TODO: determine the optimal parameters based on grid utilization
-ggml/src/ggml-metal/ggml-metal-ops.cpp:2879:    // TODO: tune per device
+ggml/src/ggml-metal/ggml-metal-ops.cpp:2930:    // TODO: tune per device
 ggml/src/ggml-metal/kernels/conv.metal:67:// TODO: optimize
 ggml/src/ggml-metal/kernels/fa.metal:529:                // TODO: this is the quantized K cache branch - not optimized yet
 ggml/src/ggml-metal/kernels/fa.metal:720:                    // TODO: this is the quantized V cache branch - not optimized yet
@@ -774,8 +774,8 @@ ggml/src/ggml-openvino/openvino/op/glu_geglu.cpp:57:        // TODO: Temporary s
 ggml/src/ggml-openvino/utils.cpp:1152:        // TODO: this is a workround for the tests case from llama.cpp, fix should from the root cause in the future.
 ggml/src/ggml-openvino/utils.cpp:1243:        // TODO ACCURACY hint triggers a bug in GPU plugin/driver on Lunar Lake. Remove once CVS-182166 is resolved
 ggml/src/ggml-rpc/ggml-rpc.cpp:955:        // TODO: make this async
-ggml/src/ggml-rpc/ggml-rpc.cpp:2169:    // TODO: obtain value from the server
-ggml/src/ggml-rpc/ggml-rpc.cpp:2208:    //TODO: call the remote backend and cache the results
+ggml/src/ggml-rpc/ggml-rpc.cpp:2173:    // TODO: obtain value from the server
+ggml/src/ggml-rpc/ggml-rpc.cpp:2212:    //TODO: call the remote backend and cache the results
 ggml/src/ggml-sycl/common.hpp:97:#define GGML_SYCL_MAX_NODES 8192 // TODO: adapt to hardwares
 ggml/src/ggml-sycl/common.hpp:100:// TODO: currently, it's not used for XMX really.
 ggml/src/ggml-sycl/convert.cpp:641:    // TODO: Downsample logic is separated from the kernel, a rewrite is desirable
@@ -795,10 +795,10 @@ ggml/src/ggml-sycl/ggml-sycl.cpp:6360:                // TODO: The configuration
 ggml/src/ggml-sycl/ggml-sycl.cpp:6366:                // TODO: This specific configuration can fail with oneDNN and needs more debugging
 ggml/src/ggml-sycl/ggml-sycl.cpp:6685:                // TODO Mamba-1 not yet ported to SYCL
 ggml/src/ggml-sycl/softmax.cpp:67:    //TODO: noncontigous inputs/outputs
-ggml/src/ggml-vulkan/ggml-vulkan.cpp:8870:    // TODO: staging_offset is not used
-ggml/src/ggml-vulkan/ggml-vulkan.cpp:9521:    // TODO: Clean up this logic to pick src1 type by capability
-ggml/src/ggml-vulkan/ggml-vulkan.cpp:16636:        // TODO probably it'd be better to pass a exit_node flag to ggml_vk_compute_forward
-ggml/src/ggml-vulkan/ggml-vulkan.cpp:19030:// TODO: enable async and synchronize
+ggml/src/ggml-vulkan/ggml-vulkan.cpp:8876:    // TODO: staging_offset is not used
+ggml/src/ggml-vulkan/ggml-vulkan.cpp:9527:    // TODO: Clean up this logic to pick src1 type by capability
+ggml/src/ggml-vulkan/ggml-vulkan.cpp:16646:        // TODO probably it'd be better to pass a exit_node flag to ggml_vk_compute_forward
+ggml/src/ggml-vulkan/ggml-vulkan.cpp:19040:// TODO: enable async and synchronize
 ggml/src/ggml-vulkan/vulkan-shaders/add.comp:19:// XXX TODO this could be sized based on number of subgroups, but that't not considered a constant
 ggml/src/ggml-vulkan/vulkan-shaders/flash_attn_mask_opt.comp:96:// TODO: This is a lot of work per workgroup, might make sense to split this into
 ggml/src/ggml-vulkan/vulkan-shaders/multi_add.comp:140:// XXX TODO this could be sized based on number of subgroups, but that't not considered a constant
@@ -833,14 +833,14 @@ ggml/src/ggml.c:5507:    // TODO: check if vT can be multiplied by (k*qT)
 ggml/src/ggml.c:5598:    // TODO: check if vT can be multiplied by (k*qT)
 ggml/src/ggml.c:5671:    // TODO: maybe support other strides than 1?
 ggml/src/ggml.c:6353:    GGML_ASSERT(lower && left && !uni); // TODO: support other variants
-ggml/src/ggml.c:6684:        struct ggml_tensor * a_zero = ggml_scale(ctx, src, 0.0f); // FIXME this is going to produce NaN if a contains inf/NaN
-ggml/src/ggml.c:6766:                ggml_add_or_set(ctx, cgraph, isrc1, ggml_mean(ctx, grad)); // TODO: should probably be sum instead of mean
-ggml/src/ggml.c:7278:        // TODO: this branch isn't accessible anymore, maybe move this to ggml_build_forward_expand
-ggml/src/ggml.c:7911:                // FIXME: use ggml-backend to obtain the tensor data
-gguf-py/gguf/constants.py:1050:    A_ENC_OUTPUT          = auto() # TODO @ngxson: rename to ATTN_OUT
-gguf-py/gguf/constants.py:1051:    A_ENC_OUTPUT_NORM     = auto() # TODO @ngxson: rename to ATTN_OUT
-gguf-py/gguf/constants.py:5699:# TODO: add GGMLFileType from ggml_ftype in ggml.h
-gguf-py/gguf/constants.py:5783:        # TODO: need help with 64-bit types in Python
+ggml/src/ggml.c:6712:        struct ggml_tensor * a_zero = ggml_scale(ctx, src, 0.0f); // FIXME this is going to produce NaN if a contains inf/NaN
+ggml/src/ggml.c:6794:                ggml_add_or_set(ctx, cgraph, isrc1, ggml_mean(ctx, grad)); // TODO: should probably be sum instead of mean
+ggml/src/ggml.c:7306:        // TODO: this branch isn't accessible anymore, maybe move this to ggml_build_forward_expand
+ggml/src/ggml.c:7939:                // FIXME: use ggml-backend to obtain the tensor data
+gguf-py/gguf/constants.py:1058:    A_ENC_OUTPUT          = auto() # TODO @ngxson: rename to ATTN_OUT
+gguf-py/gguf/constants.py:1059:    A_ENC_OUTPUT_NORM     = auto() # TODO @ngxson: rename to ATTN_OUT
+gguf-py/gguf/constants.py:5722:# TODO: add GGMLFileType from ggml_ftype in ggml.h
+gguf-py/gguf/constants.py:5806:        # TODO: need help with 64-bit types in Python
 gguf-py/gguf/gguf_reader.py:78:                    # FIXME: When/if _get_field_parts() support multi-dimensional arrays, this must do so too
 gguf-py/gguf/gguf_reader.py:217:            # TODO: add option to make this a warning and accept duplicate keys like below
 gguf-py/gguf/gguf_reader.py:261:            # FIXME: Handle multi-dimensional arrays properly instead of flattening
@@ -875,7 +875,7 @@ scripts/check-requirements.sh:172:    # TODO: the check is failing for some reas
 src/llama-adapter.cpp:288:            // TODO: add support for norm vector
 src/llama-adapter.cpp:297:    // TODO: a more general solution for non-CPU extra buft should be implemented in the future
 src/llama-adapter.h:11:// TODO: pimpl
-src/llama-arch.cpp:1154:        case LLM_ARCH_QWEN4EXP:   // TODO: fix test-llama-archs
+src/llama-arch.cpp:1161:        case LLM_ARCH_QWEN4EXP:   // TODO: fix test-llama-archs
 src/llama-batch.h:26:        // TODO @ngxson : we may need to check for model arch when more models use >1 positions
 src/llama-batch.h:32:    // TODO: whole_seqs for embeddings?
 src/llama-batch.h:114:    // TODO: support embeddings if needed in the future
@@ -887,32 +887,32 @@ src/llama-context.cpp:186:            // TODO: start reading the actual value of
 src/llama-context.cpp:426:        // TODO: move these checks to ggml_backend_sched
 src/llama-context.cpp:441:                    // TODO: should we ignore ACCEL types too?
 src/llama-context.cpp:530:            // TODO: make this descriptor-specific; model.dev_layer() preserves the current behavior,
-src/llama-context.cpp:665:        // TODO: the worst case graph is not always reached for `n_seqs > 1`
-src/llama-context.cpp:723:    // FIXME: if multiple single tokens are evaluated without a synchronization,
-src/llama-context.cpp:820:        // TODO: change the mctx->apply() to return information if a graph reserve is needed
-src/llama-context.cpp:1169:    // TODO: not sure yet if we want to reserve here
-src/llama-context.cpp:1390:        // FIXME this call causes a crash if any model inputs were not used in the graph and were therefore not allocated
-src/llama-context.cpp:1433:    // TODO: add new split mode where we pad the input sequences so that ubatch.equal_seqs == true
-src/llama-context.cpp:1439:    // TODO: this clear of the buffer can easily be forgotten - need something better
-src/llama-context.cpp:1469:    // TODO: this is a tmp solution until we have a proper way to support enc-dec models
-src/llama-context.cpp:1565:    // TODO: hacky solution
-src/llama-context.cpp:1728:    // TODO: this clear of the buffer can easily be forgotten - need something better
-src/llama-context.cpp:2009:            // TODO: is there something more efficient which also minimizes swaps?
-src/llama-context.cpp:2060:    // TODO: hacky enc-dec support
-src/llama-context.cpp:2104:    // TODO: also consider shrinking the buffer
-src/llama-context.cpp:2113:            // TODO: not needed?
-src/llama-context.cpp:2434:    // TODO: not sure if needed, might simplify in the future by removing this
-src/llama-context.cpp:2533:        // FIXME: fix in ggml_backend_sched
-src/llama-context.cpp:2586:        // TODO: add backend support to batch tensor_get? or some other way to speed this up
-src/llama-context.cpp:3283:        // TODO: add more model-specific info which should prevent loading the session file if not identical
-src/llama-context.cpp:3308:        // TODO: add more info which needs to be identical but which is not verified otherwise
-src/llama-context.cpp:3399:        return; // FIXME
-src/llama-context.cpp:3402:        return; // FIXME
-src/llama-context.cpp:3434:  //llama_set_param(model->tok_embd,        param_filter, param_filter_ud); // FIXME
-src/llama-context.cpp:3627:        /*.n_threads                   =*/ GGML_DEFAULT_N_THREADS, // TODO: better default
-src/llama-context.h:198:    // TODO: more flexible combinations of logical/physical batch size and context size
-src/llama-context.h:269:    // TODO: read/write lora adapters and cvec
-src/llama-context.h:287:    llama_cross cross; // TODO: tmp for handling cross-attention - need something better probably
+src/llama-context.cpp:668:        // TODO: the worst case graph is not always reached for `n_seqs > 1`
+src/llama-context.cpp:726:    // FIXME: if multiple single tokens are evaluated without a synchronization,
+src/llama-context.cpp:823:        // TODO: make mctx->apply() report if a graph reserve is needed, then reset graph results only if the memory module reset the scheduler
+src/llama-context.cpp:1176:    // TODO: not sure yet if we want to reserve here
+src/llama-context.cpp:1400:        // FIXME this call causes a crash if any model inputs were not used in the graph and were therefore not allocated
+src/llama-context.cpp:1443:    // TODO: add new split mode where we pad the input sequences so that ubatch.equal_seqs == true
+src/llama-context.cpp:1449:    // TODO: this clear of the buffer can easily be forgotten - need something better
+src/llama-context.cpp:1479:    // TODO: this is a tmp solution until we have a proper way to support enc-dec models
+src/llama-context.cpp:1575:    // TODO: hacky solution
+src/llama-context.cpp:1738:    // TODO: this clear of the buffer can easily be forgotten - need something better
+src/llama-context.cpp:2019:            // TODO: is there something more efficient which also minimizes swaps?
+src/llama-context.cpp:2070:    // TODO: hacky enc-dec support
+src/llama-context.cpp:2114:    // TODO: also consider shrinking the buffer
+src/llama-context.cpp:2123:            // TODO: not needed?
+src/llama-context.cpp:2460:    // TODO: not sure if needed, might simplify in the future by removing this
+src/llama-context.cpp:2559:        // FIXME: fix in ggml_backend_sched
+src/llama-context.cpp:2612:        // TODO: add backend support to batch tensor_get? or some other way to speed this up
+src/llama-context.cpp:3309:        // TODO: add more model-specific info which should prevent loading the session file if not identical
+src/llama-context.cpp:3334:        // TODO: add more info which needs to be identical but which is not verified otherwise
+src/llama-context.cpp:3425:        return; // FIXME
+src/llama-context.cpp:3428:        return; // FIXME
+src/llama-context.cpp:3460:  //llama_set_param(model->tok_embd,        param_filter, param_filter_ud); // FIXME
+src/llama-context.cpp:3655:        /*.n_threads                   =*/ GGML_DEFAULT_N_THREADS, // TODO: better default
+src/llama-context.h:199:    // TODO: more flexible combinations of logical/physical batch size and context size
+src/llama-context.h:272:    // TODO: read/write lora adapters and cvec
+src/llama-context.h:290:    llama_cross cross; // TODO: tmp for handling cross-attention - need something better probably
 src/llama-cparams.h:52:    bool warmup;             // TODO: remove [TAG_LLAMA_GRAPH_NO_WARMUP]
 src/llama-ext.h:83:// TODO: convert to C-style data structure
 src/llama-grammar.h:71:// TODO: remove, needed for tests atm
@@ -947,9 +947,9 @@ src/llama-graph.h:1318:    // TODO: move this implementation to llama_memory_rec
 src/llama-graph.h:1389:// TODO: better name
 src/llama-hparams.cpp:226:    // TODO: maybe support other convolution strides than 1
 src/llama-hparams.h:75:    // TODO: this needs to be reworked
-src/llama-hparams.h:330:    // TODO: can be expressed via the `new n_embd_inp_impl` and remove this param
-src/llama-hparams.h:464:    // TODO: think of a better place for this function
-src/llama-hparams.h:465:    // TODO: pack the SWA params in a struct?
+src/llama-hparams.h:336:    // TODO: can be expressed via the `new n_embd_inp_impl` and remove this param
+src/llama-hparams.h:470:    // TODO: think of a better place for this function
+src/llama-hparams.h:471:    // TODO: pack the SWA params in a struct?
 src/llama-impl.h:98:// TODO: rename to llama_format ?
 src/llama-kv-cache-dsv4.cpp:1610:        //FIXME : note that we conflate token positions with rows, which is not true for multi-modal case.
 src/llama-kv-cache-dsv4.cpp:1740:                //TODO: do not clear the kv-cache during `seq_rm`, ref: https://github.com/ggml-org/llama.cpp/pull/26490#discussion_r3798143663
@@ -997,18 +997,22 @@ src/llama-mmap.cpp:52:// TODO: consider moving to llama-impl.h if needed in more
 src/llama-model-loader.cpp:526:    // TODO: this is not very clever - figure out something better
 src/llama-model-loader.cpp:719:    // TODO: make optional
 src/llama-model-loader.cpp:1022:                // FIXME
-src/llama-model-saver.cpp:35:        case LLM_ARCH_DOTS3NOTE: // TODO: need to handle SWA pattern and MLA+SWA config
-src/llama-model-saver.cpp:153:            tensor_name == "rope_factors_short.weight"); // FIXME
-src/llama-model-saver.cpp:175:            // FIXME should this be treated as flags?
-src/llama-model-saver.cpp:367:    // TODO: implement split file support
-src/llama-model-saver.cpp:392:    // FIXME llama_token is type i32 but when reading in a GGUF file u32 is expected, not an issue for writing though
-src/llama-model-saver.cpp:417:    // TODO: implement LoRA support
+src/llama-model-saver.cpp:36:        case LLM_ARCH_DOTS3NOTE: // TODO: need to handle SWA pattern and MLA+SWA config
+src/llama-model-saver.cpp:154:            tensor_name == "rope_factors_short.weight"); // FIXME
+src/llama-model-saver.cpp:176:            // FIXME should this be treated as flags?
+src/llama-model-saver.cpp:372:    // TODO: implement split file support
+src/llama-model-saver.cpp:397:    // FIXME llama_token is type i32 but when reading in a GGUF file u32 is expected, not an issue for writing though
+src/llama-model-saver.cpp:422:    // TODO: implement LoRA support
 src/llama-model-saver.h:9:// FIXME temporary function for better error messages
-src/llama-model.cpp:1329:    // TODO: Handle SWA metadata similarly when models start implementing it
-src/llama-model.cpp:1527:        // TODO: move to a separate function
-src/llama-model.cpp:1735:            // FIXME: workaround for CPU backend buft having a NULL device
-src/llama-model.cpp:2749:    // TODO: move reranking logic here and generalize
-src/llama-model.h:850:// TODO: remove
+src/llama-model.cpp:606:        // TODO: clarify why this is necessary specifically for these models
+src/llama-model.cpp:607:        // TODO: deduplicate condition [TAG_SPLIT_QGATE_QWEN]
+src/llama-model.cpp:757:                // TODO: deduplicate condition [TAG_SPLIT_QGATE_QWEN]
+src/llama-model.cpp:786:                // TODO: deduplicate condition [TAG_SPLIT_QGATE_QWEN]
+src/llama-model.cpp:1354:    // TODO: Handle SWA metadata similarly when models start implementing it
+src/llama-model.cpp:1552:        // TODO: move to a separate function
+src/llama-model.cpp:1760:            // FIXME: workaround for CPU backend buft having a NULL device
+src/llama-model.cpp:2774:    // TODO: move reranking logic here and generalize
+src/llama-model.h:853:// TODO: remove
 src/llama-quant.cpp:431:    // TODO: avoid hardcoded tensor names - use the TN_* constants
 src/llama-quant.cpp:567:            // TODO: explore better strategies
 src/llama-quant.cpp:574:            // TODO: explore better strategies
@@ -1072,7 +1076,7 @@ src/models/qwen3next.cpp:517:    // TODO: avoid repeats for fused GDN, needs bro
 src/models/qwen3next.cpp:644:    // TODO: extract in a common llm_graph_context::build_inp_embd_h()
 src/models/qwen3next.cpp:653:    // TODO: make static using `ggml_build_forward_select()`
 src/models/qwen3next.cpp:741:    // TODO: CUDA is missing non-contiguous unary ops. when implemented: remove this cont
-src/models/qwen4exp.cpp:747:    // TODO: enable sparse attention when we are ready
+src/models/qwen4exp.cpp:764:    // TODO: enable sparse attention when we are ready
 src/models/refact.cpp:11:    // TODO: become GGUF KV parameter
 src/unicode.cpp:1077:        // TODO: Revisit this regex, in case there are any subtle tokenization differences with the original regex.
 src/unicode.h:7:// TODO: reimplement this structure in endian-independent way
@@ -1081,13 +1085,13 @@ tests/CMakeLists.txt:177:    # TODO: disabled due to slowness
 tests/CMakeLists.txt:305:  # TODO: repair known memory leaks
 tests/CMakeLists.txt:309:# TODO: make this test (and others) not link `libllama` as it is not needed [TAG_TESTS_LLAMA_LINK]
 tests/test-backend-ops.cpp:2471:                // TODO: Make a template or something
-tests/test-backend-ops.cpp:5744:                // FIXME: support gradients with n_offs > 0
-tests/test-backend-ops.cpp:5758:                // FIXME: support gradients with n_offs > 0
-tests/test-backend-ops.cpp:5770:                // FIXME: support gradients with n_offs > 0
-tests/test-backend-ops.cpp:8858:    GGML_TYPE_MXFP4, GGML_TYPE_NVFP4, // TODO: or "other"
-tests/test-backend-ops.cpp:9528:                    continue; // TODO: add after WebGPU is fixed
-tests/test-backend-ops.cpp:10819:    // TODO: the max_nmse_err() for these cases is not estimated correctly causing sporadic false failures.
-tests/test-backend-ops.cpp:12003:            // TODO: better value for n_threads
+tests/test-backend-ops.cpp:5765:                // FIXME: support gradients with n_offs > 0
+tests/test-backend-ops.cpp:5779:                // FIXME: support gradients with n_offs > 0
+tests/test-backend-ops.cpp:5791:                // FIXME: support gradients with n_offs > 0
+tests/test-backend-ops.cpp:8879:    GGML_TYPE_MXFP4, GGML_TYPE_NVFP4, // TODO: or "other"
+tests/test-backend-ops.cpp:9553:                    continue; // TODO: add after WebGPU is fixed
+tests/test-backend-ops.cpp:10098:    // TODO: https://github.com/ggml-org/llama.cpp/pull/26223#issuecomment-5585815365
+tests/test-backend-ops.cpp:10851:    // TODO: the max_nmse_err() for these cases is not estimated correctly causing sporadic false failures.
 tests/test-backend-sampler.cpp:807:    // TODO: biasing too much here makes the Vulkan sampling fail - should be investigated further
 tests/test-backend-sampler.cpp:2106:            // TODO: remove this when https://github.com/ggml-org/llama.cpp/pull/26592 is merged
 tests/test-chat.cpp:358:// TODO: extract to common helper (copied from test-grammar-integration.cpp)
@@ -1098,18 +1102,18 @@ tests/test-grammar-llguidance.cpp:1083:            // TODO: The following line s
 tests/test-grammar-parser.cpp:7:// TODO: shold not include libllama sources
 tests/test-llama-archs.cpp:10:// TODO: replace with #include "llama-ext.h" in the future
 tests/test-llama-archs.cpp:132:        n_vocab = 3072; // TODO: should be 4096, but user code cannot get `n_vocab_out` yet [TAG_LLAMA_N_VOCAB_OUT]
-tests/test-llama-archs.cpp:547:        return false; // FIXME CUDA backend crashes.
-tests/test-llama-archs.cpp:550:        return false; // FIXME @ngxson
-tests/test-llama-archs.cpp:553:        return false; // FIXME adapter fixture
-tests/test-llama-archs.cpp:556:        return false; // FIXME Embedding (?) models produce inconsistent results.
-tests/test-llama-archs.cpp:559:        return false; // FIXME RWKV models hang indefinitely.
-tests/test-llama-archs.cpp:563:        return false; // TODO vocab
-tests/test-llama-archs.cpp:566:        return false; // TODO tensor shapes
-tests/test-llama-archs.cpp:571:    // FIXME: these hit scheduler/view-backed-output issues with WebGPU on CI.
-tests/test-llama-archs.cpp:579:    // FIXME: jamba produces incorrect output (~0.55 NMSE vs CPU) on the HIP
-tests/test-llama-archs.cpp:621:            continue; // FIXME: ISWA KV cache initialization needs more fixture params
-tests/test-llama-archs.cpp:732:            continue; // FIXME: ISWA KV cache initialization needs more fixture params
-tests/test-llama-archs.cpp:784:                    // FIXME: when adding a tensor to a gguf_context a copy is made, this changes the pointer which the meta backend
+tests/test-llama-archs.cpp:556:        return false; // FIXME CUDA backend crashes.
+tests/test-llama-archs.cpp:559:        return false; // FIXME @ngxson
+tests/test-llama-archs.cpp:562:        return false; // FIXME adapter fixture
+tests/test-llama-archs.cpp:565:        return false; // FIXME Embedding (?) models produce inconsistent results.
+tests/test-llama-archs.cpp:568:        return false; // FIXME RWKV models hang indefinitely.
+tests/test-llama-archs.cpp:572:        return false; // TODO vocab
+tests/test-llama-archs.cpp:575:        return false; // TODO tensor shapes
+tests/test-llama-archs.cpp:580:    // FIXME: these hit scheduler/view-backed-output issues with WebGPU on CI.
+tests/test-llama-archs.cpp:588:    // FIXME: jamba produces incorrect output (~0.55 NMSE vs CPU) on the HIP
+tests/test-llama-archs.cpp:630:            continue; // FIXME: ISWA KV cache initialization needs more fixture params
+tests/test-llama-archs.cpp:741:            continue; // FIXME: ISWA KV cache initialization needs more fixture params
+tests/test-llama-archs.cpp:793:                    // FIXME: when adding a tensor to a gguf_context a copy is made, this changes the pointer which the meta backend
 tests/test-opt.cpp:1:// TODO refactor
 tests/test-quant-type-selection.cpp:229:  //{ "bartowski/Qwen_Qwen3.5-397B-A17B-GGUF",        "IQ1_S"  }, // TODO: swap with ggml-org if/when it's released
 tests/test-quantize-fns.cpp:69:    // FIXME: why is done twice?
@@ -1127,7 +1131,7 @@ tools/export-lora/export-lora.cpp:194:        // TODO: remove this when we can s
 tools/export-lora/export-lora.cpp:304:            // TODO: add support for quantized lora
 tools/gguf-split/gguf-split.cpp:359:        // TODO: detect OS and use copy_file_range() here for better performance
 tools/imatrix/imatrix.cpp:890:                    // TODO: only get outputs when (params.process_output || params.compute_ppl)
-tools/llama-bench/llama-bench.cpp:2075:                // HACK: the utf-8 character is 2 bytes
+tools/llama-bench/llama-bench.cpp:2079:                // HACK: the utf-8 character is 2 bytes
 tools/mtmd/CMakeLists.txt:6:# TODO: add MTMD_VIDEO_METHOD in the future to select between ffmpeg and other backends
 tools/mtmd/clip-graph.h:16:    // TODO @ngxson : merge attn_mask and attn_mask_layers into one call
 tools/mtmd/clip-graph.h:45:    float kq_scale; // TODO: maybe move this to hparams
